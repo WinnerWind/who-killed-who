@@ -1,4 +1,4 @@
-[gd_scene load_steps=129 format=3 uid="uid://w0kx4pqkw37h"]
+[gd_scene load_steps=134 format=3 uid="uid://w0kx4pqkw37h"]
 
 [ext_resource type="Theme" uid="uid://xyj76ld4ymnb" path="res://Art/Themes/hip_retro_dark.tres" id="1_8yja0"]
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="2_udsku"]
@@ -36,6 +36,8 @@
 [ext_resource type="Script" uid="uid://6ahcfwj62g07" path="res://Scripts/Files and Folders/files.gd" id="33_nkhfi"]
 [ext_resource type="Script" uid="uid://cmowc8flglqra" path="res://Scripts/Files and Folders/folders.gd" id="34_w8q17"]
 [ext_resource type="Script" uid="uid://betc7x5t62js8" path="res://Scripts/Resources and Files/Other/subtitles.gd" id="34_x366f"]
+[ext_resource type="Texture2D" uid="uid://cvd1r8gkr2itr" path="res://Art/Pictures/Documents/godotcon-info/godotcon-information-0.png" id="38_ewept"]
+[ext_resource type="Texture2D" uid="uid://c70dji81qedu0" path="res://Art/Pictures/Documents/godotcon-info/godotcon-information-1.png" id="39_8yja0"]
 [ext_resource type="AudioStream" uid="uid://bwoim2rlm4h6m" path="res://Art/Sound/Transitory SFX/intro_2.wav" id="40_ibk3b"]
 [ext_resource type="AudioStream" uid="uid://cwi5v7c5sfqml" path="res://Art/Sound/Transitory SFX/hipretro outro.wav" id="41_l0gm2"]
 [ext_resource type="Shader" uid="uid://b4ij2y4336ltx" path="res://Art/Shaders/stripes.tres" id="42_mydo0"]
@@ -51,6 +53,48 @@
 [ext_resource type="Texture2D" uid="uid://i3j8lcga1itj" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/logout.png" id="52_e8sag"]
 [ext_resource type="PackedScene" uid="uid://dlmfk24r0gbcc" path="res://Scenes/Other/fancy_button.tscn" id="53_nwur7"]
 [ext_resource type="Script" uid="uid://cq8v8vfrqt7lp" path="res://Scripts/Desktop/clock_and_calendar.gd" id="54_1vvat"]
+
+[sub_resource type="Resource" id="Resource_ook28"]
+resource_name = "RE: About Passwords in Transkriptor"
+script = ExtResource("9_x2dtt")
+content = "Hello Ranmara,
+
+I understand how frustrating it is to not be able to access your Transkriptor transcriptions.
+
+Do note that by default, the password to your Transkriptor instance is the same as your E-Mail address.
+
+Let me know if you require more support,
+
+Marla.
+
+Note: If you would like to close this ticket, please do so at {explink}"
+subject = "RE: About Passwords in Transkriptor"
+sender = "$support-transkriptor"
+recipient = "$ran"
+hour = 15
+minute = 0
+day = 2
+month = 0
+year = 2025
+metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
+
+[sub_resource type="Resource" id="Resource_oei7g"]
+resource_name = "About Passwords in Transkriptor"
+script = ExtResource("9_x2dtt")
+content = "Hi!
+
+I'm unable to access my Transkriptor folder as it's password protected. I don't remember setting a password either. Can you help me out?
+
+Ranmara."
+subject = "About Passwords in Transkriptor"
+sender = "$ran"
+recipient = "$support-transkriptor"
+hour = 12
+minute = 45
+day = 1
+month = 0
+year = 2025
+metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
 
 [sub_resource type="Resource" id="Resource_dl4b8"]
 resource_name = "Welcome to Transkriptor"
@@ -78,45 +122,27 @@ month = 11
 year = 2024
 metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
 
-[sub_resource type="Resource" id="Resource_oei7g"]
-resource_name = "About Passwords in Transkriptor"
+[sub_resource type="Resource" id="Resource_k7xhl"]
+resource_name = "Godot GDC happening in Bangalore!"
 script = ExtResource("9_x2dtt")
-content = "Hi!
+content = "Hello!
 
-I'm unable to access my Transkriptor folder as it's password protected. I don't remember setting a password either. Can you help me out?
+We're very happy to announce that our event GodotCon will be taking place in Bangalore this year. Join us from 14th April to 19th April, followed by an afterparty on 20th April. Further details can be found in the attachment below.
 
-Ranmara."
-subject = "About Passwords in Transkriptor"
-sender = "$ran"
-recipient = "$support-transkriptor"
+We look forward to seeing you there!
+
+Godot Engine Newsletter.
+
+[ATTACHMENT ~/Downloads/godotcon-information.pdf]
+
+NOTE: If you're recieveing this attachment, this means that you are a registered developer. If you wish to stop recieving these emails, please contact us at [code]newsletter@godotengine.org[/code]"
+subject = "Godot GDC happening in Bangalore!"
+sender = "$godot"
+recipient = "$ran + 3000+ Recipients"
 hour = 12
-minute = 45
-day = 1
-month = 0
-year = 2025
-metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
-
-[sub_resource type="Resource" id="Resource_ook28"]
-resource_name = "RE: About Passwords in Transkriptor"
-script = ExtResource("9_x2dtt")
-content = "Hello Ranmara,
-
-I understand how frustrating it is to not be able to access your Transkriptor transcriptions.
-
-Do note that by default, the password to your Transkriptor instance is the same as your E-Mail address.
-
-Let me know if you require more support,
-
-Marla.
-
-Note: If you would like to close this ticket, please do so at {explink}"
-subject = "RE: About Passwords in Transkriptor"
-sender = "$support-transkriptor"
-recipient = "$ran"
-hour = 15
 minute = 0
-day = 2
-month = 0
+day = 12
+month = 3
 year = 2025
 metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
 
@@ -593,6 +619,22 @@ key_to_be_moved = 0
 index_to_be_moved_to = 0
 
 [sub_resource type="Resource" id="Resource_ofd1c"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_e4ydr"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_yknn0"]
 script = ExtResource("34_x366f")
 subtitles = Dictionary[int, String]({})
 time_to_be_changed = 0
@@ -1131,7 +1173,7 @@ current_user = ExtResource("6_nkhfi")
 chat_username = "$ran"
 chat_realname = "Ranmara"
 group_chat_messages = Array[ExtResource("7_e4ydr")]([ExtResource("8_x2dtt")])
-emails = Array[ExtResource("9_x2dtt")]([SubResource("Resource_dl4b8"), SubResource("Resource_oei7g"), SubResource("Resource_ook28")])
+emails = Array[ExtResource("9_x2dtt")]([SubResource("Resource_ook28"), SubResource("Resource_oei7g"), SubResource("Resource_dl4b8"), SubResource("Resource_k7xhl")])
 file_manager_window = ExtResource("10_ew2rf")
 image_viewer_window = ExtResource("11_cxx12")
 text_viewer_window = ExtResource("12_y5osf")
@@ -1593,6 +1635,21 @@ video_subtitles = SubResource("Resource_ofd1c")
 script = ExtResource("34_w8q17")
 password = "ranmara@winnerwind.in"
 metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="Downloads" type="Node" parent="Files"]
+script = ExtResource("34_w8q17")
+metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="godotcon-information" type="Node" parent="Files/Downloads"]
+script = ExtResource("33_nkhfi")
+document = Array[CompressedTexture2D]([ExtResource("38_ewept"), ExtResource("39_8yja0")])
+audio_subtitles = SubResource("Resource_e4ydr")
+video_subtitles = SubResource("Resource_yknn0")
+month = 3
+day = 12
+hour = 12
+minute = 12
+metadata/_custom_type_script = "uid://6ahcfwj62g07"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

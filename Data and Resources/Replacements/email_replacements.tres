@@ -11,6 +11,7 @@ replacements = Dictionary[String, String]({
 "$ds": "strava@stravajazz.com",
 "$duj": "johan@anytable.org",
 "$dul": "liberica@anytable.org",
+"$godot": "newsletter@godotengine.org",
 "$jrm": "jeremyobrien@winnerwind.in",
 "$mu": "arcos@mydomain.org",
 "$pp": "pavlov@pavspizza.com",
