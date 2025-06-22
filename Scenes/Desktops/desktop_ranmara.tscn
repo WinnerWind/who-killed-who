@@ -1108,13 +1108,25 @@ login_scene = ExtResource("33_bpoek")
 [node name="Files" type="Node" parent="."]
 unique_name_in_owner = true
 script = ExtResource("34_w8q17")
+month = 3
+day = 27
+hour = 17
+minute = 24
 
 [node name="Documents" type="Node" parent="Files"]
 script = ExtResource("34_w8q17")
+month = 3
+day = 27
+hour = 17
+minute = 24
 metadata/_custom_type_script = "uid://cmowc8flglqra"
 
 [node name="Diary" type="Node" parent="Files/Documents"]
 script = ExtResource("34_w8q17")
+month = 3
+day = 21
+hour = 3
+minute = 12
 metadata/_custom_type_script = "uid://cmowc8flglqra"
 
 [node name="2025-01-01" type="Node" parent="Files/Documents/Diary"]
@@ -1432,10 +1444,18 @@ additional_delay = 1.1
 special_reading_prefix = "Connecting... "
 toast_name = "AnyTable"
 toast_text = "Connecting to \"Killer Games Server\":8096"
+month = 3
+day = 27
+hour = 17
+minute = 24
 metadata/_custom_type_script = "uid://cmowc8flglqra"
 
 [node name="Projects" type="Node" parent="Files/Documents/Killer Games Server"]
 script = ExtResource("34_w8q17")
+month = 3
+day = 27
+hour = 17
+minute = 24
 metadata/_custom_type_script = "uid://cmowc8flglqra"
 
 [node name="Metal Cracker" type="Node" parent="Files/Documents/Killer Games Server/Projects"]
@@ -1457,6 +1477,10 @@ metadata/_custom_type_script = "uid://cmowc8flglqra"
 
 [node name="HR" type="Node" parent="Files/Documents/Killer Games Server"]
 script = ExtResource("34_w8q17")
+month = 2
+day = 26
+hour = 15
+minute = 5
 metadata/_custom_type_script = "uid://cmowc8flglqra"
 
 [node name="Satsu Hito" type="Node" parent="Files/Documents/Killer Games Server/HR"]
