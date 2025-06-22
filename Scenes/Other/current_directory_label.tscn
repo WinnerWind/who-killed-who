@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://boaoc6d1d413x"]
+
+[node name="Current Directory" type="Label"]
+text = "/BIN/FILES/FILES"

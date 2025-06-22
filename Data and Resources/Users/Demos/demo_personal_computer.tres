@@ -1,0 +1,65 @@
+[gd_resource type="Resource" script_class="UserMetadata" load_steps=14 format=3 uid="uid://boj6rv2q14r8x"]
+
+[ext_resource type="Script" uid="uid://cxe5keybq33wo" path="res://Scripts/Resources and Files/Bootup/bootup_line.gd" id="1_kqxg7"]
+[ext_resource type="Script" uid="uid://ds65yghua76jy" path="res://Scripts/Resources and Files/Other/user_metadata.gd" id="1_r14ly"]
+[ext_resource type="Script" uid="uid://cr6b45oclcbh4" path="res://Scripts/Resources and Files/Bootup/bootup_sequence.gd" id="2_c5mvh"]
+[ext_resource type="Texture2D" uid="uid://bp2s3w6y8x40x" path="res://Art/Pictures/OS Logos/ale_large.svg" id="2_x6nin"]
+[ext_resource type="Texture2D" uid="uid://nr444sup3a3i" path="res://Art/Placeholders/looper.svg" id="3_uk8a7"]
+[ext_resource type="Texture2D" uid="uid://djaf7ar6u40vk" path="res://Art/Pictures/Portraits/unknown_user.svg" id="5_tninv"]
+
+[sub_resource type="Resource" id="Resource_yv2bb"]
+script = ExtResource("1_kqxg7")
+type = 1
+text = "Systemd started successfully"
+delay = 2.0
+
+[sub_resource type="Resource" id="Resource_qt6yl"]
+script = ExtResource("1_kqxg7")
+type = 2
+text = "Starting your system"
+delay = 2.0
+
+[sub_resource type="Resource" id="Resource_68djl"]
+script = ExtResource("2_c5mvh")
+array_of_bootup_text = Array[ExtResource("1_kqxg7")]([SubResource("Resource_yv2bb"), SubResource("Resource_qt6yl")])
+plymouth_image = ExtResource("2_x6nin")
+plymouth_looper = ExtResource("3_uk8a7")
+is_intro = true
+
+[sub_resource type="Resource" id="Resource_ncbfg"]
+script = ExtResource("1_kqxg7")
+type = 1
+text = "Systemd stopped successfully!"
+delay = 1.0
+
+[sub_resource type="Resource" id="Resource_giwsr"]
+script = ExtResource("1_kqxg7")
+type = 0
+text = "Watchdog failed to stop!"
+delay = 2.0
+
+[sub_resource type="Resource" id="Resource_gtb2j"]
+script = ExtResource("1_kqxg7")
+type = 1
+text = "Shutdown successful!"
+delay = 1.0
+
+[sub_resource type="Resource" id="Resource_oun7i"]
+script = ExtResource("2_c5mvh")
+array_of_bootup_text = Array[ExtResource("1_kqxg7")]([SubResource("Resource_ncbfg"), SubResource("Resource_giwsr"), SubResource("Resource_gtb2j")])
+plymouth_image = ExtResource("2_x6nin")
+plymouth_looper = ExtResource("3_uk8a7")
+is_intro = false
+
+[resource]
+script = ExtResource("1_r14ly")
+is_part_of_main_game = true
+image = ExtResource("5_tninv")
+name = "Me"
+subtext = "It's a me!"
+password = ""
+scene_path = "uid://be4054p0jjsat"
+boot_sequence = SubResource("Resource_68djl")
+shutdown_sequence = SubResource("Resource_oun7i")
+ip_address = ""
+username = ""

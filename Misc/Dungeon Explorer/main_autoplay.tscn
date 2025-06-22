@@ -1,0 +1,94 @@
+[gd_scene load_steps=10 format=3 uid="uid://chlmp2r7lujq0"]
+
+[ext_resource type="Environment" uid="uid://cdl3xpq77bwcq" path="res://Misc/Dungeon Explorer/environment.tres" id="1_d8yng"]
+[ext_resource type="Script" uid="uid://b327vyje1yiud" path="res://Misc/Dungeon Explorer/autoplay.gd" id="2_xkgpl"]
+[ext_resource type="MeshLibrary" uid="uid://bsp04ncfgxvit" path="res://Misc/Dungeon Explorer/mesh_library.tres" id="3_vkm0m"]
+[ext_resource type="Script" uid="uid://bgmlu0elwxudv" path="res://Misc/Dungeon Explorer/map_generator.gd" id="4_lcngp"]
+[ext_resource type="Script" uid="uid://dhqyr00vf2728" path="res://Misc/Dungeon Explorer/distance_travelled_label.gd" id="5_70rva"]
+[ext_resource type="FontFile" uid="uid://b8ea6xvmsapic" path="res://Art/Fonts/Pico Fonts/rainyedited.ttf" id="5_88wdq"]
+[ext_resource type="AudioStream" uid="uid://b17ybmgemdebe" path="res://Misc/Dungeon Explorer/footsteps.ogg" id="7_qd1nr"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_yq18d"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_n5ke2"]
+size = Vector2(90, 90)
+center_offset = Vector3(0, -2, 0)
+
+[node name="Dungeon Explorer Autoplay" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("1_d8yng")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+directional_shadow_mode = 0
+
+[node name="Player" type="Node3D" parent="." node_paths=PackedStringArray("forward_raycast", "backward_raycast")]
+unique_name_in_owner = true
+script = ExtResource("2_xkgpl")
+forward_raycast = NodePath("Forward Cast")
+backward_raycast = NodePath("Backward Cast")
+speed = 15.0
+move_cooldown_time = 0.1
+rotation_cooldown_time = 0.0
+
+[node name="TopDownCamera" type="Camera3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, -0.0535211, 0.998567, 0, -0.998567, -0.0535211, 0, 100, 0)
+visible = false
+projection = 2
+current = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
+mesh = SubResource("CapsuleMesh_yq18d")
+
+[node name="Camera3D" type="Camera3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0)
+current = true
+
+[node name="Forward Cast" type="RayCast3D" parent="Player"]
+target_position = Vector3(0, 0, -5)
+
+[node name="Backward Cast" type="RayCast3D" parent="Player"]
+target_position = Vector3(0, 0, 5)
+
+[node name="Floor" type="MeshInstance3D" parent="Player"]
+mesh = SubResource("PlaneMesh_n5ke2")
+
+[node name="Map" type="GridMap" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, -2.2, 2.5)
+mesh_library = ExtResource("3_vkm0m")
+cell_size = Vector3(5, 5, 5)
+script = ExtResource("4_lcngp")
+max_size = Vector2i(10, 10)
+distance_to_render = Vector2i(15, 15)
+distance_to_clear = 5.0
+metadata/_editor_floor_ = Vector3(0, 0, 0)
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Distance Travelled" type="RichTextLabel" parent="UI"]
+layout_mode = 1
+offset_right = 886.0
+offset_bottom = 129.0
+theme_override_fonts/normal_font = ExtResource("5_88wdq")
+bbcode_enabled = true
+text = "[wave][font_size=26]Distance Travelled : 0m"
+script = ExtResource("5_70rva")
+
+[node name="SFX" type="Node" parent="."]
+
+[node name="Footsteps SFX" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("7_qd1nr")
+volume_db = -80.0
+autoplay = true
+
+[connection signal="on_move_end" from="Player" to="Map" method="_on_player_on_move_end"]
+[connection signal="on_move_end" from="Player" to="UI/Distance Travelled" method="move_finished"]
+[connection signal="on_move_end" from="Player" to="SFX/Footsteps SFX" method="set_volume_db" binds= [-80.0]]
+[connection signal="on_move_start" from="Player" to="SFX/Footsteps SFX" method="set_volume_db" binds= [0.0]]

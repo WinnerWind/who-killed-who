@@ -1,0 +1,53 @@
+[gd_scene load_steps=3 format=3 uid="uid://6cc762s88yhl"]
+
+[ext_resource type="Script" uid="uid://cydpe4e48tq5j" path="res://Scripts/Windows/Subwindow/text_message_row.gd" id="1_537qo"]
+[ext_resource type="Texture2D" uid="uid://cfc5dvttjjqet" path="res://Art/Placeholders/soham.png" id="1_xr5iq"]
+
+[node name="Message Row" type="HBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+offset_right = 150.0
+offset_bottom = 50.0
+tooltip_text = "OWO"
+script = ExtResource("1_537qo")
+
+[node name="Highlight" type="Panel" parent="."]
+custom_minimum_size = Vector2(5, 0)
+layout_mode = 2
+theme_type_variation = &"FakeButton"
+
+[node name="Icon Margins" type="MarginContainer" parent="."]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="Icon" type="TextureRect" parent="Icon Margins"]
+layout_mode = 2
+mouse_filter = 2
+texture = ExtResource("1_xr5iq")
+expand_mode = 2
+stretch_mode = 6
+
+[node name="Text" type="VBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Spacer" type="Control" parent="Text"]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="Text"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "Soham Dash"
+text_overrun_behavior = 3
+
+[node name="Last Message" type="Label" parent="Text"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 11
+text = "How have you been?"
+text_overrun_behavior = 3
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

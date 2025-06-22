@@ -1,0 +1,281 @@
+[gd_resource type="Resource" script_class="ChatMessage" load_steps=2 format=3 uid="uid://b2bepjl0eby00"]
+
+[ext_resource type="Script" uid="uid://bifm388ef70uc" path="res://Scripts/Resources and Files/For Desktop/messages.gd" id="1_kstlx"]
+
+[resource]
+resource_name = "Killer Games - "
+script = ExtResource("1_kstlx")
+content = "
+<d 2024-12-12>
+<t 19:40>
+$sys $ran has created this chat with history enabled.
+$sys $ran has added \"$jrm\"
+$sys $ran has added \"$sth\"
+$sys $ran has added \"$rom\"
+$ran Are you all recieving this?
+$jrm Yes!
+$sth yup
+$rom yee
+$ran Sweet!
+
+<d 2024-12-25>
+<t 11:31>
+$rom merry xmas!
+$sth Thanks! Do you all have plans?
+$ran I don't actually.
+$jrm me2
+$rom i'm free too
+$sth Alright, do you guys wanna go to CafeLafe tonight?
+$rom where's dat owo
+$jrm i think its opposite to that pizza shop you used to visit, moji?
+$rom yee its moji
+$jrm yup just opposite to that
+$sth Ranmara is not the only one to know good hangout spots you know.
+$sth Why not go to Crossroads? It's right next to CafeLafe.
+$sth I hear they have excellent shots there.
+$jrm it's a bar though, cool with that?
+$rom idm
+$ran Sure, I'm at office, see you there soon.
+<t 16:24>
+$sth See you!
+
+<d 2024-12-26>
+<t 19:12>
+$sth Does anyone have photos from yesterday?
+$ran I'm fairly certain we were all too busy singing like a bunch of drunks to take any photos.
+$rom yee itst
+$jrm itst?
+$rom i think so too
+$jrm oh
+$sth Oh it's okay.
+
+<d 2024-12-31>
+<t 23:59>
+$ran 5
+$ran 4
+$ran 3
+$ran 2
+$ran 1
+
+<d 2025-01-01>
+<t 00:00>
+$ran Happy New Yer!
+$ran Year*
+$ran Oh, no one is online.
+<t 10:40>
+$sth Happy new year!
+$rom happy new year
+$jrm happy new year!
+$ran I can't believe you three fell asleep during New-Year's Eve, haha.
+$rom i was busy drawing the hammer for our game
+$ran I thought we finalized it?
+$rom i didn like the design smh
+$ran Romila seriously don't bother anymore, we only have 6 days till we launch
+$sth ^ What he said, we don't wanna cause more instability right now
+$jrm i mean im not that big of a fa of the current model but i dont really care enough. besides we dont have time
+$rom alright issok ill just design it for myself :)
+
+<d 2025-01-02> 
+<t 17:45>
+$sth How come you didn't come today Jeremy?
+$jrm had to go submit documents, boring stuff
+$sth I see, well I hope to see you tomorrow!
+
+<d 2025-01-05>
+<t 9:32>
+$ran Hey, come to office tonight at 7. We need to finalize our release page.
+$jrm k will be there
+$sth Alright.
+$rom ayeaye
+
+<d 2025-01-06>
+<t 13:12>
+$rom ah shit i forgot my laptop in my cubicle
+$ran No worries, I'll drop it off at your place
+$rom tysm
+$rom how many sales did we make?
+$ran I think like 10,000?
+$jrm holy moly are you fr?
+$ran In the first 30 seconds too.
+$ran Yeah, I am not shitting. I don't believe it myself.
+$ran Yup! I'll show you the stats tomorrow.
+$sth God, I didn't think that would be happening.
+
+<d 2025-01-07>
+<t 6:32>
+$rom sorry i can't come today
+$rom whts the sales figure's like?
+<t 7:16>
+$ran I'm not really a money guy but I think
+$ran If my calculations are right
+$ran We made about 50,000 just from MC alone.
+$jrm when are we getting our scrooge mc duck pool of gold?
+$jrm lmao
+$ran I don't think 50,000 can buy us that haha.
+$ran Anyway, let's discuss splitting tomorrow. 
+
+<d 2025-01-11>
+<t 12:32>
+$ran Do any of you have any preferences on donuts?
+$jrm gluten free ofc
+$ran Of course but any flavours?
+$rom choco :3
+$sth Never change Romila, please never change.
+$sth Anyway what's this about?
+$ran My cousin needs data for a survey, haha.
+$sth Oh.
+$sth I like Strawberry I guess.
+$jrm hmmm idek what donuts i'm into
+$jrm hmm
+$jrm probably chocolate as well
+$rom CHOCO!!!!!
+$ran Haha, I get it.
+$ran Anyway thanks!
+
+<d 2025-01-12>
+<t 22:32>
+$jrm i think i had one too many donuts lmao
+$rom same but god damn those were good
+$rom you really know how to host a party ranny
+$ran Nah, really it's the hard work you all put in.
+$sth Anyway, did anyone try the cake I made? Pretty sure it dissapeared first.
+$ran Oh really Satsu, that was probably better than my donuts idea, haha.
+$jrm fr but please dont bring so muhc food to a work party istg
+$rom i dont mind this lmao, twas fun :3
+$rom lets do this again fr
+$sth Damn Ranmara, everyone's gonna start calling you their favourite golden boy.
+$ran Nah don't give me so much credit. You guys do all the dirty work.
+$ran Anyway off to bed.
+$sth Goodnight.
+$jrm night!
+$rom nini!
+
+<d 2025-01-23>
+<t 12:36>
+$rom hey jemmy do you have my drawing stylus
+$rom REPLY!!!
+$jrm i'm literally in the next cubicle, ffs just come meet me
+$rom ok
+$rom tysm for the stylus
+$jrm just tell me irl ffs
+
+<d 2025-01-24>
+<t 17:32>
+$jrm did you finish that sketch for the metal cracker 
+$rom no, i thought deadline was tmr
+$jrm what?! but i told you to finish it by today
+$rom sowy
+$jrm you've been missing a lot of shit lately. its affecting the company yk
+$rom i thought you were being nice
+$rom you FUCKING changed the deadline A WEEK ago
+$jrm that's not an excuse to do it. 
+$rom i didn't *not* do it, i'm sketching right now
+$jrm we all have shit to do just stfu
+$ran Guys please, it's a weekend. Stop fighting.
+$ran The sketch isn't super urgent Jeremy, give it a break
+$ran Romila please try to keep up with deadlines.
+$ran Now please take it easy.
+$rom ok
+$jrm alright
+
+<d 2025-01-30>
+<t 19:54>
+$ran Hey everyone,
+$ran I feel like taking a small break from office. It seems that our game did great and we should be fine if we all take a small break for a week.
+$ran Feel free to take a week off from 1st to 9th February
+$sth Sweet!
+$rom tysm
+$jrm thanks! i was about to ask for one anyway
+$rom :3
+
+<d 2025-02-08>
+<t 21:21>
+$ran I hope you all had a great break! Looking forward to see you all tomorrow!
+
+<d 2025-02-11>
+<t 12:30>
+$ran I know it's lunch break but Romila, Jeremy and Satsu please meet me at the coffee table after this.
+$ran It's about our new game.
+$rom k
+
+<d 2025-02-18>
+<t 9:12>
+$ran Jeremy I know you didn't come in today but I just wanted to let you and everyone know that Romila's drug abuse is not going to be a problem.
+$ran Lets all keep continuing with the game.
+$jrm uk how i feel about drugs
+$rom sorry
+$ran It's not your fault.
+$jrm if you really cared you would leave our studio
+$ran Jeremy! Don't say that!
+$ran Look, I'm turning off this chat for a bit
+$sys $ran disabled this chatroom.
+
+<d 2025-02-23>
+<t 10:12>
+$sys $ran re-enabled this chatroom.
+$ran Please try to come for work. I know things are quite bad in the company and I think we should all talk it over.
+$sth I thought you were capable enough to do everything on your own? 
+$ran Now's not the time. 
+$sth Alright.
+
+<d 2025-03-01>
+<t 18:12>
+$ran Lets try not to talk about what happened today, for our own sake and for Romila's.
+$jrm at this rate i'll end up leaving the company
+$ran Please don't. We need to talk this out on Monday, alright?
+
+<d 2025-03-04>
+<t 19:12>
+$sth Have you all seen the magazines?
+$sth Some journalist managed to find out about Romila's issues.
+$ran How could they have known?
+$sth No clue.
+$rom i'm sorry its all my fault
+$ran Don't say that, it happens.
+$ran I'll see what I can do.
+$jrm gee okay.
+$jrm take sides like you always do. 
+
+<d 2025-03-18>
+<t 12:32>
+$ran Before I forget, I won't be coming to office tomorrow.
+$jrm sure buddy, \"office\"
+$jrm you dont treat our little games studio like a games studio, always calling it an \"office\"
+$jrm it would be best if you didn't come at all.
+
+<d 2025-03-24>
+<t 18:17>
+$ran I'll be coming over tomorrow. My press conference is done.
+$sth Sure.
+$jrm how'd it go?
+$ran Not too bad. It seems the journalists are finally off our asses for the drug abuse thing, though yeah we aren't really out of the woods.
+$ran Things are still quite bad, we need to stay vigilant and calm.
+
+<d 2025-03-26>
+<t 14:32>
+$ran I'm sure that you all know that I had to fire Romila today. I know that it'll be very tough with no skilled artists in our group, but we'll have to manage. Her constant drug abuse pedalled with public opinion not being in our favour really drove me to this decision.
+$ran That said, I will try my best to check in on her from time to time to make sure that she's on the right path to rehabilitation.
+$jrm probably the only right thing you've done.
+$sth \"Check in on her\"? Right, savior complex much?
+$ran I don't get what's your problem.
+$ran Please understand that this instability might spell the end for our company. We do not want that at any costs.
+$sth Sure buddy. I thought you were our \"golden boy\".
+$ran I'm just not going to engage with you.
+
+<d 2025-04-12>
+<t 21:45>
+$sth I just got a short notice invite to GDC. Do you guys want to go?
+$ran Sure, that sounds good to me.
+$jrm i dont see why not, its not like we can work in this oppressive hell anyway. 
+$sth Thank me later.
+
+<d 2025-04-21>
+<t 1:12>
+$ran Today's party was great was it not?
+$ran Really needed that to take my mind off things.
+$jrm agreed, quite a rocky time here. 
+"
+name = "Killer Games"
+alternate_name = ""
+last_message = "3 Members."
+metadata/_custom_type_script = "uid://bifm388ef70uc"

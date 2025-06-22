@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="UserMetadata" load_steps=11 format=3 uid="uid://01qrbf158lml"]
+
+[ext_resource type="Script" uid="uid://cxe5keybq33wo" path="res://Scripts/Resources and Files/Bootup/bootup_line.gd" id="1_sg1hh"]
+[ext_resource type="Texture2D" uid="uid://bp2s3w6y8x40x" path="res://Art/Pictures/OS Logos/ale_large.svg" id="2_a7bhq"]
+[ext_resource type="Texture2D" uid="uid://bxldhmj1n2syr" path="res://Art/Pictures/OS Logos/ale_looper.svg" id="3_7n861"]
+[ext_resource type="Script" uid="uid://cr6b45oclcbh4" path="res://Scripts/Resources and Files/Bootup/bootup_sequence.gd" id="4_sb1tc"]
+[ext_resource type="Texture2D" uid="uid://cfc5dvttjjqet" path="res://Art/Placeholders/soham.png" id="5_vvnqq"]
+[ext_resource type="Script" uid="uid://ds65yghua76jy" path="res://Scripts/Resources and Files/Other/user_metadata.gd" id="6_g6ywe"]
+
+[sub_resource type="Resource" id="Resource_ytr1a"]
+script = ExtResource("1_sg1hh")
+type = 0
+text = "Fhghwats"
+delay = 1.0
+
+[sub_resource type="Resource" id="Resource_rdjsr"]
+script = ExtResource("4_sb1tc")
+array_of_bootup_text = Array[ExtResource("1_sg1hh")]([SubResource("Resource_ytr1a")])
+plymouth_image = ExtResource("2_a7bhq")
+plymouth_looper = ExtResource("3_7n861")
+is_intro = true
+
+[sub_resource type="Resource" id="Resource_kt4te"]
+script = ExtResource("1_sg1hh")
+type = 0
+text = "STOPPIng"
+delay = 1.0
+
+[sub_resource type="Resource" id="Resource_bkkte"]
+script = ExtResource("4_sb1tc")
+array_of_bootup_text = Array[ExtResource("1_sg1hh")]([SubResource("Resource_kt4te")])
+plymouth_image = ExtResource("2_a7bhq")
+plymouth_looper = ExtResource("3_7n861")
+is_intro = false
+
+[resource]
+script = ExtResource("6_g6ywe")
+is_part_of_main_game = true
+image = ExtResource("5_vvnqq")
+name = "Jeremy"
+subtext = "Wishing Well"
+password = "a"
+scene_path = "uid://071ts15ivw0y"
+boot_sequence = SubResource("Resource_rdjsr")
+shutdown_sequence = SubResource("Resource_bkkte")
+ip_address = "192.168.1.0"
+username = "soham"

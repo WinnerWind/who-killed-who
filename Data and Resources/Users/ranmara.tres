@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="UserMetadata" load_steps=6 format=3 uid="uid://f8jl5nasiqhi"]
+
+[ext_resource type="Script" uid="uid://ds65yghua76jy" path="res://Scripts/Resources and Files/Other/user_metadata.gd" id="1_6lt05"]
+[ext_resource type="Script" uid="uid://cxe5keybq33wo" path="res://Scripts/Resources and Files/Bootup/bootup_line.gd" id="1_b0w1m"]
+[ext_resource type="Script" uid="uid://cr6b45oclcbh4" path="res://Scripts/Resources and Files/Bootup/bootup_sequence.gd" id="2_wqf1j"]
+
+[sub_resource type="Resource" id="Resource_erwr1"]
+script = ExtResource("2_wqf1j")
+array_of_bootup_text = Array[ExtResource("1_b0w1m")]([])
+is_intro = true
+metadata/_custom_type_script = "uid://cr6b45oclcbh4"
+
+[sub_resource type="Resource" id="Resource_06yt0"]
+script = ExtResource("2_wqf1j")
+array_of_bootup_text = Array[ExtResource("1_b0w1m")]([])
+is_intro = false
+metadata/_custom_type_script = "uid://cr6b45oclcbh4"
+
+[resource]
+script = ExtResource("1_6lt05")
+is_part_of_main_game = true
+name = "Ranmara"
+subtext = "Wishing Well"
+password = ""
+scene_path = "uid://w0kx4pqkw37h"
+boot_sequence = SubResource("Resource_erwr1")
+shutdown_sequence = SubResource("Resource_06yt0")
+ip_address = "192.168.43.89"
+username = "ranmara"
+metadata/_custom_type_script = "uid://ds65yghua76jy"

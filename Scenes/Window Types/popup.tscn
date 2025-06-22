@@ -1,0 +1,79 @@
+[gd_scene load_steps=4 format=3 uid="uid://fal2iityh6i6"]
+
+[ext_resource type="Script" uid="uid://dwjot3ojm7wpr" path="res://Scripts/Windows/popup.gd" id="1_1tmyv"]
+[ext_resource type="Texture2D" uid="uid://b854tcu45wqxe" path="res://Art/Pictures/Desktop Icons/User1/Dark/stop.svg" id="2_607fr"]
+[ext_resource type="PackedScene" uid="uid://utagi2eh5w54" path="res://Scenes/Other/titlebar.tscn" id="2_sdyvl"]
+
+[node name="Alert!" type="Panel" node_paths=PackedStringArray("image_node", "title", "subtitle")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -752.0
+offset_bottom = -448.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1tmyv")
+image_node = NodePath("Sorter/Contents/Image")
+title = NodePath("Sorter/Contents/MarginContainer/Right Side/Title")
+subtitle = NodePath("Sorter/Contents/MarginContainer/Right Side/Subtitle")
+starting_size = Vector2(400, 200)
+window_icon_name = &"stop"
+
+[node name="Sorter" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Titlebar" parent="Sorter" instance=ExtResource("2_sdyvl")]
+layout_mode = 2
+
+[node name="Contents" type="HBoxContainer" parent="Sorter"]
+clip_contents = true
+layout_mode = 2
+
+[node name="Image" type="TextureRect" parent="Sorter/Contents"]
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("2_607fr")
+stretch_mode = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="Sorter/Contents"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_bottom = 5
+
+[node name="Right Side" type="VBoxContainer" parent="Sorter/Contents/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Title" type="Label" parent="Sorter/Contents/MarginContainer/Right Side"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Out of storage!"
+horizontal_alignment = 1
+
+[node name="Subtitle" type="Label" parent="Sorter/Contents/MarginContainer/Right Side"]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 14
+text = "Please buy more storage from foobar and company
+a
+a
+a
+a"
+autowrap_mode = 3
+text_overrun_behavior = 2
+
+[node name="Okay" type="Button" parent="Sorter/Contents/MarginContainer/Right Side"]
+layout_mode = 2
+text = "Okay"
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="Sorter/Contents/MarginContainer/Right Side/Okay" to="." method="close_window"]

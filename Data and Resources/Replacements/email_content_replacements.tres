@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ReplacementList" load_steps=2 format=3 uid="uid://dq63le3te06k6"]
+
+[ext_resource type="Script" uid="uid://be5e2vas1np7c" path="res://Scripts/Resources and Files/Other/replacement_list.gd" id="1_6ynln"]
+
+[resource]
+script = ExtResource("1_6ynln")
+replacements = Dictionary[String, String]({
+"{expattachment}": "[pulse][color=dark_gray]EXPIRED ATTACHMENT[/color][/pulse]"
+})
+key_to_be_renamed = ""
+rename_key_to = ""
+key_to_be_moved = ""
+index_to_be_moved_to = 0

@@ -1,0 +1,92 @@
+[gd_resource type="Resource" script_class="DesktopIcons" load_steps=42 format=3 uid="uid://ctu38rpupbng6"]
+
+[ext_resource type="Texture2D" uid="uid://b4rlrsv0lwb8v" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/app_starter.png" id="1_lo6nv"]
+[ext_resource type="Texture2D" uid="uid://clkp1i0uibqk6" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/music.png" id="2_aduex"]
+[ext_resource type="Texture2D" uid="uid://deoj104qia5d4" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/left_arrow.svg" id="3_6apmk"]
+[ext_resource type="Texture2D" uid="uid://b0m4m23uiw77y" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/calculator.png" id="4_moj61"]
+[ext_resource type="Texture2D" uid="uid://bu1lsjiecliga" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/chats.png" id="5_k0q06"]
+[ext_resource type="Texture2D" uid="uid://farofvo8epco" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/close_button.png" id="6_arpol"]
+[ext_resource type="Texture2D" uid="uid://c1b48s0pgiklr" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/trash.png" id="7_6nk2p"]
+[ext_resource type="Texture2D" uid="uid://c4v1v05n5nvch" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/email.png" id="8_cm31o"]
+[ext_resource type="Texture2D" uid="uid://dqsglm550a60w" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/file.png" id="9_347ca"]
+[ext_resource type="Texture2D" uid="uid://byxpampcw50y4" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/folder.png" id="10_72g5a"]
+[ext_resource type="Texture2D" uid="uid://rvcyi5kdadcy" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/image.png" id="11_7nfoa"]
+[ext_resource type="Texture2D" uid="uid://muyux63iwydk" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/folder_locked.png" id="12_wu0x5"]
+[ext_resource type="Texture2D" uid="uid://i3j8lcga1itj" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/logout.png" id="13_w2x5i"]
+[ext_resource type="Texture2D" uid="uid://2coqhdw7uslv" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/loop_off.png" id="14_4godc"]
+[ext_resource type="Texture2D" uid="uid://cjfymgap3btiu" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/loop_on.png" id="15_abx4y"]
+[ext_resource type="Texture2D" uid="uid://clufgevrtgyox" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/minimize.png" id="16_b0vj4"]
+[ext_resource type="Texture2D" uid="uid://clq148s7p31ax" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/missing_texture.png" id="17_njyq4"]
+[ext_resource type="Texture2D" uid="uid://c06fv2brrwry8" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/new_file.png" id="18_4avna"]
+[ext_resource type="Texture2D" uid="uid://b2eqvsc2ufabp" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/hiptext.png" id="19_iyke5"]
+[ext_resource type="Texture2D" uid="uid://c4ei2qhgxdixk" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/bell.png" id="20_744jq"]
+[ext_resource type="Texture2D" uid="uid://cyv2aer7ofhmx" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/padlock.png" id="20_v81du"]
+[ext_resource type="Texture2D" uid="uid://cc3tntc3ldfmf" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/paused.png" id="21_eqiwh"]
+[ext_resource type="Texture2D" uid="uid://cov4hm27fuitm" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/play.png" id="22_2q5er"]
+[ext_resource type="Texture2D" uid="uid://daoq4jyauc5hv" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/poweroff.png" id="23_3dv06"]
+[ext_resource type="Texture2D" uid="uid://w2dtyngfeu4b" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/remote_connection.png" id="24_sj4hd"]
+[ext_resource type="Texture2D" uid="uid://cghundqydyvjt" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/rename.png" id="25_7yhh7"]
+[ext_resource type="Texture2D" uid="uid://dxw7k1xlbnq8x" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/restart.png" id="26_1n1us"]
+[ext_resource type="Texture2D" uid="uid://67nn68kqmv4m" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/save.png" id="27_oqx2b"]
+[ext_resource type="Script" uid="uid://5ydtly7lkawx" path="res://Scripts/Resources and Files/For Desktop/icons_for_desktop.gd" id="28_10iuv"]
+[ext_resource type="Texture2D" uid="uid://cvv4wmo6ggudf" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/settings.png" id="29_8tllj"]
+[ext_resource type="Texture2D" uid="uid://brtg3qnmo6wv0" path="res://Art/Pictures/OS Logos/hipOS.png" id="30_x8kdf"]
+[ext_resource type="Texture2D" uid="uid://oe67eyfews34" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/information.png" id="31_p2gss"]
+[ext_resource type="Texture2D" uid="uid://c5wy8afm0kkpi" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/stop.png" id="31_vrh5e"]
+[ext_resource type="Texture2D" uid="uid://c3vpp44xkun7t" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/users.png" id="32_ffep1"]
+[ext_resource type="Texture2D" uid="uid://bmjf0uw4uu55t" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/subtitles.png" id="32_fgy5b"]
+[ext_resource type="Texture2D" uid="uid://dkxa2idxxg5wh" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/video.png" id="33_mcskn"]
+[ext_resource type="Texture2D" uid="uid://cfw22bac107k3" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/volume_down.png" id="34_a7bq1"]
+[ext_resource type="Texture2D" uid="uid://sngvqub0rcju" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/volume_up.png" id="35_xsu8w"]
+[ext_resource type="Texture2D" uid="uid://m3l58i21v50l" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/zoom_in.png" id="36_22fq8"]
+[ext_resource type="Texture2D" uid="uid://ddvmu0m51q40l" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/zoom_out.png" id="37_mlu68"]
+[ext_resource type="Texture2D" uid="uid://byudk1oop8u0y" path="res://Art/Pictures/Backgrounds/dark_room.png" id="39_31h1n"]
+
+[resource]
+script = ExtResource("28_10iuv")
+missing_texture = ExtResource("17_njyq4")
+close_button = ExtResource("6_arpol")
+minimize_button = ExtResource("16_b0vj4")
+volume_down = ExtResource("34_a7bq1")
+volume_up = ExtResource("35_xsu8w")
+zoom_in = ExtResource("36_22fq8")
+zoom_out = ExtResource("37_mlu68")
+back = ExtResource("3_6apmk")
+pause_button = ExtResource("21_eqiwh")
+play_button = ExtResource("22_2q5er")
+loop_on = ExtResource("15_abx4y")
+loop_off = ExtResource("14_4godc")
+save_button = ExtResource("27_oqx2b")
+rename_button = ExtResource("25_7yhh7")
+delete_button = ExtResource("7_6nk2p")
+new_file_button = ExtResource("18_4avna")
+subtitles_button = ExtResource("32_fgy5b")
+power_off = ExtResource("23_3dv06")
+restart = ExtResource("26_1n1us")
+logout = ExtResource("13_w2x5i")
+users = ExtResource("32_ffep1")
+app_starter = ExtResource("1_lo6nv")
+padlock = ExtResource("20_v81du")
+folder_icon = ExtResource("10_72g5a")
+locked_folder_icon = ExtResource("12_wu0x5")
+file_icon = ExtResource("9_347ca")
+audio_icon = ExtResource("2_aduex")
+video_icon = ExtResource("33_mcskn")
+image_icon = ExtResource("11_7nfoa")
+document_icon = ExtResource("9_347ca")
+text_editor = ExtResource("9_347ca")
+audio_player = ExtResource("2_aduex")
+video_player = ExtResource("33_mcskn")
+image_viewer = ExtResource("11_7nfoa")
+file_manager = ExtResource("10_72g5a")
+emails = ExtResource("8_cm31o")
+chat = ExtResource("5_k0q06")
+calculator = ExtResource("4_moj61")
+remote_connection = ExtResource("24_sj4hd")
+system_information = ExtResource("31_p2gss")
+settings = ExtResource("29_8tllj")
+notepad = ExtResource("19_iyke5")
+wallpaper = ExtResource("39_31h1n")
+notification_icon = ExtResource("20_744jq")
+stop = ExtResource("31_vrh5e")
+system_icon = ExtResource("30_x8kdf")

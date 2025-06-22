@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ReplacementList" load_steps=2 format=3 uid="uid://vxh3c3txkok2"]
+
+[ext_resource type="Script" uid="uid://be5e2vas1np7c" path="res://Scripts/Resources and Files/Other/replacement_list.gd" id="1_yrlr5"]
+
+[resource]
+script = ExtResource("1_yrlr5")
+replacements = Dictionary[String, String]({
+"$da": "admin@hipxel.com",
+"$dm": "marlanickson@hipxel.com",
+"$dr": "robertnickson@hipxel.com",
+"$ds": "strava@stravajazz.com",
+"$duj": "johan@anytable.org",
+"$dul": "liberica@anytable.org",
+"$jrm": "jeremyobrien@winnerwind.in",
+"$mu": "arcos@mydomain.org",
+"$pp": "pavlov@pavspizza.com",
+"$ran": "ranmara@winnerwind.in",
+"$rom": "romila@winnerwind.in",
+"$sth": "satsu@winnerwind.in",
+"$transkriptor": "hi@transkriptor.org"
+})
+key_to_be_renamed = ""
+rename_key_to = ""
+key_to_be_moved = "$duj"
+index_to_be_moved_to = 5

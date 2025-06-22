@@ -1,0 +1,65 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2md68ibvvoxk"]
+
+[ext_resource type="Script" uid="uid://j7i470kcsndg" path="res://Scripts/Desktop/notification.gd" id="1_meim7"]
+[ext_resource type="Texture2D" uid="uid://c2r2ybfrp0o3l" path="res://Art/Pictures/Desktop Icons/User1/Dark/bell.svg" id="2_sw5hr"]
+
+[node name="Notification" type="Panel" node_paths=PackedStringArray("app_text", "title", "image")]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -250.0
+offset_top = 50.0
+offset_right = -50.0
+offset_bottom = 150.0
+grow_horizontal = 0
+mouse_filter = 2
+script = ExtResource("1_meim7")
+speed = 0.2
+app_text = NodePath("MarginContainer/App Name and Text/Text")
+title = NodePath("MarginContainer/App Name and Text/App Name and Image/App Name")
+image = NodePath("MarginContainer/App Name and Text/App Name and Image/Image")
+initial_size = Vector2(200, 100)
+
+[node name="Queue Free Timer" type="Timer" parent="."]
+wait_time = 3.0
+one_shot = true
+autostart = true
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="App Name and Text" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="App Name and Image" type="HBoxContainer" parent="MarginContainer/App Name and Text"]
+layout_mode = 2
+
+[node name="App Name" type="Label" parent="MarginContainer/App Name and Text/App Name and Image"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "App Name"
+
+[node name="Image" type="TextureRect" parent="MarginContainer/App Name and Text/App Name and Image"]
+custom_minimum_size = Vector2(23, 0)
+layout_mode = 2
+texture = ExtResource("2_sw5hr")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Text" type="Label" parent="MarginContainer/App Name and Text"]
+custom_minimum_size = Vector2(0, 75)
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 13
+text = "You have new files.  and new text files to see. aaaaaaaaaaa
+aaaaaaaaaaaaaa
+"
+autowrap_mode = 3
+text_overrun_behavior = 4
+
+[connection signal="timeout" from="Queue Free Timer" to="." method="remove"]

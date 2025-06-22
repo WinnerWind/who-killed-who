@@ -1,0 +1,98 @@
+[gd_resource type="Resource" script_class="DesktopIcons" load_steps=45 format=3 uid="uid://bn2xmponak4f7"]
+
+[ext_resource type="Texture2D" uid="uid://dnyma4cmmkyuh" path="res://Art/Pictures/Desktop Icons/WindowsXP/app_starter.png" id="1_dmeiu"]
+[ext_resource type="Texture2D" uid="uid://ddy3f1ar8bgjg" path="res://Art/Pictures/Desktop Icons/WindowsXP/back.png" id="2_21hke"]
+[ext_resource type="Texture2D" uid="uid://c8trifgkl8eb2" path="res://Art/Pictures/Desktop Icons/WindowsXP/audio.png" id="2_ngkj8"]
+[ext_resource type="Texture2D" uid="uid://ek7ujc31ih05" path="res://Art/Pictures/Desktop Icons/WindowsXP/close_button.png" id="3_ngkj8"]
+[ext_resource type="Texture2D" uid="uid://byb0glsvowk75" path="res://Art/Pictures/Desktop Icons/WindowsXP/calculator.png" id="4_g8frr"]
+[ext_resource type="Texture2D" uid="uid://bdd5k42ur62fy" path="res://Art/Pictures/Desktop Icons/WindowsXP/delete.png" id="4_gfkwu"]
+[ext_resource type="Texture2D" uid="uid://iwaf3gv0ik06" path="res://Art/Pictures/Desktop Icons/WindowsXP/chats.png" id="5_edd4q"]
+[ext_resource type="Texture2D" uid="uid://b33qxlfokayp4" path="res://Art/Pictures/Desktop Icons/WindowsXP/file.png" id="5_opipf"]
+[ext_resource type="Texture2D" uid="uid://djo1agqroxd6j" path="res://Art/Pictures/Desktop Icons/WindowsXP/folder.png" id="6_o6667"]
+[ext_resource type="Texture2D" uid="uid://dat40dm1o34nj" path="res://Art/Pictures/Desktop Icons/WindowsXP/document.png" id="6_opipf"]
+[ext_resource type="Texture2D" uid="uid://cb38gr73ssfgc" path="res://Art/Pictures/Desktop Icons/WindowsXP/image.png" id="7_21hke"]
+[ext_resource type="Texture2D" uid="uid://codqcjakpl651" path="res://Art/Pictures/Desktop Icons/WindowsXP/locked_folder.png" id="7_ijtr0"]
+[ext_resource type="Texture2D" uid="uid://dubjsv5ovl0i7" path="res://Art/Pictures/Desktop Icons/WindowsXP/logout.png" id="8_g8frr"]
+[ext_resource type="Texture2D" uid="uid://573pih7u4fd2" path="res://Art/Pictures/Desktop Icons/WindowsXP/email.png" id="9_2cnpf"]
+[ext_resource type="Texture2D" uid="uid://b6b3342etxwoc" path="res://Art/Pictures/Desktop Icons/WindowsXP/loop_off.png" id="9_edd4q"]
+[ext_resource type="Texture2D" uid="uid://cbgd5yh6o23du" path="res://Art/Pictures/Desktop Icons/WindowsXP/loop_on.png" id="10_2cnpf"]
+[ext_resource type="Texture2D" uid="uid://x3jsr5mvnsb0" path="res://Art/Pictures/Desktop Icons/WindowsXP/minimize.png" id="11_wcnup"]
+[ext_resource type="Texture2D" uid="uid://ckomqvgboawn0" path="res://Art/Pictures/Desktop Icons/WindowsXP/missing_texture.png" id="12_7sbwb"]
+[ext_resource type="Texture2D" uid="uid://duxgilci3qsqc" path="res://Art/Pictures/Desktop Icons/WindowsXP/new_file.png" id="13_7mr6u"]
+[ext_resource type="Texture2D" uid="uid://b8hy4gdvlrw6e" path="res://Art/Pictures/Desktop Icons/WindowsXP/padlock.png" id="14_hlqe3"]
+[ext_resource type="Texture2D" uid="uid://bocojepwjw6ap" path="res://Art/Pictures/Desktop Icons/WindowsXP/pause.png" id="15_3pbmh"]
+[ext_resource type="Texture2D" uid="uid://bavvet86831p5" path="res://Art/Pictures/Desktop Icons/WindowsXP/play.png" id="16_mpv2u"]
+[ext_resource type="Texture2D" uid="uid://djw8njr2vxjmy" path="res://Art/Pictures/Desktop Icons/WindowsXP/power_off.png" id="17_rnjv4"]
+[ext_resource type="Texture2D" uid="uid://g2rcowiqdd0e" path="res://Art/Pictures/Desktop Icons/WindowsXP/rename.png" id="18_wx16a"]
+[ext_resource type="Texture2D" uid="uid://tsw1lv5ecbhs" path="res://Art/Pictures/Desktop Icons/WindowsXP/reboot.png" id="19_x3k7x"]
+[ext_resource type="Texture2D" uid="uid://crqmomwwnojib" path="res://Art/Pictures/Desktop Icons/WindowsXP/notepad.png" id="20_7sbwb"]
+[ext_resource type="Texture2D" uid="uid://c870gic3m81ts" path="res://Art/Pictures/Desktop Icons/WindowsXP/save.png" id="20_n4xhm"]
+[ext_resource type="Script" uid="uid://5ydtly7lkawx" path="res://Scripts/Resources and Files/For Desktop/icons_for_desktop.gd" id="21_3xx8s"]
+[ext_resource type="Texture2D" uid="uid://dksnb6337ofgt" path="res://Art/Pictures/Desktop Icons/WindowsXP/bell.png" id="21_rnjv4"]
+[ext_resource type="Texture2D" uid="uid://c74sxrg7b7pm0" path="res://Art/Pictures/Desktop Icons/WindowsXP/subtitles.png" id="22_c1bv8"]
+[ext_resource type="Texture2D" uid="uid://bau12fqmwjrrt" path="res://Art/Pictures/Desktop Icons/WindowsXP/user_add.png" id="23_nv4y2"]
+[ext_resource type="Texture2D" uid="uid://droulc2ion5tk" path="res://Art/Pictures/Desktop Icons/WindowsXP/users.png" id="24_0fcyh"]
+[ext_resource type="Texture2D" uid="uid://b40qtoadyu6hg" path="res://Art/Pictures/Desktop Icons/WindowsXP/remote connect.png" id="25_7mr6u"]
+[ext_resource type="Texture2D" uid="uid://b7dg6ivxcq4dj" path="res://Art/Pictures/Desktop Icons/WindowsXP/vol_down.png" id="25_rr8rq"]
+[ext_resource type="Texture2D" uid="uid://biypg2i0f61mv" path="res://Art/Pictures/Desktop Icons/WindowsXP/vol_up.png" id="26_0k2bn"]
+[ext_resource type="Texture2D" uid="uid://cs87qfpj32qe0" path="res://Art/Pictures/Desktop Icons/WindowsXP/video.png" id="27_gfkwu"]
+[ext_resource type="Texture2D" uid="uid://cvuhntho868q1" path="res://Art/Pictures/Desktop Icons/WindowsXP/zoom_in.png" id="27_ypq8b"]
+[ext_resource type="Texture2D" uid="uid://b5dexoqxsyhda" path="res://Art/Pictures/Desktop Icons/WindowsXP/zoom_out.png" id="28_jyl1a"]
+[ext_resource type="Texture2D" uid="uid://dsl31vrtp7ldy" path="res://Art/Pictures/Desktop Icons/WindowsXP/settings.png" id="30_hlqe3"]
+[ext_resource type="Texture2D" uid="uid://8mitlbdc63ti" path="res://Art/Pictures/Desktop Icons/WindowsXP/stop.png" id="31_mpv2u"]
+[ext_resource type="Texture2D" uid="uid://4hjtejne2lng" path="res://Art/Pictures/Desktop Icons/WindowsXP/info.png" id="32_3pbmh"]
+[ext_resource type="Texture2D" uid="uid://i1onl0sr0pgr" path="res://Art/Pictures/Desktop Icons/WindowsXP/logo.png" id="34_rnjv4"]
+[ext_resource type="Texture2D" uid="uid://bafac24dk2q4f" path="res://Art/Pictures/Desktop Icons/WindowsXP/warning.png" id="41_rnjv4"]
+[ext_resource type="Texture2D" uid="uid://t7tnioe857hl" path="res://Art/Pictures/Backgrounds/open-sky.png" id="41_wx16a"]
+
+[resource]
+script = ExtResource("21_3xx8s")
+missing_texture = ExtResource("12_7sbwb")
+close_button = ExtResource("3_ngkj8")
+minimize_button = ExtResource("11_wcnup")
+volume_down = ExtResource("25_rr8rq")
+volume_up = ExtResource("26_0k2bn")
+zoom_in = ExtResource("27_ypq8b")
+zoom_out = ExtResource("28_jyl1a")
+back = ExtResource("2_21hke")
+pause_button = ExtResource("15_3pbmh")
+play_button = ExtResource("16_mpv2u")
+loop_on = ExtResource("10_2cnpf")
+loop_off = ExtResource("9_edd4q")
+save_button = ExtResource("20_n4xhm")
+rename_button = ExtResource("18_wx16a")
+delete_button = ExtResource("4_gfkwu")
+new_file_button = ExtResource("13_7mr6u")
+subtitles_button = ExtResource("22_c1bv8")
+power_off = ExtResource("17_rnjv4")
+restart = ExtResource("19_x3k7x")
+logout = ExtResource("8_g8frr")
+users = ExtResource("24_0fcyh")
+app_starter = ExtResource("1_dmeiu")
+padlock = ExtResource("14_hlqe3")
+folder_icon = ExtResource("6_o6667")
+locked_folder_icon = ExtResource("7_ijtr0")
+file_icon = ExtResource("5_opipf")
+audio_icon = ExtResource("2_ngkj8")
+video_icon = ExtResource("27_gfkwu")
+image_icon = ExtResource("7_21hke")
+document_icon = ExtResource("6_opipf")
+text_editor = ExtResource("5_opipf")
+audio_player = ExtResource("2_ngkj8")
+video_player = ExtResource("27_gfkwu")
+image_viewer = ExtResource("7_21hke")
+file_manager = ExtResource("6_o6667")
+emails = ExtResource("9_2cnpf")
+chat = ExtResource("5_edd4q")
+calculator = ExtResource("4_g8frr")
+remote_connection = ExtResource("25_7mr6u")
+system_information = ExtResource("32_3pbmh")
+settings = ExtResource("30_hlqe3")
+notepad = ExtResource("20_7sbwb")
+wallpaper = ExtResource("41_wx16a")
+notification_icon = ExtResource("21_rnjv4")
+stop = ExtResource("31_mpv2u")
+warning = ExtResource("41_rnjv4")
+user_add = ExtResource("23_nv4y2")
+system_icon = ExtResource("34_rnjv4")
+metadata/_custom_type_script = "uid://5ydtly7lkawx"

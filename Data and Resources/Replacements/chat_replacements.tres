@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ReplacementList" load_steps=2 format=3 uid="uid://dtmu31vmc1ob4"]
+
+[ext_resource type="Script" uid="uid://be5e2vas1np7c" path="res://Scripts/Resources and Files/Other/replacement_list.gd" id="1_flbd4"]
+
+[resource]
+script = ExtResource("1_flbd4")
+replacements = Dictionary[String, String]({
+"</d>": "---[/center]",
+"</img>": "[/img]",
+"</t>": "]---[/color]",
+"<d>": "[center]---",
+"<img>": "[img=300%]",
+"<t>": "[color=gray][",
+"{del}": "[pulse][color=dark_gray]DELETED MESSAGE[/color][/pulse]",
+"{explink}": "[pulse][color=dark_gray]EXPIRED LINK[/color][/pulse]"
+})
+key_to_be_renamed = ""
+rename_key_to = ""
+key_to_be_moved = ""
+index_to_be_moved_to = 0

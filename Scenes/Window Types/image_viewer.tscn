@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://bmcafym2vhbv8"]
+
+[ext_resource type="Script" uid="uid://b56d3pmeroj5r" path="res://Scripts/Windows/image_viewer.gd" id="1_uuxjf"]
+[ext_resource type="PackedScene" uid="uid://utagi2eh5w54" path="res://Scenes/Other/titlebar.tscn" id="2_unfyl"]
+[ext_resource type="Texture2D" uid="uid://cfc5dvttjjqet" path="res://Art/Placeholders/soham.png" id="2_w8bcb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mby2w"]
+
+[node name="Image Viewer" type="Panel" node_paths=PackedStringArray("image_node")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -852.0
+offset_bottom = -348.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_mby2w")
+script = ExtResource("1_uuxjf")
+image_node = NodePath("Sorter/Image")
+starting_size = Vector2(300, 300)
+window_icon_name = &"image_viewer"
+
+[node name="Sorter" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Titlebar" parent="Sorter" instance=ExtResource("2_unfyl")]
+layout_mode = 2
+
+[node name="Image" type="TextureRect" parent="Sorter"]
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("2_w8bcb")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="Background" type="ColorRect" parent="Sorter/Image"]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

@@ -1,0 +1,2002 @@
+[gd_scene load_steps=127 format=3 uid="uid://w0kx4pqkw37h"]
+
+[ext_resource type="Theme" uid="uid://xyj76ld4ymnb" path="res://Art/Themes/hip_retro_dark.tres" id="1_8yja0"]
+[ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="2_udsku"]
+[ext_resource type="Theme" uid="uid://so8q5n2qfwbq" path="res://Art/Themes/hip_retro_light.tres" id="3_6aq4k"]
+[ext_resource type="Resource" uid="uid://b772fc036uu3b" path="res://Art/Pictures/Desktop Icons/Icon Sets/monochrome_pixel_light.tres" id="4_oei7g"]
+[ext_resource type="Resource" uid="uid://ctu38rpupbng6" path="res://Art/Pictures/Desktop Icons/Icon Sets/monochrome_pixel_dark.tres" id="5_ook28"]
+[ext_resource type="Resource" uid="uid://f8jl5nasiqhi" path="res://Data and Resources/Users/ranmara.tres" id="6_nkhfi"]
+[ext_resource type="Script" uid="uid://bifm388ef70uc" path="res://Scripts/Resources and Files/For Desktop/messages.gd" id="7_e4ydr"]
+[ext_resource type="Resource" uid="uid://b2bepjl0eby00" path="res://Data and Resources/Messages/killer_games.tres" id="8_x2dtt"]
+[ext_resource type="Script" uid="uid://bfmnfev8k5uiw" path="res://Scripts/Resources and Files/For Desktop/emails.gd" id="9_x2dtt"]
+[ext_resource type="PackedScene" uid="uid://c6gqjqrkidn0b" path="res://Scenes/Window Types/file_manager.tscn" id="10_ew2rf"]
+[ext_resource type="PackedScene" uid="uid://bmcafym2vhbv8" path="res://Scenes/Window Types/image_viewer.tscn" id="11_cxx12"]
+[ext_resource type="PackedScene" uid="uid://heb52kbru40a" path="res://Scenes/Window Types/text_editor.tscn" id="12_y5osf"]
+[ext_resource type="PackedScene" uid="uid://cxcs7lmcqhe63" path="res://Scenes/Window Types/video_player.tscn" id="13_kh8wk"]
+[ext_resource type="PackedScene" uid="uid://c4jynkn0t0o4u" path="res://Scenes/Window Types/audio_player.tscn" id="14_nc84m"]
+[ext_resource type="PackedScene" uid="uid://bxer3ixxydvvu" path="res://Scenes/Window Types/docs_viewer.tscn" id="15_vnv3a"]
+[ext_resource type="PackedScene" uid="uid://8dhbm1w7fdt3" path="res://Scenes/Window Types/chats.tscn" id="16_6qf0f"]
+[ext_resource type="PackedScene" uid="uid://bxrho3xvynjrp" path="res://Scenes/Window Types/email.tscn" id="17_c83gv"]
+[ext_resource type="PackedScene" uid="uid://vxq4edum8thi" path="res://Scenes/Window Types/calculator.tscn" id="18_q6a52"]
+[ext_resource type="PackedScene" uid="uid://cjmgp7qnlk5kl" path="res://Scenes/Window Types/system_info.tscn" id="19_6n52c"]
+[ext_resource type="PackedScene" uid="uid://bjitvivxr8hkq" path="res://Scenes/Window Types/settings.tscn" id="20_ofses"]
+[ext_resource type="PackedScene" uid="uid://lak0kkn5lipk" path="res://Scenes/Window Types/notepad.tscn" id="21_jrutt"]
+[ext_resource type="PackedScene" uid="uid://cn45gtkcdls2w" path="res://Scenes/Window Types/remote_connection.tscn" id="22_4byag"]
+[ext_resource type="PackedScene" uid="uid://cf0woduy5x8pf" path="res://Scenes/Window Types/games_list.tscn" id="23_mpoqv"]
+[ext_resource type="PackedScene" uid="uid://c557cq0fkyke3" path="res://Scenes/Window Types/answer_input.tscn" id="24_ksy0b"]
+[ext_resource type="PackedScene" uid="uid://cx8rq0u5i5675" path="res://Scenes/Window Types/Games/dungeon_explorer.tscn" id="25_gbi1m"]
+[ext_resource type="PackedScene" uid="uid://dqkcw1xsldeke" path="res://Scenes/Window Types/Games/dungeon_explorer_autoplay.tscn" id="26_s26md"]
+[ext_resource type="PackedScene" uid="uid://c2md68ibvvoxk" path="res://Scenes/Other/notification.tscn" id="27_8n4d3"]
+[ext_resource type="PackedScene" uid="uid://fal2iityh6i6" path="res://Scenes/Window Types/popup.tscn" id="28_7sjjs"]
+[ext_resource type="PackedScene" uid="uid://c8t5wkgn4r6wi" path="res://Scenes/Window Types/password_prompt.tscn" id="29_njia7"]
+[ext_resource type="PackedScene" uid="uid://d2c8qnwy6t3gx" path="res://Scenes/Other/app_tray_icon.tscn" id="30_6q5m6"]
+[ext_resource type="PackedScene" uid="uid://g84qji3yh2sm" path="res://Scenes/Other/user_password_prompt.tscn" id="31_o8k62"]
+[ext_resource type="PackedScene" uid="uid://bj5x25ns3hxmd" path="res://Scenes/Other/power_prompt.tscn" id="32_8d41k"]
+[ext_resource type="PackedScene" uid="uid://b8jwsa53j715" path="res://Scenes/login.tscn" id="33_bpoek"]
+[ext_resource type="Script" uid="uid://6ahcfwj62g07" path="res://Scripts/Files and Folders/files.gd" id="33_nkhfi"]
+[ext_resource type="Script" uid="uid://cmowc8flglqra" path="res://Scripts/Files and Folders/folders.gd" id="34_w8q17"]
+[ext_resource type="Script" uid="uid://betc7x5t62js8" path="res://Scripts/Resources and Files/Other/subtitles.gd" id="34_x366f"]
+[ext_resource type="AudioStream" uid="uid://bwoim2rlm4h6m" path="res://Art/Sound/Transitory SFX/intro_2.wav" id="40_ibk3b"]
+[ext_resource type="AudioStream" uid="uid://cwi5v7c5sfqml" path="res://Art/Sound/Transitory SFX/hipretro outro.wav" id="41_l0gm2"]
+[ext_resource type="Shader" uid="uid://b4ij2y4336ltx" path="res://Art/Shaders/stripes.tres" id="42_mydo0"]
+[ext_resource type="Texture2D" uid="uid://dmdex3eijgfnc" path="res://Art/Placeholders/PS30TH_16x9_WALLPAPER.png" id="43_2kmbq"]
+[ext_resource type="PackedScene" uid="uid://dg541tu3cd17a" path="res://Misc/3D Spinning Background/special_spin_background.tscn" id="44_l4mwa"]
+[ext_resource type="Texture2D" uid="uid://cajkgw7h5kb80" path="res://Art/Pictures/Editor Only/file.svg" id="46_3y4nn"]
+[ext_resource type="Script" uid="uid://bumowvb75nl7b" path="res://Scripts/Desktop/desktop_panels.gd" id="47_t3ml0"]
+[ext_resource type="Script" uid="uid://cjrscc2gi8o1v" path="res://Scripts/Desktop/users_panel.gd" id="48_wscjl"]
+[ext_resource type="PackedScene" uid="uid://dqpce0a7r6slg" path="res://Scenes/Other/users_row.tscn" id="49_foch4"]
+[ext_resource type="Texture2D" uid="uid://daoq4jyauc5hv" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/poweroff.png" id="50_sc3pf"]
+[ext_resource type="Texture2D" uid="uid://dxw7k1xlbnq8x" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/restart.png" id="51_01y67"]
+[ext_resource type="PackedScene" uid="uid://dqqe25mgl8xs1" path="res://Scenes/Window Types/web_radio.tscn" id="51_pag1c"]
+[ext_resource type="Texture2D" uid="uid://i3j8lcga1itj" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/logout.png" id="52_e8sag"]
+[ext_resource type="PackedScene" uid="uid://dlmfk24r0gbcc" path="res://Scenes/Other/fancy_button.tscn" id="53_nwur7"]
+[ext_resource type="Script" uid="uid://cq8v8vfrqt7lp" path="res://Scripts/Desktop/clock_and_calendar.gd" id="54_1vvat"]
+
+[sub_resource type="Resource" id="Resource_dl4b8"]
+resource_name = "Welcome to Transkriptor"
+script = ExtResource("9_x2dtt")
+content = "Test"
+subject = "Welcome to Transkriptor"
+sender = "$transkriptor"
+recipient = "$ran"
+hour = 0
+minute = 0
+day = 1
+month = 0
+year = 2025
+metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
+
+[sub_resource type="Resource" id="Resource_dh8vg"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_x2dtt"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_pag1c"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_arpb3"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_ewept"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_8yja0"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_udsku"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_6aq4k"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_x366f"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_nc84m"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_vnv3a"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_6qf0f"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_c83gv"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_q6a52"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_6n52c"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_ofses"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_jrutt"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_4byag"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_mpoqv"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_ksy0b"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_gbi1m"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_s26md"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_8n4d3"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_7sjjs"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_njia7"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_6q5m6"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_o8k62"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_8d41k"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_bpoek"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_w8q17"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_d7kvr"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_bw25e"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_8kyht"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_ca3xi"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_1y8ul"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_ibk3b"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_l0gm2"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_mydo0"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_2kmbq"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_l4mwa"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_fj6nm"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_3y4nn"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_t3ml0"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_wscjl"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_foch4"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_sc3pf"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_01y67"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_e8sag"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_nwur7"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_1vvat"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_487lr"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_c6p00"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_8w2qy"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_krgcv"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_ew2rf"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_cxx12"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_y5osf"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_kh8wk"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_b7kwo"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_ofd1c"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Animation" id="Animation_km1se"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Smart Wallpaper:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Desktop Icons:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Smart Wallpaper:material:shader_parameter/color_stripe")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.384314, 0.384314, 0.45098, 0.156863)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Panels/Top Panel:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Panels:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_vqcpe"]
+resource_name = "intro_animation"
+length = 2.0
+capture_included = true
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Smart Wallpaper:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.533333, 1.93333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SFX/IntroSFX")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.6),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [0.0],
+"method": &"play"
+}]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Desktop Icons:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.0333333, 1.63333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Smart Wallpaper:material:shader_parameter/color_stripe")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.2, 1.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.384314, 0.384314, 0.45098, 0), Color(0.384314, 0.384314, 0.45098, 0.156863)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = false
+tracks/4/path = NodePath("Panels/Top Panel:scale")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1.66667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 1), Vector2(1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Panels:position")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 1.23333, 1.36667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 2,
+"values": [Vector2(0, -300), Vector2(0, 10), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_eqmh7"]
+resource_name = "outro_animation"
+length = 5.0
+capture_included = true
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SFX/OutroSFX")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [0.0],
+"method": &"play"
+}]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Smart Wallpaper:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.0333333, 1.73333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Desktop Icons:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.766667, 4.23333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0, 0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Smart Wallpaper:material:shader_parameter/color_stripe")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 2.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.384314, 0.384314, 0.45098, 0.156863), Color(0.384314, 0.384314, 0.45098, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = false
+tracks/4/path = NodePath("Panels/Top Panel:scale")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1e-05, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Panels:position")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.166667, 1.53333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 2,
+"values": [Vector2(0, 0), Vector2(0, 10), Vector2(0, -300)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_e48td"]
+_data = {
+&"RESET": SubResource("Animation_km1se"),
+&"intro_animation": SubResource("Animation_vqcpe"),
+&"outro_animation": SubResource("Animation_eqmh7")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gi6f8"]
+shader = ExtResource("42_mydo0")
+shader_parameter/color_gap = Color(1, 1, 1, 0)
+shader_parameter/color_stripe = Color(0.384314, 0.384314, 0.45098, 0.156863)
+shader_parameter/divisions = 8.0
+shader_parameter/stripe_bias = 2.5
+shader_parameter/speed = 0.05
+shader_parameter/angle = 0.3
+shader_parameter/skew = 0.0
+
+[sub_resource type="Animation" id="Animation_agxnw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Panel:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_pgl2h"]
+resource_name = "close_panel"
+length = 0.3
+capture_included = true
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.233333),
+"transitions": PackedFloat32Array(1, 2.54912),
+"update": 2,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.266667),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Panel:scale")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1e+06),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_k23gk"]
+resource_name = "open_panel"
+length = 0.3
+capture_included = true
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.233333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 2,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Panel:scale")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1e+06),
+"update": 0,
+"values": [Vector2(1, 0), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bxxo2"]
+_data = {
+&"RESET": SubResource("Animation_agxnw"),
+&"close_panel": SubResource("Animation_pgl2h"),
+&"open_panel": SubResource("Animation_k23gk")
+}
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a04es"]
+
+[sub_resource type="Animation" id="Animation_v3mra"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Calendar:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Calendar:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Calendar:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_rrkbg"]
+resource_name = "close_animation"
+length = 0.3
+capture_included = true
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Calendar:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.233333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Calendar:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.233333),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Calendar:scale")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 2,
+"values": [Vector2(1, 1), Vector2(1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_lj5qv"]
+resource_name = "open_animation"
+length = 0.3
+capture_included = true
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Calendar:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.233333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Calendar:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Calendar:scale")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.233333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 2,
+"values": [Vector2(1, 0), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qique"]
+_data = {
+&"RESET": SubResource("Animation_v3mra"),
+&"close_animation": SubResource("Animation_rrkbg"),
+&"open_animation": SubResource("Animation_lj5qv")
+}
+
+[node name="Ranmara" type="Control" node_paths=PackedStringArray("theme_switch_nodes", "app_icon_container", "wallpaper_node", "users_panel")]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_8yja0")
+script = ExtResource("2_udsku")
+theme_switch_nodes = [NodePath("Panels/Top Panel/Container/App Starter/Panel/Seperator/Users Sorter/Power Strip/power_off"), NodePath("Panels/Top Panel/Container/App Starter/Panel/Seperator/Users Sorter/Power Strip/restart"), NodePath("Panels/Top Panel/Container/App Starter/Panel/Seperator/Users Sorter/Power Strip/logout")]
+active_edges = Array[int]([50, 0, 0, 0])
+app_icon_container = NodePath("Panels/Top Panel/Container/App Tray Sorter/Scroll/Apps Container")
+wallpaper_node = NodePath("Smart Wallpaper/Wallpaper")
+users_panel = NodePath("Panels/Top Panel/Container/App Starter/Panel/Seperator/Users Sorter")
+dictionary_key = "ranmara"
+light_theme = ExtResource("3_6aq4k")
+dark_theme = ExtResource("1_8yja0")
+light_icons = ExtResource("4_oei7g")
+dark_icons = ExtResource("5_ook28")
+is_dark_theme = true
+is_default_dark_theme = true
+use_inverted_icons_when_titlebar_focused = true
+use_alternate_icon_for_power_prompt = true
+system_name = "HipOS"
+system_version = "v1.1.2"
+system_information = "COPYRIGHT HIPXEL CC 2025
+
+CREDITS
+HIPXEL
+WINNERWIND"
+current_user = ExtResource("6_nkhfi")
+chat_username = "$ran"
+chat_realname = "Ranmara"
+group_chat_messages = Array[ExtResource("7_e4ydr")]([ExtResource("8_x2dtt")])
+emails = Array[ExtResource("9_x2dtt")]([SubResource("Resource_dl4b8")])
+file_manager_window = ExtResource("10_ew2rf")
+image_viewer_window = ExtResource("11_cxx12")
+text_viewer_window = ExtResource("12_y5osf")
+video_player_window = ExtResource("13_kh8wk")
+music_player_window = ExtResource("14_nc84m")
+document_viewer_window = ExtResource("15_vnv3a")
+chat_app_window = ExtResource("16_6qf0f")
+email_app_window = ExtResource("17_c83gv")
+calculator_window = ExtResource("18_q6a52")
+system_information_window = ExtResource("19_6n52c")
+settings_window = ExtResource("20_ofses")
+notepad_window = ExtResource("21_jrutt")
+remote_connection_window = ExtResource("22_4byag")
+game_list_window = ExtResource("23_mpoqv")
+web_radio_window = ExtResource("51_pag1c")
+answer_input_window = ExtResource("24_ksy0b")
+dungeon_explorer = ExtResource("25_gbi1m")
+dungeon_explorer_autoplay = ExtResource("26_s26md")
+virtual_notification = ExtResource("27_8n4d3")
+popup = ExtResource("28_7sjjs")
+password_prompt = ExtResource("29_njia7")
+app_tray_icon = ExtResource("30_6q5m6")
+users_password_prompt = ExtResource("31_o8k62")
+bootup_scene_path = "res://Scenes/bootup.tscn"
+power_prompt = ExtResource("32_8d41k")
+login_scene = ExtResource("33_bpoek")
+
+[node name="Files" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("34_w8q17")
+
+[node name="Documents" type="Node" parent="Files"]
+script = ExtResource("34_w8q17")
+metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="Diary" type="Node" parent="Files/Documents"]
+script = ExtResource("34_w8q17")
+metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="2025-01-01" type="Node" parent="Files/Documents/Diary"]
+script = ExtResource("33_nkhfi")
+text = "Hey!
+
+It's me, Ranmara. I'll rant here from time to time."
+audio_subtitles = SubResource("Resource_dh8vg")
+video_subtitles = SubResource("Resource_x2dtt")
+hour = 12
+minute = 12
+metadata/_custom_type_script = "uid://6ahcfwj62g07"
+
+[node name="2025-01-06" type="Node" parent="Files/Documents/Diary"]
+script = ExtResource("33_nkhfi")
+text = "You won't believe what just happened.
+
+Me and the team just released Metal Cracker, and well we didn't really put much thought to it. However, not even 30 seconds later we had over 100 downloads, and it's been a few hours, but we're inching closer and closer to 10,000 downloads.
+
+Suffice to say, things are going great!"
+audio_subtitles = SubResource("Resource_pag1c")
+video_subtitles = SubResource("Resource_arpb3")
+day = 6
+hour = 19
+minute = 48
+metadata/_custom_type_script = "uid://6ahcfwj62g07"
+
+[node name="2025-01-12" type="Node" parent="Files/Documents/Diary"]
+script = ExtResource("33_nkhfi")
+text = "Decided to treat the entire team to a well deserved party, for hitting almost 50,000 downloads in the first week. Was pretty cool, had some donuts w/ team."
+audio_subtitles = SubResource("Resource_ewept")
+video_subtitles = SubResource("Resource_8yja0")
+day = 12
+hour = 17
+minute = 53
+metadata/_custom_type_script = "uid://6ahcfwj62g07"
+
+[node name="2025-02-01" type="Node" parent="Files/Documents/Diary"]
+script = ExtResource("33_nkhfi")
+text = "Decided to take a nice week off from the company. I think we all deserve it.
+
+Also gave it Romila, Satsu and Jeremy of course. We're all tired after working on Metal Cracker.
+
+Though profits wise, we're rolling. We might actually have the money to upgrade our computers a bit and get Romila the drawing tablet she's wanted for a while. "
+audio_subtitles = SubResource("Resource_udsku")
+video_subtitles = SubResource("Resource_6aq4k")
+month = 1
+day = 2
+minute = 12
+metadata/_custom_type_script = "uid://6ahcfwj62g07"
+
+[node name="2025-02-08" type="Node" parent="Files/Documents/Diary"]
+script = ExtResource("33_nkhfi")
+text = "Okay time to get back to work!
+
+Had a meeting with the trio. I think we wanna make a murder mystery game."
+audio_subtitles = SubResource("Resource_x366f")
+video_subtitles = SubResource("Resource_nc84m")
+month = 1
+day = 8
+hour = 15
+minute = 12
+metadata/_custom_type_script = "uid://6ahcfwj62g07"
+
+[node name="2025-02-11" type="Node" parent="Files/Documents/Diary"]
+script = ExtResource("33_nkhfi")
+text = "i didn't knw how Romila is such a power-house of ideas.
+
+Durng today's meeting, she gave us the perfect name and what is in my opinion a *killer* idea for a muder mystery game. Picture this, a bunch of high schoolers being trapped in a school together and who, out of various motivations, kill each other in an attempt to get out. I'm sold!
+
+Though I'm ot sure if Jeremy or Satsu are very fond of the idea."
+audio_subtitles = SubResource("Resource_vnv3a")
+video_subtitles = SubResource("Resource_6qf0f")
+month = 1
+day = 11
+hour = 14
+minute = 48
+metadata/_custom_type_script = "uid://6ahcfwj62g07"
+
+[node name="2025-02-14" type="Node" parent="Files/Documents/Diary"]
+script = ExtResource("33_nkhfi")
+text = "Friday, Friyay!"
+audio_subtitles = SubResource("Resource_c83gv")
+video_subtitles = SubResource("Resource_q6a52")
+month = 1
+day = 14
+hour = 11
+minute = 15
+
+[node name="2025-02-15" type="Node" parent="Files/Documents/Diary"]
+script = ExtResource("33_nkhfi")
+text = "Romila and Jeremy bickered a bit with each other over wh should take chrg of art. Honestly not sure why this disussion was even needed. Of course it;s RRomila right? Even Satsu agrees!"
+audio_subtitles = SubResource("Resource_6n52c")
+video_subtitles = SubResource("Resource_ofses")
+month = 1
+day = 15
+hour = 21
+minute = 10
+metadata/_custom_type_script = "uid://6ahcfwj62g07"
+
+[node name="2025-02-17" type="Node" parent="Files/Documents/Diary"]
+script = ExtResource("33_nkhfi")
+text = "i dont even know how to put this in words.
+
+Some cops came over and accused Romila of purchasing drugs. I stepped in but, they had evidence and really there was nothing we could do. And it;s undoubtable that the pckts found in her closet are the drugs. What else COULD they be?
+
+suffice to say we aren't getting any work done today."
+audio_subtitles = SubResource("Resource_jrutt")
+video_subtitles = SubResource("Resource_4byag")
+month = 1
+day = 17
+hour = 12
+minute = 30
+
+[node name="2025-02-21" type="Node" parent="Files/Documents/Diary"]
+script = ExtResource("33_nkhfi")
+text = "romila went homat 2pm today. i think she was crying? not sure."
+audio_subtitles = SubResource("Resource_mpoqv")
+video_subtitles = SubResource("Resource_ksy0b")
+month = 1
+day = 21
+hour = 15
+minute = 32
+
+[node name="2025-02-23" type="Node" parent="Files/Documents/Diary"]
+script = ExtResource("33_nkhfi")
+text = "So yesterday  Stsu didn't come. i didn't think much of it but it is true that he has't missed a day of work before.
+
+Today romila didn;t come."
+audio_subtitles = SubResource("Resource_gbi1m")
+video_subtitles = SubResource("Resource_s26md")
+month = 1
+day = 24
+hour = 4
+minute = 10
+
+[node name="2025-03-01" type="Node" parent="Files/Documents/Diary"]
+script = ExtResource("33_nkhfi")
+text = "I thought a new month would mean a new side of life for the people at work, but i was mistaken.
+
+I literally saw Romila injecting herself with something. Not sure what, but it's not my job to know. Anyway, I think I spoke about it too loudly because Jeremy heard me and went feral on Romila. I think I pissed him off by taking her side. god, whenw ill it end?"
+audio_subtitles = SubResource("Resource_8n4d3")
+video_subtitles = SubResource("Resource_7sjjs")
+month = 2
+hour = 17
+minute = 17
+
+[node name="2025-03-04" type="Node" parent="Files/Documents/Diary"]
+script = ExtResource("33_nkhfi")
+text = "the people online need to give romila a break. its clear that their baseless rumors are just causing more mental burden for her. I might need to make a public statement about it. I really don't want to."
+audio_subtitles = SubResource("Resource_njia7")
+video_subtitles = SubResource("Resource_6q5m6")
+month = 2
+day = 4
+hour = 17
+minute = 32
+
+[node name="2025-03-06" type="Node" parent="Files/Documents/Diary"]
+script = ExtResource("33_nkhfi")
+text = "Okay I've decided to make a statement about it publically. It needs to be adressed."
+audio_subtitles = SubResource("Resource_o8k62")
+video_subtitles = SubResource("Resource_8d41k")
+month = 2
+day = 6
+hour = 17
+minute = 21
+
+[node name="2025-03-08" type="Node" parent="Files/Documents/Diary"]
+script = ExtResource("33_nkhfi")
+text = "Just posted the statement on the announcements channel. I'm really worried. I saw Jeremy reading and re-reading it at work. I don't think he's amused. I wonder why."
+audio_subtitles = SubResource("Resource_bpoek")
+video_subtitles = SubResource("Resource_w8q17")
+month = 2
+day = 8
+hour = 16
+minute = 32
+
+[node name="2025-03-11" type="Node" parent="Files/Documents/Diary"]
+script = ExtResource("33_nkhfi")
+text = "Romila got super pissed at me for having dinner with jeremy. How'd she find out???"
+audio_subtitles = SubResource("Resource_d7kvr")
+video_subtitles = SubResource("Resource_bw25e")
+day = 11
+hour = 13
+minute = 32
+
+[node name="2025-03-17" type="Node" parent="Files/Documents/Diary"]
+script = ExtResource("33_nkhfi")
+text = "jeremy just accused me of sleeping with his wife. god, i just want a break. where is that even coming from? is he just so angry that i took romila's side?
+
+i cant do this anymore"
+audio_subtitles = SubResource("Resource_8kyht")
+video_subtitles = SubResource("Resource_ca3xi")
+month = 2
+day = 17
+hour = 21
+minute = 10
+
+[node name="2025-03-18" type="Node" parent="Files/Documents/Diary"]
+script = ExtResource("33_nkhfi")
+text = "jeremy punched me in the face during work today. i had to go home to get ice. I don't wanna go to work tomorrow."
+audio_subtitles = SubResource("Resource_1y8ul")
+video_subtitles = SubResource("Resource_ibk3b")
+month = 2
+day = 18
+hour = 17
+minute = 9
+
+[node name="2025-03-22" type="Node" parent="Files/Documents/Diary"]
+script = ExtResource("33_nkhfi")
+text = "that fucker jeremy decided to come to MY house to confront ME about the stupid thing with his wife AGAIN?
+
+GOD just END IT PLEASE"
+audio_subtitles = SubResource("Resource_l0gm2")
+video_subtitles = SubResource("Resource_mydo0")
+month = 2
+day = 22
+hour = 11
+minute = 2
+
+[node name="2025-03-24" type="Node" parent="Files/Documents/Diary"]
+script = ExtResource("33_nkhfi")
+text = "i actually forgot i had a conference to attend today. I think the reporters knew I was unnerved, but i receieved good praise for Satsujin"
+audio_subtitles = SubResource("Resource_2kmbq")
+video_subtitles = SubResource("Resource_l4mwa")
+month = 2
+day = 24
+hour = 17
+minute = 31
+
+[node name="2025-03-26" type="Node" parent="Files/Documents/Diary"]
+script = ExtResource("33_nkhfi")
+text = "I just fired Romila. It sucks. I really liked her but I caught her doing drugs at work yesterday, again! Jeremy, I guess due to being a catholic or whatever got really pissed about it and there really was no choice.
+
+i had to close office early today. the tension was clearly preventing us from working.
+
+I wish I could help her but i'm barely keeping myself together."
+audio_subtitles = SubResource("Resource_fj6nm")
+video_subtitles = SubResource("Resource_3y4nn")
+month = 2
+day = 26
+hour = 15
+minute = 12
+
+[node name="2025-03-29" type="Node" parent="Files/Documents/Diary"]
+script = ExtResource("33_nkhfi")
+text = "I had to call, well I guess the duo for dinner. We needed to talk about the future of the company. 
+
+The tldr is that:
+
+- now that it's us three, we need to work harder than ever
+- we must try to keep the past behind us
+- let's just try to keep going.
+
+Not the strongest messaging but I tried my best."
+audio_subtitles = SubResource("Resource_t3ml0")
+video_subtitles = SubResource("Resource_wscjl")
+month = 2
+day = 29
+hour = 14
+minute = 45
+
+[node name="2025-04-11" type="Node" parent="Files/Documents/Diary"]
+script = ExtResource("33_nkhfi")
+text = "While I was going to sleep last night, I thought I heard some noise. I swear it was familiar, could it have been her ringtone?
+
+I looked outside and I thought I saw romila, but then nothing else. it was too dark to see anything."
+audio_subtitles = SubResource("Resource_foch4")
+video_subtitles = SubResource("Resource_sc3pf")
+month = 3
+day = 11
+hour = 9
+minute = 36
+
+[node name="2025-04-13" type="Node" parent="Files/Documents/Diary"]
+script = ExtResource("33_nkhfi")
+text = "The Godot GDC is happening today (Thanks Satsu!) and I thought it was a good opportunity to give the team a nice break from everything and do some networking.
+
+It's gonna be here for a week and I'll probably be very busy until the party which is on the 20th."
+audio_subtitles = SubResource("Resource_01y67")
+video_subtitles = SubResource("Resource_e8sag")
+month = 3
+day = 13
+hour = 10
+
+[node name="2025-04-20" type="Node" parent="Files/Documents/Diary"]
+script = ExtResource("33_nkhfi")
+text = "Gotta say that was one hell of a party. Though I'm not too sure -- I was too busy drinking -- was Romila here too? I recall the security guards making a large commotion about a \"drunk\" woman. I was probably seeing things. It was too dark to see anything."
+audio_subtitles = SubResource("Resource_nwur7")
+video_subtitles = SubResource("Resource_1vvat")
+month = 3
+day = 21
+hour = 3
+minute = 12
+
+[node name="2025-04-25" type="Node" parent="Files/Documents/Diary"]
+script = ExtResource("33_nkhfi")
+text = "These last 3 days have been quite odd.
+
+I met Jeremy on the 23nd while I was walking home. I had completely forgotten about his accusations of me sleeping with his wife.
+
+I met Satsu on the 24th. Maybe I was just so tired but I swear he looked a little, I guess off. He seemed quite upset about something and he wasn't really talking very well.
+
+And tonight I met Romila. She tried to throw hands with me. I might need to speak to her soon. I'm free on the 27th to go visit her, I guess I just need to give her a apology and get her to go for therapy,"
+audio_subtitles = SubResource("Resource_487lr")
+video_subtitles = SubResource("Resource_c6p00")
+month = 2
+day = 25
+hour = 23
+minute = 12
+
+[node name="Killer Games Server" type="Node" parent="Files/Documents"]
+script = ExtResource("34_w8q17")
+additional_delay = 1.1
+special_reading_prefix = "Connecting... "
+toast_name = "AnyTable"
+toast_text = "Connecting to \"Killer Games Server\":8096"
+metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="Projects" type="Node" parent="Files/Documents/Killer Games Server"]
+script = ExtResource("34_w8q17")
+metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="Metal Cracker" type="Node" parent="Files/Documents/Killer Games Server/Projects"]
+script = ExtResource("34_w8q17")
+custom_type = "Godot"
+day = 8
+hour = 17
+minute = 47
+metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="Satsujin" type="Node" parent="Files/Documents/Killer Games Server/Projects"]
+script = ExtResource("34_w8q17")
+custom_type = "Godot"
+month = 3
+day = 27
+hour = 17
+minute = 24
+metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="HR" type="Node" parent="Files/Documents/Killer Games Server"]
+script = ExtResource("34_w8q17")
+metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="Satsu Hito" type="Node" parent="Files/Documents/Killer Games Server/HR"]
+script = ExtResource("33_nkhfi")
+text = "Joined on 5th December 2024.
+
+My close friend. A master when it comes to programming. A bit jealous but overall level-headed."
+audio_subtitles = SubResource("Resource_8w2qy")
+video_subtitles = SubResource("Resource_krgcv")
+month = 2
+day = 12
+hour = 8
+minute = 57
+
+[node name="Jeremy" type="Node" parent="Files/Documents/Killer Games Server/HR"]
+script = ExtResource("33_nkhfi")
+text = "Joined on 5th December 2024.
+
+A programmer and an artist. Friends with Satsu. Incredibly religious."
+audio_subtitles = SubResource("Resource_ew2rf")
+video_subtitles = SubResource("Resource_cxx12")
+month = 2
+day = 12
+hour = 8
+minute = 45
+
+[node name="Romila" type="Node" parent="Files/Documents/Killer Games Server/HR"]
+script = ExtResource("33_nkhfi")
+text = "Joined on 5th December 2024
+Fired on 26th March 2025 (see note!)
+
+A very creative artist. Used to go to college together.
+
+NOTE : Fired due to excessive drug abuse. I'm sorry."
+audio_subtitles = SubResource("Resource_y5osf")
+video_subtitles = SubResource("Resource_kh8wk")
+month = 2
+day = 26
+hour = 15
+minute = 5
+
+[node name="logs" type="Node" parent="Files/Documents/Killer Games Server"]
+script = ExtResource("33_nkhfi")
+text = "[[[25DEC24]]]
+[17:32 UTC+5:30] ranmarar has added 192.168.92.85 as satsu
+[17:33 UTC+5:30] ranmarar has added 192.168.34.72 as romila
+[17:33 UTC+5:30] ranmarar has added 192.168.105.64 as jeremyobrien
+[17:34 UTC+5:30] ranmarar has changed configuration property NEWUSERPASSWORD from \"<empty>\" to \"USE_SSH_PASSWORD\"
+[17:37 UTC+5:30] ranmarar has set configuration property LOGGINGLEVEL from \"9\" to \"1\".
+[[[27MAR25]]]
+[10:32 UTC+5:30] ranmarar has removed romila."
+audio_subtitles = SubResource("Resource_b7kwo")
+video_subtitles = SubResource("Resource_ofd1c")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_e48td")
+}
+
+[node name="SFX" type="Node" parent="."]
+unique_name_in_owner = true
+
+[node name="IntroSFX" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("40_ibk3b")
+
+[node name="OutroSFX" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("41_l0gm2")
+
+[node name="Smart Wallpaper" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_gi6f8")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Wallpaper" type="TextureRect" parent="Smart Wallpaper"]
+visible = false
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("43_2kmbq")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="3D Wallpaper" type="SubViewportContainer" parent="Smart Wallpaper"]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="Smart Wallpaper/3D Wallpaper"]
+own_world_3d = true
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1152, 648)
+render_target_update_mode = 4
+
+[node name="3D Background" parent="Smart Wallpaper/3D Wallpaper/SubViewport" instance=ExtResource("44_l4mwa")]
+
+[node name="Desktop Icons" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Panels" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Top Panel" type="Panel" parent="Panels"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+theme_type_variation = &"DesktopPanel"
+
+[node name="Container" type="HBoxContainer" parent="Panels/Top Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="App Starter" type="Button" parent="Panels/Top Panel/Container" node_paths=PackedStringArray("animation_player")]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+icon = ExtResource("46_3y4nn")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("47_t3ml0")
+icon_name = &"app_starter"
+animation_player = NodePath("Panel Animation")
+
+[node name="Panel" type="Panel" parent="Panels/Top Panel/Container/App Starter"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -7.5
+offset_top = 15.0
+offset_right = 382.5
+offset_bottom = 375.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme_type_variation = &"DesktopFloatingPanel"
+
+[node name="Seperator" type="HBoxContainer" parent="Panels/Top Panel/Container/App Starter/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Users Sorter" type="VBoxContainer" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator" node_paths=PackedStringArray("sorter")]
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("48_wscjl")
+users_row = ExtResource("49_foch4")
+sorter = NodePath("ScrollContainer/Sorter")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Users Sorter"]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="Sorter" type="VBoxContainer" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Users Sorter/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 2
+
+[node name="Power Strip" type="HBoxContainer" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Users Sorter"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+alignment = 1
+
+[node name="power_off" type="Button" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Users Sorter/Power Strip"]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+mouse_filter = 1
+icon = ExtResource("50_sc3pf")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="restart" type="Button" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Users Sorter/Power Strip"]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+mouse_filter = 1
+icon = ExtResource("51_01y67")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="logout" type="Button" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Users Sorter/Power Strip"]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+mouse_filter = 1
+icon = ExtResource("52_e8sag")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Apps Container" type="ScrollContainer" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.5
+horizontal_scroll_mode = 0
+
+[node name="Sorter" type="VBoxContainer" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Apps Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="File Manager Button" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Apps Container/Sorter" node_paths=PackedStringArray("desktop") instance=ExtResource("53_nwur7")]
+layout_mode = 2
+main_text_string = "File Manager"
+sub_text_string = "Manage your files in style."
+speed = 0.1
+desktop = NodePath("../../../../../../../../..")
+
+[node name="Calculator" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Apps Container/Sorter" node_paths=PackedStringArray("desktop") instance=ExtResource("53_nwur7")]
+layout_mode = 2
+current_type = 3
+main_text_string = "Calculator"
+sub_text_string = "Do Basic Arithmetic"
+speed = 0.1
+desktop = NodePath("../../../../../../../../..")
+
+[node name="Chat" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Apps Container/Sorter" node_paths=PackedStringArray("desktop") instance=ExtResource("53_nwur7")]
+layout_mode = 2
+current_type = 1
+main_text_string = "Nicotine"
+sub_text_string = "Addictive Chat App."
+speed = 0.1
+desktop = NodePath("../../../../../../../../..")
+
+[node name="Tsundrebird" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Apps Container/Sorter" node_paths=PackedStringArray("desktop") instance=ExtResource("53_nwur7")]
+layout_mode = 2
+current_type = 2
+main_text_string = "Tsundrebird"
+sub_text_string = "Will not kill you."
+speed = 0.1
+desktop = NodePath("../../../../../../../../..")
+
+[node name="Settings" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Apps Container/Sorter" node_paths=PackedStringArray("desktop") instance=ExtResource("53_nwur7")]
+layout_mode = 2
+current_type = 5
+main_text_string = "Settings"
+sub_text_string = "Configure your system."
+speed = 0.1
+desktop = NodePath("../../../../../../../../..")
+
+[node name="System Info" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Apps Container/Sorter" node_paths=PackedStringArray("desktop") instance=ExtResource("53_nwur7")]
+layout_mode = 2
+current_type = 4
+main_text_string = "System Information"
+sub_text_string = "View system information."
+speed = 0.1
+desktop = NodePath("../../../../../../../../..")
+
+[node name="Notepad" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Apps Container/Sorter" node_paths=PackedStringArray("desktop") instance=ExtResource("53_nwur7")]
+layout_mode = 2
+current_type = 6
+main_text_string = "HIPTEXT"
+sub_text_string = "Take notes with style and grace."
+speed = 0.1
+desktop = NodePath("../../../../../../../../..")
+
+[node name="Remote Connect" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Apps Container/Sorter" node_paths=PackedStringArray("desktop") instance=ExtResource("53_nwur7")]
+layout_mode = 2
+current_type = 7
+main_text_string = "Anytable Connect"
+sub_text_string = "Connecting your systems since 2004."
+speed = 0.1
+desktop = NodePath("../../../../../../../../..")
+
+[node name="Radio" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Apps Container/Sorter" node_paths=PackedStringArray("desktop") instance=ExtResource("53_nwur7")]
+layout_mode = 2
+current_type = 10
+main_text_string = "Foobar 1984"
+sub_text_string = "Web Radio for your pleasure."
+speed = 0.1
+desktop = NodePath("../../../../../../../../..")
+
+[node name="Police Radio" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Apps Container/Sorter" node_paths=PackedStringArray("desktop") instance=ExtResource("53_nwur7")]
+layout_mode = 2
+current_type = 9
+main_text_string = "Police Radio"
+sub_text_string = "Draw conclusions from your investigations."
+speed = 0.1
+desktop = NodePath("../../../../../../../../..")
+
+[node name="Panel Animation" type="AnimationPlayer" parent="Panels/Top Panel/Container/App Starter"]
+libraries = {
+&"": SubResource("AnimationLibrary_bxxo2")
+}
+
+[node name="VSeparator" type="VSeparator" parent="Panels/Top Panel/Container"]
+layout_mode = 2
+
+[node name="App Tray Sorter" type="VBoxContainer" parent="Panels/Top Panel/Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Scroll" type="ScrollContainer" parent="Panels/Top Panel/Container/App Tray Sorter"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_a04es")
+
+[node name="Apps Container" type="HBoxContainer" parent="Panels/Top Panel/Container/App Tray Sorter/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="VSeparator2" type="VSeparator" parent="Panels/Top Panel/Container"]
+layout_mode = 2
+
+[node name="Clock in Center" type="MarginContainer" parent="Panels/Top Panel/Container"]
+layout_mode = 2
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="Clock" type="RichTextLabel" parent="Panels/Top Panel/Container/Clock in Center" node_paths=PackedStringArray("panel", "animation_player", "month_container", "year_label", "month_label")]
+clip_contents = false
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/line_separation = 1
+bbcode_enabled = true
+text = "[center][font_size=14]17:08:24[p][center] Monday, June 4th 2024"
+fit_content = true
+scroll_active = false
+script = ExtResource("54_1vvat")
+panel = NodePath("Calendar")
+animation_player = NodePath("Calendar Animation")
+month_container = NodePath("Calendar/Sorter/Days")
+year_label = NodePath("Calendar/Sorter/Buttons Container/Year Label")
+month_label = NodePath("Calendar/Sorter/Buttons Container/Month Label")
+
+[node name="Calendar" type="Panel" parent="Panels/Top Panel/Container/Clock in Center/Clock"]
+visible = false
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -407.0
+offset_top = 17.0
+offset_right = -17.0
+offset_bottom = 317.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_type_variation = &"DesktopFloatingPanel"
+
+[node name="Sorter" type="VBoxContainer" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Day of the Week Container" type="HBoxContainer" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter"]
+layout_mode = 2
+
+[node name="Weekday" type="Label" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Week"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Monday" type="Label" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Mon"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Tuesday" type="Label" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Tue"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Wednesday" type="Label" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Wed"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Thu" type="Label" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Thu"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Fri" type="Label" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Fri"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sat" type="Label" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Sat"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sun" type="Label" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Sun"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Days" type="GridContainer" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter"]
+layout_mode = 2
+size_flags_vertical = 3
+columns = 8
+
+[node name="Buttons Container" type="HBoxContainer" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+
+[node name="Year Back" type="Button" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Buttons Container"]
+layout_mode = 2
+mouse_filter = 1
+theme_type_variation = &"NegativeButton"
+text = "<"
+flat = true
+
+[node name="Year Label" type="Label" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Buttons Container"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "2024"
+horizontal_alignment = 1
+
+[node name="Year Front" type="Button" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Buttons Container"]
+layout_mode = 2
+mouse_filter = 1
+theme_type_variation = &"NegativeButton"
+text = ">"
+flat = true
+
+[node name="Month Back" type="Button" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Buttons Container"]
+layout_mode = 2
+mouse_filter = 1
+theme_type_variation = &"NegativeButton"
+text = "<"
+flat = true
+
+[node name="Month Label" type="Label" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Buttons Container"]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Jan"
+horizontal_alignment = 1
+
+[node name="Month Front" type="Button" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Buttons Container"]
+layout_mode = 2
+mouse_filter = 1
+theme_type_variation = &"NegativeButton"
+text = ">"
+flat = true
+
+[node name="Today Button" type="Button" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Buttons Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+text = "Today"
+
+[node name="Calendar Animation" type="AnimationPlayer" parent="Panels/Top Panel/Container/Clock in Center/Clock"]
+libraries = {
+&"": SubResource("AnimationLibrary_qique")
+}
+
+[node name="Notifications Container" type="Control" parent="."]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[connection signal="theme_changed" from="." to="." method="_on_theme_changed"]
+[connection signal="mouse_entered" from="Panels/Top Panel/Container/App Starter" to="Panels/Top Panel/Container/App Starter" method="_on_panel_mouse_entered"]
+[connection signal="mouse_exited" from="Panels/Top Panel/Container/App Starter" to="Panels/Top Panel/Container/App Starter" method="_on_panel_mouse_exited"]
+[connection signal="pressed" from="Panels/Top Panel/Container/App Starter" to="Panels/Top Panel/Container/App Starter" method="_on_pressed"]
+[connection signal="mouse_entered" from="Panels/Top Panel/Container/App Starter/Panel" to="Panels/Top Panel/Container/App Starter" method="_on_panel_mouse_entered"]
+[connection signal="mouse_exited" from="Panels/Top Panel/Container/App Starter/Panel" to="Panels/Top Panel/Container/App Starter" method="_on_panel_mouse_exited"]
+[connection signal="pressed" from="Panels/Top Panel/Container/App Starter/Panel/Seperator/Users Sorter/Power Strip/power_off" to="." method="power_strip_pressed" binds= [&"power_off"]]
+[connection signal="pressed" from="Panels/Top Panel/Container/App Starter/Panel/Seperator/Users Sorter/Power Strip/restart" to="." method="power_strip_pressed" binds= [&"restart"]]
+[connection signal="pressed" from="Panels/Top Panel/Container/App Starter/Panel/Seperator/Users Sorter/Power Strip/logout" to="." method="power_strip_pressed" binds= [&"logout"]]
+[connection signal="gui_input" from="Panels/Top Panel/Container/Clock in Center/Clock" to="Panels/Top Panel/Container/Clock in Center/Clock" method="_on_gui_input"]
+[connection signal="mouse_entered" from="Panels/Top Panel/Container/Clock in Center/Clock" to="Panels/Top Panel/Container/Clock in Center/Clock" method="_on_panel_mouse_entered"]
+[connection signal="mouse_exited" from="Panels/Top Panel/Container/Clock in Center/Clock" to="Panels/Top Panel/Container/Clock in Center/Clock" method="_on_panel_mouse_exited"]
+[connection signal="mouse_entered" from="Panels/Top Panel/Container/Clock in Center/Clock/Calendar" to="Panels/Top Panel/Container/Clock in Center/Clock" method="_on_panel_mouse_entered"]
+[connection signal="mouse_exited" from="Panels/Top Panel/Container/Clock in Center/Clock/Calendar" to="Panels/Top Panel/Container/Clock in Center/Clock" method="_on_panel_mouse_exited"]
+[connection signal="pressed" from="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Buttons Container/Year Back" to="Panels/Top Panel/Container/Clock in Center/Clock" method="_change_year" binds= [-1]]
+[connection signal="pressed" from="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Buttons Container/Year Front" to="Panels/Top Panel/Container/Clock in Center/Clock" method="_change_year" binds= [1]]
+[connection signal="pressed" from="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Buttons Container/Month Back" to="Panels/Top Panel/Container/Clock in Center/Clock" method="_change_month" binds= [-1]]
+[connection signal="pressed" from="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Buttons Container/Month Front" to="Panels/Top Panel/Container/Clock in Center/Clock" method="_change_month" binds= [1]]
+[connection signal="pressed" from="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Buttons Container/Today Button" to="Panels/Top Panel/Container/Clock in Center/Clock" method="_on_today_button_pressed"]

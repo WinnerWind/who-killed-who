@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="UnifiedSubtitles" load_steps=2 format=3 uid="uid://rmbk5c1ikg37"]
+
+[ext_resource type="Script" uid="uid://betc7x5t62js8" path="res://Scripts/Resources and Files/Other/subtitles.gd" id="1_ynhf4"]
+
+[resource]
+script = ExtResource("1_ynhf4")
+subtitles = Dictionary[int, String]({
+0: "$d Welcome to the underground",
+1: "<f> This subtitle was displayed forcefully",
+4: "<cc> The listener falls down a cliff.",
+5: "<cc> The listener falls down a cliff."
+})
+time_to_be_changed = 0
+change_time_to = 2
+key_to_be_moved = 1
+index_to_be_moved_to = 1
+metadata/_custom_type_script = "uid://betc7x5t62js8"

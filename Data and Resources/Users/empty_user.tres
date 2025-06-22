@@ -1,0 +1,47 @@
+[gd_resource type="Resource" script_class="UserMetadata" load_steps=11 format=3 uid="uid://4g2ru8uwp520"]
+
+[ext_resource type="Script" uid="uid://cxe5keybq33wo" path="res://Scripts/Resources and Files/Bootup/bootup_line.gd" id="1_pko2d"]
+[ext_resource type="Texture2D" uid="uid://bp2s3w6y8x40x" path="res://Art/Pictures/OS Logos/ale_large.svg" id="2_2fllm"]
+[ext_resource type="Texture2D" uid="uid://bxldhmj1n2syr" path="res://Art/Pictures/OS Logos/ale_looper.svg" id="3_h3wve"]
+[ext_resource type="Script" uid="uid://cr6b45oclcbh4" path="res://Scripts/Resources and Files/Bootup/bootup_sequence.gd" id="4_kpj8n"]
+[ext_resource type="Texture2D" uid="uid://cfc5dvttjjqet" path="res://Art/Placeholders/soham.png" id="5_imnj0"]
+[ext_resource type="Script" uid="uid://ds65yghua76jy" path="res://Scripts/Resources and Files/Other/user_metadata.gd" id="7_b4ioi"]
+
+[sub_resource type="Resource" id="Resource_ytr1a"]
+script = ExtResource("1_pko2d")
+type = 0
+text = "Fhghwats"
+delay = 1.0
+
+[sub_resource type="Resource" id="Resource_rdjsr"]
+script = ExtResource("4_kpj8n")
+array_of_bootup_text = Array[ExtResource("1_pko2d")]([SubResource("Resource_ytr1a")])
+plymouth_image = ExtResource("2_2fllm")
+plymouth_looper = ExtResource("3_h3wve")
+is_intro = true
+
+[sub_resource type="Resource" id="Resource_kt4te"]
+script = ExtResource("1_pko2d")
+type = 0
+text = "STOPPIng"
+delay = 1.0
+
+[sub_resource type="Resource" id="Resource_bkkte"]
+script = ExtResource("4_kpj8n")
+array_of_bootup_text = Array[ExtResource("1_pko2d")]([SubResource("Resource_kt4te")])
+plymouth_image = ExtResource("2_2fllm")
+plymouth_looper = ExtResource("3_h3wve")
+is_intro = false
+
+[resource]
+script = ExtResource("7_b4ioi")
+is_part_of_main_game = true
+image = ExtResource("5_imnj0")
+name = "Soham Dash"
+subtext = "Wishing Well"
+password = "a"
+scene_path = "res://Scenes/Desktops/desktop.tscn"
+boot_sequence = SubResource("Resource_rdjsr")
+shutdown_sequence = SubResource("Resource_bkkte")
+ip_address = "192.168.1.0"
+username = "soham"

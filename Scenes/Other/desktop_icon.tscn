@@ -1,0 +1,118 @@
+[gd_scene load_steps=8 format=3 uid="uid://bwgiv56py676e"]
+
+[ext_resource type="Texture2D" uid="uid://bvhseyj550xqb" path="res://Art/Pictures/Editor Only/file-image.svg" id="1_esypj"]
+[ext_resource type="Script" uid="uid://dwqaitusbhcte" path="res://Scripts/Desktop/desktop_icon.gd" id="2_c2rum"]
+
+[sub_resource type="Animation" id="Animation_7751y"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_5yuno"]
+resource_name = "mouse_enter"
+length = 0.15
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.1, 1.1)]
+}
+
+[sub_resource type="Animation" id="Animation_wnbib"]
+resource_name = "mouse_exit"
+length = 0.15
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1.1, 1.1), Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_vbwsb"]
+resource_name = "pressed"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0333333, 0.0666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1.1, 1.1), Vector2(0.8, 0.8), Vector2(1.1, 1.1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_l8yha"]
+_data = {
+&"RESET": SubResource("Animation_7751y"),
+&"mouse_enter": SubResource("Animation_5yuno"),
+&"mouse_exit": SubResource("Animation_wnbib"),
+&"pressed": SubResource("Animation_vbwsb")
+}
+
+[node name="Desktop Icon" type="VBoxContainer"]
+custom_minimum_size = Vector2(88, 85)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -44.0
+offset_top = -42.5
+offset_right = 44.0
+offset_bottom = 42.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+script = ExtResource("2_c2rum")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 1
+theme_type_variation = &"DesktopIconButton"
+icon = ExtResource("1_esypj")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+theme_type_variation = &"DesktopIconLabel"
+text = "My App"
+horizontal_alignment = 1
+text_overrun_behavior = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_l8yha")
+}
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="button_down" from="Button" to="AnimationPlayer" method="play" binds= ["mouse_exit"]]
+[connection signal="pressed" from="Button" to="." method="_on_pressed"]

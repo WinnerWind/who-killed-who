@@ -1,0 +1,156 @@
+[gd_scene load_steps=7 format=3 uid="uid://lak0kkn5lipk"]
+
+[ext_resource type="Script" uid="uid://dgm3rgc5djt55" path="res://Scripts/Windows/notepad.gd" id="1_dtfh7"]
+[ext_resource type="PackedScene" uid="uid://utagi2eh5w54" path="res://Scenes/Other/titlebar.tscn" id="2_k1dnl"]
+
+[sub_resource type="InputEventAction" id="InputEventAction_eo1t6"]
+action = &"Yes"
+
+[sub_resource type="Shortcut" id="Shortcut_kky5k"]
+events = [SubResource("InputEventAction_eo1t6")]
+
+[sub_resource type="InputEventAction" id="InputEventAction_fxy83"]
+action = &"No"
+
+[sub_resource type="Shortcut" id="Shortcut_l5qek"]
+events = [SubResource("InputEventAction_fxy83")]
+
+[node name="HIPTEXT" type="Panel" node_paths=PackedStringArray("tab_container")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -652.0
+offset_bottom = -248.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dtfh7")
+save_data_dictionary_key = "notepad_data"
+tab_container = NodePath("Sorter/Contents")
+starting_size = Vector2(500, 400)
+window_icon_name = &"notepad"
+
+[node name="Sorter" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Titlebar" parent="Sorter" instance=ExtResource("2_k1dnl")]
+layout_mode = 2
+
+[node name="Contents" type="TabContainer" parent="Sorter"]
+layout_mode = 2
+size_flags_vertical = 3
+current_tab = 0
+drag_to_rearrange_enabled = true
+
+[node name="Text Edit" type="TextEdit" parent="Sorter/Contents"]
+layout_mode = 2
+mouse_filter = 1
+text = "HEy!
+YOU! I heard that you haven't subscribed to Netflix.
+As you know, watching movies illegally is a crime, so I must take away your family and kids. We're not sorry."
+wrap_mode = 1
+minimap_draw = true
+minimap_width = 45
+highlight_current_line = true
+metadata/_tab_index = 0
+
+[node name="Confirmation" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -50.0
+offset_right = 100.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Confirmation"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -87.5
+offset_top = -46.5
+offset_right = 87.5
+offset_bottom = 46.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Confirmation/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Really delete?"
+
+[node name="Yes" type="Button" parent="Confirmation/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+shortcut = SubResource("Shortcut_kky5k")
+text = "Yes"
+
+[node name="No" type="Button" parent="Confirmation/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+shortcut = SubResource("Shortcut_l5qek")
+text = "No"
+
+[node name="Rename Prompt" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -50.0
+offset_right = 100.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Rename Prompt"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -87.5
+offset_top = -29.0
+offset_right = 87.5
+offset_bottom = 29.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Rename Prompt/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "New Name?"
+
+[node name="Entry" type="LineEdit" parent="Rename Prompt/VBoxContainer"]
+layout_mode = 2
+placeholder_text = "Press enter to submit."
+alignment = 1
+max_length = 17
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 120.0
+autostart = true
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Sorter" to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Sorter" to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="Confirmation/VBoxContainer/No" to="Confirmation" method="hide"]
+[connection signal="timeout" from="Timer" to="." method="_auto_save"]

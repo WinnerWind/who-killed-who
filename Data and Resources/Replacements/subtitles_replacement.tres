@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ReplacementList" load_steps=2 format=3 uid="uid://cdxq8ojxlityk"]
+
+[ext_resource type="Script" uid="uid://be5e2vas1np7c" path="res://Scripts/Resources and Files/Other/replacement_list.gd" id="1_m505m"]
+
+[resource]
+script = ExtResource("1_m505m")
+replacements = Dictionary[String, String]({
+"$d": "[DEMO NAME]:"
+})
+key_to_be_renamed = ""
+rename_key_to = ""
+key_to_be_moved = ""
+index_to_be_moved_to = 0
+metadata/_custom_type_script = "uid://be5e2vas1np7c"

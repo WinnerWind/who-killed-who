@@ -1,0 +1,40 @@
+[gd_scene load_steps=3 format=3 uid="uid://2im5ydyeom7e"]
+
+[ext_resource type="Script" uid="uid://c4fwau262gb6x" path="res://Scripts/Windows/window.gd" id="1_me5iu"]
+[ext_resource type="PackedScene" uid="uid://utagi2eh5w54" path="res://Scenes/Other/titlebar.tscn" id="2_kolwc"]
+
+[node name="Window" type="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -752.0
+offset_bottom = -348.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_me5iu")
+starting_size = Vector2(400, 300)
+
+[node name="Sorter" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Titlebar" parent="Sorter" instance=ExtResource("2_kolwc")]
+layout_mode = 2
+
+[node name="Contents" type="Panel" parent="Sorter"]
+clip_contents = true
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Sorter/Contents"]
+layout_mode = 1
+offset_right = 86.0
+offset_bottom = 23.0
+text = "WINDOW 1"
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

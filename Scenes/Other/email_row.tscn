@@ -1,0 +1,47 @@
+[gd_scene load_steps=2 format=3 uid="uid://dbkatww747aba"]
+
+[ext_resource type="Script" uid="uid://b4wts80crcajt" path="res://Scripts/Windows/Subwindow/email_row.gd" id="1_i35nc"]
+
+[node name="Email Row" type="HBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_i35nc")
+
+[node name="Highlight" type="Panel" parent="."]
+custom_minimum_size = Vector2(5, 0)
+layout_mode = 2
+theme_type_variation = &"FakeButton"
+
+[node name="Text" type="VBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Subject" type="Label" parent="Text"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 8
+theme_override_font_sizes/font_size = 13
+text = "Subject Here"
+text_overrun_behavior = 4
+
+[node name="Sender" type="Label" parent="Text"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 10
+text = "Sender Here"
+text_overrun_behavior = 4
+
+[node name="Date" type="Label" parent="Text"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 10
+text = "Date
+"
+text_overrun_behavior = 4
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

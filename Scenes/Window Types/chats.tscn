@@ -1,0 +1,185 @@
+[gd_scene load_steps=13 format=3 uid="uid://8dhbm1w7fdt3"]
+
+[ext_resource type="Script" uid="uid://dhjlutamymvjp" path="res://Scripts/Windows/chats.gd" id="1_wcc2h"]
+[ext_resource type="Script" uid="uid://bifm388ef70uc" path="res://Scripts/Resources and Files/For Desktop/messages.gd" id="2_3uutx"]
+[ext_resource type="PackedScene" uid="uid://6cc762s88yhl" path="res://Scenes/Other/text_message_row.tscn" id="2_debrp"]
+[ext_resource type="Texture2D" uid="uid://br3t21kr0uhfe" path="res://Art/Placeholders/SC35_Wallpaper_1.jpg" id="3_kcrlq"]
+[ext_resource type="Texture2D" uid="uid://cfc5dvttjjqet" path="res://Art/Placeholders/soham.png" id="4_vvdtp"]
+[ext_resource type="Texture2D" uid="uid://d3fia21fx4q1i" path="res://Art/Placeholders/cat-waves.png" id="5_8i2p7"]
+[ext_resource type="Resource" uid="uid://dtmu31vmc1ob4" path="res://Data and Resources/Replacements/chat_replacements.tres" id="7_60bby"]
+[ext_resource type="PackedScene" uid="uid://utagi2eh5w54" path="res://Scenes/Other/titlebar.tscn" id="7_ir08o"]
+[ext_resource type="Resource" uid="uid://w24bhqagql3x" path="res://Data and Resources/Replacements/chat_name_replacements.tres" id="8_0qdmp"]
+
+[sub_resource type="Resource" id="Resource_n4ugk"]
+resource_name = "Patricia"
+script = ExtResource("2_3uutx")
+content = "[patricia]: Do you have the documents?
+[soham]: No, sorry! I'll send them when I get them okay?
+[patricia]: No worries!"
+icon = ExtResource("3_kcrlq")
+name = "Patricia"
+last_message = "What has never been has never been so."
+
+[sub_resource type="Resource" id="Resource_bym17"]
+resource_name = "S. Dash"
+script = ExtResource("2_3uutx")
+content = "[soham]: Hi!
+[elicia]: Hello!"
+icon = ExtResource("4_vvdtp")
+name = "S. Dash"
+last_message = "I love you."
+
+[sub_resource type="Resource" id="Resource_k027r"]
+resource_name = "The Cursed Folk"
+script = ExtResource("2_3uutx")
+content = "[bot]:hi"
+icon = ExtResource("5_8i2p7")
+name = "The Cursed Folk"
+last_message = "I kick ass"
+
+[node name="Nicotine" type="Panel" node_paths=PackedStringArray("main_text", "recipients_sorter", "message_sender_direct", "title_direct", "group_main_text", "groups_sorter", "message_sender_group", "title_group")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -552.0
+offset_bottom = -248.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wcc2h")
+direct_messages = Array[ExtResource("2_3uutx")]([SubResource("Resource_n4ugk"), SubResource("Resource_bym17")])
+group_messages = Array[ExtResource("2_3uutx")]([SubResource("Resource_k027r")])
+single_recipient_row = ExtResource("2_debrp")
+main_text = NodePath("Sorter/Contents/Direct Messages/Messages Container/Main Text")
+recipients_sorter = NodePath("Sorter/Contents/Direct Messages/Left Panel/Recipients")
+message_sender_direct = NodePath("Sorter/Contents/Direct Messages/Messages Container/Message Sender")
+title_direct = NodePath("Sorter/Contents/Direct Messages/Messages Container/Title")
+group_main_text = NodePath("Sorter/Contents/Group Messages/Messages Container/Main Text")
+groups_sorter = NodePath("Sorter/Contents/Group Messages/Left Panel/Groups")
+message_sender_group = NodePath("Sorter/Contents/Group Messages/Messages Container/Message Sender")
+title_group = NodePath("Sorter/Contents/Group Messages/Messages Container/Title")
+replacements = ExtResource("7_60bby")
+name_replacements = ExtResource("8_0qdmp")
+starting_size = Vector2(600, 400)
+window_icon_name = &"chat"
+
+[node name="Sorter" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Titlebar" parent="Sorter" instance=ExtResource("7_ir08o")]
+layout_mode = 2
+
+[node name="Contents" type="TabContainer" parent="Sorter"]
+layout_mode = 2
+size_flags_vertical = 3
+tab_alignment = 1
+current_tab = 0
+
+[node name="Direct Messages" type="HBoxContainer" parent="Sorter/Contents"]
+clip_contents = true
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="Left Panel" type="ScrollContainer" parent="Sorter/Contents/Direct Messages"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.45
+
+[node name="Recipients" type="VBoxContainer" parent="Sorter/Contents/Direct Messages/Left Panel"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Spacer" type="VSeparator" parent="Sorter/Contents/Direct Messages"]
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+
+[node name="Messages Container" type="VBoxContainer" parent="Sorter/Contents/Direct Messages"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Title" type="Label" parent="Sorter/Contents/Direct Messages/Messages Container"]
+layout_mode = 2
+theme_type_variation = &"MonospaceLabel"
+theme_override_font_sizes/font_size = 20
+text = "Home"
+
+[node name="Main Text" type="RichTextLabel" parent="Sorter/Contents/Direct Messages/Messages Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"MonospaceRTLabel"
+bbcode_enabled = true
+text = "Welcome to Nicotine Chat.
+
+Please, make yourself at home here. Click on any name on the left to reveal their chats.
+
+[color=red]404: Server not found.[/color]"
+scroll_following = true
+
+[node name="Message Sender" type="LineEdit" parent="Sorter/Contents/Direct Messages/Messages Container"]
+layout_mode = 2
+placeholder_text = "You cannot send messages."
+editable = false
+
+[node name="Spacer" type="Control" parent="Sorter/Contents/Direct Messages/Messages Container"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[node name="Group Messages" type="HBoxContainer" parent="Sorter/Contents"]
+visible = false
+clip_contents = true
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="Left Panel" type="ScrollContainer" parent="Sorter/Contents/Group Messages"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.45
+
+[node name="Groups" type="VBoxContainer" parent="Sorter/Contents/Group Messages/Left Panel"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Spacer" type="VSeparator" parent="Sorter/Contents/Group Messages"]
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+
+[node name="Messages Container" type="VBoxContainer" parent="Sorter/Contents/Group Messages"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Title" type="Label" parent="Sorter/Contents/Group Messages/Messages Container"]
+layout_mode = 2
+theme_type_variation = &"MonospaceLabel"
+theme_override_font_sizes/font_size = 20
+text = "Home"
+
+[node name="Main Text" type="RichTextLabel" parent="Sorter/Contents/Group Messages/Messages Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"MonospaceRTLabel"
+bbcode_enabled = true
+text = "Welcome to Nicotine Chat.
+
+Please, make yourself at home here. Click on any name on the left to reveal their chats.
+
+[color=red]WARNING: NO WRITE PERMISSION. YOU CANNOT SEND MESSAGES.[/color]"
+scroll_following = true
+
+[node name="Message Sender" type="LineEdit" parent="Sorter/Contents/Group Messages/Messages Container"]
+layout_mode = 2
+placeholder_text = "You cannot send messages."
+editable = false
+
+[node name="Spacer" type="Control" parent="Sorter/Contents/Group Messages/Messages Container"]
+custom_minimum_size = Vector2(0, 5)
+layout_mode = 2
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

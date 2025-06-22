@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://ca3gshuq6121m"]
+
+[ext_resource type="Script" uid="uid://d1aka3tcoyvbx" path="res://Scripts/Resources and Files/Other/display_manager.gd" id="1_5fck0"]
+
+[node name="DisplayManager" type="Node"]
+script = ExtResource("1_5fck0")
+set_resolutions = false
+display_resolutions = Array[Vector2]([Vector2(3840, 2160), Vector2(1920, 1080), Vector2(1280, 720), Vector2(1152, 648), Vector2(720, 480), Vector2(0, 0), Vector2(3480, 1140), Vector2(2560, 1080)])
+display_scales = Array[float]([2.0, 1.0, 1.0, 1.0, 0.5, 0.0, 2.0, 1.5])

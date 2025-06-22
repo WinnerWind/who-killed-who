@@ -1,0 +1,320 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjitvivxr8hkq"]
+
+[ext_resource type="Script" uid="uid://b4aexddpxh0ep" path="res://Scripts/Windows/settings_window.gd" id="1_lfaf5"]
+[ext_resource type="PackedScene" uid="uid://utagi2eh5w54" path="res://Scenes/Other/titlebar.tscn" id="2_ri1le"]
+
+[node name="Settings" type="Panel" node_paths=PackedStringArray("checkbuttons_array", "current_desktop_theme_checkbutton", "option_box_array")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -732.0
+offset_bottom = -348.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lfaf5")
+checkbuttons_array = [NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Instant Entries/fm_instant_load"), NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Default Theme/desktop_use_default_theme"), NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Rollover Mouse/rollover_window_focus"), NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/24H Clock/use_24h_clock"), NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Show Names for Subtitles/subtitles_show_names"), NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Subtitles/subtitles_shown"), NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/On Screen Descriptions/subtitles_use_cc"), NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Show Names for Subtitles/subtitles_show_names"), NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Larger File Manager Icons/larger_file_manager_icons")]
+current_desktop_theme_checkbutton = NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Theme Row/Desktop Theme Button")
+option_box_array = [NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Display Resolution/display_resolution"), NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Display Type/display_type")]
+starting_size = Vector2(400, 300)
+window_icon_name = &"settings"
+
+[node name="Sorter" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Titlebar" parent="Sorter" instance=ExtResource("2_ri1le")]
+layout_mode = 2
+
+[node name="Contents" type="MarginContainer" parent="Sorter"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Sorter/Contents"]
+layout_mode = 2
+follow_focus = true
+horizontal_scroll_mode = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="Sorter/Contents/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_type_variation = &"ScrollbarMargins"
+
+[node name="Sorter" type="VBoxContainer" parent="Sorter/Contents/ScrollContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Desktop Theme Settings" type="Label" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Desktop Theme Settings"
+autowrap_mode = 3
+
+[node name="Theme Row" type="HBoxContainer" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="Text" type="Label" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Theme Row"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+text = "Use dark theme"
+autowrap_mode = 3
+
+[node name="Spacer" type="Control" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Theme Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Desktop Theme Button" type="CheckButton" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Theme Row"]
+layout_mode = 2
+flat = true
+
+[node name="Default Theme" type="HBoxContainer" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="Text" type="Label" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Default Theme"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+text = "Use whatever is the default theme"
+autowrap_mode = 3
+
+[node name="Spacer" type="Control" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Default Theme"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="desktop_use_default_theme" type="CheckButton" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Default Theme"]
+layout_mode = 2
+flat = true
+
+[node name="HSeparator" type="HSeparator" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter"]
+layout_mode = 2
+
+[node name="Misc" type="Label" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Misc"
+autowrap_mode = 3
+
+[node name="Instant Entries" type="HBoxContainer" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="Text" type="Label" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Instant Entries"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+text = "Show file entries instantly"
+autowrap_mode = 3
+
+[node name="Spacer" type="Control" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Instant Entries"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="fm_instant_load" type="CheckButton" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Instant Entries"]
+layout_mode = 2
+flat = true
+
+[node name="24H Clock" type="HBoxContainer" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="Text" type="Label" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/24H Clock"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+text = "Use 24H clock"
+autowrap_mode = 3
+
+[node name="Spacer" type="Control" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/24H Clock"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="use_24h_clock" type="CheckButton" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/24H Clock"]
+layout_mode = 2
+flat = true
+
+[node name="Accessibility" type="Label" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Accessbility"
+autowrap_mode = 3
+
+[node name="Rollover Mouse" type="HBoxContainer" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="Text" type="Label" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Rollover Mouse"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+text = "Focus window on mouse motion only"
+autowrap_mode = 3
+
+[node name="Spacer" type="Control" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Rollover Mouse"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="rollover_window_focus" type="CheckButton" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Rollover Mouse"]
+layout_mode = 2
+flat = true
+
+[node name="Subtitles" type="HBoxContainer" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="Text" type="Label" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Subtitles"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+text = "Show subtitles"
+autowrap_mode = 3
+
+[node name="Spacer" type="Control" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Subtitles"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="subtitles_shown" type="CheckButton" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Subtitles"]
+layout_mode = 2
+flat = true
+
+[node name="On Screen Descriptions" type="HBoxContainer" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="Text" type="Label" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/On Screen Descriptions"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+text = "Show on screen descriptions in subs"
+autowrap_mode = 3
+
+[node name="Spacer" type="Control" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/On Screen Descriptions"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="subtitles_use_cc" type="CheckButton" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/On Screen Descriptions"]
+layout_mode = 2
+flat = true
+
+[node name="Show Names for Subtitles" type="HBoxContainer" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="Text" type="Label" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Show Names for Subtitles"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+text = "Show speaker names in subtitles"
+autowrap_mode = 3
+
+[node name="Spacer" type="Control" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Show Names for Subtitles"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="subtitles_show_names" type="CheckButton" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Show Names for Subtitles"]
+layout_mode = 2
+flat = true
+
+[node name="Larger File Manager Icons" type="HBoxContainer" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="Text" type="Label" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Larger File Manager Icons"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+text = "Larger icons for files and folders"
+autowrap_mode = 3
+
+[node name="Spacer" type="Control" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Larger File Manager Icons"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="larger_file_manager_icons" type="CheckButton" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Larger File Manager Icons"]
+layout_mode = 2
+flat = true
+
+[node name="Display" type="Label" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Display Settings"
+autowrap_mode = 3
+
+[node name="Display Resolution" type="HBoxContainer" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="Text" type="Label" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Display Resolution"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "Display Resolution"
+autowrap_mode = 3
+
+[node name="Spacer" type="Control" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Display Resolution"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="display_resolution" type="OptionButton" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Display Resolution"]
+layout_mode = 2
+selected = 0
+allow_reselect = true
+item_count = 8
+popup/item_0/text = "3840x2160 (4k)"
+popup/item_0/id = 0
+popup/item_1/text = "1920x1080 (1k)"
+popup/item_1/id = 1
+popup/item_2/text = "1280x720"
+popup/item_2/id = 2
+popup/item_3/text = "1152x648"
+popup/item_3/id = 4
+popup/item_4/text = "720x480"
+popup/item_4/id = 4
+popup/item_5/text = "Ultrawide"
+popup/item_5/id = 5
+popup/item_5/separator = true
+popup/item_6/text = "3480x1140"
+popup/item_6/id = 6
+popup/item_7/text = "2560x1080"
+popup/item_7/id = 7
+
+[node name="Display Type" type="HBoxContainer" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="Text" type="Label" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Display Type"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "Display Resolution"
+autowrap_mode = 3
+
+[node name="Spacer" type="Control" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Display Type"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="display_type" type="OptionButton" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Display Type"]
+layout_mode = 2
+selected = 0
+allow_reselect = true
+item_count = 3
+popup/item_0/text = "Windowed"
+popup/item_0/id = 0
+popup/item_1/text = "Fullscreen"
+popup/item_1/id = 1
+popup/item_2/text = "Ex. Fullscreen"
+popup/item_2/id = 2
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="toggled" from="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Theme Row/Desktop Theme Button" to="." method="set_desktop_theme"]
+[connection signal="toggled" from="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Default Theme/desktop_use_default_theme" to="." method="set_setting" binds= ["desktop_use_default_theme"]]
+[connection signal="toggled" from="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Instant Entries/fm_instant_load" to="." method="set_setting" binds= ["fm_instant_load"]]
+[connection signal="toggled" from="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/24H Clock/use_24h_clock" to="." method="set_setting" binds= ["use_24h_clock"]]
+[connection signal="toggled" from="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Rollover Mouse/rollover_window_focus" to="." method="set_setting" binds= ["rollover_window_focus"]]
+[connection signal="toggled" from="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Subtitles/subtitles_shown" to="." method="set_setting" binds= ["subtitles_shown"]]
+[connection signal="toggled" from="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/On Screen Descriptions/subtitles_use_cc" to="." method="set_setting" binds= ["subtitles_use_cc"]]
+[connection signal="toggled" from="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Show Names for Subtitles/subtitles_show_names" to="." method="set_setting" binds= ["subtitles_show_names"]]
+[connection signal="toggled" from="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Larger File Manager Icons/larger_file_manager_icons" to="." method="set_setting" binds= ["larger_file_manager_icons"]]
+[connection signal="item_selected" from="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Display Resolution/display_resolution" to="." method="change_resolution"]
+[connection signal="item_selected" from="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Display Type/display_type" to="." method="change_display_type"]

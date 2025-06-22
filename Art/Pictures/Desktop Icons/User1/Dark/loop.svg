@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+	<circle r="30" cx="32" cy="32" stroke="#1d6330" stroke-width="4" fill="#94e2d5" />
+	<g stroke-width="2">
+		<path d="M12 32A1 1 0 0 0 53 32" stroke="#11111b" fill="none" />
+		<path d="M12 32A1 1 0 0 1 53 32" stroke="#11111b" fill="none" />
+	</g>
+	<polyline fill="none" stroke="#11111b" points="24 19 24 44 43 44" stroke-linecap="round" stroke-width="3" />
+	<g stroke-width="2">
+		<polyline fill="none" stroke="black" points="8 29 12 32 16 29" stroke-linecap="round" />
+		<polyline fill="none" stroke="black" points="49 35 53 32 57 35" stroke-linecap="round" />
+	</g>
+</svg>

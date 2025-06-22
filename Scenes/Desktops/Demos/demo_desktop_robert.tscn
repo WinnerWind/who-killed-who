@@ -1,0 +1,1781 @@
+[gd_scene load_steps=102 format=3 uid="uid://brhdquuk2h4w3"]
+
+[ext_resource type="Theme" uid="uid://xyj76ld4ymnb" path="res://Art/Themes/hip_retro_dark.tres" id="1_dde6s"]
+[ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="2_k4mv5"]
+[ext_resource type="Theme" uid="uid://so8q5n2qfwbq" path="res://Art/Themes/hip_retro_light.tres" id="3_8thma"]
+[ext_resource type="Resource" uid="uid://b772fc036uu3b" path="res://Art/Pictures/Desktop Icons/Icon Sets/monochrome_pixel_light.tres" id="4_7u3ux"]
+[ext_resource type="Resource" uid="uid://ctu38rpupbng6" path="res://Art/Pictures/Desktop Icons/Icon Sets/monochrome_pixel_dark.tres" id="5_a0way"]
+[ext_resource type="Resource" uid="uid://dwqseev5bc8ta" path="res://Data and Resources/Users/Demos/demo_robert.tres" id="6_umdms"]
+[ext_resource type="Texture2D" uid="uid://b46gufoiyflwo" path="res://Art/Pictures/OS Logos/anytable_small.svg" id="8_1na51"]
+[ext_resource type="PackedScene" uid="uid://bwgiv56py676e" path="res://Scenes/Other/desktop_icon.tscn" id="32_oa5lw"]
+[ext_resource type="AudioStream" uid="uid://bsomeolopdx06" path="res://Art/Placeholders/factorio.mp3" id="34_5viui"]
+[ext_resource type="VideoStream" uid="uid://cyyri2jlqkvxw" path="res://Art/Placeholders/epic fail.mp4" id="37_o4ggh"]
+[ext_resource type="Script" uid="uid://betc7x5t62js8" path="res://Scripts/Resources and Files/Other/subtitles.gd" id="38_7gd06"]
+[ext_resource type="Resource" uid="uid://rmbk5c1ikg37" path="res://Data and Resources/Subtitles/test_subtitles.tres" id="38_47fub"]
+[ext_resource type="Texture2D" uid="uid://byudk1oop8u0y" path="res://Art/Pictures/Backgrounds/dark_room.png" id="39_o36hy"]
+[ext_resource type="AudioStream" uid="uid://cwi5v7c5sfqml" path="res://Art/Sound/Transitory SFX/hipretro outro.wav" id="40_47fub"]
+[ext_resource type="PackedScene" uid="uid://dlmfk24r0gbcc" path="res://Scenes/Other/fancy_button.tscn" id="43_5xxbg"]
+[ext_resource type="Texture2D" uid="uid://daoq4jyauc5hv" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/poweroff.png" id="43_j027r"]
+[ext_resource type="Texture2D" uid="uid://dxw7k1xlbnq8x" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/restart.png" id="44_1bb3r"]
+[ext_resource type="Texture2D" uid="uid://i3j8lcga1itj" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/logout.png" id="45_1sfsh"]
+[ext_resource type="PackedScene" uid="uid://c557cq0fkyke3" path="res://Scenes/Window Types/answer_input.tscn" id="50_4cfve"]
+[ext_resource type="Script" uid="uid://bifm388ef70uc" path="res://Scripts/Resources and Files/For Desktop/messages.gd" id="50_ji8ne"]
+[ext_resource type="PackedScene" uid="uid://bxer3ixxydvvu" path="res://Scenes/Window Types/docs_viewer.tscn" id="51_ccvk2"]
+[ext_resource type="Script" uid="uid://bfmnfev8k5uiw" path="res://Scripts/Resources and Files/For Desktop/emails.gd" id="51_ggfsq"]
+[ext_resource type="PackedScene" uid="uid://c6gqjqrkidn0b" path="res://Scenes/Window Types/file_manager.tscn" id="52_u2mg4"]
+[ext_resource type="PackedScene" uid="uid://bmcafym2vhbv8" path="res://Scenes/Window Types/image_viewer.tscn" id="53_0jve4"]
+[ext_resource type="PackedScene" uid="uid://heb52kbru40a" path="res://Scenes/Window Types/text_editor.tscn" id="54_kbwef"]
+[ext_resource type="PackedScene" uid="uid://cxcs7lmcqhe63" path="res://Scenes/Window Types/video_player.tscn" id="55_6nat6"]
+[ext_resource type="PackedScene" uid="uid://c4jynkn0t0o4u" path="res://Scenes/Window Types/audio_player.tscn" id="56_5qinv"]
+[ext_resource type="PackedScene" uid="uid://8dhbm1w7fdt3" path="res://Scenes/Window Types/chats.tscn" id="57_f4iji"]
+[ext_resource type="PackedScene" uid="uid://bxrho3xvynjrp" path="res://Scenes/Window Types/email.tscn" id="58_u52ry"]
+[ext_resource type="PackedScene" uid="uid://vxq4edum8thi" path="res://Scenes/Window Types/calculator.tscn" id="59_mwysp"]
+[ext_resource type="PackedScene" uid="uid://cjmgp7qnlk5kl" path="res://Scenes/Window Types/system_info.tscn" id="60_02hdy"]
+[ext_resource type="PackedScene" uid="uid://bjitvivxr8hkq" path="res://Scenes/Window Types/settings.tscn" id="61_ht1s0"]
+[ext_resource type="PackedScene" uid="uid://lak0kkn5lipk" path="res://Scenes/Window Types/notepad.tscn" id="62_fmrpc"]
+[ext_resource type="PackedScene" uid="uid://cn45gtkcdls2w" path="res://Scenes/Window Types/remote_connection.tscn" id="63_ljbh4"]
+[ext_resource type="PackedScene" uid="uid://cf0woduy5x8pf" path="res://Scenes/Window Types/games_list.tscn" id="64_ndpjr"]
+[ext_resource type="PackedScene" uid="uid://c2md68ibvvoxk" path="res://Scenes/Other/notification.tscn" id="64_v2sof"]
+[ext_resource type="PackedScene" uid="uid://fal2iityh6i6" path="res://Scenes/Window Types/popup.tscn" id="65_0vpst"]
+[ext_resource type="PackedScene" uid="uid://c8t5wkgn4r6wi" path="res://Scenes/Window Types/password_prompt.tscn" id="66_0y038"]
+[ext_resource type="PackedScene" uid="uid://d2c8qnwy6t3gx" path="res://Scenes/Other/app_tray_icon.tscn" id="67_dbgwq"]
+[ext_resource type="PackedScene" uid="uid://g84qji3yh2sm" path="res://Scenes/Other/user_password_prompt.tscn" id="68_4y7ik"]
+[ext_resource type="PackedScene" uid="uid://bj5x25ns3hxmd" path="res://Scenes/Other/power_prompt.tscn" id="69_eg2v3"]
+[ext_resource type="PackedScene" uid="uid://b8jwsa53j715" path="res://Scenes/login.tscn" id="70_y2fgo"]
+[ext_resource type="Script" uid="uid://cmowc8flglqra" path="res://Scripts/Files and Folders/folders.gd" id="71_hjb14"]
+[ext_resource type="Script" uid="uid://6ahcfwj62g07" path="res://Scripts/Files and Folders/files.gd" id="72_gbfor"]
+[ext_resource type="AudioStream" uid="uid://bwoim2rlm4h6m" path="res://Art/Sound/Transitory SFX/intro_2.wav" id="77_01apy"]
+[ext_resource type="Shader" uid="uid://b4ij2y4336ltx" path="res://Art/Shaders/stripes.tres" id="79_q6uif"]
+[ext_resource type="Texture2D" uid="uid://dmdex3eijgfnc" path="res://Art/Placeholders/PS30TH_16x9_WALLPAPER.png" id="80_jo4dm"]
+[ext_resource type="Texture2D" uid="uid://cajkgw7h5kb80" path="res://Art/Pictures/Editor Only/file.svg" id="82_hoela"]
+[ext_resource type="Script" uid="uid://bumowvb75nl7b" path="res://Scripts/Desktop/desktop_panels.gd" id="83_fc1o6"]
+[ext_resource type="Script" uid="uid://cjrscc2gi8o1v" path="res://Scripts/Desktop/users_panel.gd" id="85_1f6bk"]
+[ext_resource type="PackedScene" uid="uid://dqpce0a7r6slg" path="res://Scenes/Other/users_row.tscn" id="86_57rdh"]
+[ext_resource type="Script" uid="uid://cq8v8vfrqt7lp" path="res://Scripts/Desktop/clock_and_calendar.gd" id="90_1l44u"]
+[ext_resource type="PackedScene" uid="uid://dqkcw1xsldeke" path="res://Scenes/Window Types/Games/dungeon_explorer_autoplay.tscn" id="90_8pxua"]
+[ext_resource type="PackedScene" uid="uid://cx8rq0u5i5675" path="res://Scenes/Window Types/Games/dungeon_explorer.tscn" id="91_ve5tm"]
+[ext_resource type="PackedScene" uid="uid://dg541tu3cd17a" path="res://Misc/3D Spinning Background/special_spin_background.tscn" id="108_ct6ic"]
+
+[sub_resource type="Resource" id="Resource_3no4q"]
+resource_name = "Computer Repair"
+script = ExtResource("50_ji8ne")
+content = "<d> 28th February 2025 </d>
+$m Hey there! I heard you deal with computer repair? Can you help me?
+$dc dont ask to ask haha. what's your issue?
+$m I made a folder the other day and I forgot its password. Can you help unlock it?
+$dc that's tough, especially if your password is quite uncommon. i can take a look sometime. i'll message you sometime this week.
+$m Sure!
+<d> 5th March 2025 </d>
+$dc alright, can you mail me your computer? 
+$m Will Remote SSH work? I'll send you my details.
+$dc sure that works
+$m Alright! Here are the details then:
+$m [code] SSH KEYS - DO NOT SHARE THIS WITH ANYONE
+PRIVATE KEY: 576F772120492063616E27742062656C6965766520796F75206465636F64656420746869732E
+PUBLIC KEY (LOOPBACK USER): 526F6265727420697320616E206964696F7420646F6E277420796F75207468696E6B3F
+[/code]
+$dc wrong one, also delete that message.
+$m Oops! How do I delete messages?
+$dc nevermind, just send me the invite.
+$m Sorry! Here you go.
+$m [code] SSH INVITE - 1 USE ONLY!
+USE THESE DETAILS IN SSH GUI OR BY USING THE TERMINAL.
+IP ADDRESS : 192.168.43.89
+USERNAME : robert
+PASSWORD : reallycoolpassword
+[/code]
+$dc nice, i'll get to work soon.
+$m Good luck!"
+name = "Computer Repair"
+last_message = "Off for the weekend."
+
+[sub_resource type="Resource" id="Resource_gaswo"]
+resource_name = "Strava"
+script = ExtResource("50_ji8ne")
+content = "<d> 18th October 2024 </d>
+$ds hey, heard you switched emails. how are you?
+$m I'm alright Strava! How's your dog? 
+$m I had to change emails because that stupid Pavlov's Pizza wouldn't stop bugging me with their constant promotions
+$ds oh, i know like 15 ways to stop thier emails lol. 
+$ds anyway thats done. robert is okay, thanks
+$ds how's your father?
+$m Not so good, he keeps coughing out blood. We've taken him to the doctor and they're stumped.
+$ds wishinng him a speedy recovery
+$ds did they say what happened?
+$m Thanks Strava. Means a lot.
+$m No, the doctors themselves are not sure. They've put him in the ICU for a bit.
+$ds shit, hope he feels better soon.
+$m Thanks a lot!
+$ds i gotta go run some errands
+$ds see you
+$m Yeah, Sure!
+<d> 24th October 2024 </d>
+$ds heyheyhey, how's your dad
+$m Not much better to be fair, but at least he has his own room now. Still coughing out blood. 
+$m The nurse isn't very optimistic, but I think he'll make it through.
+$m I have to be strong for him.
+$ds thats really noble. i'm sure he'll be okay.
+$ds let me know if you wanna talk. me and robert are always here for you.
+$m By the way, why did you name your dog Robert?
+$ds well you're a really cool guy so <3
+$m Well, I'm flattered, Thanks Strava.
+$ds only kidding. honestly i didn't know what to name him, so i just named him robert. first name on my mind.
+$ds (not kidding about the cool part. you are a cool guy >:(
+$m Well funnily, that's also how my father named me. Had no other name in his mind, so just rolled die, haha.
+$ds shit duty calls. gtg
+$m Sure thing. Take care Strava.
+<d> 31st December 2024 </d>
+$ds happy new year! sorry I couldn't message for so long.
+$m Happy new year! Well, we still have a minute to go. Would you like to come over?
+$ds ofc! i have nothing on my mind anyway.
+$m Sure, see you in a bit!
+<d> 2nd February 2025 </d>
+$ds hey
+$ds i'm really sorry for what happened to your father
+$m Don't be, you didn't kill him did you?
+$ds yeah but like...
+$ds idk what to say
+$m It's alright. He spent his time well.
+$m Work already gave me a really long vacation, so I'm taking it easy.
+$m You don't need to worry about me.
+<d> 10th February 2025 </d>
+$m Hey, how do I lock a folder?
+$ds you use hipos right?
+$m That's the one!
+$ds oh you just right click then click \"lock folder\" then put a password.
+$ds passwords are case sensitive so just make sure your capslock isnt on lmao
+$m Will do! I think I won't make a mistake like that.
+$m Thanks! By the way, what happened to your email?
+$ds too much spam lol
+$ds got sick of it
+$ds besides i dont need an email
+$m I see, why not just make a new one?
+$ds dont really need an email lmao
+$m I see.
+<d> 27th February 2025 </d>
+$m Do you happen to know any computer guys nearby?
+$ds not nearby but he can fix computers remotely.
+$ds i've mailed you their contact. you still use robertnickson@hipxel.com?
+$m Sure do!
+$ds just remember to tell him that you want to repair using remote ssh. they'll handle the rest.
+$m Thanks Strava! Don't know what I'd do without you.
+$ds btw what happened
+$m Well I forgot the password to a folder I made. Truly my mistake.
+$ds maybe you wrote it down somewhere?
+$m I vaguely remember doing that but I just can't remember where.
+$ds well its quite hard to figure out the password of a folder
+$ds anyway gl
+$m Thanks Strava."
+name = "Strava"
+last_message = "You never know when you'll die.."
+
+[sub_resource type="Resource" id="Resource_clnbi"]
+resource_name = "Mom"
+script = ExtResource("50_ji8ne")
+content = "<d> 1st February 2025 </d>
+$dm You need to come to the hospital.
+$m What's wrong?
+$dm No time. Come quick. St. Gabriel's.
+$m On my way. 
+<d> 3rd February 2025 </d>
+$dm I emailed the funeral details to you.
+$m Thanks ma. "
+name = "Mom"
+last_message = "Hey. I'm new to Nicotine."
+
+[sub_resource type="Resource" id="Resource_tnfxc"]
+resource_name = "Rakesh"
+script = ExtResource("50_ji8ne")
+content = "<d> 9th February 2025 </d>
+$dur I heard what happened to your father, really am sorry.
+$m Did Strava tell you?
+$dur You could say that, haha.
+$m Well it's okay, don't worry about me, I'm actually having a good time. Me and Dad weren't particularly close anyway.
+$dur I know it doesn't mean much but hit me up whenever you need a drink or something okay buddy?
+$m Will do.
+$dur You know, my father too passed away some time ago.
+$m I'm sorry.
+$dur Naw, it's nothing.
+$dur Anyway, it really helped for me to take some of his images and keep them somewhere safe.
+$m I'm doing exactly that!
+$dur Really? You aren't using the company laptop are you?
+$m It's the only one I have...
+$dur Well remember to lock that folder. Company can see everything on that laptop haha.
+$dur What password do you have in mind?
+$m Locking?
+$m Oh, I'm not too sure, maybe I'll just make it my father's initials. Seems fitting.
+$dur Give it some thought, anyway see you around.
+$dur Take care buddy.
+<d> 11th February 2025 </d>
+$m Just thought of a nice password. I think the initials idea was good idea, but not secure enough.
+$dur Well don't forget it! The more you add, the more secure it is!
+$dur A trick I use is to just put whatever weak password I had thought of initially then add a few digits to the end.
+$dur Something important enough to remember yknow.
+$dur Like a date?
+$m Good idea, maybe the date of death of my father?
+$dur Yeah! Just remember the format. Also I'm fairly certain HipOS doesn't allow slashes in passwords.
+$m I guess I'll just put the date in the traditional format.
+$dur Good idea!
+$dur Good rule of thumb is to keep passwords in lower case, especially if you struggle to remember them.
+$m Never heard of that, I thought a password with both upper case and lower case is more secure?
+$dur Bingo! But I know you are a bit forgetful so just stick to lower case and less digits.
+$m I better go.
+$dur Seeya!
+
+"
+name = "Rakesh"
+last_message = "I work as a UI designer @ Anydesk"
+
+[sub_resource type="Resource" id="Resource_rjq6y"]
+resource_name = "UI/UX Team 3"
+script = ExtResource("50_ji8ne")
+content = "<d> 4th February 2025 </d>
+$m Hey guys, I'm going to be taking a few days leave from office. Father passed away recently and I have to attend his funeral. Sorry that I can't attend the meeting with Personus. Wishing you guys luck.
+$dur No worries, just take care of yourself. See you soon.
+$dul Aw, take care. See you in office soon.
+$duj Yeah man, don't worry about the Personus thing. We'll handle it.
+<d> 8th February 2025 </d>
+$dul Personus thing didn't do as planned but it's alright. Me and Rakesh managed to sell them in to the Anytable Private Network solution.
+$duj Really? what do they think about it?
+$dul They think that it has some potential but I think Rakesh can explain this part best.
+$dur The guys from Personus really want us to amp up our PNS' security. I told them that security wasn't our field and I referred them to Gina but they didn't seem to understand.
+$duj I'll handle the security bit and talk to Gina myself, hopefully it gets somewhere. Good day.
+<d> 17th February 2025 </d>
+$dur Has anyone heard from Robert? 
+$duj Nope.
+$dul Same here.
+$dur Do you reckon we should tell management?
+$m I'm not dead don't worry, I just need some time off. HR already approved my leave till 3rd.
+$dur My bad, take care.
+<d> 23rd February 2025 </d>
+$m I'll be back in office soon.
+$duj Noted.
+<d> 1st March 2025 </d> 
+$duj Has anyone sent Personus the new UI concept?
+$dur I have, they really seem invested and are willing to give the UI team a massive grant.
+$duj Where did you hear that part about a grant? I wasn't told anything.
+$dur You told me.
+$duj I can't remember. Anyway, speak to you soon.
+$m Why is Personus invested in our remote connection tech anyway?
+$duj Wish I could tell you."
+icon = ExtResource("8_1na51")
+name = "UI/UX Team 3"
+last_message = "15 members"
+
+[sub_resource type="Resource" id="Resource_76v1m"]
+resource_name = "Registered."
+script = ExtResource("51_ggfsq")
+content = "Hey there robertnickson,
+	We have recieved your written mail regarding registering on our website.
+	Even though we do not consider new registrations at this time of year, we have gone ahead and registered your new email. You can contact us if you have any queries.
+
+Sincerely,
+Hipxel
+"
+subject = "Registered."
+sender = "$da"
+recipient = "$dr"
+hour = 21
+minute = 59
+day = 26
+month = 8
+year = 2024
+
+[sub_resource type="Resource" id="Resource_o7ecu"]
+resource_name = "Request for leave"
+script = ExtResource("51_ggfsq")
+content = "Hey Johan,
+	I need to take a few days off. There has been a bit of a family emergency and I won't be able to make it to the meeting. Sorry.
+	Please approve my leave for the next few weeks. I need it, as it's a really urgent problem.
+
+Sincerely,
+Robert,
+UI Team 3."
+subject = "Request for leave"
+sender = "$dr"
+recipient = "$duj"
+hour = 12
+minute = 19
+day = 3
+month = 1
+year = 2025
+
+[sub_resource type="Resource" id="Resource_d43fo"]
+resource_name = "Funeral for Rupesh Nickson."
+script = ExtResource("51_ggfsq")
+content = "Dear friends,
+	It is with a heavy heart that I am sending you this email. Rupesh Nickson passed away on 2nd Feburary 2025. 
+	The funeral will be held on 5th Feburary 2025. Do send any photos or stories you may have had with Rupesh.
+
+Sincerely,
+Marla."
+subject = "Funeral for Rupesh Nickson."
+sender = "$dm"
+recipient = "$dr"
+hour = 12
+minute = 39
+day = 3
+month = 1
+year = 2025
+
+[sub_resource type="Resource" id="Resource_6q853"]
+resource_name = "RE: Request for leave"
+script = ExtResource("51_ggfsq")
+content = "Dear Robert,
+	Approved. Please take as much time as you need, after all, you have done a lot for us in the UI sphere these last few months.
+
+Sincerely,
+Johan,
+UI Team 3"
+subject = "RE: Request for leave"
+sender = "$duj"
+recipient = "$dr"
+hour = 14
+minute = 43
+day = 3
+month = 1
+year = 2025
+
+[sub_resource type="Resource" id="Resource_b303t"]
+resource_name = "Help locking a folder"
+script = ExtResource("51_ggfsq")
+content = "Hey Strava,
+	I made a folder of all of Dad's photos. How do I lock a folder? Just for safety purposes. Don't want anyone to access it easily"
+subject = "Help locking a folder"
+sender = "$dr"
+recipient = "$ds"
+hour = 9
+minute = 32
+day = 4
+month = 1
+year = 2025
+
+[sub_resource type="Resource" id="Resource_2uadw"]
+resource_name = "Inactive Email"
+script = ExtResource("51_ggfsq")
+content = "Dear robertnickson,
+	This email is not in use. The owner of this email has left a message.
+[center] Hey! Please contact me on my Nicotine. Contact is below [/center]
+[code]
+1 Attachment
+
+Strava.nicotinecontact
+( You already have this contact )
+[/code]"
+subject = "Inactive Email"
+sender = "$ds"
+recipient = "$dr"
+hour = 9
+minute = 34
+day = 4
+month = 1
+year = 2025
+
+[sub_resource type="Resource" id="Resource_3ift1"]
+resource_name = "Request to delete email."
+script = ExtResource("51_ggfsq")
+content = "Dear Admin,
+	I am writing this email to request the removal/deactivation of my father's email address, rupeshnickson@hipxel.com. He has passed away recently, and according to your terms of service, this is standard procedure.
+	I have attached his death certificate.
+
+Sincerely,
+Robert Nickson
+[code]
+1 Attachment
+
+Death Certificate.pdf {expattachment}
+[/code]"
+subject = "Request to delete email."
+sender = "$dr"
+recipient = "$da"
+hour = 17
+minute = 45
+day = 6
+month = 1
+year = 2025
+
+[sub_resource type="Resource" id="Resource_d7smp"]
+resource_name = "RE: Request to delete email."
+script = ExtResource("51_ggfsq")
+content = "Dear Robert,
+	We have acknowledged your request. Please note that due to certain legal restrictions, we cannot delete your father's account, but we have deactivated it. 
+	Sorry for your loss, and have a good day.
+
+Sincerely,
+Hipxel Administrator."
+subject = "RE: Request to delete email."
+sender = "$da"
+recipient = "$dr"
+hour = 10
+minute = 12
+day = 7
+month = 1
+year = 2025
+
+[sub_resource type="Resource" id="Resource_ccvk2"]
+resource_name = "About Personus"
+script = ExtResource("51_ggfsq")
+content = "Hey guys,
+	I can't seem to figure out why Personus is so invested in our remote connection software. Why do they keep throwing money at our insecure and badly designed software? Why do we work on it?
+	So many questions.
+
+Liberica."
+subject = "About Personus"
+sender = "$dul"
+recipient = "$duj $dr"
+hour = 12
+minute = 45
+day = 10
+month = 1
+year = 2025
+metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
+
+[sub_resource type="Resource" id="Resource_o4ggh"]
+resource_name = "RE: About Personus"
+script = ExtResource("51_ggfsq")
+content = "Dear Liberica,
+	I think it's best we don't ask.
+
+Sincerely,
+Johan,
+Manager,
+UI Team 3 and Team 4"
+subject = "RE: About Personus"
+sender = "$duj"
+recipient = "$dul $dr"
+hour = 12
+minute = 55
+day = 10
+month = 1
+year = 2025
+metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
+
+[sub_resource type="Resource" id="Resource_4lr00"]
+resource_name = "Computer Repair contact details"
+script = ExtResource("51_ggfsq")
+content = "attached at bottom.
+
+[code]
+1 Attachment
+
+1. Computer Repair.nicotinecontact
+( This contact has been added as \"Computer Repair\" )
+[/code]"
+subject = "Computer Repair contact details"
+sender = "$ds"
+recipient = "$dr"
+hour = 19
+minute = 32
+day = 27
+month = 1
+year = 2025
+
+[sub_resource type="Resource" id="Resource_mxefu"]
+script = ExtResource("38_7gd06")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_70dad"]
+script = ExtResource("38_7gd06")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_we40e"]
+script = ExtResource("38_7gd06")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_2ukkn"]
+script = ExtResource("38_7gd06")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_vnoil"]
+script = ExtResource("38_7gd06")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_2j08k"]
+script = ExtResource("38_7gd06")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_adcxq"]
+script = ExtResource("38_7gd06")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_b70ak"]
+script = ExtResource("38_7gd06")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_mk7lo"]
+script = ExtResource("38_7gd06")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_s3u6c"]
+script = ExtResource("38_7gd06")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_5pxs8"]
+script = ExtResource("38_7gd06")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_t1q1x"]
+script = ExtResource("38_7gd06")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_44f32"]
+script = ExtResource("38_7gd06")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_nmft7"]
+script = ExtResource("38_7gd06")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_43777"]
+script = ExtResource("38_7gd06")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_24lag"]
+script = ExtResource("38_7gd06")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Animation" id="Animation_km1se"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Smart Wallpaper:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Desktop Icons:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Smart Wallpaper:material:shader_parameter/color_stripe")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.384314, 0.384314, 0.45098, 0.156863)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Panels/Top Panel:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Panels:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_vqcpe"]
+resource_name = "intro_animation"
+length = 2.0
+capture_included = true
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Smart Wallpaper:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.533333, 1.93333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SFX/IntroSFX")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.6),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [0.0],
+"method": &"play"
+}]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Desktop Icons:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.0333333, 1.63333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Smart Wallpaper:material:shader_parameter/color_stripe")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.2, 1.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.384314, 0.384314, 0.45098, 0), Color(0.384314, 0.384314, 0.45098, 0.156863)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = false
+tracks/4/path = NodePath("Panels/Top Panel:scale")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1.66667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 1), Vector2(1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Panels:position")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 1.23333, 1.36667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 2,
+"values": [Vector2(0, -300), Vector2(0, 10), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_eqmh7"]
+resource_name = "outro_animation"
+length = 5.0
+capture_included = true
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("SFX/OutroSFX")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [0.0],
+"method": &"play"
+}]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Smart Wallpaper:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.0333333, 1.73333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Desktop Icons:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.766667, 4.23333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0, 0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Smart Wallpaper:material:shader_parameter/color_stripe")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 2.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0.384314, 0.384314, 0.45098, 0.156863), Color(0.384314, 0.384314, 0.45098, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = false
+tracks/4/path = NodePath("Panels/Top Panel:scale")
+tracks/4/interp = 2
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1e-05, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Panels:position")
+tracks/5/interp = 2
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.166667, 1.53333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 2,
+"values": [Vector2(0, 0), Vector2(0, 10), Vector2(0, -300)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_e48td"]
+_data = {
+&"RESET": SubResource("Animation_km1se"),
+&"intro_animation": SubResource("Animation_vqcpe"),
+&"outro_animation": SubResource("Animation_eqmh7")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gi6f8"]
+shader = ExtResource("79_q6uif")
+shader_parameter/color_gap = Color(1, 1, 1, 0)
+shader_parameter/color_stripe = Color(0.384314, 0.384314, 0.45098, 0.156863)
+shader_parameter/divisions = 8.0
+shader_parameter/stripe_bias = 2.5
+shader_parameter/speed = 0.05
+shader_parameter/angle = 0.3
+shader_parameter/skew = 0.0
+
+[sub_resource type="Animation" id="Animation_agxnw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Panel:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_pgl2h"]
+resource_name = "close_panel"
+length = 0.3
+capture_included = true
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.233333),
+"transitions": PackedFloat32Array(1, 2.54912),
+"update": 2,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.266667),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Panel:scale")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1e+06),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_k23gk"]
+resource_name = "open_panel"
+length = 0.3
+capture_included = true
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.233333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 2,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Panel:scale")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1e+06),
+"update": 0,
+"values": [Vector2(1, 0), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bxxo2"]
+_data = {
+&"RESET": SubResource("Animation_agxnw"),
+&"close_panel": SubResource("Animation_pgl2h"),
+&"open_panel": SubResource("Animation_k23gk")
+}
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a04es"]
+
+[sub_resource type="Animation" id="Animation_v3mra"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Calendar:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Calendar:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Calendar:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_rrkbg"]
+resource_name = "close_animation"
+length = 0.3
+capture_included = true
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Calendar:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.233333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Calendar:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.233333),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Calendar:scale")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 2,
+"values": [Vector2(1, 1), Vector2(1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_lj5qv"]
+resource_name = "open_animation"
+length = 0.3
+capture_included = true
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Calendar:modulate")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.233333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Calendar:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Calendar:scale")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.233333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 2,
+"values": [Vector2(1, 0), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_qique"]
+_data = {
+&"RESET": SubResource("Animation_v3mra"),
+&"close_animation": SubResource("Animation_rrkbg"),
+&"open_animation": SubResource("Animation_lj5qv")
+}
+
+[node name="Demo Robert" type="Control" node_paths=PackedStringArray("theme_switch_nodes", "app_icon_container", "wallpaper_node", "users_panel")]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_dde6s")
+script = ExtResource("2_k4mv5")
+theme_switch_nodes = [NodePath("Panels/Top Panel/Container/App Starter/Panel/Seperator/Users Sorter/Power Strip/power_off"), NodePath("Panels/Top Panel/Container/App Starter/Panel/Seperator/Users Sorter/Power Strip/restart"), NodePath("Panels/Top Panel/Container/App Starter/Panel/Seperator/Users Sorter/Power Strip/logout")]
+active_edges = Array[int]([50, 0, 0, 0])
+app_icon_container = NodePath("Panels/Top Panel/Container/App Tray Sorter/Scroll/Apps Container")
+wallpaper_node = NodePath("Smart Wallpaper/Wallpaper")
+users_panel = NodePath("Panels/Top Panel/Container/App Starter/Panel/Seperator/Users Sorter")
+dictionary_key = "demo_robert"
+light_theme = ExtResource("3_8thma")
+dark_theme = ExtResource("1_dde6s")
+light_icons = ExtResource("4_7u3ux")
+dark_icons = ExtResource("5_a0way")
+is_dark_theme = true
+is_default_dark_theme = true
+use_inverted_icons_when_titlebar_focused = true
+use_alternate_icon_for_power_prompt = true
+system_name = "HipOS"
+system_version = "v0.9.5-demo"
+system_information = "COPYRIGHT WINNERWIND
+This is, by definition, a demo piece of software. Bugs are expected."
+current_user = ExtResource("6_umdms")
+personal_chat_messages = Array[ExtResource("50_ji8ne")]([SubResource("Resource_3no4q"), SubResource("Resource_gaswo"), SubResource("Resource_clnbi"), SubResource("Resource_tnfxc")])
+group_chat_messages = Array[ExtResource("50_ji8ne")]([SubResource("Resource_rjq6y")])
+emails = Array[ExtResource("51_ggfsq")]([SubResource("Resource_76v1m"), SubResource("Resource_o7ecu"), SubResource("Resource_d43fo"), SubResource("Resource_6q853"), SubResource("Resource_b303t"), SubResource("Resource_2uadw"), SubResource("Resource_3ift1"), SubResource("Resource_d7smp"), SubResource("Resource_ccvk2"), SubResource("Resource_o4ggh"), SubResource("Resource_4lr00")])
+file_manager_window = ExtResource("52_u2mg4")
+image_viewer_window = ExtResource("53_0jve4")
+text_viewer_window = ExtResource("54_kbwef")
+video_player_window = ExtResource("55_6nat6")
+music_player_window = ExtResource("56_5qinv")
+document_viewer_window = ExtResource("51_ccvk2")
+chat_app_window = ExtResource("57_f4iji")
+email_app_window = ExtResource("58_u52ry")
+calculator_window = ExtResource("59_mwysp")
+system_information_window = ExtResource("60_02hdy")
+settings_window = ExtResource("61_ht1s0")
+notepad_window = ExtResource("62_fmrpc")
+remote_connection_window = ExtResource("63_ljbh4")
+game_list_window = ExtResource("64_ndpjr")
+answer_input_window = ExtResource("50_4cfve")
+dungeon_explorer = ExtResource("91_ve5tm")
+dungeon_explorer_autoplay = ExtResource("90_8pxua")
+virtual_notification = ExtResource("64_v2sof")
+popup = ExtResource("65_0vpst")
+password_prompt = ExtResource("66_0y038")
+app_tray_icon = ExtResource("67_dbgwq")
+users_password_prompt = ExtResource("68_4y7ik")
+bootup_scene_path = "res://Scenes/bootup.tscn"
+power_prompt = ExtResource("69_eg2v3")
+login_scene = ExtResource("70_y2fgo")
+
+[node name="Files" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("71_hjb14")
+
+[node name="Desktop" type="Node" parent="Files"]
+script = ExtResource("71_hjb14")
+
+[node name="cheftalk" type="Node" parent="Files/Desktop"]
+script = ExtResource("72_gbfor")
+music = ExtResource("34_5viui")
+title = "cheftalk"
+subtitle = "Exported using FL Stud."
+audio_subtitles = ExtResource("38_47fub")
+video_subtitles = SubResource("Resource_mxefu")
+has_date_time = false
+year = 0
+month = 1
+
+[node name="ananas" type="Node" parent="Files/Desktop"]
+script = ExtResource("72_gbfor")
+video = ExtResource("37_o4ggh")
+title = "cheftalk"
+subtitle = "Exported using FL Stud."
+audio_subtitles = SubResource("Resource_70dad")
+video_subtitles = ExtResource("38_47fub")
+year = 0
+month = 1
+
+[node name="Documents" type="Node" parent="Files"]
+script = ExtResource("71_hjb14")
+
+[node name="VirtualFile" type="Node" parent="Files/Documents"]
+script = ExtResource("72_gbfor")
+image = ExtResource("39_o36hy")
+audio_subtitles = SubResource("Resource_we40e")
+video_subtitles = SubResource("Resource_2ukkn")
+metadata/_custom_type_script = "uid://6ahcfwj62g07"
+
+[node name="Photos" type="Node" parent="Files"]
+script = ExtResource("71_hjb14")
+
+[node name="Dad\'s Photos" type="Node" parent="Files/Photos"]
+script = ExtResource("71_hjb14")
+password = "rn22"
+
+[node name="LMMS" type="Node" parent="Files"]
+script = ExtResource("71_hjb14")
+
+[node name="Notes" type="Node" parent="Files/LMMS"]
+script = ExtResource("71_hjb14")
+
+[node name="2024 jotpad" type="Node" parent="Files/LMMS/Notes"]
+script = ExtResource("72_gbfor")
+text = "7/10 -> New computer. Unfortunately forgot to backup the notes.
+10/10 -> Just had a great musical idea. BRB. Imagine something really jazzy, but at the same time, smooth like a cappuchino and relaxing like jazz. I probably do not make any sense.
+11/10 -> Almost done.
+12/10 -> Done! Exported it onto my desktop. Probs my best work yet.
+1/11 -> Got kind of busy, haha.
+31/12 -> Almost New Year's!"
+audio_subtitles = SubResource("Resource_vnoil")
+video_subtitles = SubResource("Resource_2j08k")
+year = 0
+month = 1
+
+[node name="2025 jotpad" type="Node" parent="Files/LMMS/Notes"]
+script = ExtResource("72_gbfor")
+text = "1/1 -> Happy new year!
+2/1 -> I should really organise my notes
+8/1 -> I made a new folder that contains all of dad's old photos. I should remember its password.
+20/2 -> I FORGOT THE PASSWORD
+21/2 -> I'm trying so hard to remember the password. I think it had 4 digits?
+27/2 -> I'm just going to get help."
+audio_subtitles = SubResource("Resource_adcxq")
+video_subtitles = SubResource("Resource_b70ak")
+year = 0
+month = 1
+
+[node name="Samples" type="Node" parent="Files/LMMS"]
+script = ExtResource("71_hjb14")
+
+[node name="two drums and a cymbal" type="Node" parent="Files/LMMS/Samples"]
+script = ExtResource("72_gbfor")
+audio_subtitles = SubResource("Resource_mk7lo")
+video_subtitles = SubResource("Resource_s3u6c")
+custom_type = "Sample"
+year = 0
+month = 1
+
+[node name="banana split" type="Node" parent="Files/LMMS"]
+script = ExtResource("72_gbfor")
+audio_subtitles = SubResource("Resource_5pxs8")
+video_subtitles = SubResource("Resource_t1q1x")
+custom_type = "Composition"
+year = 0
+month = 1
+
+[node name="adam" type="Node" parent="Files/LMMS"]
+script = ExtResource("72_gbfor")
+audio_subtitles = SubResource("Resource_44f32")
+video_subtitles = SubResource("Resource_nmft7")
+custom_type = "Composition"
+year = 0
+month = 1
+
+[node name="cheftalk" type="Node" parent="Files/LMMS"]
+script = ExtResource("72_gbfor")
+audio_subtitles = SubResource("Resource_43777")
+video_subtitles = SubResource("Resource_24lag")
+custom_type = "Composition"
+year = 24
+month = 9
+day = 12
+hour = 21
+minute = 36
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_e48td")
+}
+
+[node name="SFX" type="Node" parent="."]
+unique_name_in_owner = true
+
+[node name="IntroSFX" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("77_01apy")
+
+[node name="OutroSFX" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("40_47fub")
+
+[node name="Smart Wallpaper" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_gi6f8")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Wallpaper" type="TextureRect" parent="Smart Wallpaper"]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("80_jo4dm")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="3D Wallpaper" type="SubViewportContainer" parent="Smart Wallpaper"]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="Smart Wallpaper/3D Wallpaper"]
+own_world_3d = true
+transparent_bg = true
+handle_input_locally = false
+size = Vector2i(1152, 648)
+render_target_update_mode = 4
+
+[node name="3D Background" parent="Smart Wallpaper/3D Wallpaper/SubViewport" instance=ExtResource("108_ct6ic")]
+
+[node name="Desktop Icons" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Desktop Icon" parent="Desktop Icons" instance=ExtResource("32_oa5lw")]
+layout_mode = 1
+icon_type = 2
+icon_name = &"audio_icon"
+text = "cheftalk"
+tooltip = "/Desktop/cheftalk.mp3"
+open_file_instead = true
+file_path = "Desktop/cheftalk"
+autoshift = true
+
+[node name="Desktop Icon2" parent="Desktop Icons" instance=ExtResource("32_oa5lw")]
+layout_mode = 1
+offset_left = -350.0
+offset_top = -162.0
+offset_right = -262.0
+offset_bottom = -77.0
+icon_type = 2
+icon_name = &"audio_icon"
+text = "AAAA"
+tooltip = "/Desktop/a"
+open_file_instead = true
+file_path = "Desktop/a"
+autoshift = true
+
+[node name="Panels" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Top Panel" type="Panel" parent="Panels"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+theme_type_variation = &"DesktopPanel"
+
+[node name="Container" type="HBoxContainer" parent="Panels/Top Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="App Starter" type="Button" parent="Panels/Top Panel/Container" node_paths=PackedStringArray("animation_player")]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+icon = ExtResource("82_hoela")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("83_fc1o6")
+icon_name = &"app_starter"
+animation_player = NodePath("Panel Animation")
+
+[node name="Panel" type="Panel" parent="Panels/Top Panel/Container/App Starter"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -7.5
+offset_top = 15.0
+offset_right = 382.5
+offset_bottom = 375.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 2
+theme_type_variation = &"DesktopFloatingPanel"
+
+[node name="Seperator" type="HBoxContainer" parent="Panels/Top Panel/Container/App Starter/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Users Sorter" type="VBoxContainer" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator" node_paths=PackedStringArray("sorter")]
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("85_1f6bk")
+users_row = ExtResource("86_57rdh")
+sorter = NodePath("ScrollContainer/Sorter")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Users Sorter"]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="Sorter" type="VBoxContainer" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Users Sorter/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 2
+
+[node name="Power Strip" type="HBoxContainer" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Users Sorter"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+alignment = 1
+
+[node name="power_off" type="Button" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Users Sorter/Power Strip"]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+mouse_filter = 1
+icon = ExtResource("43_j027r")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="restart" type="Button" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Users Sorter/Power Strip"]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+mouse_filter = 1
+icon = ExtResource("44_1bb3r")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="logout" type="Button" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Users Sorter/Power Strip"]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+mouse_filter = 1
+icon = ExtResource("45_1sfsh")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Apps Container" type="ScrollContainer" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.5
+horizontal_scroll_mode = 0
+
+[node name="Sorter" type="VBoxContainer" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Apps Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+
+[node name="File Manager Button" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Apps Container/Sorter" node_paths=PackedStringArray("desktop") instance=ExtResource("43_5xxbg")]
+layout_mode = 2
+main_text_string = "File Manager"
+sub_text_string = "Manage your files in style."
+speed = 0.1
+desktop = NodePath("../../../../../../../../..")
+
+[node name="Calculator" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Apps Container/Sorter" node_paths=PackedStringArray("desktop") instance=ExtResource("43_5xxbg")]
+layout_mode = 2
+current_type = 3
+main_text_string = "Calculator"
+sub_text_string = "Do Basic Arithmetic"
+speed = 0.1
+desktop = NodePath("../../../../../../../../..")
+
+[node name="Chat" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Apps Container/Sorter" node_paths=PackedStringArray("desktop") instance=ExtResource("43_5xxbg")]
+layout_mode = 2
+current_type = 1
+main_text_string = "Nicotine"
+sub_text_string = "Addictive Chat App."
+speed = 0.1
+desktop = NodePath("../../../../../../../../..")
+
+[node name="Tsundrebird" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Apps Container/Sorter" node_paths=PackedStringArray("desktop") instance=ExtResource("43_5xxbg")]
+layout_mode = 2
+current_type = 2
+main_text_string = "Tsundrebird"
+sub_text_string = "Will not kill you."
+speed = 0.1
+desktop = NodePath("../../../../../../../../..")
+
+[node name="Settings" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Apps Container/Sorter" node_paths=PackedStringArray("desktop") instance=ExtResource("43_5xxbg")]
+layout_mode = 2
+current_type = 5
+main_text_string = "Settings"
+sub_text_string = "Configure your system."
+speed = 0.1
+desktop = NodePath("../../../../../../../../..")
+
+[node name="System Info" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Apps Container/Sorter" node_paths=PackedStringArray("desktop") instance=ExtResource("43_5xxbg")]
+layout_mode = 2
+current_type = 4
+main_text_string = "System Information"
+sub_text_string = "View system information."
+speed = 0.1
+desktop = NodePath("../../../../../../../../..")
+
+[node name="Notepad" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Apps Container/Sorter" node_paths=PackedStringArray("desktop") instance=ExtResource("43_5xxbg")]
+layout_mode = 2
+current_type = 6
+main_text_string = "HIPTEXT"
+sub_text_string = "Take notes with style and grace."
+speed = 0.1
+desktop = NodePath("../../../../../../../../..")
+
+[node name="Remote Connect" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Apps Container/Sorter" node_paths=PackedStringArray("desktop") instance=ExtResource("43_5xxbg")]
+layout_mode = 2
+current_type = 7
+main_text_string = "Anytable Connect"
+sub_text_string = "Connecting your systems since 2004."
+speed = 0.1
+desktop = NodePath("../../../../../../../../..")
+
+[node name="Games" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Apps Container/Sorter" node_paths=PackedStringArray("desktop") instance=ExtResource("43_5xxbg")]
+layout_mode = 2
+current_type = 8
+main_text_string = "Games"
+sub_text_string = "Kill off some steam with fun games."
+speed = 0.1
+desktop = NodePath("../../../../../../../../..")
+
+[node name="Police Radio" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Apps Container/Sorter" node_paths=PackedStringArray("desktop") instance=ExtResource("43_5xxbg")]
+layout_mode = 2
+current_type = 9
+main_text_string = "Police Radio"
+sub_text_string = "Draw conclusions from your investigations."
+speed = 0.1
+desktop = NodePath("../../../../../../../../..")
+
+[node name="Panel Animation" type="AnimationPlayer" parent="Panels/Top Panel/Container/App Starter"]
+libraries = {
+&"": SubResource("AnimationLibrary_bxxo2")
+}
+
+[node name="VSeparator" type="VSeparator" parent="Panels/Top Panel/Container"]
+layout_mode = 2
+
+[node name="App Tray Sorter" type="VBoxContainer" parent="Panels/Top Panel/Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Scroll" type="ScrollContainer" parent="Panels/Top Panel/Container/App Tray Sorter"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_a04es")
+
+[node name="Apps Container" type="HBoxContainer" parent="Panels/Top Panel/Container/App Tray Sorter/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="VSeparator2" type="VSeparator" parent="Panels/Top Panel/Container"]
+layout_mode = 2
+
+[node name="Clock in Center" type="MarginContainer" parent="Panels/Top Panel/Container"]
+layout_mode = 2
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_bottom = 0
+
+[node name="Clock" type="RichTextLabel" parent="Panels/Top Panel/Container/Clock in Center" node_paths=PackedStringArray("panel", "animation_player", "month_container", "year_label", "month_label")]
+clip_contents = false
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/line_separation = 1
+bbcode_enabled = true
+text = "[center][font_size=14]17:08:24[p][center] Monday, June 4th 2024"
+fit_content = true
+scroll_active = false
+script = ExtResource("90_1l44u")
+panel = NodePath("Calendar")
+animation_player = NodePath("Calendar Animation")
+month_container = NodePath("Calendar/Sorter/Days")
+year_label = NodePath("Calendar/Sorter/Buttons Container/Year Label")
+month_label = NodePath("Calendar/Sorter/Buttons Container/Month Label")
+
+[node name="Calendar" type="Panel" parent="Panels/Top Panel/Container/Clock in Center/Clock"]
+visible = false
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -407.0
+offset_top = 17.0
+offset_right = -17.0
+offset_bottom = 317.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_type_variation = &"DesktopFloatingPanel"
+
+[node name="Sorter" type="VBoxContainer" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Day of the Week Container" type="HBoxContainer" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter"]
+layout_mode = 2
+
+[node name="Weekday" type="Label" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Week"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Monday" type="Label" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Mon"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Tuesday" type="Label" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Tue"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Wednesday" type="Label" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Wed"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Thu" type="Label" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Thu"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Fri" type="Label" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Fri"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sat" type="Label" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Sat"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sun" type="Label" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Sun"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Days" type="GridContainer" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter"]
+layout_mode = 2
+size_flags_vertical = 3
+columns = 8
+
+[node name="Buttons Container" type="HBoxContainer" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+
+[node name="Year Back" type="Button" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Buttons Container"]
+layout_mode = 2
+mouse_filter = 1
+theme_type_variation = &"NegativeButton"
+text = "<"
+flat = true
+
+[node name="Year Label" type="Label" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Buttons Container"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "2024"
+horizontal_alignment = 1
+
+[node name="Year Front" type="Button" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Buttons Container"]
+layout_mode = 2
+mouse_filter = 1
+theme_type_variation = &"NegativeButton"
+text = ">"
+flat = true
+
+[node name="Month Back" type="Button" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Buttons Container"]
+layout_mode = 2
+mouse_filter = 1
+theme_type_variation = &"NegativeButton"
+text = "<"
+flat = true
+
+[node name="Month Label" type="Label" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Buttons Container"]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Jan"
+horizontal_alignment = 1
+
+[node name="Month Front" type="Button" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Buttons Container"]
+layout_mode = 2
+mouse_filter = 1
+theme_type_variation = &"NegativeButton"
+text = ">"
+flat = true
+
+[node name="Today Button" type="Button" parent="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Buttons Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+text = "Today"
+
+[node name="Calendar Animation" type="AnimationPlayer" parent="Panels/Top Panel/Container/Clock in Center/Clock"]
+libraries = {
+&"": SubResource("AnimationLibrary_qique")
+}
+
+[node name="Notifications Container" type="Control" parent="."]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[connection signal="theme_changed" from="." to="." method="_on_theme_changed"]
+[connection signal="mouse_entered" from="Panels/Top Panel/Container/App Starter" to="Panels/Top Panel/Container/App Starter" method="_on_panel_mouse_entered"]
+[connection signal="mouse_exited" from="Panels/Top Panel/Container/App Starter" to="Panels/Top Panel/Container/App Starter" method="_on_panel_mouse_exited"]
+[connection signal="pressed" from="Panels/Top Panel/Container/App Starter" to="Panels/Top Panel/Container/App Starter" method="_on_pressed"]
+[connection signal="mouse_entered" from="Panels/Top Panel/Container/App Starter/Panel" to="Panels/Top Panel/Container/App Starter" method="_on_panel_mouse_entered"]
+[connection signal="mouse_exited" from="Panels/Top Panel/Container/App Starter/Panel" to="Panels/Top Panel/Container/App Starter" method="_on_panel_mouse_exited"]
+[connection signal="pressed" from="Panels/Top Panel/Container/App Starter/Panel/Seperator/Users Sorter/Power Strip/power_off" to="." method="power_strip_pressed" binds= [&"power_off"]]
+[connection signal="pressed" from="Panels/Top Panel/Container/App Starter/Panel/Seperator/Users Sorter/Power Strip/restart" to="." method="power_strip_pressed" binds= [&"restart"]]
+[connection signal="pressed" from="Panels/Top Panel/Container/App Starter/Panel/Seperator/Users Sorter/Power Strip/logout" to="." method="power_strip_pressed" binds= [&"logout"]]
+[connection signal="gui_input" from="Panels/Top Panel/Container/Clock in Center/Clock" to="Panels/Top Panel/Container/Clock in Center/Clock" method="_on_gui_input"]
+[connection signal="mouse_entered" from="Panels/Top Panel/Container/Clock in Center/Clock" to="Panels/Top Panel/Container/Clock in Center/Clock" method="_on_panel_mouse_entered"]
+[connection signal="mouse_exited" from="Panels/Top Panel/Container/Clock in Center/Clock" to="Panels/Top Panel/Container/Clock in Center/Clock" method="_on_panel_mouse_exited"]
+[connection signal="mouse_entered" from="Panels/Top Panel/Container/Clock in Center/Clock/Calendar" to="Panels/Top Panel/Container/Clock in Center/Clock" method="_on_panel_mouse_entered"]
+[connection signal="mouse_exited" from="Panels/Top Panel/Container/Clock in Center/Clock/Calendar" to="Panels/Top Panel/Container/Clock in Center/Clock" method="_on_panel_mouse_exited"]
+[connection signal="pressed" from="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Buttons Container/Year Back" to="Panels/Top Panel/Container/Clock in Center/Clock" method="_change_year" binds= [-1]]
+[connection signal="pressed" from="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Buttons Container/Year Front" to="Panels/Top Panel/Container/Clock in Center/Clock" method="_change_year" binds= [1]]
+[connection signal="pressed" from="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Buttons Container/Month Back" to="Panels/Top Panel/Container/Clock in Center/Clock" method="_change_month" binds= [-1]]
+[connection signal="pressed" from="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Buttons Container/Month Front" to="Panels/Top Panel/Container/Clock in Center/Clock" method="_change_month" binds= [1]]
+[connection signal="pressed" from="Panels/Top Panel/Container/Clock in Center/Clock/Calendar/Sorter/Buttons Container/Today Button" to="Panels/Top Panel/Container/Clock in Center/Clock" method="_on_today_button_pressed"]

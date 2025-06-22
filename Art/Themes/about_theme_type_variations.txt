@@ -1,0 +1,34 @@
+#CALCULATOR#
+- CalculatorACButton - Button - Used for the "All Clear" button on the calc.
+- CalculatorSwapButton - Button - Used for the "Swap" button on the calc.
+- CalculatorButton - Button - Used for all buttons in calculator.
+
+#DESKTOP#
+- DesktopFloatingPanel - Panel - Panel used for contextual panels like the calendar and app menu in the Desktop
+- DesktopPanel - Panel - Used for the static panels in Desktop.
+- DesktopIconButton - Button - Button used for desktop icons.
+- DesktopIconLabel - Label - Label used for desktop icons
+- FancyButton - Panel - Panel used for fancy hover buttons
+- FancyButtonHover - Panel - Same as before but only when button is hovered.
+- FancyButtonSubtext - Label - Label for subtext in a FancyButton
+- NegativeButton - Button - Button that uses the opposite colored font (Eg. Calendar buttons)
+- PasswordShowBox - CheckBox - Used for the button that shows/hides the typed in password.
+- PowerPromptTextMarginContainer - MarginContainer - Used for the text when powering off.
+
+#WINDOWS#
+- FakeButton - Panel - Little hover indicator for chats, emails and file manager rows. Use this when not hovering
+- FakeButtonHover - Panel - Same as before but use this when the item is being hovered over.
+- MonospaceLabel - Label - Label that uses a monospace font
+- MonospaceRTLabel - RichTextLabel - RTL that uses a monospace font
+- TooltipPanel - Panel - Used for tooltips
+- Titlebar - Panel - Base titlebar
+- TitlebarFocused - Panel - Used when the titlebar is focused
+- TitlebarText - Label - Label for Titlebar
+- TitlebarTextFocused - Label - used when titlebar is focused
+- ScrollbarMargins - MarginContainer - used for margins right underneath scrollbars
+
+#CALENDAR#
+- SaturdayLabel - Label - Used for saturdays in calendar
+- SundayLabel - Label - Used for sundays in calendar.
+- TodayDayLabel - Label - Used for the day that is today in the calendar.
+- WeekNumberLabel - Label - Used for the week number and dates not in current month.

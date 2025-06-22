@@ -1,0 +1,238 @@
+[gd_scene load_steps=3 format=3 uid="uid://vxq4edum8thi"]
+
+[ext_resource type="Script" uid="uid://dqmft7ogrp574" path="res://Scripts/Windows/calculator.gd" id="1_ivd0i"]
+[ext_resource type="PackedScene" uid="uid://utagi2eh5w54" path="res://Scenes/Other/titlebar.tscn" id="2_s0jhv"]
+
+[node name="Calculator" type="Panel" node_paths=PackedStringArray("input_bar", "operator_bar", "stored_value_bar")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -852.0
+offset_bottom = -348.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ivd0i")
+input_bar = NodePath("Sorter/Contents/Buttons/Inputs/Current Value")
+operator_bar = NodePath("Sorter/Contents/Buttons/Inputs/Operator")
+stored_value_bar = NodePath("Sorter/Contents/Buttons/Inputs/Stored Value")
+starting_size = Vector2(300, 300)
+window_icon_name = &"calculator"
+
+[node name="Sorter" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Titlebar" parent="Sorter" instance=ExtResource("2_s0jhv")]
+layout_mode = 2
+
+[node name="Contents" type="MarginContainer" parent="Sorter"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Buttons" type="VBoxContainer" parent="Sorter/Contents"]
+clip_contents = true
+layout_mode = 2
+
+[node name="Inputs" type="HBoxContainer" parent="Sorter/Contents/Buttons"]
+layout_mode = 2
+alignment = 1
+
+[node name="Stored Value" type="LineEdit" parent="Sorter/Contents/Buttons/Inputs"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+placeholder_text = "Answer"
+editable = false
+
+[node name="Operator" type="Label" parent="Sorter/Contents/Buttons/Inputs"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+horizontal_alignment = 1
+
+[node name="Current Value" type="LineEdit" parent="Sorter/Contents/Buttons/Inputs"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+placeholder_text = "Value"
+editable = false
+
+[node name="BackspaceButton" type="Button" parent="Sorter/Contents/Buttons/Inputs"]
+layout_mode = 2
+theme_type_variation = &"CalculatorButton"
+text = "BKSP"
+
+[node name="Buttons" type="VBoxContainer" parent="Sorter/Contents/Buttons"]
+clip_contents = true
+layout_mode = 2
+
+[node name="Function Row" type="HBoxContainer" parent="Sorter/Contents/Buttons/Buttons"]
+layout_mode = 2
+alignment = 1
+
+[node name="ButtonEval" type="Button" parent="Sorter/Contents/Buttons/Buttons/Function Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "EVAL"
+
+[node name="ButtonSwap" type="Button" parent="Sorter/Contents/Buttons/Buttons/Function Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"CalculatorSwapButton"
+text = "SWAP"
+
+[node name="ButtonAllClear" type="Button" parent="Sorter/Contents/Buttons/Buttons/Function Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"CalculatorACButton"
+text = "AC
+"
+
+[node name="First Row" type="HBoxContainer" parent="Sorter/Contents/Buttons/Buttons"]
+layout_mode = 2
+alignment = 1
+
+[node name="Button7" type="Button" parent="Sorter/Contents/Buttons/Buttons/First Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"CalculatorButton"
+text = "7
+"
+
+[node name="Button8" type="Button" parent="Sorter/Contents/Buttons/Buttons/First Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"CalculatorButton"
+text = "8
+"
+
+[node name="Button9" type="Button" parent="Sorter/Contents/Buttons/Buttons/First Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"CalculatorButton"
+text = "9
+"
+
+[node name="ButtonPlus" type="Button" parent="Sorter/Contents/Buttons/Buttons/First Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"CalculatorButton"
+text = "+"
+
+[node name="Second Row" type="HBoxContainer" parent="Sorter/Contents/Buttons/Buttons"]
+layout_mode = 2
+alignment = 1
+
+[node name="Button4" type="Button" parent="Sorter/Contents/Buttons/Buttons/Second Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"CalculatorButton"
+text = "4
+"
+
+[node name="Button5" type="Button" parent="Sorter/Contents/Buttons/Buttons/Second Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"CalculatorButton"
+text = "5"
+
+[node name="Button6" type="Button" parent="Sorter/Contents/Buttons/Buttons/Second Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"CalculatorButton"
+text = "6
+"
+
+[node name="ButtonMinus" type="Button" parent="Sorter/Contents/Buttons/Buttons/Second Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"CalculatorButton"
+text = "-
+"
+
+[node name="Third Row" type="HBoxContainer" parent="Sorter/Contents/Buttons/Buttons"]
+layout_mode = 2
+alignment = 1
+
+[node name="Button1" type="Button" parent="Sorter/Contents/Buttons/Buttons/Third Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"CalculatorButton"
+text = "1
+"
+
+[node name="Button2" type="Button" parent="Sorter/Contents/Buttons/Buttons/Third Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"CalculatorButton"
+text = "2
+"
+
+[node name="Button3" type="Button" parent="Sorter/Contents/Buttons/Buttons/Third Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"CalculatorButton"
+text = "3
+"
+
+[node name="ButtonMultiply" type="Button" parent="Sorter/Contents/Buttons/Buttons/Third Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"CalculatorButton"
+text = "x"
+
+[node name="Fourth Row" type="HBoxContainer" parent="Sorter/Contents/Buttons/Buttons"]
+layout_mode = 2
+alignment = 1
+
+[node name="Button0" type="Button" parent="Sorter/Contents/Buttons/Buttons/Fourth Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"CalculatorButton"
+text = "0
+"
+
+[node name="ButtonDot" type="Button" parent="Sorter/Contents/Buttons/Buttons/Fourth Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"CalculatorButton"
+text = "."
+
+[node name="ButtonDivide" type="Button" parent="Sorter/Contents/Buttons/Buttons/Fourth Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"CalculatorButton"
+text = "/"
+
+[node name="ButtonRemainder" type="Button" parent="Sorter/Contents/Buttons/Buttons/Fourth Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"CalculatorButton"
+text = "%"
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="Sorter/Contents/Buttons/Inputs/BackspaceButton" to="." method="_on_backspace_button_pressed"]
+[connection signal="pressed" from="Sorter/Contents/Buttons/Buttons/Function Row/ButtonEval" to="." method="_eval_pressed"]
+[connection signal="pressed" from="Sorter/Contents/Buttons/Buttons/Function Row/ButtonSwap" to="." method="_swap_pressed"]
+[connection signal="pressed" from="Sorter/Contents/Buttons/Buttons/Function Row/ButtonAllClear" to="." method="_all_clear_pressed"]
+[connection signal="pressed" from="Sorter/Contents/Buttons/Buttons/First Row/Button7" to="." method="_number_button_pressed" binds= [7]]
+[connection signal="pressed" from="Sorter/Contents/Buttons/Buttons/First Row/Button8" to="." method="_number_button_pressed" binds= [8]]
+[connection signal="pressed" from="Sorter/Contents/Buttons/Buttons/First Row/Button9" to="." method="_number_button_pressed" binds= [9]]
+[connection signal="pressed" from="Sorter/Contents/Buttons/Buttons/First Row/ButtonPlus" to="." method="_add_symbol" binds= [1]]
+[connection signal="pressed" from="Sorter/Contents/Buttons/Buttons/Second Row/Button4" to="." method="_number_button_pressed" binds= [4]]
+[connection signal="pressed" from="Sorter/Contents/Buttons/Buttons/Second Row/Button5" to="." method="_number_button_pressed" binds= [5]]
+[connection signal="pressed" from="Sorter/Contents/Buttons/Buttons/Second Row/Button6" to="." method="_number_button_pressed" binds= [6]]
+[connection signal="pressed" from="Sorter/Contents/Buttons/Buttons/Second Row/ButtonMinus" to="." method="_add_symbol" binds= [2]]
+[connection signal="pressed" from="Sorter/Contents/Buttons/Buttons/Third Row/Button1" to="." method="_number_button_pressed" binds= [1]]
+[connection signal="pressed" from="Sorter/Contents/Buttons/Buttons/Third Row/Button2" to="." method="_number_button_pressed" binds= [2]]
+[connection signal="pressed" from="Sorter/Contents/Buttons/Buttons/Third Row/Button3" to="." method="_number_button_pressed" binds= [3]]
+[connection signal="pressed" from="Sorter/Contents/Buttons/Buttons/Third Row/ButtonMultiply" to="." method="_add_symbol" binds= [4]]
+[connection signal="pressed" from="Sorter/Contents/Buttons/Buttons/Fourth Row/Button0" to="." method="_number_button_pressed" binds= [0]]
+[connection signal="pressed" from="Sorter/Contents/Buttons/Buttons/Fourth Row/ButtonDot" to="." method="_add_decimal"]
+[connection signal="pressed" from="Sorter/Contents/Buttons/Buttons/Fourth Row/ButtonDivide" to="." method="_add_symbol" binds= [3]]
+[connection signal="pressed" from="Sorter/Contents/Buttons/Buttons/Fourth Row/ButtonRemainder" to="." method="_add_symbol" binds= [5]]

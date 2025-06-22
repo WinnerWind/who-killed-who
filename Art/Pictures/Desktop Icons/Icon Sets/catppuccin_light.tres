@@ -1,0 +1,97 @@
+[gd_resource type="Resource" script_class="DesktopIcons" load_steps=46 format=3 uid="uid://cc4ybi1u6hoj3"]
+
+[ext_resource type="Texture2D" uid="uid://bhi5kvbw0cxc6" path="res://Art/Pictures/Desktop Icons/User1/Light/app_menu.svg" id="1_n42vf"]
+[ext_resource type="Texture2D" uid="uid://w7dwmw7467io" path="res://Art/Pictures/Desktop Icons/User1/Light/music_file.svg" id="2_402s6"]
+[ext_resource type="Texture2D" uid="uid://b72e7dwtyuouh" path="res://Art/Pictures/Desktop Icons/User1/Light/music.svg" id="3_wrmnc"]
+[ext_resource type="Texture2D" uid="uid://dbhydudq3yq7m" path="res://Art/Pictures/Desktop Icons/User1/Light/back.svg" id="4_x1y0v"]
+[ext_resource type="Texture2D" uid="uid://bys3kdc0xjbap" path="res://Art/Pictures/Desktop Icons/User1/Light/calculator.svg" id="5_5rhow"]
+[ext_resource type="Texture2D" uid="uid://cibsnklwav114" path="res://Art/Pictures/Desktop Icons/User1/Light/chats.svg" id="6_baobs"]
+[ext_resource type="Texture2D" uid="uid://lscwyn161vg" path="res://Art/Pictures/Desktop Icons/User1/Light/close_main.svg" id="7_w8no4"]
+[ext_resource type="Texture2D" uid="uid://cfs3b3s2too6c" path="res://Art/Pictures/Desktop Icons/User1/Light/delete.svg" id="8_ltja6"]
+[ext_resource type="Texture2D" uid="uid://0056q8801es8" path="res://Art/Pictures/Desktop Icons/User1/Light/email.svg" id="9_xygk0"]
+[ext_resource type="Texture2D" uid="uid://n6gkbff5ed5e" path="res://Art/Pictures/Desktop Icons/User1/Light/file.svg" id="10_a1pih"]
+[ext_resource type="Texture2D" uid="uid://pa1yep45h261" path="res://Art/Pictures/Desktop Icons/User1/Light/folder.svg" id="11_6w7ag"]
+[ext_resource type="Texture2D" uid="uid://dwupqmg770glk" path="res://Art/Pictures/Desktop Icons/User1/Light/image.svg" id="12_whgpe"]
+[ext_resource type="Texture2D" uid="uid://cpsysryq75wdl" path="res://Art/Pictures/Desktop Icons/User1/Light/folder_locked.svg" id="13_he24y"]
+[ext_resource type="Texture2D" uid="uid://bnye1k82ftnjy" path="res://Art/Pictures/Desktop Icons/User1/Light/logout.svg" id="14_qg7cf"]
+[ext_resource type="Texture2D" uid="uid://cwp7rh8s20pvj" path="res://Art/Pictures/Desktop Icons/User1/Light/loop_off.svg" id="15_ui43u"]
+[ext_resource type="Texture2D" uid="uid://c8sdu3crm8ydf" path="res://Art/Pictures/Desktop Icons/User1/Light/loop.svg" id="16_6feet"]
+[ext_resource type="Texture2D" uid="uid://b0630lrvydrsg" path="res://Art/Pictures/Desktop Icons/User1/Light/minimize_main.svg" id="17_8lh8y"]
+[ext_resource type="Texture2D" uid="uid://4esqsyhcpn82" path="res://Art/Pictures/Desktop Icons/User1/Light/texture_missing.svg" id="18_hixg6"]
+[ext_resource type="Texture2D" uid="uid://dnynnnnm4n2je" path="res://Art/Pictures/Desktop Icons/User1/Light/new_file.svg" id="19_3p1la"]
+[ext_resource type="Texture2D" uid="uid://c7ml6xnryayu0" path="res://Art/Pictures/Desktop Icons/User1/Light/investigator.svg" id="20_3qhra"]
+[ext_resource type="Texture2D" uid="uid://jvfcivbmwn72" path="res://Art/Pictures/Desktop Icons/User1/Light/bell.svg" id="21_ism57"]
+[ext_resource type="Texture2D" uid="uid://dmqmpaevjs4fq" path="res://Art/Pictures/Desktop Icons/User1/Light/padlock.svg" id="22_nkvs7"]
+[ext_resource type="Texture2D" uid="uid://dqci12a6ad4q2" path="res://Art/Pictures/Desktop Icons/User1/Light/paused.svg" id="23_rrp3r"]
+[ext_resource type="Texture2D" uid="uid://bwgvbb2qsed5l" path="res://Art/Pictures/Desktop Icons/User1/Light/play.svg" id="24_nkggr"]
+[ext_resource type="Texture2D" uid="uid://bc06ubhlyd76s" path="res://Art/Pictures/Desktop Icons/User1/Light/police_scanner.svg" id="25_xxp0q"]
+[ext_resource type="Texture2D" uid="uid://cbdocndgm2a2h" path="res://Art/Pictures/Desktop Icons/User1/Light/power_off.svg" id="26_apw0p"]
+[ext_resource type="Texture2D" uid="uid://cqb0erimxb5he" path="res://Art/Pictures/Desktop Icons/User1/Light/remote_login.svg" id="27_knnw3"]
+[ext_resource type="Texture2D" uid="uid://f7hlteen0sra" path="res://Art/Pictures/Desktop Icons/User1/Light/rename.svg" id="28_pd3pk"]
+[ext_resource type="Texture2D" uid="uid://brfyihmkoprtm" path="res://Art/Pictures/Desktop Icons/User1/Light/reboot.svg" id="29_huawf"]
+[ext_resource type="Texture2D" uid="uid://cv455b808f53s" path="res://Art/Pictures/Desktop Icons/User1/Light/save.svg" id="30_ega2u"]
+[ext_resource type="Script" uid="uid://5ydtly7lkawx" path="res://Scripts/Resources and Files/For Desktop/icons_for_desktop.gd" id="31_t0mju"]
+[ext_resource type="Texture2D" uid="uid://d1xxy55rdfx47" path="res://Art/Pictures/Desktop Icons/User1/Light/settings.svg" id="32_6f3hf"]
+[ext_resource type="Texture2D" uid="uid://df85mydmbousf" path="res://Art/Pictures/Desktop Icons/User1/Light/stop.svg" id="33_52xpg"]
+[ext_resource type="Texture2D" uid="uid://de2rfdv4jgjkh" path="res://Art/Pictures/OS Logos/ale_small.svg" id="34_y434p"]
+[ext_resource type="Texture2D" uid="uid://ddhg22t06qrfw" path="res://Art/Pictures/Desktop Icons/User1/Light/info.svg" id="35_ks75a"]
+[ext_resource type="Texture2D" uid="uid://cv11biuskbjsi" path="res://Art/Pictures/Desktop Icons/User1/Light/text_editor.svg" id="36_dbakj"]
+[ext_resource type="Texture2D" uid="uid://ojjet8g7rf6t" path="res://Art/Pictures/Desktop Icons/User1/Light/user_add.svg" id="37_2jxr0"]
+[ext_resource type="Texture2D" uid="uid://c3hvg5tddhoaf" path="res://Art/Pictures/Desktop Icons/User1/Light/user.svg" id="38_fn8xb"]
+[ext_resource type="Texture2D" uid="uid://cky5p1pwoe637" path="res://Art/Pictures/Desktop Icons/User1/Light/video_player.svg" id="39_ew8us"]
+[ext_resource type="Texture2D" uid="uid://c3h7aba5ilu1g" path="res://Art/Pictures/Desktop Icons/User1/Light/voldown.svg" id="40_8lh0e"]
+[ext_resource type="Texture2D" uid="uid://b0wg2526c6h4u" path="res://Art/Pictures/Desktop Icons/User1/Light/volup.svg" id="41_0p8vb"]
+[ext_resource type="Texture2D" uid="uid://br3t21kr0uhfe" path="res://Art/Placeholders/SC35_Wallpaper_1.jpg" id="42_hc8lo"]
+[ext_resource type="Texture2D" uid="uid://ho8g811c18yk" path="res://Art/Pictures/Desktop Icons/User1/Light/warning.svg" id="43_3uuos"]
+[ext_resource type="Texture2D" uid="uid://dfsi7mb1ddh7w" path="res://Art/Pictures/Desktop Icons/User1/Light/zoomin.svg" id="44_cdntt"]
+[ext_resource type="Texture2D" uid="uid://cc5pn723xj32h" path="res://Art/Pictures/Desktop Icons/User1/Light/zoomout.svg" id="45_42pa5"]
+
+[resource]
+script = ExtResource("31_t0mju")
+missing_texture = ExtResource("18_hixg6")
+close_button = ExtResource("7_w8no4")
+minimize_button = ExtResource("17_8lh8y")
+volume_down = ExtResource("40_8lh0e")
+volume_up = ExtResource("41_0p8vb")
+zoom_in = ExtResource("44_cdntt")
+zoom_out = ExtResource("45_42pa5")
+back = ExtResource("4_x1y0v")
+pause_button = ExtResource("23_rrp3r")
+play_button = ExtResource("24_nkggr")
+loop_on = ExtResource("16_6feet")
+loop_off = ExtResource("15_ui43u")
+save_button = ExtResource("30_ega2u")
+rename_button = ExtResource("28_pd3pk")
+delete_button = ExtResource("8_ltja6")
+new_file_button = ExtResource("19_3p1la")
+power_off = ExtResource("26_apw0p")
+restart = ExtResource("29_huawf")
+logout = ExtResource("14_qg7cf")
+users = ExtResource("38_fn8xb")
+app_starter = ExtResource("1_n42vf")
+padlock = ExtResource("22_nkvs7")
+folder_icon = ExtResource("11_6w7ag")
+locked_folder_icon = ExtResource("13_he24y")
+file_icon = ExtResource("10_a1pih")
+audio_icon = ExtResource("2_402s6")
+video_icon = ExtResource("39_ew8us")
+image_icon = ExtResource("12_whgpe")
+text_editor = ExtResource("36_dbakj")
+audio_player = ExtResource("3_wrmnc")
+video_player = ExtResource("39_ew8us")
+image_viewer = ExtResource("12_whgpe")
+file_manager = ExtResource("11_6w7ag")
+emails = ExtResource("9_xygk0")
+chat = ExtResource("6_baobs")
+calculator = ExtResource("5_5rhow")
+police_radio = ExtResource("25_xxp0q")
+remote_connection = ExtResource("27_knnw3")
+system_information = ExtResource("35_ks75a")
+settings = ExtResource("32_6f3hf")
+notepad = ExtResource("20_3qhra")
+wallpaper = ExtResource("42_hc8lo")
+notification_icon = ExtResource("21_ism57")
+stop = ExtResource("33_52xpg")
+warning = ExtResource("43_3uuos")
+user_add = ExtResource("37_2jxr0")
+system_icon = ExtResource("34_y434p")

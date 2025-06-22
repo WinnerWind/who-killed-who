@@ -1,0 +1,68 @@
+[gd_scene load_steps=5 format=3 uid="uid://bxer3ixxydvvu"]
+
+[ext_resource type="Script" uid="uid://bmi84smkqhc7u" path="res://Scripts/Windows/docs_viewer.gd" id="1_66hha"]
+[ext_resource type="PackedScene" uid="uid://utagi2eh5w54" path="res://Scenes/Other/titlebar.tscn" id="2_gtog8"]
+[ext_resource type="Texture2D" uid="uid://btbpwrtdjafue" path="res://Art/Placeholders/Documents/docs.png" id="2_v2a7c"]
+[ext_resource type="Texture2D" uid="uid://btfmt5q40rxee" path="res://Art/Placeholders/Documents/docs2.png" id="3_xfdjr"]
+
+[node name="FreeOffice" type="Panel" node_paths=PackedStringArray("pages_container", "page_number_node", "doc_name_node")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -752.0
+offset_bottom = -348.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_66hha")
+images_array = Array[CompressedTexture2D]([ExtResource("2_v2a7c"), ExtResource("3_xfdjr")])
+pages_container = NodePath("Sorter/MarginContainer/Contents/Document/Pages")
+page_number_node = NodePath("Sorter/MarginContainer/Contents/Top Row/Page Number")
+doc_name_node = NodePath("Sorter/MarginContainer/Contents/Top Row/Doc Name")
+starting_size = Vector2(400, 300)
+window_icon_name = &"text_editor"
+
+[node name="Sorter" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Titlebar" parent="Sorter" instance=ExtResource("2_gtog8")]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Sorter"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Contents" type="VBoxContainer" parent="Sorter/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Top Row" type="HBoxContainer" parent="Sorter/MarginContainer/Contents"]
+layout_mode = 2
+
+[node name="Doc Name" type="Label" parent="Sorter/MarginContainer/Contents/Top Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Document.ods"
+
+[node name="Page Number" type="Label" parent="Sorter/MarginContainer/Contents/Top Row"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "12/3"
+horizontal_alignment = 2
+
+[node name="Document" type="ScrollContainer" parent="Sorter/MarginContainer/Contents"]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="Pages" type="VBoxContainer" parent="Sorter/MarginContainer/Contents/Document"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

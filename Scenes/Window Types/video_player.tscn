@@ -1,0 +1,87 @@
+[gd_scene load_steps=5 format=3 uid="uid://cxcs7lmcqhe63"]
+
+[ext_resource type="Script" uid="uid://cvt8tv4pkucma" path="res://Scripts/Windows/video_player.gd" id="1_1bojp"]
+[ext_resource type="PackedScene" uid="uid://utagi2eh5w54" path="res://Scenes/Other/titlebar.tscn" id="2_oy8mg"]
+[ext_resource type="Resource" uid="uid://cdxq8ojxlityk" path="res://Data and Resources/Replacements/subtitles_replacement.tres" id="3_cl2tv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bhvjf"]
+bg_color = Color(0, 0, 0, 1)
+expand_margin_left = 15.0
+expand_margin_top = 15.0
+expand_margin_right = 15.0
+expand_margin_bottom = 15.0
+
+[node name="Video Plan Player" type="Panel" node_paths=PackedStringArray("slider", "player", "subtitle_text_node")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -552.0
+offset_bottom = -198.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1bojp")
+slider = NodePath("Sorter/Seekbar")
+player = NodePath("Sorter/MarginContainer/Player")
+subtitles_shown = true
+subtitle_text_node = NodePath("Sorter/MarginContainer/Subtitles Margin/SubtitlesAligner/Subtitle Label")
+subtitle_replacements = ExtResource("3_cl2tv")
+starting_size = Vector2(575, 400)
+window_icon_name = &"video_player"
+
+[node name="Sorter" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Titlebar" parent="Sorter" instance=ExtResource("2_oy8mg")]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Sorter"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Player" type="VideoStreamPlayer" parent="Sorter/MarginContainer"]
+custom_minimum_size = Vector2(400, 250)
+layout_mode = 2
+size_flags_vertical = 3
+autoplay = true
+expand = true
+
+[node name="Subtitles Margin" type="MarginContainer" parent="Sorter/MarginContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 200
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 20
+
+[node name="SubtitlesAligner" type="VBoxContainer" parent="Sorter/MarginContainer/Subtitles Margin"]
+layout_mode = 2
+mouse_filter = 2
+alignment = 2
+
+[node name="Subtitle Label" type="RichTextLabel" parent="Sorter/MarginContainer/Subtitles Margin/SubtitlesAligner"]
+custom_minimum_size = Vector2(0, 26)
+layout_mode = 2
+mouse_filter = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_bhvjf")
+bbcode_enabled = true
+text = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+scroll_active = false
+shortcut_keys_enabled = false
+horizontal_alignment = 1
+vertical_alignment = 1
+threaded = true
+
+[node name="Seekbar" type="HSlider" parent="Sorter"]
+layout_mode = 2
+value = 50.0
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="drag_ended" from="Sorter/Seekbar" to="." method="_on_seekbar_drag_ended"]
+[connection signal="drag_started" from="Sorter/Seekbar" to="." method="_on_seekbar_drag_started"]
+[connection signal="value_changed" from="Sorter/Seekbar" to="." method="_on_seekbar_value_changed"]

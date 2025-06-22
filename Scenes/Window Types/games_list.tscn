@@ -1,0 +1,98 @@
+[gd_scene load_steps=4 format=3 uid="uid://cf0woduy5x8pf"]
+
+[ext_resource type="Script" uid="uid://c4fwau262gb6x" path="res://Scripts/Windows/window.gd" id="1_c32s0"]
+[ext_resource type="PackedScene" uid="uid://utagi2eh5w54" path="res://Scenes/Other/titlebar.tscn" id="2_36qi5"]
+[ext_resource type="Script" uid="uid://c14c6xupn0fyn" path="res://Scripts/Windows/Subwindow/game_row.gd" id="3_gcms6"]
+
+[node name="WinnerWind\'s Games" type="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -752.0
+offset_bottom = -348.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_c32s0")
+starting_size = Vector2(400, 300)
+
+[node name="Sorter" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Titlebar" parent="Sorter" instance=ExtResource("2_36qi5")]
+layout_mode = 2
+
+[node name="Contents" type="ScrollContainer" parent="Sorter"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Sorter" type="VBoxContainer" parent="Sorter/Contents"]
+clip_contents = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Dream Maze" type="HBoxContainer" parent="Sorter/Contents/Sorter"]
+layout_mode = 2
+script = ExtResource("3_gcms6")
+game_id = 101
+
+[node name="Highlight" type="Panel" parent="Sorter/Contents/Sorter/Dream Maze"]
+custom_minimum_size = Vector2(5, 0)
+layout_mode = 2
+
+[node name="Icon" type="TextureRect" parent="Sorter/Contents/Sorter/Dream Maze"]
+custom_minimum_size = Vector2(87, 0)
+layout_mode = 2
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Sorter/Contents/Sorter/Dream Maze"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Title" type="Label" parent="Sorter/Contents/Sorter/Dream Maze/VBoxContainer"]
+layout_mode = 2
+text = "Dream Maze"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Sorter/Contents/Sorter/Dream Maze/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[color=gray]A non-linear and infinitely generating dungeon course, set in a dream world."
+
+[node name="Dream Maze Auto" type="HBoxContainer" parent="Sorter/Contents/Sorter"]
+layout_mode = 2
+script = ExtResource("3_gcms6")
+game_id = 102
+
+[node name="Highlight" type="Panel" parent="Sorter/Contents/Sorter/Dream Maze Auto"]
+custom_minimum_size = Vector2(5, 0)
+layout_mode = 2
+
+[node name="Icon" type="TextureRect" parent="Sorter/Contents/Sorter/Dream Maze Auto"]
+custom_minimum_size = Vector2(87, 0)
+layout_mode = 2
+expand_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Sorter/Contents/Sorter/Dream Maze Auto"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Title" type="Label" parent="Sorter/Contents/Sorter/Dream Maze Auto/VBoxContainer"]
+layout_mode = 2
+text = "Dream Maze (Autoplay)"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Sorter/Contents/Sorter/Dream Maze Auto/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[color=gray]Dream Maze, but with autoplay enabled."
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

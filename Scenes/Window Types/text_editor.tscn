@@ -1,0 +1,68 @@
+[gd_scene load_steps=4 format=3 uid="uid://heb52kbru40a"]
+
+[ext_resource type="Script" uid="uid://cf7nw0jsgmdf2" path="res://Scripts/Windows/text_editor.gd" id="1_te6kw"]
+[ext_resource type="PackedScene" uid="uid://utagi2eh5w54" path="res://Scenes/Other/titlebar.tscn" id="2_kekt8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dy4ta"]
+
+[node name="Gnome Scribe" type="Panel" node_paths=PackedStringArray("main_text", "directory_label")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -752.0
+offset_bottom = -348.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_te6kw")
+main_text = NodePath("Sorter/MarginContainer/Contents/Margin/Main Text")
+directory_label = NodePath("Sorter/MarginContainer/Contents/Location")
+starting_size = Vector2(400, 300)
+window_icon_name = &"text_editor"
+
+[node name="Sorter" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Titlebar" parent="Sorter" instance=ExtResource("2_kekt8")]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Sorter"]
+layout_mode = 2
+
+[node name="Contents" type="VBoxContainer" parent="Sorter/MarginContainer"]
+clip_contents = true
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Location" type="RichTextLabel" parent="Sorter/MarginContainer/Contents"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+focus_mode = 2
+theme_type_variation = &"MonospaceLabel"
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dy4ta")
+text = ">> /home/soham/README"
+scroll_following = true
+context_menu_enabled = true
+selection_enabled = true
+
+[node name="Margin" type="MarginContainer" parent="Sorter/MarginContainer/Contents"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="Main Text" type="RichTextLabel" parent="Sorter/MarginContainer/Contents/Margin"]
+custom_minimum_size = Vector2(300, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 2
+focus_mode = 2
+theme_type_variation = &"MonospaceRTLabel"
+context_menu_enabled = true
+selection_enabled = true
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

@@ -1,0 +1,68 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhidfn25ynx85"]
+
+[ext_resource type="Script" uid="uid://drdgsn0ir2dys" path="res://Scripts/Windows/Subwindow/file_manager_row.gd" id="1_ad7ui"]
+[ext_resource type="Texture2D" uid="uid://cfc5dvttjjqet" path="res://Art/Placeholders/soham.png" id="2_2msgk"]
+
+[node name="Row" type="HBoxContainer"]
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+mouse_filter = 0
+script = ExtResource("1_ad7ui")
+
+[node name="Highlight" type="Panel" parent="."]
+custom_minimum_size = Vector2(5, 0)
+layout_mode = 2
+theme_type_variation = &"FakeButton"
+
+[node name="Index" type="Label" parent="."]
+custom_minimum_size = Vector2(30, 0)
+layout_mode = 2
+text = "1."
+
+[node name="Icon" type="TextureRect" parent="."]
+layout_mode = 2
+mouse_filter = 2
+texture = ExtResource("2_2msgk")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="Spacer2" type="Control" parent="."]
+custom_minimum_size = Vector2(5, 0)
+layout_mode = 2
+
+[node name="Name" type="Label" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "smoke"
+
+[node name="Center Container" type="VBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="File Modification Date" type="RichTextLabel" parent="Center Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+bbcode_enabled = true
+text = "[right]Hello World. Date goes here[/right]"
+fit_content = true
+
+[node name="Spacer" type="Control" parent="."]
+custom_minimum_size = Vector2(5, 0)
+layout_mode = 2
+
+[node name="Type" type="Label" parent="."]
+custom_minimum_size = Vector2(70, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 1
+text = "Music"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

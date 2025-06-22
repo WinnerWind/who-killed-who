@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="ReplacementList" load_steps=2 format=3 uid="uid://w24bhqagql3x"]
+
+[ext_resource type="Script" uid="uid://be5e2vas1np7c" path="res://Scripts/Resources and Files/Other/replacement_list.gd" id="1_3duu0"]
+
+[resource]
+script = ExtResource("1_3duu0")
+replacements = Dictionary[String, String]({
+"$dc": "[[color=lime]Computer Repair[/color]]:",
+"$dm": "[[color=olive]Mom[/color]]:",
+"$dr": "[[color=tomato]Robert[/color]]:",
+"$ds": "[[color=hot_pink]Strava[/color]]:",
+"$duj": "[[color=steel_blue]Johan[/color]]:",
+"$dul": "[[color=dark_orange]Liberica[/color]]:",
+"$dur": "[[color=teal]Rakesh[/color]]:",
+"$jrm": "[[color=steel_blue]Jeremy[/color]]:",
+"$m": "[Me]:",
+"$ran": "[[color=teal]Ranmara[/color]:",
+"$rom": "[[color=teal]Romila[/color]]:",
+"$sth": "[[color=tomato]Satsu[/color]]:",
+"$sys": "[SYSTEM]:"
+})
+key_to_be_renamed = "$sh"
+rename_key_to = "$sth"
+key_to_be_moved = ""
+index_to_be_moved_to = 0

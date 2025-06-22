@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="UserMetadata" load_steps=8 format=3 uid="uid://dwqseev5bc8ta"]
+
+[ext_resource type="Script" uid="uid://cxe5keybq33wo" path="res://Scripts/Resources and Files/Bootup/bootup_line.gd" id="1_exyn0"]
+[ext_resource type="Script" uid="uid://ds65yghua76jy" path="res://Scripts/Resources and Files/Other/user_metadata.gd" id="1_ylk0x"]
+[ext_resource type="Texture2D" uid="uid://bdop77kp3s4tj" path="res://Art/Pictures/OS Logos/anytable_large.svg" id="2_06or2"]
+[ext_resource type="Texture2D" uid="uid://b2hefal5b3m6y" path="res://Art/Pictures/OS Logos/anytable_looper.svg" id="3_e50iv"]
+[ext_resource type="Script" uid="uid://cr6b45oclcbh4" path="res://Scripts/Resources and Files/Bootup/bootup_sequence.gd" id="4_2du2i"]
+
+[sub_resource type="Resource" id="Resource_tn7vc"]
+script = ExtResource("4_2du2i")
+array_of_bootup_text = Array[ExtResource("1_exyn0")]([])
+plymouth_image = ExtResource("2_06or2")
+plymouth_looper = ExtResource("3_e50iv")
+is_intro = true
+
+[sub_resource type="Resource" id="Resource_1an45"]
+script = ExtResource("4_2du2i")
+array_of_bootup_text = Array[ExtResource("1_exyn0")]([])
+is_intro = false
+
+[resource]
+script = ExtResource("1_ylk0x")
+is_part_of_main_game = true
+name = "Robert"
+subtext = "Looking cool Joker!"
+password = ""
+scene_path = "res://Scenes/Desktops/demo_desktop_robert.tscn"
+boot_sequence = SubResource("Resource_tn7vc")
+shutdown_sequence = SubResource("Resource_1an45")
+ip_address = "0.0.0.0"
+username = ""

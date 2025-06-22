@@ -1,0 +1,187 @@
+[gd_scene load_steps=14 format=3 uid="uid://c4jynkn0t0o4u"]
+
+[ext_resource type="Script" uid="uid://cgnaoh104a3jc" path="res://Scripts/Windows/music_player.gd" id="1_ay3lr"]
+[ext_resource type="AudioStream" uid="uid://bsomeolopdx06" path="res://Art/Placeholders/factorio.mp3" id="2_2cd82"]
+[ext_resource type="PackedScene" uid="uid://utagi2eh5w54" path="res://Scenes/Other/titlebar.tscn" id="2_kt4f0"]
+[ext_resource type="Resource" uid="uid://cdxq8ojxlityk" path="res://Data and Resources/Replacements/subtitles_replacement.tres" id="3_miy1k"]
+[ext_resource type="Texture2D" uid="uid://ccnia8nte46io" path="res://Art/Pictures/Desktop Icons/User1/Dark/music_file.svg" id="4_vkxex"]
+
+[sub_resource type="InputEventAction" id="InputEventAction_kl5ro"]
+action = &"Playback Control"
+
+[sub_resource type="Shortcut" id="Shortcut_b2ler"]
+events = [SubResource("InputEventAction_kl5ro")]
+
+[sub_resource type="InputEventAction" id="InputEventAction_iqhys"]
+action = &"Loop"
+
+[sub_resource type="Shortcut" id="Shortcut_fg3bb"]
+events = [SubResource("InputEventAction_iqhys")]
+
+[sub_resource type="InputEventAction" id="InputEventAction_wxnmw"]
+action = &"Volume Down"
+
+[sub_resource type="Shortcut" id="Shortcut_cxmcw"]
+events = [SubResource("InputEventAction_wxnmw")]
+
+[sub_resource type="InputEventAction" id="InputEventAction_btec8"]
+action = &"Volume Up"
+
+[sub_resource type="Shortcut" id="Shortcut_nl6ls"]
+events = [SubResource("InputEventAction_btec8")]
+
+[node name="Music Player" type="Panel" node_paths=PackedStringArray("player", "slider", "loop_button", "volume_up_button", "volume_down_button", "pause_button", "title_node", "subtitle_node", "modification_date_node", "icon_node", "subtitle_text_node")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -802.0
+offset_bottom = -448.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ay3lr")
+audio = ExtResource("2_2cd82")
+subtitles_enabled_size = Vector2i(350, 275)
+player = NodePath("Player")
+slider = NodePath("Sorter/Contents/Playback/Slider")
+loop_button = NodePath("Sorter/Contents/Playback/Loop")
+volume_up_button = NodePath("Sorter/Contents/Playback/Vol UP")
+volume_down_button = NodePath("Sorter/Contents/Playback/Vol Down")
+pause_button = NodePath("Sorter/Contents/Playback/Pause")
+title_node = NodePath("Sorter/Contents/Information/Text/Title")
+subtitle_node = NodePath("Sorter/Contents/Information/Text/Subtitle")
+modification_date_node = NodePath("Sorter/Contents/Information/Text/Modification Date")
+icon_node = NodePath("Sorter/Contents/Information/Icon")
+subtitle_text_node = NodePath("Sorter/Subtitles Margin/Subtitles")
+subtitle_replacements = ExtResource("3_miy1k")
+starting_size = Vector2(350, 200)
+window_icon_name = &"audio_player"
+
+[node name="Sorter" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Titlebar" parent="Sorter" instance=ExtResource("2_kt4f0")]
+layout_mode = 2
+
+[node name="Contents" type="VBoxContainer" parent="Sorter"]
+clip_contents = true
+layout_mode = 2
+
+[node name="Information" type="HBoxContainer" parent="Sorter/Contents"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Icon" type="TextureRect" parent="Sorter/Contents/Information"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("4_vkxex")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="Text" type="VBoxContainer" parent="Sorter/Contents/Information"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="Title" type="Label" parent="Sorter/Contents/Information/Text"]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "TITLE TITLE TITLE TITLE TITLE"
+horizontal_alignment = 2
+autowrap_mode = 2
+
+[node name="Subtitle" type="Label" parent="Sorter/Contents/Information/Text"]
+custom_minimum_size = Vector2(150, 25)
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+text = "SUBTITLE"
+horizontal_alignment = 2
+autowrap_mode = 2
+
+[node name="Modification Date" type="Label" parent="Sorter/Contents/Information/Text"]
+custom_minimum_size = Vector2(150, 25)
+layout_mode = 2
+size_flags_vertical = 6
+theme_override_font_sizes/font_size = 14
+text = "18/12/24 6:05PM"
+horizontal_alignment = 2
+autowrap_mode = 2
+
+[node name="Playback" type="HBoxContainer" parent="Sorter/Contents"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+
+[node name="Pause" type="Button" parent="Sorter/Contents/Playback"]
+custom_minimum_size = Vector2(32, 24)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 19
+shortcut = SubResource("Shortcut_b2ler")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Loop" type="Button" parent="Sorter/Contents/Playback"]
+custom_minimum_size = Vector2(32, 24)
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 19
+shortcut = SubResource("Shortcut_fg3bb")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Slider" type="HSlider" parent="Sorter/Contents/Playback"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+
+[node name="Vol Down" type="Button" parent="Sorter/Contents/Playback"]
+custom_minimum_size = Vector2(32, 24)
+layout_mode = 2
+shortcut = SubResource("Shortcut_cxmcw")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Vol UP" type="Button" parent="Sorter/Contents/Playback"]
+custom_minimum_size = Vector2(32, 24)
+layout_mode = 2
+shortcut = SubResource("Shortcut_nl6ls")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="Subtitles Margin" type="MarginContainer" parent="Sorter"]
+layout_mode = 2
+
+[node name="Subtitles" type="RichTextLabel" parent="Sorter/Subtitles Margin"]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[center]CAPTIONING DISABLED[/center]"
+vertical_alignment = 1
+threaded = true
+
+[node name="Player" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+autoplay = true
+playback_type = 1
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="Sorter/Contents/Playback/Pause" to="." method="_state_change"]
+[connection signal="pressed" from="Sorter/Contents/Playback/Loop" to="." method="_loop_state_change"]
+[connection signal="drag_ended" from="Sorter/Contents/Playback/Slider" to="." method="_on_seekbar_drag_ended"]
+[connection signal="drag_started" from="Sorter/Contents/Playback/Slider" to="." method="_on_seekbar_drag_started"]
+[connection signal="value_changed" from="Sorter/Contents/Playback/Slider" to="." method="_on_seekbar_value_changed"]
+[connection signal="pressed" from="Sorter/Contents/Playback/Vol Down" to="." method="decrease_volume"]
+[connection signal="pressed" from="Sorter/Contents/Playback/Vol UP" to="." method="increase_volume"]
+[connection signal="finished" from="Player" to="." method="_on_audio_finished"]

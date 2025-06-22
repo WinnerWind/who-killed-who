@@ -1,0 +1,55 @@
+[gd_scene load_steps=6 format=3 uid="uid://c6gqjqrkidn0b"]
+
+[ext_resource type="Script" uid="uid://byygi45lci0k5" path="res://Scripts/Windows/file_manager.gd" id="1_x47so"]
+[ext_resource type="PackedScene" uid="uid://bhidfn25ynx85" path="res://Scenes/Other/file_manager_row.tscn" id="2_recye"]
+[ext_resource type="PackedScene" uid="uid://boaoc6d1d413x" path="res://Scenes/Other/current_directory_label.tscn" id="3_v2xir"]
+[ext_resource type="PackedScene" uid="uid://utagi2eh5w54" path="res://Scenes/Other/titlebar.tscn" id="5_mjaq4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uo2ho"]
+
+[node name="File Manager" type="Panel" node_paths=PackedStringArray("sorter")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -602.0
+offset_bottom = -298.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_x47so")
+sorter = NodePath("Sorter/Contents/MarginContainer/Sorter")
+file_manager_row = ExtResource("2_recye")
+directory_label = ExtResource("3_v2xir")
+maximum_path_length = 55
+starting_size = Vector2(650, 450)
+window_icon_name = &"file_manager"
+
+[node name="Sorter" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Titlebar" parent="Sorter" instance=ExtResource("5_mjaq4")]
+layout_mode = 2
+
+[node name="Contents" type="ScrollContainer" parent="Sorter"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxEmpty_uo2ho")
+horizontal_scroll_mode = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="Sorter/Contents"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Sorter" type="VBoxContainer" parent="Sorter/Contents/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="mouse_entered" from="Sorter" to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Sorter" to="." method="_on_mouse_exited"]

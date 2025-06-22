@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=3 uid="uid://dlmfk24r0gbcc"]
+
+[ext_resource type="Script" uid="uid://ba6p8d8bcj57w" path="res://Scripts/Desktop/fancy_button.gd" id="1_583bi"]
+
+[node name="FancyButton" type="Panel" node_paths=PackedStringArray("main_text", "sub_text")]
+custom_minimum_size = Vector2(0, 30)
+mouse_filter = 1
+theme_type_variation = &"FancyButton"
+script = ExtResource("1_583bi")
+main_text_string = "Balls"
+sub_text_string = "OWO"
+main_text = NodePath("MarginContainer/Sorter/Main Text")
+sub_text = NodePath("MarginContainer/Sorter/Subtext")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 41.0
+grow_horizontal = 2
+
+[node name="Sorter" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Main Text" type="Label" parent="MarginContainer/Sorter"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "UNDERGROUND"
+text_overrun_behavior = 4
+
+[node name="Subtext" type="Label" parent="MarginContainer/Sorter"]
+layout_mode = 2
+theme_type_variation = &"FancyButtonSubtext"
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+text = "how are your balls"
+text_overrun_behavior = 4

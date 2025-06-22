@@ -1,0 +1,131 @@
+[gd_scene load_steps=7 format=3 uid="uid://bj5x25ns3hxmd"]
+
+[ext_resource type="Script" uid="uid://d1wnbajur41hk" path="res://Scripts/Desktop/power_prompt.gd" id="1_mr5tw"]
+[ext_resource type="Texture2D" uid="uid://duceho8c5llak" path="res://Art/Pictures/Desktop Icons/User1/Dark/power_off.svg" id="1_xpfy6"]
+
+[sub_resource type="InputEventAction" id="InputEventAction_h3jgi"]
+action = &"Yes"
+
+[sub_resource type="Shortcut" id="Shortcut_nsudv"]
+events = [SubResource("InputEventAction_h3jgi")]
+
+[sub_resource type="InputEventAction" id="InputEventAction_yu33g"]
+action = &"No"
+
+[sub_resource type="Shortcut" id="Shortcut_mpgbp"]
+events = [SubResource("InputEventAction_yu33g")]
+
+[node name="Power Prompt" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="." node_paths=PackedStringArray("main_text", "title", "icon", "alternate_icon", "yes_button", "no_button")]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.0
+offset_top = -100.0
+offset_right = 200.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mr5tw")
+use_alternate_icon = true
+image_to_use = ExtResource("1_xpfy6")
+main_text = NodePath("MarginContainer/VBoxContainer/Main Content/Main Text Margin/Main Text")
+title = NodePath("MarginContainer/VBoxContainer/Title")
+icon = NodePath("MarginContainer/VBoxContainer/Main Content/Icon Margin/TextureRect")
+alternate_icon = NodePath("Alternate Icon")
+yes_button = NodePath("MarginContainer/VBoxContainer/Buttons Margin/Buttons Container/Yes")
+no_button = NodePath("MarginContainer/VBoxContainer/Buttons Margin/Buttons Container/No")
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Are you sure?"
+horizontal_alignment = 1
+
+[node name="Spacer" type="Control" parent="Panel/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 10)
+layout_mode = 2
+
+[node name="Main Content" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Icon Margin" type="MarginContainer" parent="Panel/MarginContainer/VBoxContainer/Main Content"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="TextureRect" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/Main Content/Icon Margin"]
+layout_mode = 2
+texture = ExtResource("1_xpfy6")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="Main Text Margin" type="MarginContainer" parent="Panel/MarginContainer/VBoxContainer/Main Content"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"PowerPromptTextMarginContainer"
+
+[node name="Main Text" type="Label" parent="Panel/MarginContainer/VBoxContainer/Main Content/Main Text Margin"]
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+text = "Are you sure that you wish to power off? Your work will not be saved."
+autowrap_mode = 3
+
+[node name="Buttons Margin" type="MarginContainer" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_type_variation = &"SmallMarginContainer"
+
+[node name="Buttons Container" type="HBoxContainer" parent="Panel/MarginContainer/VBoxContainer/Buttons Margin"]
+layout_mode = 2
+
+[node name="Yes" type="Button" parent="Panel/MarginContainer/VBoxContainer/Buttons Margin/Buttons Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+shortcut = SubResource("Shortcut_nsudv")
+text = "Yes, I am sure."
+
+[node name="No" type="Button" parent="Panel/MarginContainer/VBoxContainer/Buttons Margin/Buttons Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+shortcut = SubResource("Shortcut_mpgbp")
+text = "No, take me back."
+
+[node name="Alternate Icon" type="TextureRect" parent="Panel"]
+modulate = Color(1, 1, 1, 0.333333)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -86.0
+offset_top = -59.0
+offset_right = -186.0
+offset_bottom = -59.0
+grow_horizontal = 2
+grow_vertical = 2

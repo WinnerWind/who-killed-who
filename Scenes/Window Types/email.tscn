@@ -1,0 +1,144 @@
+[gd_scene load_steps=9 format=3 uid="uid://bxrho3xvynjrp"]
+
+[ext_resource type="Script" uid="uid://e6q371x3hdqj" path="res://Scripts/Windows/email.gd" id="1_hvdsn"]
+[ext_resource type="Script" uid="uid://bfmnfev8k5uiw" path="res://Scripts/Resources and Files/For Desktop/emails.gd" id="2_nikkj"]
+[ext_resource type="PackedScene" uid="uid://dbkatww747aba" path="res://Scenes/Other/email_row.tscn" id="2_q2swt"]
+[ext_resource type="PackedScene" uid="uid://utagi2eh5w54" path="res://Scenes/Other/titlebar.tscn" id="4_5gleg"]
+[ext_resource type="Resource" uid="uid://vxh3c3txkok2" path="res://Data and Resources/Replacements/email_replacements.tres" id="4_skeah"]
+[ext_resource type="Resource" uid="uid://dq63le3te06k6" path="res://Data and Resources/Replacements/email_content_replacements.tres" id="5_smjo0"]
+
+[sub_resource type="Resource" id="Resource_yhsfq"]
+resource_name = "Attached Images"
+script = ExtResource("2_nikkj")
+content = "/home/soham/Pictures/Junk/Wallpapers/PS30TH_16x9_WALLPAPER.png
+"
+subject = "Attached Images"
+sender = "elbowsparse@gmail.com"
+recipient = "soham.gwh@gmail.com"
+hour = 23
+minute = 59
+day = 31
+month = 1
+year = 2025
+
+[sub_resource type="Resource" id="Resource_x3bd1"]
+resource_name = "RE: Attached Images"
+script = ExtResource("2_nikkj")
+content = "Dear elbowsparse,
+	Learn to embed images!
+
+Sincerely,
+soham.gwh"
+subject = "RE: Attached Images"
+sender = "soham.gwh@gmail.com"
+recipient = "elbowsparse@gmail.com"
+hour = 23
+minute = 59
+day = 31
+month = 1
+year = 2025
+
+[node name="Tsundere Bird" type="Panel" node_paths=PackedStringArray("right_side_sorter", "left_side_sorter")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -552.0
+offset_bottom = -248.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hvdsn")
+email_list = Array[ExtResource("2_nikkj")]([SubResource("Resource_yhsfq"), SubResource("Resource_x3bd1")])
+email_row = ExtResource("2_q2swt")
+right_side_sorter = NodePath("Sorter/Contents/Left Side/Sorter")
+left_side_sorter = NodePath("Sorter/Contents/Right Side")
+email_replacements = ExtResource("4_skeah")
+content_replacements = ExtResource("5_smjo0")
+starting_size = Vector2(600, 400)
+window_icon_name = &"emails"
+
+[node name="Sorter" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Titlebar" parent="Sorter" instance=ExtResource("4_5gleg")]
+layout_mode = 2
+
+[node name="Contents" type="HBoxContainer" parent="Sorter"]
+clip_contents = true
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Left Side" type="ScrollContainer" parent="Sorter/Contents"]
+layout_mode = 2
+size_flags_horizontal = 3
+horizontal_scroll_mode = 0
+
+[node name="Sorter" type="VBoxContainer" parent="Sorter/Contents/Left Side"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button Margin" type="MarginContainer" parent="Sorter/Contents/Left Side/Sorter"]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="Compose Button" type="Button" parent="Sorter/Contents/Left Side/Sorter/Button Margin"]
+layout_mode = 2
+text = "Compose"
+
+[node name="Seperator" type="VSeparator" parent="Sorter/Contents"]
+layout_mode = 2
+
+[node name="Right Side" type="VBoxContainer" parent="Sorter/Contents"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.25
+
+[node name="Subject" type="Label" parent="Sorter/Contents/Right Side"]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "Welcome to Tsunderebird."
+autowrap_mode = 2
+
+[node name="To" type="Label" parent="Sorter/Contents/Right Side"]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+text = "The all in one mail suite for all your corporate and personal"
+autowrap_mode = 2
+
+[node name="From" type="Label" parent="Sorter/Contents/Right Side"]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+text = "needs. "
+autowrap_mode = 2
+
+[node name="Date" type="Label" parent="Sorter/Contents/Right Side"]
+custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 14
+text = "In case of rudeness, please send us an email."
+autowrap_mode = 2
+
+[node name="Seperator" type="HSeparator" parent="Sorter/Contents/Right Side"]
+layout_mode = 2
+
+[node name="Main Text" type="RichTextLabel" parent="Sorter/Contents/Right Side"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_font_sizes/normal_font_size = 15
+bbcode_enabled = true
+text = "[color=red]Could not connect to server! You can only view your downloaded E-Mails."
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="Sorter/Contents/Left Side/Sorter/Button Margin/Compose Button" to="." method="compose_button_pressed"]

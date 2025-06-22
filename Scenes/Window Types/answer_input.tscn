@@ -1,0 +1,186 @@
+[gd_scene load_steps=8 format=3 uid="uid://c557cq0fkyke3"]
+
+[ext_resource type="Script" uid="uid://b6d685ce5kdmp" path="res://Scripts/Windows/answer_input.gd" id="1_083qw"]
+[ext_resource type="PackedScene" uid="uid://utagi2eh5w54" path="res://Scenes/Other/titlebar.tscn" id="2_j30vd"]
+[ext_resource type="Script" uid="uid://bu4x7bccn1iiu" path="res://Scripts/Resources and Files/Other/qna_resource.gd" id="2_miarm"]
+[ext_resource type="PackedScene" uid="uid://bj0ggtv30md6n" path="res://Scenes/Other/answer_confirmation_row.tscn" id="3_op88k"]
+
+[sub_resource type="Resource" id="Resource_pcs0e"]
+script = ExtResource("2_miarm")
+type = 2
+title = "Ans is 69"
+correct_answer = ""
+submitted_text = ""
+option1_text = ""
+option2_text = ""
+option3_text = ""
+option4_text = ""
+option5_text = ""
+option6_text = ""
+correct_option = 0
+submitted_option = 0
+correct_number = 69
+submitted_number = 0
+
+[sub_resource type="Resource" id="Resource_3jc0l"]
+script = ExtResource("2_miarm")
+type = 0
+title = "Ans is Hello World"
+correct_answer = "Hello World"
+submitted_text = ""
+option1_text = ""
+option2_text = ""
+option3_text = ""
+option4_text = ""
+option5_text = ""
+option6_text = ""
+correct_option = 0
+submitted_option = 0
+correct_number = 0
+submitted_number = 0
+metadata/_custom_type_script = "uid://bu4x7bccn1iiu"
+
+[sub_resource type="Resource" id="Resource_xelsm"]
+script = ExtResource("2_miarm")
+type = 1
+title = "Ans is Hipxel is the best."
+correct_answer = ""
+submitted_text = ""
+option1_text = "Hipxel is the worst"
+option2_text = "Hipxel is the best"
+option3_text = "GO GO ENGLAND"
+option4_text = "uwu"
+option5_text = "WHAT?!"
+option6_text = "何？！"
+correct_option = 1
+submitted_option = 0
+correct_number = 0
+submitted_number = 0
+metadata/_custom_type_script = "uid://bu4x7bccn1iiu"
+
+[node name="Police Radio" type="Panel" node_paths=PackedStringArray("main_input_field", "title_node", "ending_confirmation", "next_button", "previous_button")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -752.0
+offset_bottom = -348.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_083qw")
+questions = Array[ExtResource("2_miarm")]([SubResource("Resource_pcs0e"), SubResource("Resource_3jc0l"), SubResource("Resource_xelsm")])
+main_input_field = NodePath("Sorter/MarginContainer/Contents/Inputs")
+title_node = NodePath("Sorter/MarginContainer/Contents/Question")
+ending_confirmation = NodePath("Ending Confirmation")
+next_button = NodePath("Sorter/MarginContainer/Contents/Buttons/Front")
+previous_button = NodePath("Sorter/MarginContainer/Contents/Buttons/Back")
+answer_confirmation_row = ExtResource("3_op88k")
+starting_size = Vector2(400, 300)
+window_icon_name = &"police_radio"
+
+[node name="Sorter" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Titlebar" parent="Sorter" instance=ExtResource("2_j30vd")]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Sorter"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Contents" type="VBoxContainer" parent="Sorter/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Question" type="Label" parent="Sorter/MarginContainer/Contents"]
+layout_mode = 2
+text = "What is your worst memory?"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Inputs" type="Control" parent="Sorter/MarginContainer/Contents"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Buttons" type="HBoxContainer" parent="Sorter/MarginContainer/Contents"]
+layout_mode = 2
+alignment = 1
+
+[node name="Back" type="Button" parent="Sorter/MarginContainer/Contents/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+disabled = true
+text = "Previous Question"
+
+[node name="Front" type="Button" parent="Sorter/MarginContainer/Contents/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Next Question"
+
+[node name="Ending Confirmation" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -187.5
+offset_top = -100.0
+offset_right = 187.5
+offset_bottom = 100.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Ending Confirmation"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sorter" type="VBoxContainer" parent="Ending Confirmation/MarginContainer"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="Ending Confirmation/MarginContainer/Sorter"]
+layout_mode = 2
+text = "End your investigation now?"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="HSeparator" type="HSeparator" parent="Ending Confirmation/MarginContainer/Sorter"]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Ending Confirmation/MarginContainer/Sorter"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Answer Row Sorter" type="VBoxContainer" parent="Ending Confirmation/MarginContainer/Sorter/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Buttons Container" type="HBoxContainer" parent="Ending Confirmation/MarginContainer/Sorter"]
+layout_mode = 2
+
+[node name="No" type="Button" parent="Ending Confirmation/MarginContainer/Sorter/Buttons Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Take me back."
+
+[node name="Yes" type="Button" parent="Ending Confirmation/MarginContainer/Sorter/Buttons Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "I am sure."
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="pressed" from="Sorter/MarginContainer/Contents/Buttons/Back" to="." method="go_back"]
+[connection signal="pressed" from="Sorter/MarginContainer/Contents/Buttons/Front" to="." method="progress_question"]
+[connection signal="pressed" from="Ending Confirmation/MarginContainer/Sorter/Buttons Container/No" to="Ending Confirmation" method="hide"]
+[connection signal="pressed" from="Ending Confirmation/MarginContainer/Sorter/Buttons Container/Yes" to="." method="ending_confirmed"]

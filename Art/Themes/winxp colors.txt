@@ -1,0 +1,4 @@
+Main - #1f61c4
+Accent - #9fdaed
+BG - #e6ebcc
+BG Accent - #847f86

@@ -1,0 +1,1010 @@
+[gd_scene load_steps=144 format=3 uid="uid://kfx6qqnmheq4"]
+
+[ext_resource type="Theme" uid="uid://dfp8tc3gbtaeo" path="res://Art/Themes/winxp.tres" id="1_h11lm"]
+[ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="1_it257"]
+[ext_resource type="Texture2D" uid="uid://bhi5kvbw0cxc6" path="res://Art/Pictures/Desktop Icons/User1/Light/app_menu.svg" id="4_r40b8"]
+[ext_resource type="Texture2D" uid="uid://w7dwmw7467io" path="res://Art/Pictures/Desktop Icons/User1/Light/music_file.svg" id="5_6v03d"]
+[ext_resource type="Texture2D" uid="uid://b72e7dwtyuouh" path="res://Art/Pictures/Desktop Icons/User1/Light/music.svg" id="6_dl0ij"]
+[ext_resource type="Texture2D" uid="uid://dbhydudq3yq7m" path="res://Art/Pictures/Desktop Icons/User1/Light/back.svg" id="7_lgcqo"]
+[ext_resource type="Texture2D" uid="uid://bys3kdc0xjbap" path="res://Art/Pictures/Desktop Icons/User1/Light/calculator.svg" id="8_4y2e1"]
+[ext_resource type="Texture2D" uid="uid://cibsnklwav114" path="res://Art/Pictures/Desktop Icons/User1/Light/chats.svg" id="9_0r54k"]
+[ext_resource type="Texture2D" uid="uid://lscwyn161vg" path="res://Art/Pictures/Desktop Icons/User1/Light/close_main.svg" id="10_7xk2j"]
+[ext_resource type="Texture2D" uid="uid://cfs3b3s2too6c" path="res://Art/Pictures/Desktop Icons/User1/Light/delete.svg" id="11_26ac8"]
+[ext_resource type="Texture2D" uid="uid://0056q8801es8" path="res://Art/Pictures/Desktop Icons/User1/Light/email.svg" id="12_42mxc"]
+[ext_resource type="Texture2D" uid="uid://n6gkbff5ed5e" path="res://Art/Pictures/Desktop Icons/User1/Light/file.svg" id="13_0y548"]
+[ext_resource type="Texture2D" uid="uid://pa1yep45h261" path="res://Art/Pictures/Desktop Icons/User1/Light/folder.svg" id="14_3cb2w"]
+[ext_resource type="Texture2D" uid="uid://dwupqmg770glk" path="res://Art/Pictures/Desktop Icons/User1/Light/image.svg" id="15_qhgcc"]
+[ext_resource type="Texture2D" uid="uid://cpsysryq75wdl" path="res://Art/Pictures/Desktop Icons/User1/Light/folder_locked.svg" id="16_aqd3l"]
+[ext_resource type="Texture2D" uid="uid://bnye1k82ftnjy" path="res://Art/Pictures/Desktop Icons/User1/Light/logout.svg" id="17_p7p1u"]
+[ext_resource type="Texture2D" uid="uid://cwp7rh8s20pvj" path="res://Art/Pictures/Desktop Icons/User1/Light/loop_off.svg" id="18_dtmuj"]
+[ext_resource type="Texture2D" uid="uid://c8sdu3crm8ydf" path="res://Art/Pictures/Desktop Icons/User1/Light/loop.svg" id="19_ustfs"]
+[ext_resource type="Texture2D" uid="uid://b0630lrvydrsg" path="res://Art/Pictures/Desktop Icons/User1/Light/minimize_main.svg" id="20_io3yb"]
+[ext_resource type="Texture2D" uid="uid://4esqsyhcpn82" path="res://Art/Pictures/Desktop Icons/User1/Light/texture_missing.svg" id="21_5pe4t"]
+[ext_resource type="Texture2D" uid="uid://dnynnnnm4n2je" path="res://Art/Pictures/Desktop Icons/User1/Light/new_file.svg" id="22_3b2di"]
+[ext_resource type="Texture2D" uid="uid://c7ml6xnryayu0" path="res://Art/Pictures/Desktop Icons/User1/Light/investigator.svg" id="23_m6ruj"]
+[ext_resource type="Texture2D" uid="uid://jvfcivbmwn72" path="res://Art/Pictures/Desktop Icons/User1/Light/bell.svg" id="24_365wf"]
+[ext_resource type="Texture2D" uid="uid://dmqmpaevjs4fq" path="res://Art/Pictures/Desktop Icons/User1/Light/padlock.svg" id="25_f1rvo"]
+[ext_resource type="Texture2D" uid="uid://dqci12a6ad4q2" path="res://Art/Pictures/Desktop Icons/User1/Light/paused.svg" id="26_sd3rp"]
+[ext_resource type="Texture2D" uid="uid://bwgvbb2qsed5l" path="res://Art/Pictures/Desktop Icons/User1/Light/play.svg" id="27_wspcf"]
+[ext_resource type="Texture2D" uid="uid://bc06ubhlyd76s" path="res://Art/Pictures/Desktop Icons/User1/Light/police_scanner.svg" id="28_4gmgc"]
+[ext_resource type="Texture2D" uid="uid://cbdocndgm2a2h" path="res://Art/Pictures/Desktop Icons/User1/Light/power_off.svg" id="29_spnyo"]
+[ext_resource type="Texture2D" uid="uid://cqb0erimxb5he" path="res://Art/Pictures/Desktop Icons/User1/Light/remote_login.svg" id="30_oqxyf"]
+[ext_resource type="Texture2D" uid="uid://f7hlteen0sra" path="res://Art/Pictures/Desktop Icons/User1/Light/rename.svg" id="31_csd52"]
+[ext_resource type="Texture2D" uid="uid://brfyihmkoprtm" path="res://Art/Pictures/Desktop Icons/User1/Light/reboot.svg" id="32_ne12y"]
+[ext_resource type="Texture2D" uid="uid://cv455b808f53s" path="res://Art/Pictures/Desktop Icons/User1/Light/save.svg" id="33_3pyuo"]
+[ext_resource type="Script" uid="uid://5ydtly7lkawx" path="res://Scripts/Resources and Files/For Desktop/icons_for_desktop.gd" id="34_x7pch"]
+[ext_resource type="Texture2D" uid="uid://d1xxy55rdfx47" path="res://Art/Pictures/Desktop Icons/User1/Light/settings.svg" id="35_f4ujw"]
+[ext_resource type="Texture2D" uid="uid://df85mydmbousf" path="res://Art/Pictures/Desktop Icons/User1/Light/stop.svg" id="36_1oq5y"]
+[ext_resource type="Texture2D" uid="uid://de2rfdv4jgjkh" path="res://Art/Pictures/OS Logos/ale_small.svg" id="37_mwrpj"]
+[ext_resource type="Texture2D" uid="uid://ddhg22t06qrfw" path="res://Art/Pictures/Desktop Icons/User1/Light/info.svg" id="38_wlbyx"]
+[ext_resource type="Texture2D" uid="uid://cv11biuskbjsi" path="res://Art/Pictures/Desktop Icons/User1/Light/text_editor.svg" id="39_n63vd"]
+[ext_resource type="Texture2D" uid="uid://ojjet8g7rf6t" path="res://Art/Pictures/Desktop Icons/User1/Light/user_add.svg" id="40_qqqyc"]
+[ext_resource type="Texture2D" uid="uid://c3hvg5tddhoaf" path="res://Art/Pictures/Desktop Icons/User1/Light/user.svg" id="41_atisf"]
+[ext_resource type="Texture2D" uid="uid://cky5p1pwoe637" path="res://Art/Pictures/Desktop Icons/User1/Light/video_player.svg" id="42_7hbxh"]
+[ext_resource type="Texture2D" uid="uid://c3h7aba5ilu1g" path="res://Art/Pictures/Desktop Icons/User1/Light/voldown.svg" id="43_ofgyi"]
+[ext_resource type="Texture2D" uid="uid://b0wg2526c6h4u" path="res://Art/Pictures/Desktop Icons/User1/Light/volup.svg" id="44_qlmjq"]
+[ext_resource type="Texture2D" uid="uid://c5223lhemtbyj" path="res://Art/Placeholders/3e29gwdyh9g61.webp" id="44_v7xba"]
+[ext_resource type="Texture2D" uid="uid://br3t21kr0uhfe" path="res://Art/Placeholders/SC35_Wallpaper_1.jpg" id="45_xii63"]
+[ext_resource type="Texture2D" uid="uid://ho8g811c18yk" path="res://Art/Pictures/Desktop Icons/User1/Light/warning.svg" id="46_kx18j"]
+[ext_resource type="Texture2D" uid="uid://dfsi7mb1ddh7w" path="res://Art/Pictures/Desktop Icons/User1/Light/zoomin.svg" id="47_iagts"]
+[ext_resource type="Texture2D" uid="uid://cc5pn723xj32h" path="res://Art/Pictures/Desktop Icons/User1/Light/zoomout.svg" id="48_fpynh"]
+[ext_resource type="Texture2D" uid="uid://dm1vbx2y6cm5f" path="res://Art/Pictures/Desktop Icons/User1/Dark/app_menu.svg" id="49_e1im5"]
+[ext_resource type="Texture2D" uid="uid://ccnia8nte46io" path="res://Art/Pictures/Desktop Icons/User1/Dark/music_file.svg" id="50_6miho"]
+[ext_resource type="Texture2D" uid="uid://b3605els5onun" path="res://Art/Pictures/Desktop Icons/User1/Dark/music.svg" id="51_gsjmi"]
+[ext_resource type="Texture2D" uid="uid://yjrfwvws0kut" path="res://Art/Pictures/Desktop Icons/User1/Dark/back.svg" id="52_2e08a"]
+[ext_resource type="Texture2D" uid="uid://ss28m5sabr6u" path="res://Art/Pictures/Desktop Icons/User1/Dark/calculator.svg" id="53_4efyf"]
+[ext_resource type="Texture2D" uid="uid://p4oqlownbyoc" path="res://Art/Pictures/Desktop Icons/User1/Dark/chats.svg" id="54_yg8mw"]
+[ext_resource type="Texture2D" uid="uid://djpj5eahvik2d" path="res://Art/Pictures/Desktop Icons/User1/Dark/close_main.svg" id="55_nx148"]
+[ext_resource type="Texture2D" uid="uid://bqrxnv5fl54oa" path="res://Art/Pictures/Desktop Icons/User1/Dark/delete.svg" id="56_r8jtj"]
+[ext_resource type="Texture2D" uid="uid://dmrxrgmfbj6a6" path="res://Art/Pictures/Desktop Icons/User1/Dark/email.svg" id="57_fyo27"]
+[ext_resource type="Texture2D" uid="uid://bwsyvcy6j5ui5" path="res://Art/Pictures/Desktop Icons/User1/Dark/file.svg" id="58_b2w2q"]
+[ext_resource type="Texture2D" uid="uid://bat65wwv4j7xl" path="res://Art/Pictures/Desktop Icons/User1/Dark/folder.svg" id="59_whhg3"]
+[ext_resource type="Texture2D" uid="uid://c7awk7fey4nx7" path="res://Art/Pictures/Desktop Icons/User1/Dark/image.svg" id="60_14x70"]
+[ext_resource type="Texture2D" uid="uid://cmymt2w6xc001" path="res://Art/Pictures/Desktop Icons/User1/Dark/folder_locked.svg" id="61_hv2uw"]
+[ext_resource type="Texture2D" uid="uid://c7nvijstn4ujf" path="res://Art/Pictures/Desktop Icons/User1/Dark/logout.svg" id="62_c3hhl"]
+[ext_resource type="Texture2D" uid="uid://cnpf12l0l5bot" path="res://Art/Pictures/Desktop Icons/User1/Dark/loop_off.svg" id="63_1t26l"]
+[ext_resource type="Texture2D" uid="uid://ccnt14i0m3a7x" path="res://Art/Pictures/Desktop Icons/User1/Dark/loop.svg" id="64_yhls3"]
+[ext_resource type="Texture2D" uid="uid://bi2mgf0kf7yx2" path="res://Art/Pictures/Desktop Icons/User1/Dark/minimize_main.svg" id="65_apelx"]
+[ext_resource type="Texture2D" uid="uid://dywlh26wmrw87" path="res://Art/Pictures/Desktop Icons/User1/Dark/texture_missing.svg" id="66_03ikf"]
+[ext_resource type="Texture2D" uid="uid://bcbyai0wq86xi" path="res://Art/Pictures/Desktop Icons/User1/Dark/new_file.svg" id="67_usweg"]
+[ext_resource type="Texture2D" uid="uid://de0xwnde5kl2k" path="res://Art/Pictures/Desktop Icons/User1/Dark/investigator.svg" id="68_cjqna"]
+[ext_resource type="Texture2D" uid="uid://c2r2ybfrp0o3l" path="res://Art/Pictures/Desktop Icons/User1/Dark/bell.svg" id="69_w2r1f"]
+[ext_resource type="Texture2D" uid="uid://cduk8ne8pr6jy" path="res://Art/Pictures/Desktop Icons/User1/Dark/padlock.svg" id="70_3kh7e"]
+[ext_resource type="Texture2D" uid="uid://bgtwxgp4jtu3w" path="res://Art/Pictures/Desktop Icons/User1/Dark/paused.svg" id="71_8nw8i"]
+[ext_resource type="Texture2D" uid="uid://c00n5njbha2an" path="res://Art/Pictures/Desktop Icons/User1/Dark/play.svg" id="72_6ej8a"]
+[ext_resource type="Texture2D" uid="uid://dsyaguqa8jf6t" path="res://Art/Pictures/Desktop Icons/User1/Dark/police_scanner.svg" id="73_j4ult"]
+[ext_resource type="Texture2D" uid="uid://duceho8c5llak" path="res://Art/Pictures/Desktop Icons/User1/Dark/power_off.svg" id="74_68tij"]
+[ext_resource type="Texture2D" uid="uid://b7grp7b743oyr" path="res://Art/Pictures/Desktop Icons/User1/Dark/remote_login.svg" id="75_8b4ce"]
+[ext_resource type="Texture2D" uid="uid://dvucgcygous0a" path="res://Art/Pictures/Desktop Icons/User1/Dark/rename.svg" id="76_iy4be"]
+[ext_resource type="Texture2D" uid="uid://bvfc20h5rfxyj" path="res://Art/Pictures/Desktop Icons/User1/Dark/reboot.svg" id="77_sbg4x"]
+[ext_resource type="Texture2D" uid="uid://dyqd60eim12ob" path="res://Art/Pictures/Desktop Icons/User1/Dark/save.svg" id="78_sjg7m"]
+[ext_resource type="Texture2D" uid="uid://d3mpebt4od8fx" path="res://Art/Pictures/Desktop Icons/User1/Dark/settings.svg" id="79_r4bbj"]
+[ext_resource type="Texture2D" uid="uid://b854tcu45wqxe" path="res://Art/Pictures/Desktop Icons/User1/Dark/stop.svg" id="80_57ama"]
+[ext_resource type="Texture2D" uid="uid://cuv2yfh7jcemk" path="res://Art/Pictures/Desktop Icons/User1/Dark/info.svg" id="81_1ismk"]
+[ext_resource type="Texture2D" uid="uid://colrgb3rl4ox" path="res://Art/Pictures/Desktop Icons/User1/Dark/text_editor.svg" id="82_7q8l2"]
+[ext_resource type="Texture2D" uid="uid://cq1abl314rua5" path="res://Art/Pictures/Desktop Icons/User1/Dark/user_add.svg" id="83_8s4yo"]
+[ext_resource type="Texture2D" uid="uid://cnvyg8xy4g157" path="res://Art/Pictures/Desktop Icons/User1/Dark/user.svg" id="84_t476h"]
+[ext_resource type="Texture2D" uid="uid://c720m30fxisnm" path="res://Art/Pictures/Desktop Icons/User1/Dark/video_player.svg" id="85_1f0gn"]
+[ext_resource type="Texture2D" uid="uid://dblnykev2sgmd" path="res://Art/Pictures/Desktop Icons/User1/Dark/voldown.svg" id="86_iy0ga"]
+[ext_resource type="Texture2D" uid="uid://cnboel2754ol2" path="res://Art/Pictures/Desktop Icons/User1/Dark/volup.svg" id="87_yxvu8"]
+[ext_resource type="Texture2D" uid="uid://dmdex3eijgfnc" path="res://Art/Placeholders/PS30TH_16x9_WALLPAPER.png" id="88_q4ms2"]
+[ext_resource type="Texture2D" uid="uid://4m5rhcko7040" path="res://Art/Pictures/Desktop Icons/User1/Dark/warning.svg" id="89_s304a"]
+[ext_resource type="Texture2D" uid="uid://bbsbuflx0n0ma" path="res://Art/Pictures/Desktop Icons/User1/Dark/zoomin.svg" id="90_eq51o"]
+[ext_resource type="Resource" uid="uid://boj6rv2q14r8x" path="res://Data and Resources/Users/Demos/demo_personal_computer.tres" id="91_fil86"]
+[ext_resource type="Texture2D" uid="uid://bl45rwe5sd5tb" path="res://Art/Pictures/Desktop Icons/User1/Dark/zoomout.svg" id="91_u6sq8"]
+[ext_resource type="Script" uid="uid://bifm388ef70uc" path="res://Scripts/Resources and Files/For Desktop/messages.gd" id="92_w80v7"]
+[ext_resource type="Texture2D" uid="uid://cfc5dvttjjqet" path="res://Art/Placeholders/soham.png" id="93_mqy4b"]
+[ext_resource type="Script" uid="uid://bfmnfev8k5uiw" path="res://Scripts/Resources and Files/For Desktop/emails.gd" id="94_omolt"]
+[ext_resource type="PackedScene" uid="uid://c6gqjqrkidn0b" path="res://Scenes/Window Types/file_manager.tscn" id="95_ichr4"]
+[ext_resource type="PackedScene" uid="uid://bmcafym2vhbv8" path="res://Scenes/Window Types/image_viewer.tscn" id="96_yp3vj"]
+[ext_resource type="PackedScene" uid="uid://heb52kbru40a" path="res://Scenes/Window Types/text_editor.tscn" id="97_tm5et"]
+[ext_resource type="PackedScene" uid="uid://cxcs7lmcqhe63" path="res://Scenes/Window Types/video_player.tscn" id="98_rh8uk"]
+[ext_resource type="PackedScene" uid="uid://c4jynkn0t0o4u" path="res://Scenes/Window Types/audio_player.tscn" id="99_u78ik"]
+[ext_resource type="PackedScene" uid="uid://8dhbm1w7fdt3" path="res://Scenes/Window Types/chats.tscn" id="100_jtpc6"]
+[ext_resource type="PackedScene" uid="uid://bxrho3xvynjrp" path="res://Scenes/Window Types/email.tscn" id="101_nts6c"]
+[ext_resource type="PackedScene" uid="uid://vxq4edum8thi" path="res://Scenes/Window Types/calculator.tscn" id="102_rai3r"]
+[ext_resource type="PackedScene" uid="uid://cjmgp7qnlk5kl" path="res://Scenes/Window Types/system_info.tscn" id="103_ta58a"]
+[ext_resource type="PackedScene" uid="uid://bjitvivxr8hkq" path="res://Scenes/Window Types/settings.tscn" id="104_st2y5"]
+[ext_resource type="PackedScene" uid="uid://lak0kkn5lipk" path="res://Scenes/Window Types/notepad.tscn" id="105_ofexk"]
+[ext_resource type="PackedScene" uid="uid://cn45gtkcdls2w" path="res://Scenes/Window Types/remote_connection.tscn" id="106_e0vci"]
+[ext_resource type="PackedScene" uid="uid://c2md68ibvvoxk" path="res://Scenes/Other/notification.tscn" id="107_44b6h"]
+[ext_resource type="PackedScene" uid="uid://fal2iityh6i6" path="res://Scenes/Window Types/popup.tscn" id="108_rn15c"]
+[ext_resource type="PackedScene" uid="uid://c8t5wkgn4r6wi" path="res://Scenes/Window Types/password_prompt.tscn" id="109_lb6a8"]
+[ext_resource type="PackedScene" uid="uid://d2c8qnwy6t3gx" path="res://Scenes/Other/app_tray_icon.tscn" id="110_p5mjd"]
+[ext_resource type="PackedScene" uid="uid://g84qji3yh2sm" path="res://Scenes/Other/user_password_prompt.tscn" id="111_pl78w"]
+[ext_resource type="PackedScene" uid="uid://bj5x25ns3hxmd" path="res://Scenes/Other/power_prompt.tscn" id="112_2aabg"]
+[ext_resource type="PackedScene" uid="uid://b8jwsa53j715" path="res://Scenes/login.tscn" id="113_jm23b"]
+[ext_resource type="Script" uid="uid://6ahcfwj62g07" path="res://Scripts/Files and Folders/files.gd" id="114_njwfn"]
+[ext_resource type="VideoStream" uid="uid://qgqmwiyknykv" path="res://Art/Placeholders/disturbing the peace.ogv" id="115_01im7"]
+[ext_resource type="Script" uid="uid://cmowc8flglqra" path="res://Scripts/Files and Folders/folders.gd" id="116_kbotc"]
+[ext_resource type="AudioStream" uid="uid://ctxac8gf3lly6" path="res://Art/Sound/Transitory SFX/intro_1.wav" id="118_6ft1w"]
+[ext_resource type="AudioStream" uid="uid://cr8605kdbhaom" path="res://Art/Sound/Transitory SFX/outro_1.wav" id="119_xildg"]
+[ext_resource type="Script" uid="uid://bumowvb75nl7b" path="res://Scripts/Desktop/desktop_panels.gd" id="120_kixdc"]
+[ext_resource type="Script" uid="uid://cjrscc2gi8o1v" path="res://Scripts/Desktop/users_panel.gd" id="121_uqkvk"]
+[ext_resource type="PackedScene" uid="uid://dqpce0a7r6slg" path="res://Scenes/Other/users_row.tscn" id="122_ge6up"]
+[ext_resource type="Script" uid="uid://cq8v8vfrqt7lp" path="res://Scripts/Desktop/clock_and_calendar.gd" id="123_wivpr"]
+[ext_resource type="Texture2D" uid="uid://cajkgw7h5kb80" path="res://Art/Pictures/Editor Only/file.svg" id="124_rv2f5"]
+[ext_resource type="PackedScene" uid="uid://bwgiv56py676e" path="res://Scenes/Other/desktop_icon.tscn" id="125_bonl8"]
+
+[sub_resource type="Resource" id="Resource_27ica"]
+script = ExtResource("34_x7pch")
+missing_texture = ExtResource("21_5pe4t")
+close_button = ExtResource("10_7xk2j")
+minimize_button = ExtResource("20_io3yb")
+volume_down = ExtResource("43_ofgyi")
+volume_up = ExtResource("44_qlmjq")
+zoom_in = ExtResource("47_iagts")
+zoom_out = ExtResource("48_fpynh")
+back = ExtResource("7_lgcqo")
+pause_button = ExtResource("26_sd3rp")
+play_button = ExtResource("27_wspcf")
+loop_on = ExtResource("19_ustfs")
+loop_off = ExtResource("18_dtmuj")
+save_button = ExtResource("33_3pyuo")
+rename_button = ExtResource("31_csd52")
+delete_button = ExtResource("11_26ac8")
+new_file_button = ExtResource("22_3b2di")
+power_off = ExtResource("29_spnyo")
+restart = ExtResource("32_ne12y")
+logout = ExtResource("17_p7p1u")
+users = ExtResource("41_atisf")
+app_starter = ExtResource("4_r40b8")
+padlock = ExtResource("25_f1rvo")
+folder_icon = ExtResource("14_3cb2w")
+locked_folder_icon = ExtResource("16_aqd3l")
+file_icon = ExtResource("13_0y548")
+audio_icon = ExtResource("5_6v03d")
+video_icon = ExtResource("42_7hbxh")
+image_icon = ExtResource("15_qhgcc")
+text_editor = ExtResource("39_n63vd")
+audio_player = ExtResource("6_dl0ij")
+video_player = ExtResource("42_7hbxh")
+image_viewer = ExtResource("15_qhgcc")
+file_manager = ExtResource("14_3cb2w")
+emails = ExtResource("12_42mxc")
+chat = ExtResource("9_0r54k")
+calculator = ExtResource("8_4y2e1")
+police_radio = ExtResource("28_4gmgc")
+remote_connection = ExtResource("30_oqxyf")
+system_information = ExtResource("38_wlbyx")
+settings = ExtResource("35_f4ujw")
+notepad = ExtResource("23_m6ruj")
+wallpaper = ExtResource("44_v7xba")
+notification_icon = ExtResource("24_365wf")
+stop = ExtResource("36_1oq5y")
+warning = ExtResource("46_kx18j")
+user_add = ExtResource("40_qqqyc")
+system_icon = ExtResource("37_mwrpj")
+
+[sub_resource type="Resource" id="Resource_68gby"]
+script = ExtResource("34_x7pch")
+missing_texture = ExtResource("66_03ikf")
+close_button = ExtResource("55_nx148")
+minimize_button = ExtResource("65_apelx")
+volume_down = ExtResource("86_iy0ga")
+volume_up = ExtResource("87_yxvu8")
+zoom_in = ExtResource("90_eq51o")
+zoom_out = ExtResource("91_u6sq8")
+back = ExtResource("52_2e08a")
+pause_button = ExtResource("71_8nw8i")
+play_button = ExtResource("72_6ej8a")
+loop_on = ExtResource("64_yhls3")
+loop_off = ExtResource("63_1t26l")
+save_button = ExtResource("78_sjg7m")
+rename_button = ExtResource("76_iy4be")
+delete_button = ExtResource("56_r8jtj")
+new_file_button = ExtResource("67_usweg")
+power_off = ExtResource("74_68tij")
+restart = ExtResource("77_sbg4x")
+logout = ExtResource("62_c3hhl")
+users = ExtResource("84_t476h")
+app_starter = ExtResource("49_e1im5")
+padlock = ExtResource("70_3kh7e")
+folder_icon = ExtResource("59_whhg3")
+locked_folder_icon = ExtResource("61_hv2uw")
+file_icon = ExtResource("58_b2w2q")
+audio_icon = ExtResource("50_6miho")
+video_icon = ExtResource("85_1f0gn")
+image_icon = ExtResource("60_14x70")
+text_editor = ExtResource("82_7q8l2")
+audio_player = ExtResource("51_gsjmi")
+video_player = ExtResource("85_1f0gn")
+image_viewer = ExtResource("60_14x70")
+file_manager = ExtResource("59_whhg3")
+emails = ExtResource("57_fyo27")
+chat = ExtResource("54_yg8mw")
+calculator = ExtResource("53_4efyf")
+police_radio = ExtResource("73_j4ult")
+remote_connection = ExtResource("75_8b4ce")
+system_information = ExtResource("81_1ismk")
+settings = ExtResource("79_r4bbj")
+notepad = ExtResource("68_cjqna")
+wallpaper = ExtResource("88_q4ms2")
+notification_icon = ExtResource("69_w2r1f")
+stop = ExtResource("80_57ama")
+warning = ExtResource("89_s304a")
+user_add = ExtResource("83_8s4yo")
+system_icon = ExtResource("37_mwrpj")
+
+[sub_resource type="Resource" id="Resource_whyey"]
+resource_name = "Actie"
+script = ExtResource("92_w80v7")
+content = "[winnerwind]: I really missed you
+[actie]: Aww, me too."
+icon = ExtResource("93_mqy4b")
+name = "Actie"
+last_message = "What's never been has never been so."
+
+[sub_resource type="Resource" id="Resource_k3fa1"]
+resource_name = "Hi"
+script = ExtResource("92_w80v7")
+content = "$a I am Amanda!
+$c I am clyde!
+<d> 2 Days ago </d>"
+name = "Hi"
+last_message = "owo"
+
+[sub_resource type="Resource" id="Resource_4464d"]
+resource_name = "Request for files."
+script = ExtResource("94_omolt")
+content = "Please send me the files by Monday.
+
+Cheers,
+	WinnerWind"
+subject = "Request for files."
+sender = "elbowsparse@gmail.com"
+recipient = "soham.gwh@gmail.com"
+hour = 23
+minute = 59
+day = 31
+month = 1
+year = 2025
+
+[sub_resource type="Animation" id="Animation_km1se"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_pdvax"]
+resource_name = "intro_animation"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.5, 1.63333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-1500, 0), Vector2(0, 0)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SFX/IntroSFX")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.66666),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [0.0],
+"method": &"play"
+}]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(-0.5, 1.56667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.4, 0.4), Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_eqmh7"]
+resource_name = "outro_animation"
+length = 2.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.03333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0.4, 0.4)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2.13333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(320, -800)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:rotation")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.200713]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SFX/OutroSFX")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [0.0],
+"method": &"play"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_e48td"]
+_data = {
+&"RESET": SubResource("Animation_km1se"),
+&"intro_animation": SubResource("Animation_pdvax"),
+&"outro_animation": SubResource("Animation_eqmh7")
+}
+
+[sub_resource type="Animation" id="Animation_oo3qg"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_6dpgf"]
+resource_name = "open_panel"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.633333),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_27ica"]
+resource_name = "close_panel"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.266667),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_27ica"]
+_data = {
+&"RESET": SubResource("Animation_oo3qg"),
+&"close_panel": SubResource("Animation_27ica"),
+&"open_panel": SubResource("Animation_6dpgf")
+}
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a04es"]
+
+[sub_resource type="Animation" id="Animation_ybo8t"]
+resource_name = "open_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Calendar:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.6),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_4upio"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Calendar:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_i3s41"]
+resource_name = "close_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Calendar:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.433333),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ocbpv"]
+_data = {
+&"RESET": SubResource("Animation_4upio"),
+&"close_animation": SubResource("Animation_i3s41"),
+&"open_animation": SubResource("Animation_ybo8t")
+}
+
+[node name="Satsu" type="Control" node_paths=PackedStringArray("theme_switch_nodes", "app_icon_container", "wallpaper_node", "users_panel")]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_h11lm")
+script = ExtResource("1_it257")
+theme_switch_nodes = [NodePath("Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Panel/Power Strip/power_off"), NodePath("Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Panel/Power Strip/restart"), NodePath("Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Panel/Power Strip/logout")]
+active_edges = Array[int]([45, 1, 1, 45])
+app_icon_container = NodePath("Panels/Bottom Panel/Container/Apps Container/Apps Container")
+wallpaper_node = NodePath("Wallpaper")
+users_panel = NodePath("Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Users Sorter")
+dictionary_key = "satsu"
+light_theme = ExtResource("1_h11lm")
+light_icons = SubResource("Resource_27ica")
+dark_icons = SubResource("Resource_68gby")
+is_dark_theme = true
+system_name = "All See OS"
+system_version = "v0.0.1"
+system_information = "Copyright WinnerWind"
+current_user = ExtResource("91_fil86")
+personal_chat_messages = Array[ExtResource("92_w80v7")]([SubResource("Resource_whyey")])
+group_chat_messages = Array[ExtResource("92_w80v7")]([SubResource("Resource_k3fa1")])
+emails = Array[ExtResource("94_omolt")]([SubResource("Resource_4464d")])
+file_manager_window = ExtResource("95_ichr4")
+image_viewer_window = ExtResource("96_yp3vj")
+text_viewer_window = ExtResource("97_tm5et")
+video_player_window = ExtResource("98_rh8uk")
+music_player_window = ExtResource("99_u78ik")
+chat_app_window = ExtResource("100_jtpc6")
+email_app_window = ExtResource("101_nts6c")
+calculator_window = ExtResource("102_rai3r")
+system_information_window = ExtResource("103_ta58a")
+settings_window = ExtResource("104_st2y5")
+notepad_window = ExtResource("105_ofexk")
+remote_connection_window = ExtResource("106_e0vci")
+virtual_notification = ExtResource("107_44b6h")
+popup = ExtResource("108_rn15c")
+password_prompt = ExtResource("109_lb6a8")
+app_tray_icon = ExtResource("110_p5mjd")
+users_password_prompt = ExtResource("111_pl78w")
+bootup_scene_path = "res://Scenes/bootup.tscn"
+power_prompt = ExtResource("112_2aabg")
+login_scene = ExtResource("113_jm23b")
+
+[node name="Files" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("116_kbotc")
+metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="VirtualFile" type="Node" parent="Files"]
+script = ExtResource("114_njwfn")
+text = "This file contains some text, which might be the clue for the locked folder below.
+
+The password for the folder is abcd"
+
+[node name="Image" type="Node" parent="Files"]
+script = ExtResource("114_njwfn")
+image = ExtResource("45_xii63")
+
+[node name="Video" type="Node" parent="Files"]
+script = ExtResource("114_njwfn")
+video = ExtResource("115_01im7")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_e48td")
+}
+
+[node name="SFX" type="Node" parent="."]
+unique_name_in_owner = true
+
+[node name="IntroSFX" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("118_6ft1w")
+
+[node name="OutroSFX" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("119_xildg")
+
+[node name="Wallpaper" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("88_q4ms2")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Notifications Container" type="Control" parent="."]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Panels" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Bottom Panel" type="Panel" parent="Panels"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_type_variation = &"DesktopPanel"
+
+[node name="Container" type="HBoxContainer" parent="Panels/Bottom Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="App Starter" type="Button" parent="Panels/Bottom Panel/Container" node_paths=PackedStringArray("animation_player")]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+icon = ExtResource("124_rv2f5")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("120_kixdc")
+icon_name = &"app_starter"
+animation_player = NodePath("AnimationPlayer")
+
+[node name="Panel" type="Panel" parent="Panels/Bottom Panel/Container/App Starter"]
+visible = false
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = -461.0
+offset_right = 436.0
+offset_bottom = -61.0
+grow_vertical = 0
+theme_type_variation = &"DesktopFloatingPanel"
+
+[node name="Main Container" type="VBoxContainer" parent="Panels/Bottom Panel/Container/App Starter/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Apps and Users" type="HBoxContainer" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Users Sorter" type="VBoxContainer" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users" node_paths=PackedStringArray("sorter")]
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("121_uqkvk")
+users_row = ExtResource("122_ge6up")
+sorter = NodePath(".")
+
+[node name="VSeparator" type="VSeparator" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users"]
+layout_mode = 2
+
+[node name="Apps" type="VBoxContainer" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Title" type="Label" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps"]
+layout_mode = 2
+text = "Apps"
+horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="GridContainer" type="GridContainer" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/ScrollContainer"]
+layout_mode = 2
+columns = 3
+
+[node name="Files Icon" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/ScrollContainer/GridContainer" instance=ExtResource("125_bonl8")]
+layout_mode = 2
+size_flags_horizontal = 1
+icon_name = &"file_manager"
+text = "File Manager"
+tooltip = "Manage your files in style!"
+
+[node name="Calculator Icon" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/ScrollContainer/GridContainer" instance=ExtResource("125_bonl8")]
+layout_mode = 2
+size_flags_horizontal = 1
+type = 3
+icon_name = &"calculator"
+text = "Calculator"
+tooltip = "Do Basic Arithmetic"
+
+[node name="Settings" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/ScrollContainer/GridContainer" instance=ExtResource("125_bonl8")]
+layout_mode = 2
+size_flags_horizontal = 1
+type = 5
+icon_name = &"settings"
+text = "Settings"
+tooltip = "Configure your system."
+
+[node name="Notepad" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/ScrollContainer/GridContainer" instance=ExtResource("125_bonl8")]
+layout_mode = 2
+size_flags_horizontal = 1
+type = 6
+icon_name = &"notepad"
+text = "HIPTEXT"
+tooltip = "Write in style"
+
+[node name="Files Icon2" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/ScrollContainer/GridContainer" instance=ExtResource("125_bonl8")]
+layout_mode = 2
+size_flags_horizontal = 1
+icon_name = &"file_manager"
+text = "File Manager"
+tooltip = "Manage your files in style!"
+
+[node name="Calculator Icon2" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/ScrollContainer/GridContainer" instance=ExtResource("125_bonl8")]
+layout_mode = 2
+size_flags_horizontal = 1
+type = 3
+icon_name = &"calculator"
+text = "Calculator"
+tooltip = "Do Basic Arithmetic"
+
+[node name="Settings2" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/ScrollContainer/GridContainer" instance=ExtResource("125_bonl8")]
+layout_mode = 2
+size_flags_horizontal = 1
+type = 5
+icon_name = &"settings"
+text = "Settings"
+tooltip = "Configure your system."
+
+[node name="Notepad2" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/ScrollContainer/GridContainer" instance=ExtResource("125_bonl8")]
+layout_mode = 2
+size_flags_horizontal = 1
+type = 6
+icon_name = &"notepad"
+text = "HIPTEXT"
+tooltip = "Write in style"
+
+[node name="Panel" type="Panel" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.1
+theme_type_variation = &"DesktopPanel"
+
+[node name="Power Strip" type="HBoxContainer" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Panel"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="power_off" type="Button" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Panel/Power Strip"]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+mouse_filter = 1
+icon = ExtResource("74_68tij")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="restart" type="Button" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Panel/Power Strip"]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+mouse_filter = 1
+icon = ExtResource("77_sbg4x")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="logout" type="Button" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Panel/Power Strip"]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+mouse_filter = 1
+icon = ExtResource("62_c3hhl")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Panels/Bottom Panel/Container/App Starter"]
+libraries = {
+&"": SubResource("AnimationLibrary_27ica")
+}
+
+[node name="Apps Container" type="ScrollContainer" parent="Panels/Bottom Panel/Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_a04es")
+
+[node name="Apps Container" type="HBoxContainer" parent="Panels/Bottom Panel/Container/Apps Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="Clock" type="RichTextLabel" parent="Panels/Bottom Panel/Container" node_paths=PackedStringArray("panel", "animation_player", "month_container", "year_label", "month_label")]
+clip_contents = false
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+bbcode_enabled = true
+text = "[center][font_size=16]17:08:24[p][center] Monday, June 4th 2024"
+scroll_active = false
+script = ExtResource("123_wivpr")
+panel = NodePath("Calendar")
+animation_player = NodePath("AnimationPlayer")
+month_container = NodePath("Calendar/Sorter/Days")
+year_label = NodePath("Calendar/Sorter/Buttons Container/Year Label")
+month_label = NodePath("Calendar/Sorter/Buttons Container/Month Label")
+
+[node name="Calendar" type="Panel" parent="Panels/Bottom Panel/Container/Clock"]
+visible = false
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -414.0
+offset_top = -361.0
+offset_right = -24.0
+offset_bottom = -61.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_type_variation = &"DesktopFloatingPanel"
+
+[node name="Sorter" type="VBoxContainer" parent="Panels/Bottom Panel/Container/Clock/Calendar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Buttons Container" type="HBoxContainer" parent="Panels/Bottom Panel/Container/Clock/Calendar/Sorter"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+
+[node name="Year Back" type="Button" parent="Panels/Bottom Panel/Container/Clock/Calendar/Sorter/Buttons Container"]
+layout_mode = 2
+mouse_filter = 1
+theme_type_variation = &"NegativeButton"
+text = "<"
+flat = true
+
+[node name="Year Label" type="Label" parent="Panels/Bottom Panel/Container/Clock/Calendar/Sorter/Buttons Container"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "2024"
+horizontal_alignment = 1
+
+[node name="Year Front" type="Button" parent="Panels/Bottom Panel/Container/Clock/Calendar/Sorter/Buttons Container"]
+layout_mode = 2
+mouse_filter = 1
+theme_type_variation = &"NegativeButton"
+text = ">"
+flat = true
+
+[node name="VSeparator" type="VSeparator" parent="Panels/Bottom Panel/Container/Clock/Calendar/Sorter/Buttons Container"]
+layout_mode = 2
+
+[node name="Month Back" type="Button" parent="Panels/Bottom Panel/Container/Clock/Calendar/Sorter/Buttons Container"]
+layout_mode = 2
+mouse_filter = 1
+theme_type_variation = &"NegativeButton"
+text = "<"
+flat = true
+
+[node name="Month Label" type="Label" parent="Panels/Bottom Panel/Container/Clock/Calendar/Sorter/Buttons Container"]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Jan"
+horizontal_alignment = 1
+
+[node name="Month Front" type="Button" parent="Panels/Bottom Panel/Container/Clock/Calendar/Sorter/Buttons Container"]
+layout_mode = 2
+mouse_filter = 1
+theme_type_variation = &"NegativeButton"
+text = ">"
+flat = true
+
+[node name="VSeparator2" type="VSeparator" parent="Panels/Bottom Panel/Container/Clock/Calendar/Sorter/Buttons Container"]
+layout_mode = 2
+
+[node name="Today Button" type="Button" parent="Panels/Bottom Panel/Container/Clock/Calendar/Sorter/Buttons Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+text = "Today"
+
+[node name="Day of the Week Container" type="HBoxContainer" parent="Panels/Bottom Panel/Container/Clock/Calendar/Sorter"]
+layout_mode = 2
+
+[node name="Monday2" type="Label" parent="Panels/Bottom Panel/Container/Clock/Calendar/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Week"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Monday" type="Label" parent="Panels/Bottom Panel/Container/Clock/Calendar/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Mon"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Tuesday" type="Label" parent="Panels/Bottom Panel/Container/Clock/Calendar/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Tue"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Wednesday" type="Label" parent="Panels/Bottom Panel/Container/Clock/Calendar/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Wed"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Thu" type="Label" parent="Panels/Bottom Panel/Container/Clock/Calendar/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Thu"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Fri" type="Label" parent="Panels/Bottom Panel/Container/Clock/Calendar/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Fri"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sat" type="Label" parent="Panels/Bottom Panel/Container/Clock/Calendar/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Sat"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sun" type="Label" parent="Panels/Bottom Panel/Container/Clock/Calendar/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Sun"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Days" type="GridContainer" parent="Panels/Bottom Panel/Container/Clock/Calendar/Sorter"]
+layout_mode = 2
+size_flags_vertical = 3
+columns = 8
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Panels/Bottom Panel/Container/Clock"]
+libraries = {
+&"": SubResource("AnimationLibrary_ocbpv")
+}
+
+[connection signal="theme_changed" from="." to="." method="_on_theme_changed"]
+[connection signal="mouse_entered" from="Panels/Bottom Panel/Container/App Starter" to="Panels/Bottom Panel/Container/App Starter" method="_on_panel_mouse_entered"]
+[connection signal="mouse_exited" from="Panels/Bottom Panel/Container/App Starter" to="Panels/Bottom Panel/Container/App Starter" method="_on_panel_mouse_exited"]
+[connection signal="pressed" from="Panels/Bottom Panel/Container/App Starter" to="Panels/Bottom Panel/Container/App Starter" method="_on_pressed"]
+[connection signal="mouse_entered" from="Panels/Bottom Panel/Container/App Starter/Panel" to="Panels/Bottom Panel/Container/App Starter" method="_on_panel_mouse_entered"]
+[connection signal="mouse_exited" from="Panels/Bottom Panel/Container/App Starter/Panel" to="Panels/Bottom Panel/Container/App Starter" method="_on_panel_mouse_exited"]
+[connection signal="pressed" from="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Panel/Power Strip/power_off" to="." method="power_strip_pressed" binds= [&"power_off"]]
+[connection signal="pressed" from="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Panel/Power Strip/restart" to="." method="power_strip_pressed" binds= [&"restart"]]
+[connection signal="pressed" from="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Panel/Power Strip/logout" to="." method="power_strip_pressed" binds= [&"logout"]]
+[connection signal="gui_input" from="Panels/Bottom Panel/Container/Clock" to="Panels/Bottom Panel/Container/Clock" method="_on_gui_input"]
+[connection signal="mouse_entered" from="Panels/Bottom Panel/Container/Clock" to="Panels/Bottom Panel/Container/Clock" method="_on_panel_mouse_entered"]
+[connection signal="mouse_exited" from="Panels/Bottom Panel/Container/Clock" to="Panels/Bottom Panel/Container/Clock" method="_on_panel_mouse_exited"]
+[connection signal="mouse_entered" from="Panels/Bottom Panel/Container/Clock/Calendar" to="Panels/Bottom Panel/Container/Clock" method="_on_panel_mouse_entered"]
+[connection signal="mouse_exited" from="Panels/Bottom Panel/Container/Clock/Calendar" to="Panels/Bottom Panel/Container/Clock" method="_on_panel_mouse_exited"]
+[connection signal="pressed" from="Panels/Bottom Panel/Container/Clock/Calendar/Sorter/Buttons Container/Year Back" to="Panels/Bottom Panel/Container/Clock" method="_change_year" binds= [-1]]
+[connection signal="pressed" from="Panels/Bottom Panel/Container/Clock/Calendar/Sorter/Buttons Container/Year Front" to="Panels/Bottom Panel/Container/Clock" method="_change_year" binds= [1]]
+[connection signal="pressed" from="Panels/Bottom Panel/Container/Clock/Calendar/Sorter/Buttons Container/Month Back" to="Panels/Bottom Panel/Container/Clock" method="_change_month" binds= [-1]]
+[connection signal="pressed" from="Panels/Bottom Panel/Container/Clock/Calendar/Sorter/Buttons Container/Month Front" to="Panels/Bottom Panel/Container/Clock" method="_change_month" binds= [1]]
+[connection signal="pressed" from="Panels/Bottom Panel/Container/Clock/Calendar/Sorter/Buttons Container/Today Button" to="Panels/Bottom Panel/Container/Clock" method="_on_today_button_pressed"]

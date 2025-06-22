@@ -1,0 +1,5 @@
+Main - #ffffff
+Accent - #1f1f1f
+Accent2 - #b0b0b0
+BG - #181818
+BG Accent - #151515

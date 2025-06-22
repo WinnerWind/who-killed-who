@@ -1,0 +1,895 @@
+[gd_scene load_steps=54 format=3 uid="uid://di4bb10dtakdq"]
+
+[ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="1_xr8cy"]
+[ext_resource type="Resource" uid="uid://gmxp5mjhrbdg" path="res://Data and Resources/Users/romila.tres" id="2_f78nl"]
+[ext_resource type="Theme" uid="uid://d2df2jma0gcpp" path="res://Art/Themes/catppuccin_light.tres" id="2_gag1y"]
+[ext_resource type="Theme" uid="uid://b3noirgemj1q8" path="res://Art/Themes/catppuccin_dark.tres" id="3_8b36o"]
+[ext_resource type="Script" uid="uid://bifm388ef70uc" path="res://Scripts/Resources and Files/For Desktop/messages.gd" id="3_qk1qt"]
+[ext_resource type="Resource" uid="uid://cc4ybi1u6hoj3" path="res://Art/Pictures/Desktop Icons/Icon Sets/catppuccin_light.tres" id="4_1h41d"]
+[ext_resource type="Script" uid="uid://bfmnfev8k5uiw" path="res://Scripts/Resources and Files/For Desktop/emails.gd" id="5_1h41d"]
+[ext_resource type="Resource" uid="uid://dtqu8mweyv71g" path="res://Art/Pictures/Desktop Icons/Icon Sets/catppuccin_dark.tres" id="5_vqh4t"]
+[ext_resource type="PackedScene" uid="uid://c6gqjqrkidn0b" path="res://Scenes/Window Types/file_manager.tscn" id="6_vqh4t"]
+[ext_resource type="PackedScene" uid="uid://bmcafym2vhbv8" path="res://Scenes/Window Types/image_viewer.tscn" id="7_53p6d"]
+[ext_resource type="PackedScene" uid="uid://heb52kbru40a" path="res://Scenes/Window Types/text_editor.tscn" id="8_ke114"]
+[ext_resource type="PackedScene" uid="uid://cxcs7lmcqhe63" path="res://Scenes/Window Types/video_player.tscn" id="9_rd6dx"]
+[ext_resource type="PackedScene" uid="uid://c4jynkn0t0o4u" path="res://Scenes/Window Types/audio_player.tscn" id="10_mv4s2"]
+[ext_resource type="PackedScene" uid="uid://8dhbm1w7fdt3" path="res://Scenes/Window Types/chats.tscn" id="11_jkww4"]
+[ext_resource type="PackedScene" uid="uid://bxrho3xvynjrp" path="res://Scenes/Window Types/email.tscn" id="12_md6mi"]
+[ext_resource type="PackedScene" uid="uid://vxq4edum8thi" path="res://Scenes/Window Types/calculator.tscn" id="13_eua2p"]
+[ext_resource type="PackedScene" uid="uid://cjmgp7qnlk5kl" path="res://Scenes/Window Types/system_info.tscn" id="14_sytq0"]
+[ext_resource type="PackedScene" uid="uid://bjitvivxr8hkq" path="res://Scenes/Window Types/settings.tscn" id="15_lvsis"]
+[ext_resource type="PackedScene" uid="uid://lak0kkn5lipk" path="res://Scenes/Window Types/notepad.tscn" id="16_l3i1i"]
+[ext_resource type="PackedScene" uid="uid://cn45gtkcdls2w" path="res://Scenes/Window Types/remote_connection.tscn" id="17_ndxm2"]
+[ext_resource type="PackedScene" uid="uid://c2md68ibvvoxk" path="res://Scenes/Other/notification.tscn" id="18_c5icf"]
+[ext_resource type="PackedScene" uid="uid://fal2iityh6i6" path="res://Scenes/Window Types/popup.tscn" id="19_jg670"]
+[ext_resource type="PackedScene" uid="uid://c8t5wkgn4r6wi" path="res://Scenes/Window Types/password_prompt.tscn" id="20_vkw88"]
+[ext_resource type="PackedScene" uid="uid://d2c8qnwy6t3gx" path="res://Scenes/Other/app_tray_icon.tscn" id="21_cueay"]
+[ext_resource type="PackedScene" uid="uid://g84qji3yh2sm" path="res://Scenes/Other/user_password_prompt.tscn" id="22_24c36"]
+[ext_resource type="PackedScene" uid="uid://bj5x25ns3hxmd" path="res://Scenes/Other/power_prompt.tscn" id="23_m03v7"]
+[ext_resource type="PackedScene" uid="uid://b8jwsa53j715" path="res://Scenes/login.tscn" id="24_n7ldb"]
+[ext_resource type="Script" uid="uid://cmowc8flglqra" path="res://Scripts/Files and Folders/folders.gd" id="25_d7gui"]
+[ext_resource type="AudioStream" uid="uid://ctxac8gf3lly6" path="res://Art/Sound/Transitory SFX/intro_1.wav" id="26_ys4re"]
+[ext_resource type="AudioStream" uid="uid://cr8605kdbhaom" path="res://Art/Sound/Transitory SFX/outro_1.wav" id="27_o2j7o"]
+[ext_resource type="Texture2D" uid="uid://dmdex3eijgfnc" path="res://Art/Placeholders/PS30TH_16x9_WALLPAPER.png" id="28_0d8bm"]
+[ext_resource type="Texture2D" uid="uid://cajkgw7h5kb80" path="res://Art/Pictures/Editor Only/file.svg" id="29_wjaef"]
+[ext_resource type="Script" uid="uid://bumowvb75nl7b" path="res://Scripts/Desktop/desktop_panels.gd" id="30_0aslj"]
+[ext_resource type="Script" uid="uid://cjrscc2gi8o1v" path="res://Scripts/Desktop/users_panel.gd" id="31_sgic2"]
+[ext_resource type="PackedScene" uid="uid://dqpce0a7r6slg" path="res://Scenes/Other/users_row.tscn" id="32_clir5"]
+[ext_resource type="PackedScene" uid="uid://bwgiv56py676e" path="res://Scenes/Other/desktop_icon.tscn" id="33_vgd67"]
+[ext_resource type="Script" uid="uid://cq8v8vfrqt7lp" path="res://Scripts/Desktop/clock_and_calendar.gd" id="37_silvm"]
+[ext_resource type="Texture2D" uid="uid://duceho8c5llak" path="res://Art/Pictures/Desktop Icons/User1/Dark/power_off.svg" id="38_mv4s2"]
+[ext_resource type="Texture2D" uid="uid://bvfc20h5rfxyj" path="res://Art/Pictures/Desktop Icons/User1/Dark/reboot.svg" id="39_jkww4"]
+[ext_resource type="Texture2D" uid="uid://c7nvijstn4ujf" path="res://Art/Pictures/Desktop Icons/User1/Dark/logout.svg" id="40_md6mi"]
+
+[sub_resource type="Resource" id="Resource_3no4q"]
+resource_name = "Robert - "
+script = ExtResource("3_qk1qt")
+content = "<d> 28th February 2025 </d>
+$dr Hey there! I heard you deal with computer repair? Can you help me?
+$m dont ask to ask haha. what's your issue?
+$dr I made a folder the other day and I forgot its password. Can you help unlock it?
+$m that's tough, especially if your password is quite uncommon. i can take a look sometime. i'll message you sometime this week.
+$dr Sure!
+<d> 3rd March 2025 </d>
+$m alright, can you mail me your computer? 
+$dr Will Remote SSH work? I'll send you my details.
+$m sure that works
+$dr Alright! Here are the details then:
+$dr [code] SSH KEYS - DO NOT SHARE THIS WITH ANYONE
+PRIVATE KEY: 576F772120492063616E27742062656C6965766520796F75206465636F64656420746869732E
+PUBLIC KEY (LOOPBACK USER): 526F6265727420697320616E206964696F7420646F6E277420796F75207468696E6B3F
+[/code]
+$m wrong one, also delete that message.
+$dr Oops! How do I delete messages?
+$m nevermind, just send me the invite.
+$dr Sorry! Here you go.
+$dr [code] SSH INVITE - 1 USE ONLY!
+USE THESE DETAILS IN SSH GUI OR BY USING THE TERMINAL.
+IP ADDRESS : 192.168.43.89
+USERNAME : robert
+PASSWORD : reallycoolpassword
+[/code]
+$m: nice, i'll get to work soon.
+$dr: Good luck!"
+name = "Robert"
+alternate_name = ""
+last_message = "What's never been has never been so."
+
+[sub_resource type="Resource" id="Resource_jt4cg"]
+resource_name = "FREE DEALS ON PIZZA"
+script = ExtResource("5_1h41d")
+content = "Hey there!
+
+Pavlov Pizza is having a half off on all pizzas this week! Be sure to grab your fill! We have everything ranging from the fattest of cheese pizzas to the most elegant of pepperoni.
+
+- Pavlov Pizza"
+subject = "FREE DEALS ON PIZZA"
+sender = "$pp"
+recipient = "$mu"
+hour = 23
+minute = 59
+day = 7
+month = 2
+year = 2025
+
+[sub_resource type="Resource" id="Resource_hgqbr"]
+resource_name = "Unsubscribe"
+script = ExtResource("5_1h41d")
+content = "unsubscribe
+
+This is an autogenerated mail by Tsundrebird."
+subject = "Unsubscribe"
+sender = "$mu"
+recipient = "$pp"
+hour = 12
+minute = 18
+day = 8
+month = 2
+year = 2025
+
+[sub_resource type="Animation" id="Animation_km1se"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_pdvax"]
+resource_name = "intro_animation"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(-0.5, 1.63333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-1500, 0), Vector2(0, 0)]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("SFX/IntroSFX")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.66666),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [0.0],
+"method": &"play"
+}]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(-0.5, 1.56667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0.4, 0.4), Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_eqmh7"]
+resource_name = "outro_animation"
+length = 2.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.03333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(0.4, 0.4)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 2.13333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(320, -800)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:rotation")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.200713]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SFX/OutroSFX")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [0.0],
+"method": &"play"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_e48td"]
+_data = {
+&"RESET": SubResource("Animation_km1se"),
+&"intro_animation": SubResource("Animation_pdvax"),
+&"outro_animation": SubResource("Animation_eqmh7")
+}
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a04es"]
+
+[sub_resource type="Animation" id="Animation_wniub"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_f317w"]
+resource_name = "close_animation"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.433333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.466667),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_8kbl8"]
+resource_name = "open_animation"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Panel:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0333333, 0.433333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Panel:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.0333333),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_65abu"]
+_data = {
+&"RESET": SubResource("Animation_wniub"),
+&"close_panel": SubResource("Animation_f317w"),
+&"open_panel": SubResource("Animation_8kbl8")
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dhras"]
+_data = {
+&"RESET": SubResource("Animation_wniub"),
+&"close_animation": SubResource("Animation_f317w"),
+&"open_animation": SubResource("Animation_8kbl8")
+}
+
+[node name="Romila" type="Control" node_paths=PackedStringArray("theme_switch_nodes", "app_icon_container", "wallpaper_node", "users_panel")]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xr8cy")
+theme_switch_nodes = [NodePath("Panels/Top Panel/Container/User Switcher/Panel/Users Sorter/Power Strip/power_off"), NodePath("Panels/Top Panel/Container/User Switcher/Panel/Users Sorter/Power Strip/restart"), NodePath("Panels/Top Panel/Container/User Switcher/Panel/Users Sorter/Power Strip/logout")]
+active_edges = Array[int]([45, 1, 1, 45])
+app_icon_container = NodePath("Panels/Left Panel/Sorter/Scroll/Apps Container")
+wallpaper_node = NodePath("Wallpaper")
+users_panel = NodePath("Panels/Top Panel/Container/User Switcher/Panel")
+dictionary_key = "romila"
+light_theme = ExtResource("2_gag1y")
+dark_theme = ExtResource("3_8b36o")
+light_icons = ExtResource("4_1h41d")
+dark_icons = ExtResource("5_vqh4t")
+is_dark_theme = true
+is_default_dark_theme = true
+system_name = "All See OS"
+system_version = "v0.0.1"
+system_information = "Copyright WinnerWind"
+current_user = ExtResource("2_f78nl")
+personal_chat_messages = Array[ExtResource("3_qk1qt")]([SubResource("Resource_3no4q")])
+emails = Array[ExtResource("5_1h41d")]([SubResource("Resource_jt4cg"), SubResource("Resource_hgqbr")])
+file_manager_window = ExtResource("6_vqh4t")
+image_viewer_window = ExtResource("7_53p6d")
+text_viewer_window = ExtResource("8_ke114")
+video_player_window = ExtResource("9_rd6dx")
+music_player_window = ExtResource("10_mv4s2")
+chat_app_window = ExtResource("11_jkww4")
+email_app_window = ExtResource("12_md6mi")
+calculator_window = ExtResource("13_eua2p")
+system_information_window = ExtResource("14_sytq0")
+settings_window = ExtResource("15_lvsis")
+notepad_window = ExtResource("16_l3i1i")
+remote_connection_window = ExtResource("17_ndxm2")
+virtual_notification = ExtResource("18_c5icf")
+popup = ExtResource("19_jg670")
+password_prompt = ExtResource("20_vkw88")
+app_tray_icon = ExtResource("21_cueay")
+users_password_prompt = ExtResource("22_24c36")
+bootup_scene_path = "res://Scenes/bootup.tscn"
+power_prompt = ExtResource("23_m03v7")
+login_scene = ExtResource("24_n7ldb")
+
+[node name="Files" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("25_d7gui")
+
+[node name="Desktop" type="Node" parent="Files"]
+script = ExtResource("25_d7gui")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_e48td")
+}
+
+[node name="SFX" type="Node" parent="."]
+unique_name_in_owner = true
+
+[node name="IntroSFX" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("26_ys4re")
+
+[node name="OutroSFX" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("27_o2j7o")
+
+[node name="Wallpaper" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("28_0d8bm")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Desktop Icons" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panels" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Left Panel" type="Panel" parent="Panels"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_top = 45.0
+offset_right = 45.0
+grow_vertical = 2
+mouse_filter = 2
+theme_type_variation = &"DesktopPanel"
+
+[node name="Sorter" type="VBoxContainer" parent="Panels/Left Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VSeparator" type="HSeparator" parent="Panels/Left Panel/Sorter"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+
+[node name="Scroll" type="ScrollContainer" parent="Panels/Left Panel/Sorter"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_a04es")
+
+[node name="Apps Container" type="VBoxContainer" parent="Panels/Left Panel/Sorter/Scroll"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="Top Panel" type="Panel" parent="Panels"]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+theme_type_variation = &"DesktopPanel"
+
+[node name="Container" type="HBoxContainer" parent="Panels/Top Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="User Switcher" type="Button" parent="Panels/Top Panel/Container" node_paths=PackedStringArray("animation_player")]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("30_0aslj")
+icon_name = &"users"
+animation_player = NodePath("AnimationPlayer")
+
+[node name="Panel" type="Panel" parent="Panels/Top Panel/Container/User Switcher" node_paths=PackedStringArray("sorter")]
+visible = false
+custom_minimum_size = Vector2(150, 300)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 15.0
+offset_top = 15.0
+offset_right = 165.0
+offset_bottom = 315.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_type_variation = &"DesktopFloatingPanel"
+script = ExtResource("31_sgic2")
+users_row = ExtResource("32_clir5")
+sorter = NodePath("Users Sorter")
+
+[node name="Users Sorter" type="VBoxContainer" parent="Panels/Top Panel/Container/User Switcher/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Power Strip" type="HBoxContainer" parent="Panels/Top Panel/Container/User Switcher/Panel/Users Sorter"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+alignment = 1
+
+[node name="power_off" type="Button" parent="Panels/Top Panel/Container/User Switcher/Panel/Users Sorter/Power Strip"]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+mouse_filter = 1
+icon = ExtResource("38_mv4s2")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="restart" type="Button" parent="Panels/Top Panel/Container/User Switcher/Panel/Users Sorter/Power Strip"]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+mouse_filter = 1
+icon = ExtResource("39_jkww4")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="logout" type="Button" parent="Panels/Top Panel/Container/User Switcher/Panel/Users Sorter/Power Strip"]
+custom_minimum_size = Vector2(40, 0)
+layout_mode = 2
+mouse_filter = 1
+icon = ExtResource("40_md6mi")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Panels/Top Panel/Container/User Switcher"]
+libraries = {
+&"": SubResource("AnimationLibrary_65abu")
+}
+
+[node name="Midspacer" type="Control" parent="Panels/Top Panel/Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Clock" type="RichTextLabel" parent="Panels/Top Panel/Container" node_paths=PackedStringArray("panel", "animation_player", "month_container", "year_label", "month_label")]
+clip_contents = false
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+bbcode_enabled = true
+text = "[center][font_size=16]17:08:24[p][center] Monday, June 4th 2024"
+scroll_active = false
+script = ExtResource("37_silvm")
+panel = NodePath("Panel")
+animation_player = NodePath("AnimationPlayer")
+month_container = NodePath("Panel/Sorter/Days")
+year_label = NodePath("Panel/Sorter/Buttons Container/Year Label")
+month_label = NodePath("Panel/Sorter/Buttons Container/Month Label")
+
+[node name="Panel" type="Panel" parent="Panels/Top Panel/Container/Clock"]
+visible = false
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -370.0
+offset_top = 15.0
+offset_right = 20.0
+offset_bottom = 315.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_type_variation = &"DesktopFloatingPanel"
+
+[node name="Sorter" type="VBoxContainer" parent="Panels/Top Panel/Container/Clock/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Buttons Container" type="HBoxContainer" parent="Panels/Top Panel/Container/Clock/Panel/Sorter"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+
+[node name="Year Back" type="Button" parent="Panels/Top Panel/Container/Clock/Panel/Sorter/Buttons Container"]
+layout_mode = 2
+mouse_filter = 1
+theme_type_variation = &"NegativeButton"
+text = "<"
+flat = true
+
+[node name="Year Label" type="Label" parent="Panels/Top Panel/Container/Clock/Panel/Sorter/Buttons Container"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "2024"
+horizontal_alignment = 1
+
+[node name="Year Front" type="Button" parent="Panels/Top Panel/Container/Clock/Panel/Sorter/Buttons Container"]
+layout_mode = 2
+mouse_filter = 1
+theme_type_variation = &"NegativeButton"
+text = ">"
+flat = true
+
+[node name="VSeparator" type="VSeparator" parent="Panels/Top Panel/Container/Clock/Panel/Sorter/Buttons Container"]
+layout_mode = 2
+
+[node name="Month Back" type="Button" parent="Panels/Top Panel/Container/Clock/Panel/Sorter/Buttons Container"]
+layout_mode = 2
+mouse_filter = 1
+theme_type_variation = &"NegativeButton"
+text = "<"
+flat = true
+
+[node name="Month Label" type="Label" parent="Panels/Top Panel/Container/Clock/Panel/Sorter/Buttons Container"]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Jan"
+horizontal_alignment = 1
+
+[node name="Month Front" type="Button" parent="Panels/Top Panel/Container/Clock/Panel/Sorter/Buttons Container"]
+layout_mode = 2
+mouse_filter = 1
+theme_type_variation = &"NegativeButton"
+text = ">"
+flat = true
+
+[node name="VSeparator2" type="VSeparator" parent="Panels/Top Panel/Container/Clock/Panel/Sorter/Buttons Container"]
+layout_mode = 2
+
+[node name="Today Button" type="Button" parent="Panels/Top Panel/Container/Clock/Panel/Sorter/Buttons Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+text = "Today"
+
+[node name="Day of the Week Container" type="HBoxContainer" parent="Panels/Top Panel/Container/Clock/Panel/Sorter"]
+layout_mode = 2
+
+[node name="Monday2" type="Label" parent="Panels/Top Panel/Container/Clock/Panel/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Week"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Monday" type="Label" parent="Panels/Top Panel/Container/Clock/Panel/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Mon"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Tuesday" type="Label" parent="Panels/Top Panel/Container/Clock/Panel/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Tue"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Wednesday" type="Label" parent="Panels/Top Panel/Container/Clock/Panel/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Wed"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Thu" type="Label" parent="Panels/Top Panel/Container/Clock/Panel/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Thu"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Fri" type="Label" parent="Panels/Top Panel/Container/Clock/Panel/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Fri"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sat" type="Label" parent="Panels/Top Panel/Container/Clock/Panel/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Sat"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Sun" type="Label" parent="Panels/Top Panel/Container/Clock/Panel/Sorter/Day of the Week Container"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Sun"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Days" type="GridContainer" parent="Panels/Top Panel/Container/Clock/Panel/Sorter"]
+layout_mode = 2
+size_flags_vertical = 3
+columns = 8
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Panels/Top Panel/Container/Clock"]
+libraries = {
+&"": SubResource("AnimationLibrary_dhras")
+}
+
+[node name="App Starter" type="Button" parent="Panels/Top Panel/Container" node_paths=PackedStringArray("animation_player")]
+custom_minimum_size = Vector2(45, 45)
+layout_mode = 2
+icon = ExtResource("29_wjaef")
+flat = true
+icon_alignment = 1
+expand_icon = true
+script = ExtResource("30_0aslj")
+icon_name = &"app_starter"
+animation_player = NodePath("AnimationPlayer")
+
+[node name="Panel" type="Panel" parent="Panels/Top Panel/Container/App Starter"]
+visible = false
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -387.5
+offset_top = 15.0
+offset_right = 2.5
+offset_bottom = 315.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_type_variation = &"DesktopFloatingPanel"
+
+[node name="Main Container" type="VBoxContainer" parent="Panels/Top Panel/Container/App Starter/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="Title" type="Label" parent="Panels/Top Panel/Container/App Starter/Panel/Main Container"]
+layout_mode = 2
+text = "Apps"
+horizontal_alignment = 1
+
+[node name="Apps Row" type="VBoxContainer" parent="Panels/Top Panel/Container/App Starter/Panel/Main Container"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="1st Row" type="HBoxContainer" parent="Panels/Top Panel/Container/App Starter/Panel/Main Container/Apps Row"]
+layout_mode = 2
+alignment = 1
+
+[node name="Files Icon" parent="Panels/Top Panel/Container/App Starter/Panel/Main Container/Apps Row/1st Row" instance=ExtResource("33_vgd67")]
+layout_mode = 2
+size_flags_horizontal = 1
+icon_name = &"file_manager"
+text = "File Manager"
+tooltip = "Manage your files in style!"
+
+[node name="Calculator Icon" parent="Panels/Top Panel/Container/App Starter/Panel/Main Container/Apps Row/1st Row" instance=ExtResource("33_vgd67")]
+layout_mode = 2
+size_flags_horizontal = 1
+type = 3
+icon_name = &"calculator"
+text = "Calculator"
+tooltip = "Do Basic Arithmetic"
+
+[node name="Settings" parent="Panels/Top Panel/Container/App Starter/Panel/Main Container/Apps Row/1st Row" instance=ExtResource("33_vgd67")]
+layout_mode = 2
+size_flags_horizontal = 1
+type = 5
+icon_name = &"settings"
+text = "Settings"
+tooltip = "Configure your system."
+
+[node name="Notepad" parent="Panels/Top Panel/Container/App Starter/Panel/Main Container/Apps Row/1st Row" instance=ExtResource("33_vgd67")]
+layout_mode = 2
+size_flags_horizontal = 1
+type = 6
+icon_name = &"notepad"
+text = "HIPTEXT"
+tooltip = "Write in style"
+
+[node name="2nd Row" type="HBoxContainer" parent="Panels/Top Panel/Container/App Starter/Panel/Main Container/Apps Row"]
+layout_mode = 2
+alignment = 1
+
+[node name="Chat" parent="Panels/Top Panel/Container/App Starter/Panel/Main Container/Apps Row/2nd Row" instance=ExtResource("33_vgd67")]
+layout_mode = 2
+size_flags_horizontal = 1
+type = 1
+icon_name = &"chat"
+text = "Nicotine"
+tooltip = "Addictive chat app!"
+
+[node name="Email" parent="Panels/Top Panel/Container/App Starter/Panel/Main Container/Apps Row/2nd Row" instance=ExtResource("33_vgd67")]
+layout_mode = 2
+size_flags_horizontal = 1
+type = 2
+icon_name = &"emails"
+text = "Tsundrebird"
+tooltip = "Will not kill you."
+
+[node name="SSH Gui" parent="Panels/Top Panel/Container/App Starter/Panel/Main Container/Apps Row/2nd Row" instance=ExtResource("33_vgd67")]
+layout_mode = 2
+size_flags_horizontal = 1
+type = 7
+icon_name = &"remote_connection"
+text = "SSH GUI"
+tooltip = "Connect to other systems."
+
+[node name="System Information" parent="Panels/Top Panel/Container/App Starter/Panel/Main Container/Apps Row/2nd Row" instance=ExtResource("33_vgd67")]
+layout_mode = 2
+size_flags_horizontal = 1
+type = 4
+icon_name = &"system_information"
+text = "System Info."
+tooltip = "View information about your system."
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Panels/Top Panel/Container/App Starter"]
+libraries = {
+&"": SubResource("AnimationLibrary_65abu")
+}
+
+[node name="Notifications Container" type="Control" parent="."]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+grow_vertical = 2
+mouse_filter = 2
+
+[connection signal="theme_changed" from="." to="." method="_on_theme_changed"]
+[connection signal="mouse_entered" from="Panels/Top Panel/Container/User Switcher" to="Panels/Top Panel/Container/User Switcher" method="_on_panel_mouse_entered"]
+[connection signal="mouse_exited" from="Panels/Top Panel/Container/User Switcher" to="Panels/Top Panel/Container/User Switcher" method="_on_panel_mouse_exited"]
+[connection signal="pressed" from="Panels/Top Panel/Container/User Switcher" to="Panels/Top Panel/Container/User Switcher" method="_on_pressed"]
+[connection signal="mouse_entered" from="Panels/Top Panel/Container/User Switcher/Panel" to="Panels/Top Panel/Container/User Switcher" method="_on_panel_mouse_entered"]
+[connection signal="mouse_exited" from="Panels/Top Panel/Container/User Switcher/Panel" to="Panels/Top Panel/Container/User Switcher" method="_on_panel_mouse_exited"]
+[connection signal="pressed" from="Panels/Top Panel/Container/User Switcher/Panel/Users Sorter/Power Strip/power_off" to="." method="power_strip_pressed" binds= [&"power_off"]]
+[connection signal="pressed" from="Panels/Top Panel/Container/User Switcher/Panel/Users Sorter/Power Strip/restart" to="." method="power_strip_pressed" binds= [&"restart"]]
+[connection signal="pressed" from="Panels/Top Panel/Container/User Switcher/Panel/Users Sorter/Power Strip/logout" to="." method="power_strip_pressed" binds= [&"logout"]]
+[connection signal="gui_input" from="Panels/Top Panel/Container/Clock" to="Panels/Top Panel/Container/Clock" method="_on_gui_input"]
+[connection signal="mouse_entered" from="Panels/Top Panel/Container/Clock" to="Panels/Top Panel/Container/Clock" method="_on_panel_mouse_entered"]
+[connection signal="mouse_exited" from="Panels/Top Panel/Container/Clock" to="Panels/Top Panel/Container/Clock" method="_on_panel_mouse_exited"]
+[connection signal="mouse_entered" from="Panels/Top Panel/Container/Clock/Panel" to="Panels/Top Panel/Container/Clock" method="_on_panel_mouse_entered"]
+[connection signal="mouse_exited" from="Panels/Top Panel/Container/Clock/Panel" to="Panels/Top Panel/Container/Clock" method="_on_panel_mouse_exited"]
+[connection signal="pressed" from="Panels/Top Panel/Container/Clock/Panel/Sorter/Buttons Container/Year Back" to="Panels/Top Panel/Container/Clock" method="_change_year" binds= [-1]]
+[connection signal="pressed" from="Panels/Top Panel/Container/Clock/Panel/Sorter/Buttons Container/Year Front" to="Panels/Top Panel/Container/Clock" method="_change_year" binds= [1]]
+[connection signal="pressed" from="Panels/Top Panel/Container/Clock/Panel/Sorter/Buttons Container/Month Back" to="Panels/Top Panel/Container/Clock" method="_change_month" binds= [-1]]
+[connection signal="pressed" from="Panels/Top Panel/Container/Clock/Panel/Sorter/Buttons Container/Month Front" to="Panels/Top Panel/Container/Clock" method="_change_month" binds= [1]]
+[connection signal="pressed" from="Panels/Top Panel/Container/Clock/Panel/Sorter/Buttons Container/Today Button" to="Panels/Top Panel/Container/Clock" method="_on_today_button_pressed"]
+[connection signal="mouse_entered" from="Panels/Top Panel/Container/App Starter" to="Panels/Top Panel/Container/App Starter" method="_on_panel_mouse_entered"]
+[connection signal="mouse_exited" from="Panels/Top Panel/Container/App Starter" to="Panels/Top Panel/Container/App Starter" method="_on_panel_mouse_exited"]
+[connection signal="pressed" from="Panels/Top Panel/Container/App Starter" to="Panels/Top Panel/Container/App Starter" method="_on_pressed"]
+[connection signal="mouse_entered" from="Panels/Top Panel/Container/App Starter/Panel" to="Panels/Top Panel/Container/App Starter" method="_on_panel_mouse_entered"]
+[connection signal="mouse_exited" from="Panels/Top Panel/Container/App Starter/Panel" to="Panels/Top Panel/Container/App Starter" method="_on_panel_mouse_exited"]

@@ -1,0 +1,152 @@
+[gd_scene load_steps=13 format=3 uid="uid://bvq01if54w6ot"]
+
+[ext_resource type="Script" uid="uid://bb3mt2eyokg3v" path="res://Scripts/Desktop/bootup.gd" id="2_etgtv"]
+[ext_resource type="Texture2D" uid="uid://bdop77kp3s4tj" path="res://Art/Pictures/OS Logos/anytable_large.svg" id="3_dnrft"]
+[ext_resource type="Script" uid="uid://cxe5keybq33wo" path="res://Scripts/Resources and Files/Bootup/bootup_line.gd" id="3_jm3ha"]
+[ext_resource type="Texture2D" uid="uid://b2hefal5b3m6y" path="res://Art/Pictures/OS Logos/anytable_looper.svg" id="4_xyfhq"]
+[ext_resource type="Script" uid="uid://cr6b45oclcbh4" path="res://Scripts/Resources and Files/Bootup/bootup_sequence.gd" id="6_0du3p"]
+[ext_resource type="FontFile" uid="uid://ckrjqgctwmwjc" path="res://Art/Fonts/IBM VGA/Px437_IBM_VGA_9x16.ttf" id="7_rjwdn"]
+[ext_resource type="PackedScene" uid="uid://b8jwsa53j715" path="res://Scenes/login.tscn" id="7_tkliv"]
+
+[sub_resource type="Resource" id="Resource_f8vrr"]
+script = ExtResource("3_jm3ha")
+type = 1
+text = "New Line."
+delay = 3.0
+
+[sub_resource type="Resource" id="Resource_v3yly"]
+script = ExtResource("6_0du3p")
+array_of_bootup_text = Array[ExtResource("3_jm3ha")]([SubResource("Resource_f8vrr")])
+plymouth_image = ExtResource("3_dnrft")
+plymouth_looper = ExtResource("4_xyfhq")
+is_intro = true
+
+[sub_resource type="Animation" id="Animation_g4gue"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_vxr68"]
+resource_name = "loop"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 3.14159, 6.28319]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_r64il"]
+_data = {
+&"RESET": SubResource("Animation_g4gue"),
+&"loop": SubResource("Animation_vxr68")
+}
+
+[node name="Bootup" type="Control" node_paths=PackedStringArray("main_text_label", "plymouth", "plymouth_image", "plymouth_looper")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_etgtv")
+main_text_label = NodePath("Text Only Interface/Main Text")
+plymouth = NodePath("Plymouth")
+plymouth_image = NodePath("Plymouth/Container/Image")
+plymouth_looper = NodePath("Plymouth/Container/Looper Parent/Looper")
+sequence = SubResource("Resource_v3yly")
+scene_to_start = ExtResource("7_tkliv")
+
+[node name="Text Only Interface" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="Main Text" type="RichTextLabel" parent="Text Only Interface"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_fonts/normal_font = ExtResource("7_rjwdn")
+bbcode_enabled = true
+scroll_active = false
+scroll_following = true
+shortcut_keys_enabled = false
+
+[node name="Plymouth" type="MarginContainer" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 150
+theme_override_constants/margin_top = 150
+theme_override_constants/margin_right = 150
+theme_override_constants/margin_bottom = 150
+
+[node name="Container" type="VBoxContainer" parent="Plymouth"]
+layout_mode = 2
+
+[node name="Image" type="TextureRect" parent="Plymouth/Container"]
+layout_mode = 2
+size_flags_vertical = 3
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Looper Parent" type="Control" parent="Plymouth/Container"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="Looper" type="TextureRect" parent="Plymouth/Container/Looper Parent"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -25.0
+offset_top = -25.0
+offset_right = 25.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(25, 25)
+size_flags_vertical = 4
+expand_mode = 1
+stretch_mode = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Plymouth/Container/Looper Parent/Looper"]
+libraries = {
+&"": SubResource("AnimationLibrary_r64il")
+}
+autoplay = "loop"
+speed_scale = 0.5
+
+[node name="Timer" type="Timer" parent="Plymouth"]
+wait_time = 5.0
+one_shot = true

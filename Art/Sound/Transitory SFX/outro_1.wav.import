@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cr8605kdbhaom"
+path="res://.godot/imported/outro_1.wav-5e1885490db45d5c3ad4f0d8f6b362d7.sample"
+
+[deps]
+
+source_file="res://Art/Sound/Transitory SFX/outro_1.wav"
+dest_files=["res://.godot/imported/outro_1.wav-5e1885490db45d5c3ad4f0d8f6b362d7.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

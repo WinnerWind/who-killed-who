@@ -1,0 +1,79 @@
+[gd_scene load_steps=4 format=3 uid="uid://cjmgp7qnlk5kl"]
+
+[ext_resource type="Script" uid="uid://wy8366in87t3" path="res://Scripts/Windows/system_info.gd" id="1_kaqp4"]
+[ext_resource type="Texture2D" uid="uid://de2rfdv4jgjkh" path="res://Art/Pictures/OS Logos/ale_small.svg" id="2_6hfkq"]
+[ext_resource type="PackedScene" uid="uid://utagi2eh5w54" path="res://Scenes/Other/titlebar.tscn" id="2_iwmbt"]
+
+[node name="System Information" type="Panel" node_paths=PackedStringArray("title", "version", "more_information", "system_icon")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -752.0
+offset_bottom = -398.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kaqp4")
+title = NodePath("Sorter/Contents/Text/Title")
+version = NodePath("Sorter/Contents/Text/Version Number")
+more_information = NodePath("Sorter/Contents/Text/Advanced Information")
+system_icon = NodePath("Sorter/Contents/Image Margins/Image")
+starting_size = Vector2(400, 250)
+window_icon_name = &"system_information"
+
+[node name="Sorter" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Titlebar" parent="Sorter" instance=ExtResource("2_iwmbt")]
+layout_mode = 2
+
+[node name="Contents" type="HBoxContainer" parent="Sorter"]
+clip_contents = true
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Image Margins" type="MarginContainer" parent="Sorter/Contents"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="Image" type="TextureRect" parent="Sorter/Contents/Image Margins"]
+layout_mode = 2
+texture = ExtResource("2_6hfkq")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Text" type="VBoxContainer" parent="Sorter/Contents"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Title" type="Label" parent="Sorter/Contents/Text"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "Arch Linux"
+horizontal_alignment = 1
+
+[node name="Version Number" type="Label" parent="Sorter/Contents/Text"]
+layout_mode = 2
+text = "v0.2.2"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="Sorter/Contents/Text"]
+layout_mode = 2
+
+[node name="Advanced Information" type="RichTextLabel" parent="Sorter/Contents/Text"]
+custom_minimum_size = Vector2(10, 0)
+layout_mode = 2
+size_flags_vertical = 3
+text = "Copyright WinnerWind and Co.
+You may not distribute this operating system without a licence."
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

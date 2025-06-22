@@ -1,0 +1,129 @@
+[gd_scene load_steps=5 format=3 uid="uid://cn45gtkcdls2w"]
+
+[ext_resource type="Script" uid="uid://bwxvw56c8f4rs" path="res://Scripts/Windows/remote_connection.gd" id="1_jbxaj"]
+[ext_resource type="PackedScene" uid="uid://utagi2eh5w54" path="res://Scenes/Other/titlebar.tscn" id="2_nmtrj"]
+[ext_resource type="Script" uid="uid://ds65yghua76jy" path="res://Scripts/Resources and Files/Other/user_metadata.gd" id="2_x1qqv"]
+[ext_resource type="Resource" uid="uid://dwqseev5bc8ta" path="res://Data and Resources/Users/Demos/demo_robert.tres" id="3_q2kbw"]
+
+[node name="Anytable Discovery" type="Panel" node_paths=PackedStringArray("username_input", "password_input", "ip_address_inputs")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -752.0
+offset_bottom = -348.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jbxaj")
+unlockable_users = Array[ExtResource("2_x1qqv")]([ExtResource("3_q2kbw")])
+username_input = NodePath("Sorter/Contents/Sorter/Username")
+password_input = NodePath("Sorter/Contents/Sorter/Password with Show Button/Password")
+ip_address_inputs = NodePath("Sorter/Contents/Sorter/IP Address Nodes")
+starting_size = Vector2(400, 300)
+window_icon_name = &"remote_connection"
+
+[node name="Sorter" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Titlebar" parent="Sorter" instance=ExtResource("2_nmtrj")]
+layout_mode = 2
+
+[node name="Contents" type="MarginContainer" parent="Sorter"]
+clip_contents = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 10
+
+[node name="Sorter" type="VBoxContainer" parent="Sorter/Contents"]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="Sorter/Contents/Sorter"]
+layout_mode = 2
+text = "Enter your remote connection details"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="IP Address Nodes" type="HBoxContainer" parent="Sorter/Contents/Sorter"]
+layout_mode = 2
+
+[node name="IP Address" type="SpinBox" parent="Sorter/Contents/Sorter/IP Address Nodes"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 256.0
+rounded = true
+alignment = 3
+suffix = "."
+
+[node name="IP Address2" type="SpinBox" parent="Sorter/Contents/Sorter/IP Address Nodes"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 256.0
+rounded = true
+alignment = 3
+suffix = "."
+
+[node name="IP Address3" type="SpinBox" parent="Sorter/Contents/Sorter/IP Address Nodes"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 256.0
+rounded = true
+alignment = 3
+suffix = "."
+
+[node name="IP Address4" type="SpinBox" parent="Sorter/Contents/Sorter/IP Address Nodes"]
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 256.0
+rounded = true
+alignment = 3
+
+[node name="Username" type="LineEdit" parent="Sorter/Contents/Sorter"]
+layout_mode = 2
+placeholder_text = "Username"
+
+[node name="Password with Show Button" type="HBoxContainer" parent="Sorter/Contents/Sorter"]
+layout_mode = 2
+
+[node name="Password" type="LineEdit" parent="Sorter/Contents/Sorter/Password with Show Button"]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_next = NodePath("../../Submit Button")
+placeholder_text = "Password"
+virtual_keyboard_type = 6
+secret = true
+
+[node name="Show Button" type="CheckBox" parent="Sorter/Contents/Sorter/Password with Show Button"]
+layout_mode = 2
+theme_type_variation = &"PasswordShowBox"
+button_pressed = true
+flat = true
+icon_alignment = 1
+
+[node name="Text" type="Label" parent="Sorter/Contents/Sorter"]
+layout_mode = 2
+text = "Note: Users will be added to your in built user list."
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="HSeparator" type="HSeparator" parent="Sorter/Contents/Sorter"]
+layout_mode = 2
+
+[node name="Submit Button" type="Button" parent="Sorter/Contents/Sorter"]
+layout_mode = 2
+text = "Submit"
+
+[node name="Clear Button" type="Button" parent="Sorter/Contents/Sorter"]
+layout_mode = 2
+text = "Clear"
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="toggled" from="Sorter/Contents/Sorter/Password with Show Button/Show Button" to="Sorter/Contents/Sorter/Password with Show Button/Password" method="set_secret"]
+[connection signal="pressed" from="Sorter/Contents/Sorter/Submit Button" to="." method="_on_submit_button_pressed"]
+[connection signal="pressed" from="Sorter/Contents/Sorter/Clear Button" to="." method="_on_clear_button_pressed"]
