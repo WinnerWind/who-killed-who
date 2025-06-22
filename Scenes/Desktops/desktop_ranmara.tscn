@@ -55,15 +55,27 @@
 [sub_resource type="Resource" id="Resource_dl4b8"]
 resource_name = "Welcome to Transkriptor"
 script = ExtResource("9_x2dtt")
-content = "Test"
+content = "Hello,
+
+Thank you for your purchase of Transkriptor v3. Below we have attached an invoice for you.
+
+{expattachment}
+
+Do note that Transkriptor v3 always runs on your system. By default, the output directory is [code]~/Transkriptor[/code]. This can be changed in your [code]~/Transkriptor/config[/code] file.
+
+Happy transcripting!
+
+Transkriptor & Co.
+
+THIS IS A SENDONLY ADDRESS. DO NOT REPLY TO THIS. FOR SERVICE QUERIES, PLEASE EMAIL [code]support@transkriptor.org[/code]"
 subject = "Welcome to Transkriptor"
 sender = "$transkriptor"
 recipient = "$ran"
-hour = 0
-minute = 0
-day = 1
-month = 0
-year = 2025
+hour = 12
+minute = 32
+day = 31
+month = 11
+year = 2024
 metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
 
 [sub_resource type="Resource" id="Resource_dh8vg"]
