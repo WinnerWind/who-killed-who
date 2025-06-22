@@ -17,6 +17,7 @@ replacements = Dictionary[String, String]({
 "$ran": "ranmara@winnerwind.in",
 "$rom": "romila@winnerwind.in",
 "$sth": "satsu@winnerwind.in",
+"$support-transkriptor": "support@transkriptor.org",
 "$transkriptor": "hi@transkriptor.org"
 })
 key_to_be_renamed = ""

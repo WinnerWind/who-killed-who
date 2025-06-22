@@ -1,4 +1,4 @@
-[gd_scene load_steps=127 format=3 uid="uid://w0kx4pqkw37h"]
+[gd_scene load_steps=129 format=3 uid="uid://w0kx4pqkw37h"]
 
 [ext_resource type="Theme" uid="uid://xyj76ld4ymnb" path="res://Art/Themes/hip_retro_dark.tres" id="1_8yja0"]
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="2_udsku"]
@@ -57,7 +57,7 @@ resource_name = "Welcome to Transkriptor"
 script = ExtResource("9_x2dtt")
 content = "Hello,
 
-Thank you for your purchase of Transkriptor v3. Below we have attached an invoice for you.
+Thank you for your purchase of Transkriptor v3 Enterprise Licence. Below we have attached an invoice for you.
 
 {expattachment}
 
@@ -76,6 +76,48 @@ minute = 32
 day = 31
 month = 11
 year = 2024
+metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
+
+[sub_resource type="Resource" id="Resource_oei7g"]
+resource_name = "About Passwords in Transkriptor"
+script = ExtResource("9_x2dtt")
+content = "Hi!
+
+I'm unable to access my Transkriptor folder as it's password protected. I don't remember setting a password either. Can you help me out?
+
+Ranmara."
+subject = "About Passwords in Transkriptor"
+sender = "$ran"
+recipient = "$support-transkriptor"
+hour = 12
+minute = 45
+day = 1
+month = 0
+year = 2025
+metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
+
+[sub_resource type="Resource" id="Resource_ook28"]
+resource_name = "RE: About Passwords in Transkriptor"
+script = ExtResource("9_x2dtt")
+content = "Hello Ranmara,
+
+I understand how frustrating it is to not be able to access your Transkriptor transcriptions.
+
+Do note that by default, the password to your Transkriptor instance is the same as your E-Mail address.
+
+Let me know if you require more support,
+
+Marla.
+
+Note: If you would like to close this ticket, please do so at {explink}"
+subject = "RE: About Passwords in Transkriptor"
+sender = "$support-transkriptor"
+recipient = "$ran"
+hour = 15
+minute = 0
+day = 2
+month = 0
+year = 2025
 metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
 
 [sub_resource type="Resource" id="Resource_dh8vg"]
@@ -1089,7 +1131,7 @@ current_user = ExtResource("6_nkhfi")
 chat_username = "$ran"
 chat_realname = "Ranmara"
 group_chat_messages = Array[ExtResource("7_e4ydr")]([ExtResource("8_x2dtt")])
-emails = Array[ExtResource("9_x2dtt")]([SubResource("Resource_dl4b8")])
+emails = Array[ExtResource("9_x2dtt")]([SubResource("Resource_dl4b8"), SubResource("Resource_oei7g"), SubResource("Resource_ook28")])
 file_manager_window = ExtResource("10_ew2rf")
 image_viewer_window = ExtResource("11_cxx12")
 text_viewer_window = ExtResource("12_y5osf")
@@ -1546,6 +1588,11 @@ text = "[[[25DEC24]]]
 [10:32 UTC+5:30] ranmarar has removed romila."
 audio_subtitles = SubResource("Resource_b7kwo")
 video_subtitles = SubResource("Resource_ofd1c")
+
+[node name="Transkriptor" type="Node" parent="Files"]
+script = ExtResource("34_w8q17")
+password = "ranmara@winnerwind.in"
+metadata/_custom_type_script = "uid://cmowc8flglqra"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

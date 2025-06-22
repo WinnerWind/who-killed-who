@@ -5,7 +5,8 @@
 [resource]
 script = ExtResource("1_6ynln")
 replacements = Dictionary[String, String]({
-"{expattachment}": "[pulse][color=dark_gray]EXPIRED ATTACHMENT[/color][/pulse]"
+"{expattachment}": "[pulse][color=dark_gray]EXPIRED ATTACHMENT[/color][/pulse]",
+"{explink}": "[pulse][color=dark_gray]EXPIRED LINK[/color][/pulse]"
 })
 key_to_be_renamed = ""
 rename_key_to = ""
