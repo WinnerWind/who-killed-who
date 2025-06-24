@@ -1,4 +1,4 @@
-[gd_scene load_steps=134 format=3 uid="uid://w0kx4pqkw37h"]
+[gd_scene load_steps=135 format=3 uid="uid://w0kx4pqkw37h"]
 
 [ext_resource type="Theme" uid="uid://xyj76ld4ymnb" path="res://Art/Themes/hip_retro_dark.tres" id="1_8yja0"]
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="2_udsku"]
@@ -53,6 +53,15 @@
 [ext_resource type="Texture2D" uid="uid://i3j8lcga1itj" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/logout.png" id="52_e8sag"]
 [ext_resource type="PackedScene" uid="uid://dlmfk24r0gbcc" path="res://Scenes/Other/fancy_button.tscn" id="53_nwur7"]
 [ext_resource type="Script" uid="uid://cq8v8vfrqt7lp" path="res://Scripts/Desktop/clock_and_calendar.gd" id="54_1vvat"]
+
+[sub_resource type="Resource" id="Resource_amo2v"]
+resource_name = "Satsu Hito - "
+script = ExtResource("7_e4ydr")
+content = "<d"
+name = "Satsu Hito"
+alternate_name = "Ranmara"
+last_message = "What's never been has never been so."
+metadata/_custom_type_script = "uid://bifm388ef70uc"
 
 [sub_resource type="Resource" id="Resource_ook28"]
 resource_name = "RE: About Passwords in Transkriptor"
@@ -1172,6 +1181,7 @@ WINNERWIND"
 current_user = ExtResource("6_nkhfi")
 chat_username = "$ran"
 chat_realname = "Ranmara"
+personal_chat_messages = Array[ExtResource("7_e4ydr")]([SubResource("Resource_amo2v")])
 group_chat_messages = Array[ExtResource("7_e4ydr")]([ExtResource("8_x2dtt")])
 emails = Array[ExtResource("9_x2dtt")]([SubResource("Resource_ook28"), SubResource("Resource_oei7g"), SubResource("Resource_dl4b8"), SubResource("Resource_k7xhl")])
 file_manager_window = ExtResource("10_ew2rf")
@@ -1666,6 +1676,7 @@ stream = ExtResource("40_ibk3b")
 stream = ExtResource("41_l0gm2")
 
 [node name="Smart Wallpaper" type="ColorRect" parent="."]
+visible = false
 material = SubResource("ShaderMaterial_gi6f8")
 layout_mode = 1
 anchors_preset = 15
@@ -1702,7 +1713,7 @@ own_world_3d = true
 transparent_bg = true
 handle_input_locally = false
 size = Vector2i(1152, 648)
-render_target_update_mode = 4
+render_target_update_mode = 0
 
 [node name="3D Background" parent="Smart Wallpaper/3D Wallpaper/SubViewport" instance=ExtResource("44_l4mwa")]
 
