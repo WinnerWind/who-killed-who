@@ -34,7 +34,7 @@ project/assembly_name="Who Killed Who"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/csgtomesh/plugin.cfg")
+enabled=PackedStringArray("res://addons/csgtomesh/plugin.cfg", "res://addons/startup_runner/plugin.cfg")
 
 [file_customization]
 
