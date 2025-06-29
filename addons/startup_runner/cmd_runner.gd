@@ -15,7 +15,7 @@ func _enter_tree() -> void: #Also runs on editor start.
 			if not command.strip_edges() == "": #Don't execute a blank line on accident.
 				var command_name:String = command.split(" ")[0]
 				var command_arguments:PackedStringArray = command.split(" ").slice(1)
-				OS.execute(command_name,command_arguments,[],false,true)
+				OS.execute_with_pipe(command_name,command_arguments)
 	
 
 func _exit_tree() -> void:
