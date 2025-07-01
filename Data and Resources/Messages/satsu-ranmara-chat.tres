@@ -1,0 +1,150 @@
+[gd_resource type="Resource" script_class="ChatMessage" load_steps=2 format=3 uid="uid://qytd0uftfts"]
+
+[ext_resource type="Script" uid="uid://bifm388ef70uc" path="res://Scripts/Resources and Files/For Desktop/messages.gd" id="1_12wnk"]
+
+[resource]
+resource_name = "Satsu Hito - "
+script = ExtResource("1_12wnk")
+content = "<d 2025-01-03>
+<t 12:12>
+$sth Do you want to go for a drink tonight?
+$ran Sure. Same place as always?
+$sth You know it. Crossroads.
+$ran Alright.
+
+<d 2025-01-31>
+<t 17:45>
+$ran I kinda wanna take a leave from the company for a bit you know.
+$ran Recharge and stuff. Our company is doing very well nowadays. I think we'll be fine if we take a short break and recharge.
+$sth I completely get that.
+$sth Let me handle things for a bit.
+$sth I'll be able to take care of the crew on my own. 
+$ran That's not what I meant.
+<t 18:32>
+$ran You know, lets go to Crossroads again.
+$sth Sure.
+
+<d 2025-02-09>
+<t 18:12>
+$sth This feels hopeless.
+$sth No one has any ideas for our next game.
+$sth If I was taking charge, maybe our little ragtag team would've been a lot more ahead.
+$ran Relax Satsu, have some faith.
+$ran We'll have some great ideas soon.
+
+<d 2025-02-14>
+<t 17:12>
+$sth Please meet me at Crossroads. 
+$sth I have some greivances I need to address with you.
+$ran No worries. No need to keep it formal too.
+$ran I'll be there at 8, like always.
+
+<d 2025-02-15>
+<t 16:12>
+$ran Thank you so much for taking care of the situation between Romila and Jeremy. 
+$ran I didn't think I would be able to handle that.
+$sth No worries. No need to keep it formal.
+$ran Ha, I didn't think you'd use my own words against me.
+$ran Anyway, thanks again.
+$sth No probem.
+
+<d 2025-02-17>
+<t 18:10>
+$sth I'm not sure how to feel about Romila's drug issue.
+$sth I mean I don't really care too much about drugs but,
+$sth It seems as though no one in our studio wants to work anymore. It sucks. The air feels so stagnant.
+$ran We'll get her through this, together.
+$ran We just need to have some faith in her.
+$ran I read somewhere that the best path to rehab is to give her the support she needs.
+$ran We have to be there for her.
+$sth Sure.
+
+<d 2025-02-21>
+<t 19:12>
+$ran I'm getting really worried for Romila you know.
+$ran Ugh, what do we do?
+$ran Why'd she break down today? Did she say anything?
+$sth Nothing that I know of.
+$sth She hasn't said anything to me. Perhaps she did to someone else. 
+$sth It's not like she ever opens up to me.
+$ran Fine, I'll shoot her a message.
+
+<d 2025-02-22>
+<t 4:30>
+$sth I won't be coming to the studio today.
+<t 9:09>
+$ran Something happen?
+$sth Don't worry. I'm fine.
+$ran If you say so.
+
+<d 2025-02-23>
+<t 19:45>
+$ran Things have been very unstable at the company lately.
+$ran I've been thinking about what should happen to the company if something were to, you know, cause major disorder and I need to step down from the company.
+$ran Do you think you'll be able to take over control if anything happens?
+$sth Sure, I can't see why not.
+$sth I could really use more money right now.
+$sth Do you want to form a contract about this?
+$ran Probably not now.
+$ran Anyway, it was a passing thought.
+
+<d 2025-02-28>
+<t 16:32>
+$ran Crossroads tonight.
+$sth Sure.
+
+<d 2025-03-07>
+<t 21:04>
+$ran Ugh, the rumors are spreading again.
+$sth I know. I wonder who started them.
+$sth How'd they even find out?
+$ran God knows. We can't keep dealing with this shit though.
+$sth Want to have a drink?
+$ran Sure.
+
+<d 2025-03-14>
+<t 17:12>
+$ran I don't feel like having a drink tonight...
+$sth Why don't we go someplace nice for dinner then?
+$ran Sounds good.
+$sth CafeLafe has fine dining right?
+$ran I think so, besides its worth a shot anyway.
+
+<d 2025-03-19>
+<t 2:12>
+$ran I dont think I can do this anymore.
+$ran There's so much shit happening at our office and I hate it so much.
+$ran I'm going to take a short break.
+$sth Please leave everything to me. 
+$sth I'll handle it.
+$ran Alright.
+
+<d 2025-03-21>
+<t 18:12>
+$ran I dont think I can make it today, sorry.
+$sth It's alright.
+$sth Just do whatever you do best, golden boy.
+$ran Not sure where the hostility is coming from.
+
+<d 2025-03-28>
+<t 17:12>
+$ran Let's go to Crossroads tomorrow.
+$ran I invited Jeremy too.
+$ran It's urgent. Be there.
+$sth Oh so now I don't even have a say? Okay.
+$sth Guess you're the boss.
+
+<d 2025-03-21>
+<t 6:34>
+$sth Do you think that the \"crazy woman\" who made a commotion at the party was Romila?
+$ran Could be. I wans't really paying attention.
+$ran Why do you think that?
+$sth I don't know. Deja vu. Their face seemed familiar I guess.
+
+<d 2025-03-27>
+<t 21:34>
+$sth Goodbye."
+name = "Satsu Hito"
+alternate_name = "Ranmara"
+last_message = "What's never been has never been so."
+metadata/_custom_type_script = "uid://bifm388ef70uc"

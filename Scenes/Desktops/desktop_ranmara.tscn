@@ -7,6 +7,7 @@
 [ext_resource type="Resource" uid="uid://ctu38rpupbng6" path="res://Art/Pictures/Desktop Icons/Icon Sets/monochrome_pixel_dark.tres" id="5_ook28"]
 [ext_resource type="Resource" uid="uid://f8jl5nasiqhi" path="res://Data and Resources/Users/ranmara.tres" id="6_nkhfi"]
 [ext_resource type="Script" uid="uid://bifm388ef70uc" path="res://Scripts/Resources and Files/For Desktop/messages.gd" id="7_e4ydr"]
+[ext_resource type="Resource" uid="uid://qytd0uftfts" path="res://Data and Resources/Messages/satsu-ranmara-chat.tres" id="8_8yja0"]
 [ext_resource type="Resource" uid="uid://b2bepjl0eby00" path="res://Data and Resources/Messages/killer_games.tres" id="8_x2dtt"]
 [ext_resource type="Script" uid="uid://bfmnfev8k5uiw" path="res://Scripts/Resources and Files/For Desktop/emails.gd" id="9_x2dtt"]
 [ext_resource type="PackedScene" uid="uid://c6gqjqrkidn0b" path="res://Scenes/Window Types/file_manager.tscn" id="10_ew2rf"]
@@ -53,15 +54,6 @@
 [ext_resource type="Texture2D" uid="uid://i3j8lcga1itj" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/logout.png" id="52_e8sag"]
 [ext_resource type="PackedScene" uid="uid://dlmfk24r0gbcc" path="res://Scenes/Other/fancy_button.tscn" id="53_nwur7"]
 [ext_resource type="Script" uid="uid://cq8v8vfrqt7lp" path="res://Scripts/Desktop/clock_and_calendar.gd" id="54_1vvat"]
-
-[sub_resource type="Resource" id="Resource_amo2v"]
-resource_name = "Satsu Hito - "
-script = ExtResource("7_e4ydr")
-content = "<d"
-name = "Satsu Hito"
-alternate_name = "Ranmara"
-last_message = "What's never been has never been so."
-metadata/_custom_type_script = "uid://bifm388ef70uc"
 
 [sub_resource type="Resource" id="Resource_ook28"]
 resource_name = "RE: About Passwords in Transkriptor"
@@ -1181,7 +1173,7 @@ WINNERWIND"
 current_user = ExtResource("6_nkhfi")
 chat_username = "$ran"
 chat_realname = "Ranmara"
-personal_chat_messages = Array[ExtResource("7_e4ydr")]([SubResource("Resource_amo2v")])
+personal_chat_messages = Array[ExtResource("7_e4ydr")]([ExtResource("8_8yja0")])
 group_chat_messages = Array[ExtResource("7_e4ydr")]([ExtResource("8_x2dtt")])
 emails = Array[ExtResource("9_x2dtt")]([SubResource("Resource_ook28"), SubResource("Resource_oei7g"), SubResource("Resource_dl4b8"), SubResource("Resource_k7xhl")])
 file_manager_window = ExtResource("10_ew2rf")
