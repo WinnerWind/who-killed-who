@@ -21,7 +21,7 @@ func _ready():
 	message_sender_group.hide()
 	message_sender_direct.hide() #Don't want text on intro
 	
-	desktop.open_popup("No write permission!","It appears that you do not have write permission on this system. Launching in read-only mode.", "Error: Nicotine")
+	desktop.open_popup("No write permission!","It appears that you do not have write permission on this system. Launching in read-only mode.", "Dr. Konqui")
 	# load messages from the desktop.
 	direct_messages = desktop.personal_chat_messages
 	group_messages = desktop.group_chat_messages
