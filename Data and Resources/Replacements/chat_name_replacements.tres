@@ -14,7 +14,7 @@ replacements = Dictionary[String, String]({
 "$dur": "[[color=teal]Rakesh[/color]]:",
 "$jrm": "[[color=steel_blue]Jeremy[/color]]:",
 "$m": "[Me]:",
-"$ran": "[[color=teal]Ranmara[/color]:",
+"$ran": "[[color=teal]Ranmara[/color]]:",
 "$rom": "[[color=teal]Romila[/color]]:",
 "$sth": "[[color=tomato]Satsu[/color]]:",
 "$sys": "[SYSTEM]:"
