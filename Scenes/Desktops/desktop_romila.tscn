@@ -10,6 +10,7 @@
 [ext_resource type="Resource" uid="uid://dtqu8mweyv71g" path="res://Art/Pictures/Desktop Icons/Icon Sets/catppuccin_dark.tres" id="5_vqh4t"]
 [ext_resource type="PackedScene" uid="uid://c6gqjqrkidn0b" path="res://Scenes/Window Types/file_manager.tscn" id="6_vqh4t"]
 [ext_resource type="PackedScene" uid="uid://bmcafym2vhbv8" path="res://Scenes/Window Types/image_viewer.tscn" id="7_53p6d"]
+[ext_resource type="Resource" uid="uid://bf8cvgbl8ku3t" path="res://Data and Resources/Messages/romila-ranmara-chat.tres" id="8_1h41d"]
 [ext_resource type="PackedScene" uid="uid://heb52kbru40a" path="res://Scenes/Window Types/text_editor.tscn" id="8_ke114"]
 [ext_resource type="PackedScene" uid="uid://cxcs7lmcqhe63" path="res://Scenes/Window Types/video_player.tscn" id="9_rd6dx"]
 [ext_resource type="PackedScene" uid="uid://c4jynkn0t0o4u" path="res://Scenes/Window Types/audio_player.tscn" id="10_mv4s2"]
@@ -40,40 +41,6 @@
 [ext_resource type="Texture2D" uid="uid://duceho8c5llak" path="res://Art/Pictures/Desktop Icons/User1/Dark/power_off.svg" id="38_mv4s2"]
 [ext_resource type="Texture2D" uid="uid://bvfc20h5rfxyj" path="res://Art/Pictures/Desktop Icons/User1/Dark/reboot.svg" id="39_jkww4"]
 [ext_resource type="Texture2D" uid="uid://c7nvijstn4ujf" path="res://Art/Pictures/Desktop Icons/User1/Dark/logout.svg" id="40_md6mi"]
-
-[sub_resource type="Resource" id="Resource_3no4q"]
-resource_name = "Robert - "
-script = ExtResource("3_qk1qt")
-content = "<d> 28th February 2025 </d>
-$dr Hey there! I heard you deal with computer repair? Can you help me?
-$m dont ask to ask haha. what's your issue?
-$dr I made a folder the other day and I forgot its password. Can you help unlock it?
-$m that's tough, especially if your password is quite uncommon. i can take a look sometime. i'll message you sometime this week.
-$dr Sure!
-<d> 3rd March 2025 </d>
-$m alright, can you mail me your computer? 
-$dr Will Remote SSH work? I'll send you my details.
-$m sure that works
-$dr Alright! Here are the details then:
-$dr [code] SSH KEYS - DO NOT SHARE THIS WITH ANYONE
-PRIVATE KEY: 576F772120492063616E27742062656C6965766520796F75206465636F64656420746869732E
-PUBLIC KEY (LOOPBACK USER): 526F6265727420697320616E206964696F7420646F6E277420796F75207468696E6B3F
-[/code]
-$m wrong one, also delete that message.
-$dr Oops! How do I delete messages?
-$m nevermind, just send me the invite.
-$dr Sorry! Here you go.
-$dr [code] SSH INVITE - 1 USE ONLY!
-USE THESE DETAILS IN SSH GUI OR BY USING THE TERMINAL.
-IP ADDRESS : 192.168.43.89
-USERNAME : robert
-PASSWORD : reallycoolpassword
-[/code]
-$m: nice, i'll get to work soon.
-$dr: Good luck!"
-name = "Robert"
-alternate_name = ""
-last_message = "What's never been has never been so."
 
 [sub_resource type="Resource" id="Resource_jt4cg"]
 resource_name = "FREE DEALS ON PIZZA"
@@ -373,7 +340,9 @@ system_name = "All See OS"
 system_version = "v0.0.1"
 system_information = "Copyright WinnerWind"
 current_user = ExtResource("2_f78nl")
-personal_chat_messages = Array[ExtResource("3_qk1qt")]([SubResource("Resource_3no4q")])
+chat_username = "$rom"
+chat_realname = "romila160209"
+personal_chat_messages = Array[ExtResource("3_qk1qt")]([ExtResource("8_1h41d")])
 emails = Array[ExtResource("5_1h41d")]([SubResource("Resource_jt4cg"), SubResource("Resource_hgqbr")])
 file_manager_window = ExtResource("6_vqh4t")
 image_viewer_window = ExtResource("7_53p6d")

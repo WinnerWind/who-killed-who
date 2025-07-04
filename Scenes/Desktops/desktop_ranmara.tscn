@@ -1,4 +1,4 @@
-[gd_scene load_steps=137 format=3 uid="uid://w0kx4pqkw37h"]
+[gd_scene load_steps=139 format=3 uid="uid://w0kx4pqkw37h"]
 
 [ext_resource type="Theme" uid="uid://xyj76ld4ymnb" path="res://Art/Themes/hip_retro_dark.tres" id="1_8yja0"]
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="2_udsku"]
@@ -622,6 +622,22 @@ key_to_be_moved = 0
 index_to_be_moved_to = 0
 
 [sub_resource type="Resource" id="Resource_ofd1c"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_amo2v"]
+script = ExtResource("34_x366f")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_2v7jc"]
 script = ExtResource("34_x366f")
 subtitles = Dictionary[int, String]({})
 time_to_be_changed = 0
@@ -1639,6 +1655,18 @@ video_subtitles = SubResource("Resource_ofd1c")
 script = ExtResource("34_w8q17")
 password = "ranmara@winnerwind.in"
 metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="config" type="Node" parent="Files/Transkriptor"]
+script = ExtResource("33_nkhfi")
+text = "[allowed_users]
+# Define allowed users here in the format <username> = <password>
+romila = romramsh
+
+[run_rate]
+# Define how often transkriptor should run. By default \"never\". Allowed values are \"never\", \"when_necessary\", \"once/day\"
+never"
+audio_subtitles = SubResource("Resource_amo2v")
+video_subtitles = SubResource("Resource_2v7jc")
 
 [node name="Downloads" type="Node" parent="Files"]
 script = ExtResource("34_w8q17")
