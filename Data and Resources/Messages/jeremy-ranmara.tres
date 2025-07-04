@@ -1,0 +1,54 @@
+[gd_resource type="Resource" script_class="ChatMessage" load_steps=2 format=3 uid="uid://foqcvb0xt380"]
+
+[ext_resource type="Script" uid="uid://bifm388ef70uc" path="res://Scripts/Resources and Files/For Desktop/messages.gd" id="1_aricu"]
+
+[resource]
+resource_name = "Jeremy O'Brien - "
+script = ExtResource("1_aricu")
+content = "
+<d 2025-03-07>
+<t 9:45>
+$ran Okay so,
+$ran Are you free tonight for a drink? There's something I want to discuss with you.
+$ran To be specific, it's about hte conference we had.
+$jrm i dont think i have anything on tonight
+$jrm crossroads right?
+$jrm will be there.
+
+<d 2025-03-17>
+<t 10:12>
+$jrm i was going to confront you in your office but just to preserve your (non-existent) dignity, i'm going to pm you.
+$jrm i know that you've been having an affair with my wife.
+$jrm just come clean with it and we'll talk as though god intended, like men.
+$ran I have no idea where this is coming from but I'll tell you, I know nothing about this.
+$ran If you're so confident, why don't you ask her yourself?
+$jrm you can deflect it all you want but the fact of the matter is that i know you did this.
+$jrm i know tis happened
+$jrm she herself told me
+$ran What? I swear it's not true.
+$ran You know very well that I'm not that kind of person.
+$ran Are you sure she said my name?
+$jrm yup
+$ran It's not true.
+$jrm that's what they all say.
+$jrm look just own up to it and nothing will happen
+$jrm just swear that it won't happen
+$ran Look. I have literally no idea what you're on.
+$ran I swear this is just a misunderstanding.
+$jrm god just fuck off.
+
+<d 2025-03-27>
+<t 13:48>
+$ran I'm giving you charge over art.
+$jrm k
+
+<d 2025-04-06>
+<t 23:12>
+$ran I really do not appreciate you following me all the way to my home.
+$ran I know I'm in no position to say this but I really do not like that.
+$ran I know you're pissed about your wife but please understand, it wasn't me.
+$jrm sure."
+name = "Jeremy O'Brien"
+alternate_name = "Ranmara"
+last_message = "God save the prince."
+metadata/_custom_type_script = "uid://bifm388ef70uc"

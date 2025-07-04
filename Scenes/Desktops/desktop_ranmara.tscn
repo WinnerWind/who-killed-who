@@ -1,4 +1,4 @@
-[gd_scene load_steps=136 format=3 uid="uid://w0kx4pqkw37h"]
+[gd_scene load_steps=137 format=3 uid="uid://w0kx4pqkw37h"]
 
 [ext_resource type="Theme" uid="uid://xyj76ld4ymnb" path="res://Art/Themes/hip_retro_dark.tres" id="1_8yja0"]
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="2_udsku"]
@@ -11,6 +11,7 @@
 [ext_resource type="Resource" uid="uid://b2bepjl0eby00" path="res://Data and Resources/Messages/killer_games.tres" id="8_x2dtt"]
 [ext_resource type="Resource" uid="uid://bf8cvgbl8ku3t" path="res://Data and Resources/Messages/romila-ranmara-chat.tres" id="9_udsku"]
 [ext_resource type="Script" uid="uid://bfmnfev8k5uiw" path="res://Scripts/Resources and Files/For Desktop/emails.gd" id="9_x2dtt"]
+[ext_resource type="Resource" uid="uid://foqcvb0xt380" path="res://Data and Resources/Messages/jeremy-ranmara.tres" id="10_6aq4k"]
 [ext_resource type="PackedScene" uid="uid://c6gqjqrkidn0b" path="res://Scenes/Window Types/file_manager.tscn" id="10_ew2rf"]
 [ext_resource type="PackedScene" uid="uid://bmcafym2vhbv8" path="res://Scenes/Window Types/image_viewer.tscn" id="11_cxx12"]
 [ext_resource type="PackedScene" uid="uid://heb52kbru40a" path="res://Scenes/Window Types/text_editor.tscn" id="12_y5osf"]
@@ -1174,7 +1175,7 @@ WINNERWIND"
 current_user = ExtResource("6_nkhfi")
 chat_username = "$ran"
 chat_realname = "Ranmara"
-personal_chat_messages = Array[ExtResource("7_e4ydr")]([ExtResource("8_8yja0"), ExtResource("9_udsku")])
+personal_chat_messages = Array[ExtResource("7_e4ydr")]([ExtResource("8_8yja0"), ExtResource("9_udsku"), ExtResource("10_6aq4k")])
 group_chat_messages = Array[ExtResource("7_e4ydr")]([ExtResource("8_x2dtt")])
 emails = Array[ExtResource("9_x2dtt")]([SubResource("Resource_ook28"), SubResource("Resource_oei7g"), SubResource("Resource_dl4b8"), SubResource("Resource_k7xhl")])
 file_manager_window = ExtResource("10_ew2rf")
