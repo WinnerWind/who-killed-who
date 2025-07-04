@@ -1,0 +1,142 @@
+[gd_resource type="Resource" script_class="ChatMessage" load_steps=2 format=3 uid="uid://bf8cvgbl8ku3t"]
+
+[ext_resource type="Script" uid="uid://bifm388ef70uc" path="res://Scripts/Resources and Files/For Desktop/messages.gd" id="1_03t5w"]
+
+[resource]
+resource_name = "romila160209 - "
+script = ExtResource("1_03t5w")
+content = "<d 2024-12-10>
+<t 12:24>
+$ran Hey.
+$ran I know we never really talked in school a lot but I saw your pintrest a while ago.
+$ran Would you like to join me in making some video games?
+<t 18:12>
+$rom uhhhh who are you
+$ran Oh, uh it's me, Ranmara.
+$ran I always sat in front of you during high school.
+$rom that was like 5 years ago xd
+$rom anyway uh have you made any games
+$ran Right now its just me, Satsu, and Jeremy.
+$ran I don't think you know Jeremy.
+$rom idk
+$ran Anyway, the three of us are getting really close to finishing our game Metal Cracker, and we could use some help with art.
+$ran Are you free to talk about details some day?
+$rom sure idk
+$rom actually send me an email about this tysm.
+$ran Alright.
+
+<d 2024-12-14>
+<t 18:36>
+$ran Oh yeah so I'm setting up a central git server for all of us to work together and collaborate on.
+$rom okay
+$ran Can you give me your username and password?
+$rom uhhhhh sure
+$rom username is romila
+$rom password is romramsh
+$ran Thanks! Will add you soon once I get it working.
+
+<d 2024-12-27>
+<t 18:12>
+$rom what drawing program would you like me to use
+$ran I don't even know how to draw a line, haha.
+$ran When Jeremy was in charge of art, he used something called Krita.
+$ran I hear it's pretty good.
+$rom okkk :3
+
+<d 2025-01-04>
+<t 17:12>
+$ran Can you come over tonight?
+$rom to your place?! hell no
+$ran That's not what I meant...
+$ran I meant to the office, I've told everyone to come in person but I forgot to tell you.
+$ran We're finalizing the release page.
+$rom sorry idts i can make it tonight
+$rom sowy :(
+$ran No harm done. Don't worry.
+
+<d 2025-02-21>
+<t 18:12>
+$ran Hey are you okay?
+$rom not really
+$rom do you wanna talk rn
+$ran I'm the one who asked, haha.
+$ran What's up?
+$rom it's like
+$rom the drug thing
+$rom why am i like this
+$rom i hate this sm
+$ran It's not your fault.
+$ran How'd you get into it?
+$ran If you don't mind me asking of course
+$rom a friend spiked my drink
+$rom it was really strong and i ended up faining on the floor
+$rom id ont remember much after that
+$rom i try not to 
+$ran Sorry.
+$ran Have you considered going to de-addicton centers?
+$rom i have
+$rom none helped
+$rom always some rehearsed bs
+$ran I see...
+$ran You know that it's bad for you right?
+$rom mhm
+$rom i cant do anything though
+$rom its like im addicted
+$rom i hate this but at the same time
+$rom ic ant live without it
+<t 19:35>
+$rom hey i know this is quite sudden but tysm for checking in on me
+$rom it really means a lot
+$ran It's nothing.
+$ran Do you need to take a break? I feel as though we can afford it.
+$rom will think tysm
+$ran No worries.
+
+<d 2025-03-04>
+<t 6:34>
+$rom hey can we talk
+$rom i got more than one death threat in my inbox today
+$rom how'd they even know about all this shit?
+$rom who told them?
+$ran I don't know, but I think it's best that you go offline for a bit.
+$ran I don't see anything yet but I'll keep you posted.
+$ran I'll make sure that you'll be alright.
+
+<d 2025-03-07>
+<t 19:13>
+$ran So I need to make a public statement about this.
+$ran The rumors about you are spiralling out of control.
+$ran They started sane and sensible but now they're just.... lies.
+$ran I'll probably need to talk about you on the stage.
+$rom can we discuss this over call?
+$ran Sure.
+
+<d 2025-03-08>
+<t 21:12>
+$rom tysm for sticking up for me
+$rom it really means a lot
+$ran Anytime. 
+$ran I don't know you very well but I still care about you.
+$ran Please talk to me any time.
+
+<d 2025-03-11>
+<t 17:12>
+$rom how could you?
+$rom i trusted you you know
+$ran What happened?
+$rom how could you speak behind my back?
+$ran I'm not sure what you mean.
+$rom I know you talked to Jeremy and bad mouthed me.
+$ran This is a misunderstanding. 
+$ran I was just talking about the public statement I made 3 days ago and talking about how the public feels about it.
+$ran I never bad mouthed you.
+$ran You have my word.
+$rom i KNOW you did.
+$ran How did you even find out?
+$rom doesn't matter.
+$rom god i hate you so much
+$sys $rom has blocked $ran"
+name = "romila160209"
+alternate_name = "Ranmara"
+last_message = "sus"
+metadata/_custom_type_script = "uid://bifm388ef70uc"
