@@ -58,6 +58,30 @@
 [ext_resource type="PackedScene" uid="uid://dlmfk24r0gbcc" path="res://Scenes/Other/fancy_button.tscn" id="53_nwur7"]
 [ext_resource type="Script" uid="uid://cq8v8vfrqt7lp" path="res://Scripts/Desktop/clock_and_calendar.gd" id="54_1vvat"]
 
+[sub_resource type="Resource" id="Resource_k7xhl"]
+resource_name = "Godot GDC happening in Bangalore!"
+script = ExtResource("9_x2dtt")
+content = "Hello!
+
+We're very happy to announce that our event GodotCon will be taking place in Bangalore this year. Join us from 14th April to 19th April, followed by an afterparty on 20th April. Further details can be found in the attachment below.
+
+We look forward to seeing you there!
+
+Godot Engine Newsletter.
+
+[ATTACHMENT ~/Downloads/godotcon-information.pdf]
+
+NOTE: If you're recieveing this attachment, this means that you are a registered developer. If you wish to stop recieving these emails, please contact us at [code]newsletter@godotengine.org[/code]"
+subject = "Godot GDC happening in Bangalore!"
+sender = "$godot"
+recipient = "$ran + 3000+ Recipients"
+hour = 12
+minute = 0
+day = 12
+month = 3
+year = 2025
+metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
+
 [sub_resource type="Resource" id="Resource_ook28"]
 resource_name = "RE: About Passwords in Transkriptor"
 script = ExtResource("9_x2dtt")
@@ -124,30 +148,6 @@ minute = 32
 day = 31
 month = 11
 year = 2024
-metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
-
-[sub_resource type="Resource" id="Resource_k7xhl"]
-resource_name = "Godot GDC happening in Bangalore!"
-script = ExtResource("9_x2dtt")
-content = "Hello!
-
-We're very happy to announce that our event GodotCon will be taking place in Bangalore this year. Join us from 14th April to 19th April, followed by an afterparty on 20th April. Further details can be found in the attachment below.
-
-We look forward to seeing you there!
-
-Godot Engine Newsletter.
-
-[ATTACHMENT ~/Downloads/godotcon-information.pdf]
-
-NOTE: If you're recieveing this attachment, this means that you are a registered developer. If you wish to stop recieving these emails, please contact us at [code]newsletter@godotengine.org[/code]"
-subject = "Godot GDC happening in Bangalore!"
-sender = "$godot"
-recipient = "$ran + 3000+ Recipients"
-hour = 12
-minute = 0
-day = 12
-month = 3
-year = 2025
 metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
 
 [sub_resource type="Resource" id="Resource_dh8vg"]
@@ -1130,7 +1130,7 @@ chat_username = "$ran"
 chat_realname = "Ranmara"
 personal_chat_messages = Array[ExtResource("7_e4ydr")]([ExtResource("8_8yja0"), ExtResource("9_udsku"), ExtResource("10_6aq4k")])
 group_chat_messages = Array[ExtResource("7_e4ydr")]([ExtResource("8_x2dtt")])
-emails = Array[ExtResource("9_x2dtt")]([SubResource("Resource_ook28"), SubResource("Resource_oei7g"), SubResource("Resource_dl4b8"), SubResource("Resource_k7xhl")])
+emails = Array[ExtResource("9_x2dtt")]([SubResource("Resource_k7xhl"), SubResource("Resource_ook28"), SubResource("Resource_oei7g"), SubResource("Resource_dl4b8")])
 file_manager_window = ExtResource("10_ew2rf")
 image_viewer_window = ExtResource("11_cxx12")
 text_viewer_window = ExtResource("12_y5osf")
