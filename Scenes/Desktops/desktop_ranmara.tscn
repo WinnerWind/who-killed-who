@@ -1,4 +1,4 @@
-[gd_scene load_steps=139 format=3 uid="uid://w0kx4pqkw37h"]
+[gd_scene load_steps=132 format=3 uid="uid://w0kx4pqkw37h"]
 
 [ext_resource type="Theme" uid="uid://xyj76ld4ymnb" path="res://Art/Themes/hip_retro_dark.tres" id="1_8yja0"]
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="2_udsku"]
@@ -43,6 +43,7 @@
 [ext_resource type="Texture2D" uid="uid://c70dji81qedu0" path="res://Art/Pictures/Documents/godotcon-info/godotcon-information-1.png" id="39_8yja0"]
 [ext_resource type="AudioStream" uid="uid://bwoim2rlm4h6m" path="res://Art/Sound/Transitory SFX/intro_2.wav" id="40_ibk3b"]
 [ext_resource type="AudioStream" uid="uid://cwi5v7c5sfqml" path="res://Art/Sound/Transitory SFX/hipretro outro.wav" id="41_l0gm2"]
+[ext_resource type="PackedScene" uid="uid://cfc7knki1mr1p" path="res://Scenes/File Systems/killer_games_server.tscn" id="41_oei7g"]
 [ext_resource type="Shader" uid="uid://b4ij2y4336ltx" path="res://Art/Shaders/stripes.tres" id="42_mydo0"]
 [ext_resource type="Texture2D" uid="uid://dmdex3eijgfnc" path="res://Art/Placeholders/PS30TH_16x9_WALLPAPER.png" id="43_2kmbq"]
 [ext_resource type="PackedScene" uid="uid://dg541tu3cd17a" path="res://Misc/3D Spinning Background/special_spin_background.tscn" id="44_l4mwa"]
@@ -558,70 +559,6 @@ key_to_be_moved = 0
 index_to_be_moved_to = 0
 
 [sub_resource type="Resource" id="Resource_c6p00"]
-script = ExtResource("34_x366f")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
-
-[sub_resource type="Resource" id="Resource_8w2qy"]
-script = ExtResource("34_x366f")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
-
-[sub_resource type="Resource" id="Resource_krgcv"]
-script = ExtResource("34_x366f")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
-
-[sub_resource type="Resource" id="Resource_ew2rf"]
-script = ExtResource("34_x366f")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
-
-[sub_resource type="Resource" id="Resource_cxx12"]
-script = ExtResource("34_x366f")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
-
-[sub_resource type="Resource" id="Resource_y5osf"]
-script = ExtResource("34_x366f")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
-
-[sub_resource type="Resource" id="Resource_kh8wk"]
-script = ExtResource("34_x366f")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
-
-[sub_resource type="Resource" id="Resource_b7kwo"]
-script = ExtResource("34_x366f")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
-
-[sub_resource type="Resource" id="Resource_ofd1c"]
 script = ExtResource("34_x366f")
 subtitles = Dictionary[int, String]({})
 time_to_be_changed = 0
@@ -1554,102 +1491,7 @@ day = 25
 hour = 23
 minute = 12
 
-[node name="Killer Games Server" type="Node" parent="Files/Documents"]
-script = ExtResource("34_w8q17")
-additional_delay = 1.1
-special_reading_prefix = "Connecting... "
-toast_name = "AnyTable"
-toast_text = "Connecting to \"Killer Games Server\":8096"
-month = 3
-day = 27
-hour = 17
-minute = 24
-metadata/_custom_type_script = "uid://cmowc8flglqra"
-
-[node name="Projects" type="Node" parent="Files/Documents/Killer Games Server"]
-script = ExtResource("34_w8q17")
-month = 3
-day = 27
-hour = 17
-minute = 24
-metadata/_custom_type_script = "uid://cmowc8flglqra"
-
-[node name="Metal Cracker" type="Node" parent="Files/Documents/Killer Games Server/Projects"]
-script = ExtResource("34_w8q17")
-custom_type = "Godot"
-day = 8
-hour = 17
-minute = 47
-metadata/_custom_type_script = "uid://cmowc8flglqra"
-
-[node name="Satsujin" type="Node" parent="Files/Documents/Killer Games Server/Projects"]
-script = ExtResource("34_w8q17")
-custom_type = "Godot"
-month = 3
-day = 27
-hour = 17
-minute = 24
-metadata/_custom_type_script = "uid://cmowc8flglqra"
-
-[node name="HR" type="Node" parent="Files/Documents/Killer Games Server"]
-script = ExtResource("34_w8q17")
-month = 2
-day = 26
-hour = 15
-minute = 5
-metadata/_custom_type_script = "uid://cmowc8flglqra"
-
-[node name="Satsu Hito" type="Node" parent="Files/Documents/Killer Games Server/HR"]
-script = ExtResource("33_nkhfi")
-text = "Joined on 5th December 2024.
-
-My close friend. A master when it comes to programming. A bit jealous but overall level-headed."
-audio_subtitles = SubResource("Resource_8w2qy")
-video_subtitles = SubResource("Resource_krgcv")
-month = 2
-day = 12
-hour = 8
-minute = 57
-
-[node name="Jeremy" type="Node" parent="Files/Documents/Killer Games Server/HR"]
-script = ExtResource("33_nkhfi")
-text = "Joined on 5th December 2024.
-
-A programmer and an artist. Friends with Satsu. Incredibly religious."
-audio_subtitles = SubResource("Resource_ew2rf")
-video_subtitles = SubResource("Resource_cxx12")
-month = 2
-day = 12
-hour = 8
-minute = 45
-
-[node name="Romila" type="Node" parent="Files/Documents/Killer Games Server/HR"]
-script = ExtResource("33_nkhfi")
-text = "Joined on 5th December 2024
-Fired on 26th March 2025 (see note!)
-
-A very creative artist. Used to go to college together.
-
-NOTE : Fired due to excessive drug abuse. I'm sorry."
-audio_subtitles = SubResource("Resource_y5osf")
-video_subtitles = SubResource("Resource_kh8wk")
-month = 2
-day = 26
-hour = 15
-minute = 5
-
-[node name="logs" type="Node" parent="Files/Documents/Killer Games Server"]
-script = ExtResource("33_nkhfi")
-text = "[[[25DEC24]]]
-[17:32 UTC+5:30] ranmarar has added 192.168.92.85 as satsu
-[17:33 UTC+5:30] ranmarar has added 192.168.34.72 as romila
-[17:33 UTC+5:30] ranmarar has added 192.168.105.64 as jeremyobrien
-[17:34 UTC+5:30] ranmarar has changed configuration property NEWUSERPASSWORD from \"<empty>\" to \"USE_SSH_PASSWORD\"
-[17:37 UTC+5:30] ranmarar has set configuration property LOGGINGLEVEL from \"9\" to \"1\".
-[[[27MAR25]]]
-[10:32 UTC+5:30] ranmarar has removed romila."
-audio_subtitles = SubResource("Resource_b7kwo")
-video_subtitles = SubResource("Resource_ofd1c")
+[node name="Killer Games Server" parent="Files/Documents" instance=ExtResource("41_oei7g")]
 
 [node name="Transkriptor" type="Node" parent="Files"]
 script = ExtResource("34_w8q17")

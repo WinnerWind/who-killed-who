@@ -1,0 +1,166 @@
+[gd_scene load_steps=12 format=3 uid="uid://cfc7knki1mr1p"]
+
+[ext_resource type="Script" uid="uid://cmowc8flglqra" path="res://Scripts/Files and Folders/folders.gd" id="1_2m0ra"]
+[ext_resource type="Script" uid="uid://6ahcfwj62g07" path="res://Scripts/Files and Folders/files.gd" id="2_h76ia"]
+[ext_resource type="Script" uid="uid://betc7x5t62js8" path="res://Scripts/Resources and Files/Other/subtitles.gd" id="3_oemh0"]
+
+[sub_resource type="Resource" id="Resource_8w2qy"]
+script = ExtResource("3_oemh0")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_krgcv"]
+script = ExtResource("3_oemh0")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_ew2rf"]
+script = ExtResource("3_oemh0")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_cxx12"]
+script = ExtResource("3_oemh0")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_y5osf"]
+script = ExtResource("3_oemh0")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_kh8wk"]
+script = ExtResource("3_oemh0")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_b7kwo"]
+script = ExtResource("3_oemh0")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_ofd1c"]
+script = ExtResource("3_oemh0")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[node name="Killer Games Server" type="Node"]
+script = ExtResource("1_2m0ra")
+additional_delay = 1.1
+special_reading_prefix = "Connecting... "
+toast_name = "AnyTable"
+toast_text = "Connecting to \"Killer Games Server\":8096"
+month = 3
+day = 27
+hour = 17
+minute = 24
+metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="Projects" type="Node" parent="."]
+script = ExtResource("1_2m0ra")
+month = 3
+day = 27
+hour = 17
+minute = 24
+metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="Metal Cracker" type="Node" parent="Projects"]
+script = ExtResource("1_2m0ra")
+custom_type = "Godot"
+day = 8
+hour = 17
+minute = 47
+metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="Satsujin" type="Node" parent="Projects"]
+script = ExtResource("1_2m0ra")
+custom_type = "Godot"
+month = 3
+day = 27
+hour = 17
+minute = 24
+metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="HR" type="Node" parent="."]
+script = ExtResource("1_2m0ra")
+month = 2
+day = 26
+hour = 15
+minute = 5
+metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="Satsu Hito" type="Node" parent="HR"]
+script = ExtResource("2_h76ia")
+text = "Joined on 5th December 2024.
+
+My close friend. A master when it comes to programming. A bit jealous but overall level-headed."
+audio_subtitles = SubResource("Resource_8w2qy")
+video_subtitles = SubResource("Resource_krgcv")
+month = 2
+day = 12
+hour = 8
+minute = 57
+
+[node name="Jeremy" type="Node" parent="HR"]
+script = ExtResource("2_h76ia")
+text = "Joined on 5th December 2024.
+
+A programmer and an artist. Friends with Satsu. Incredibly religious."
+audio_subtitles = SubResource("Resource_ew2rf")
+video_subtitles = SubResource("Resource_cxx12")
+month = 2
+day = 12
+hour = 8
+minute = 45
+
+[node name="Romila" type="Node" parent="HR"]
+script = ExtResource("2_h76ia")
+text = "Joined on 5th December 2024
+Fired on 26th March 2025 (see note!)
+
+A very creative artist. Used to go to college together.
+
+NOTE : Fired due to excessive drug abuse. I'm sorry."
+audio_subtitles = SubResource("Resource_y5osf")
+video_subtitles = SubResource("Resource_kh8wk")
+month = 2
+day = 26
+hour = 15
+minute = 5
+
+[node name="logs" type="Node" parent="."]
+script = ExtResource("2_h76ia")
+text = "[[[25DEC24]]]
+[17:32 UTC+5:30] ranmarar has added 192.168.92.85 as satsu
+[17:33 UTC+5:30] ranmarar has added 192.168.34.72 as romila
+[17:33 UTC+5:30] ranmarar has added 192.168.105.64 as jeremyobrien
+[17:34 UTC+5:30] ranmarar has changed configuration property NEWUSERPASSWORD from \"<empty>\" to \"USE_SSH_PASSWORD\"
+[17:37 UTC+5:30] ranmarar has set configuration property LOGGINGLEVEL from \"9\" to \"1\".
+[[[27MAR25]]]
+[10:32 UTC+5:30] ranmarar has removed romila."
+audio_subtitles = SubResource("Resource_b7kwo")
+video_subtitles = SubResource("Resource_ofd1c")
