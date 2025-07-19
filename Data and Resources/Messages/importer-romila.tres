@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="ChatMessage" load_steps=2 format=3 uid="uid://cdvgtgls1c0dx"]
+
+[ext_resource type="Script" uid="uid://bifm388ef70uc" path="res://Scripts/Resources and Files/For Desktop/messages.gd" id="1_kxocl"]
+
+[resource]
+resource_name = "importer - "
+script = ExtResource("1_kxocl")
+content = "<d 2024-11-12>
+<t 10:12>
+$rom got your contact from a friend.
+$rom will you help me import a few things?
+$imp such as?
+$rom just a few knives
+$imp i don't hvae any in stock rn
+$imp im sure you know that they're super hard to get out here.
+$imp we usually get about 20 per shipment anyway.
+$imp if i get any i'll let you know
+$rom okay, thanks!
+
+<d 2025-02-15>
+<t 21:12>
+$imp just imported a large set of butterfly knives.
+$imp are you interested in any?
+$rom butterfly knifes are exactly what i'm looking for.
+$rom how much will they be?
+$imp about 3000 for one
+$rom wow that's a lot cheaper than i thought.
+$rom alright i'd like to buy one
+$imp i'll ship it to your place in a few days.
+$imp what's your address?
+$rom i dont like giving away my address
+$rom how about we meet at Moji Pizza?
+$imp a meetup then
+$imp sounds good
+$imp tomorrow, 6PM?
+$rom works by me.
+$imp alright.
+
+<d 2025-02-16>
+<t 18:15>
+$rom i got the knife. thanks.
+$imp no issue. i got confirmation about the payment too.
+$imp pleasure doing buisness.
+$rom likewise."
+name = "importer"
+alternate_name = ""
+last_message = "Now 50% off!"
+metadata/_custom_type_script = "uid://bifm388ef70uc"
