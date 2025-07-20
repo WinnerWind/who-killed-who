@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=3 uid="uid://di4bb10dtakdq"]
+[gd_scene load_steps=72 format=3 uid="uid://di4bb10dtakdq"]
 
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="1_xr8cy"]
 [ext_resource type="Resource" uid="uid://gmxp5mjhrbdg" path="res://Data and Resources/Users/romila.tres" id="2_f78nl"]
@@ -22,6 +22,7 @@
 [ext_resource type="PackedScene" uid="uid://cjmgp7qnlk5kl" path="res://Scenes/Window Types/system_info.tscn" id="14_sytq0"]
 [ext_resource type="PackedScene" uid="uid://bjitvivxr8hkq" path="res://Scenes/Window Types/settings.tscn" id="15_lvsis"]
 [ext_resource type="PackedScene" uid="uid://lak0kkn5lipk" path="res://Scenes/Window Types/notepad.tscn" id="16_l3i1i"]
+[ext_resource type="PackedScene" uid="uid://bxer3ixxydvvu" path="res://Scenes/Window Types/docs_viewer.tscn" id="17_l3i1i"]
 [ext_resource type="PackedScene" uid="uid://cn45gtkcdls2w" path="res://Scenes/Window Types/remote_connection.tscn" id="17_ndxm2"]
 [ext_resource type="PackedScene" uid="uid://c2md68ibvvoxk" path="res://Scenes/Other/notification.tscn" id="18_c5icf"]
 [ext_resource type="PackedScene" uid="uid://fal2iityh6i6" path="res://Scenes/Window Types/popup.tscn" id="19_jg670"]
@@ -31,14 +32,22 @@
 [ext_resource type="PackedScene" uid="uid://bj5x25ns3hxmd" path="res://Scenes/Other/power_prompt.tscn" id="23_m03v7"]
 [ext_resource type="PackedScene" uid="uid://b8jwsa53j715" path="res://Scenes/login.tscn" id="24_n7ldb"]
 [ext_resource type="Script" uid="uid://cmowc8flglqra" path="res://Scripts/Files and Folders/folders.gd" id="25_d7gui"]
+[ext_resource type="PackedScene" uid="uid://cf0woduy5x8pf" path="res://Scenes/Window Types/games_list.tscn" id="25_ndxm2"]
+[ext_resource type="PackedScene" uid="uid://dqqe25mgl8xs1" path="res://Scenes/Window Types/web_radio.tscn" id="26_c5icf"]
 [ext_resource type="AudioStream" uid="uid://ctxac8gf3lly6" path="res://Art/Sound/Transitory SFX/intro_1.wav" id="26_ys4re"]
+[ext_resource type="PackedScene" uid="uid://c557cq0fkyke3" path="res://Scenes/Window Types/answer_input.tscn" id="27_jg670"]
 [ext_resource type="AudioStream" uid="uid://cr8605kdbhaom" path="res://Art/Sound/Transitory SFX/outro_1.wav" id="27_o2j7o"]
 [ext_resource type="Texture2D" uid="uid://dmdex3eijgfnc" path="res://Art/Placeholders/PS30TH_16x9_WALLPAPER.png" id="28_0d8bm"]
 [ext_resource type="Texture2D" uid="uid://cajkgw7h5kb80" path="res://Art/Pictures/Editor Only/file.svg" id="29_wjaef"]
 [ext_resource type="Script" uid="uid://bumowvb75nl7b" path="res://Scripts/Desktop/desktop_panels.gd" id="30_0aslj"]
 [ext_resource type="Script" uid="uid://cjrscc2gi8o1v" path="res://Scripts/Desktop/users_panel.gd" id="31_sgic2"]
 [ext_resource type="PackedScene" uid="uid://dqpce0a7r6slg" path="res://Scenes/Other/users_row.tscn" id="32_clir5"]
+[ext_resource type="Script" uid="uid://6ahcfwj62g07" path="res://Scripts/Files and Folders/files.gd" id="32_rd6dx"]
+[ext_resource type="Script" uid="uid://betc7x5t62js8" path="res://Scripts/Resources and Files/Other/subtitles.gd" id="33_mv4s2"]
 [ext_resource type="PackedScene" uid="uid://bwgiv56py676e" path="res://Scenes/Other/desktop_icon.tscn" id="33_vgd67"]
+[ext_resource type="Texture2D" uid="uid://cvd1r8gkr2itr" path="res://Art/Pictures/Documents/godotcon-info/godotcon-information-0.png" id="34_jkww4"]
+[ext_resource type="Texture2D" uid="uid://c70dji81qedu0" path="res://Art/Pictures/Documents/godotcon-info/godotcon-information-1.png" id="35_md6mi"]
+[ext_resource type="AudioStream" uid="uid://w7qblkd2bb2l" path="res://Art/Placeholders/kiryev and the void.wav" id="36_md6mi"]
 [ext_resource type="Script" uid="uid://cq8v8vfrqt7lp" path="res://Scripts/Desktop/clock_and_calendar.gd" id="37_silvm"]
 [ext_resource type="Texture2D" uid="uid://duceho8c5llak" path="res://Art/Pictures/Desktop Icons/User1/Dark/power_off.svg" id="38_mv4s2"]
 [ext_resource type="Texture2D" uid="uid://bvfc20h5rfxyj" path="res://Art/Pictures/Desktop Icons/User1/Dark/reboot.svg" id="39_jkww4"]
@@ -104,6 +113,54 @@ day = 31
 month = 11
 year = 2024
 metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
+
+[sub_resource type="Resource" id="Resource_jkww4"]
+script = ExtResource("33_mv4s2")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_md6mi"]
+script = ExtResource("33_mv4s2")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_eua2p"]
+script = ExtResource("33_mv4s2")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_sytq0"]
+script = ExtResource("33_mv4s2")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_lvsis"]
+script = ExtResource("33_mv4s2")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_l3i1i"]
+script = ExtResource("33_mv4s2")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
 
 [sub_resource type="Animation" id="Animation_km1se"]
 length = 0.001
@@ -380,6 +437,7 @@ image_viewer_window = ExtResource("7_53p6d")
 text_viewer_window = ExtResource("8_ke114")
 video_player_window = ExtResource("9_rd6dx")
 music_player_window = ExtResource("10_mv4s2")
+document_viewer_window = ExtResource("17_l3i1i")
 chat_app_window = ExtResource("11_jkww4")
 email_app_window = ExtResource("12_md6mi")
 calculator_window = ExtResource("13_eua2p")
@@ -387,6 +445,9 @@ system_information_window = ExtResource("14_sytq0")
 settings_window = ExtResource("15_lvsis")
 notepad_window = ExtResource("16_l3i1i")
 remote_connection_window = ExtResource("17_ndxm2")
+game_list_window = ExtResource("25_ndxm2")
+web_radio_window = ExtResource("26_c5icf")
+answer_input_window = ExtResource("27_jg670")
 virtual_notification = ExtResource("18_c5icf")
 popup = ExtResource("19_jg670")
 password_prompt = ExtResource("20_vkw88")
@@ -399,9 +460,69 @@ login_scene = ExtResource("24_n7ldb")
 [node name="Files" type="Node" parent="."]
 unique_name_in_owner = true
 script = ExtResource("25_d7gui")
+month = 3
+day = 12
+minute = 12
 
 [node name="Desktop" type="Node" parent="Files"]
 script = ExtResource("25_d7gui")
+
+[node name="Killer Games Server" type="Node" parent="Files"]
+script = ExtResource("25_d7gui")
+month = 2
+day = 27
+hour = 10
+minute = 33
+metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="README" type="Node" parent="Files/Killer Games Server"]
+script = ExtResource("32_rd6dx")
+text = "It appears that you do not have access to this folder. Perhaps the owner has limited access to this folder."
+audio_subtitles = SubResource("Resource_jkww4")
+video_subtitles = SubResource("Resource_md6mi")
+month = 2
+day = 27
+hour = 10
+minute = 33
+metadata/_custom_type_script = "uid://6ahcfwj62g07"
+
+[node name="Pictures" type="Node" parent="Files"]
+script = ExtResource("25_d7gui")
+metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="art" type="Node" parent="Files"]
+script = ExtResource("25_d7gui")
+metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="Documents" type="Node" parent="Files"]
+script = ExtResource("25_d7gui")
+month = 3
+day = 12
+minute = 12
+metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="godotcon" type="Node" parent="Files/Documents"]
+script = ExtResource("32_rd6dx")
+document = Array[CompressedTexture2D]([ExtResource("34_jkww4"), ExtResource("35_md6mi")])
+audio_subtitles = SubResource("Resource_eua2p")
+video_subtitles = SubResource("Resource_sytq0")
+month = 3
+day = 12
+minute = 12
+metadata/_custom_type_script = "uid://6ahcfwj62g07"
+
+[node name="f7833464" type="Node" parent="Files/Documents"]
+script = ExtResource("32_rd6dx")
+music = ExtResource("36_md6mi")
+title = "Kiryev and The Void"
+subtitle = "WinnerWind"
+audio_subtitles = SubResource("Resource_lvsis")
+video_subtitles = SubResource("Resource_l3i1i")
+month = 1
+day = 26
+hour = 18
+minute = 32
+metadata/_custom_type_script = "uid://6ahcfwj62g07"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
