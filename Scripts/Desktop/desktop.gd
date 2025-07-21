@@ -158,7 +158,7 @@ func hand_over_file(path:String):
 	elif actual_file.type == all_file_types.IMAGE:
 		new_window = image_viewer_window.instantiate()
 		new_window.image = actual_file.image
-		
+		new_window.location = actual_file.name
 		
 	elif actual_file.type == all_file_types.TEXT:
 		new_window = text_viewer_window.instantiate()

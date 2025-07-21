@@ -8,15 +8,21 @@ extends VirtualWindow
 
 @export var image_node:TextureRect
 
+var location:String
+
 func _ready():
 	titlebar.add_button(titlebar.sorters.LEFT,decrease_size,&"decrease_size","Zoom Out")
 	titlebar.add_button(titlebar.sorters.LEFT,increase_size,&"increase_size","Zoom In")
+	
+	name = location
+	
 	super()
 	#Fixes the image node sizes.
 	#image_node.size.y = image.get_size().y/10
 	image_node.texture = image
 	#image_node.set_deferred("size",size)
 	image_node.position.y = titlebar_size+30	
+	
 	
 func _process(delta):
 	super(delta)
