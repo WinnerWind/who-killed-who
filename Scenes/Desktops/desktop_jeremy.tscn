@@ -8,6 +8,7 @@
 [ext_resource type="Resource" uid="uid://01qrbf158lml" path="res://Data and Resources/Users/jeremy.tres" id="6_tt7uf"]
 [ext_resource type="Script" uid="uid://bifm388ef70uc" path="res://Scripts/Resources and Files/For Desktop/messages.gd" id="7_tps5e"]
 [ext_resource type="Script" uid="uid://bfmnfev8k5uiw" path="res://Scripts/Resources and Files/For Desktop/emails.gd" id="8_eqaup"]
+[ext_resource type="Resource" uid="uid://b2bepjl0eby00" path="res://Data and Resources/Messages/killer_games.tres" id="8_xkmop"]
 [ext_resource type="PackedScene" uid="uid://c6gqjqrkidn0b" path="res://Scenes/Window Types/file_manager.tscn" id="9_3021e"]
 [ext_resource type="PackedScene" uid="uid://bmcafym2vhbv8" path="res://Scenes/Window Types/image_viewer.tscn" id="10_3lvtn"]
 [ext_resource type="PackedScene" uid="uid://heb52kbru40a" path="res://Scenes/Window Types/text_editor.tscn" id="11_tnhlv"]
@@ -42,16 +43,6 @@
 [ext_resource type="Texture2D" uid="uid://c7nvijstn4ujf" path="res://Art/Pictures/Desktop Icons/User1/Dark/logout.svg" id="40_vf2oy"]
 [ext_resource type="Script" uid="uid://cq8v8vfrqt7lp" path="res://Scripts/Desktop/clock_and_calendar.gd" id="41_o5rgc"]
 [ext_resource type="Texture2D" uid="uid://cajkgw7h5kb80" path="res://Art/Pictures/Editor Only/file.svg" id="42_tk811"]
-
-[sub_resource type="Resource" id="Resource_3no4q"]
-resource_name = "Robert - "
-script = ExtResource("7_tps5e")
-content = "$dr Hello World.
-$jrm Jeremy.
-$rom Romila"
-name = "Robert"
-alternate_name = "Jeremy"
-last_message = "What's never been has never been so."
 
 [sub_resource type="Resource" id="Resource_jt4cg"]
 resource_name = "FREE DEALS ON PIZZA"
@@ -385,7 +376,7 @@ system_information = "Copyright WinnerWind"
 current_user = ExtResource("6_tt7uf")
 chat_username = "$rom"
 chat_realname = "Jeremy"
-personal_chat_messages = Array[ExtResource("7_tps5e")]([SubResource("Resource_3no4q")])
+group_chat_messages = Array[ExtResource("7_tps5e")]([ExtResource("8_xkmop")])
 emails = Array[ExtResource("8_eqaup")]([SubResource("Resource_jt4cg"), SubResource("Resource_hgqbr")])
 file_manager_window = ExtResource("9_3021e")
 image_viewer_window = ExtResource("10_3lvtn")
