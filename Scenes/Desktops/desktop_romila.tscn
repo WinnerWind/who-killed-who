@@ -1,4 +1,4 @@
-[gd_scene load_steps=72 format=3 uid="uid://di4bb10dtakdq"]
+[gd_scene load_steps=83 format=3 uid="uid://di4bb10dtakdq"]
 
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="1_xr8cy"]
 [ext_resource type="Resource" uid="uid://gmxp5mjhrbdg" path="res://Data and Resources/Users/romila.tres" id="2_f78nl"]
@@ -49,8 +49,11 @@
 [ext_resource type="Texture2D" uid="uid://c70dji81qedu0" path="res://Art/Pictures/Documents/godotcon-info/godotcon-information-1.png" id="35_md6mi"]
 [ext_resource type="AudioStream" uid="uid://w7qblkd2bb2l" path="res://Art/Placeholders/kiryev and the void.wav" id="36_md6mi"]
 [ext_resource type="Script" uid="uid://cq8v8vfrqt7lp" path="res://Scripts/Desktop/clock_and_calendar.gd" id="37_silvm"]
+[ext_resource type="Texture2D" uid="uid://c3h3exl6xyt5w" path="res://Art/Pictures/Drawings/kissing.png" id="38_jg670"]
 [ext_resource type="Texture2D" uid="uid://duceho8c5llak" path="res://Art/Pictures/Desktop Icons/User1/Dark/power_off.svg" id="38_mv4s2"]
 [ext_resource type="Texture2D" uid="uid://bvfc20h5rfxyj" path="res://Art/Pictures/Desktop Icons/User1/Dark/reboot.svg" id="39_jkww4"]
+[ext_resource type="Texture2D" uid="uid://scco86wk7weo" path="res://Art/Pictures/Drawings/Ooty.png" id="39_vkw88"]
+[ext_resource type="Texture2D" uid="uid://cvtg7nvn2a1om" path="res://Art/Pictures/Drawings/sketching_practice.jpg" id="40_cueay"]
 [ext_resource type="Texture2D" uid="uid://c7nvijstn4ujf" path="res://Art/Pictures/Desktop Icons/User1/Dark/logout.svg" id="40_md6mi"]
 
 [sub_resource type="Resource" id="Resource_jt4cg"]
@@ -123,6 +126,70 @@ key_to_be_moved = 0
 index_to_be_moved_to = 0
 
 [sub_resource type="Resource" id="Resource_md6mi"]
+script = ExtResource("33_mv4s2")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_ndxm2"]
+script = ExtResource("33_mv4s2")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_c5icf"]
+script = ExtResource("33_mv4s2")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_jg670"]
+script = ExtResource("33_mv4s2")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_vkw88"]
+script = ExtResource("33_mv4s2")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_cueay"]
+script = ExtResource("33_mv4s2")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_24c36"]
+script = ExtResource("33_mv4s2")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_m03v7"]
+script = ExtResource("33_mv4s2")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_n7ldb"]
 script = ExtResource("33_mv4s2")
 subtitles = Dictionary[int, String]({})
 time_to_be_changed = 0
@@ -493,6 +560,33 @@ metadata/_custom_type_script = "uid://cmowc8flglqra"
 [node name="art" type="Node" parent="Files"]
 script = ExtResource("25_d7gui")
 metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="kissing" type="Node" parent="Files/art"]
+script = ExtResource("32_rd6dx")
+image = ExtResource("38_jg670")
+audio_subtitles = SubResource("Resource_ndxm2")
+video_subtitles = SubResource("Resource_c5icf")
+
+[node name="hotel" type="Node" parent="Files/art"]
+script = ExtResource("32_rd6dx")
+image = ExtResource("39_vkw88")
+audio_subtitles = SubResource("Resource_jg670")
+video_subtitles = SubResource("Resource_vkw88")
+
+[node name="sketching" type="Node" parent="Files/art"]
+script = ExtResource("32_rd6dx")
+image = ExtResource("40_cueay")
+audio_subtitles = SubResource("Resource_cueay")
+video_subtitles = SubResource("Resource_24c36")
+
+[node name="! - Notes" type="Node" parent="Files/art"]
+script = ExtResource("32_rd6dx")
+audio_subtitles = SubResource("Resource_m03v7")
+video_subtitles = SubResource("Resource_n7ldb")
+month = 3
+day = 21
+hour = 17
+minute = 19
 
 [node name="Documents" type="Node" parent="Files"]
 script = ExtResource("25_d7gui")
