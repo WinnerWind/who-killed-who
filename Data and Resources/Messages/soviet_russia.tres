@@ -1,0 +1,161 @@
+[gd_resource type="Resource" script_class="ChatMessage" load_steps=2 format=3 uid="uid://dkv76hg064h55"]
+
+[ext_resource type="Script" uid="uid://bifm388ef70uc" path="res://Scripts/Resources and Files/For Desktop/messages.gd" id="1_5m3tt"]
+
+[resource]
+resource_name = "Soviet Russia - "
+script = ExtResource("1_5m3tt")
+content = "
+<d 2024-08-09>
+<t 1:09>
+$rom r yaal recieving this?
+$rom just switched laptops
+$kumr yup im getting this msg
+$pebs what message?
+$kumr very funny
+$pebs no seriously i cant see romila's messages
+$pebs o shit
+$rom HAHAHHA GOTEM
+$rom WOOOOOOOO
+$rom anyway though yeah im glad my messages are sending yo
+$rom ( *^^)o∀*∀o(^^* )
+
+<d 2024-08-12>
+<t 10:10>
+$kumr Thanks for the blows!
+$kumr holy shit what's the latency on that one
+$kumr I SENT IT 15 DAYS AGO?
+$kumr wtf
+$pebs happens
+$pebs you gotta stack it correctly
+$pebs avoid the gaps uk
+$kumr HOW IS THIS EVEN RELATED?!
+
+<d 2024-08-18>
+<t 19:45>
+$rom yo pebs is this your number {explink}
+$pebs yeah but DONT CALL HER NOW SHE'S AT A FUNERAL
+$rom oops, already called her qwq
+$pebs thats it im coming to your place
+$kumr yo here's romila's address {exp$link}
+$rom KUMAR!!!!
+$rom anyway i was just joking
+$rom i didnt actually call her uk
+
+<d 2024-09-12>
+<t 20:24>
+$pebs have yaal played fieldbattle?
+$rom no not rlly
+$rom i hear its really shit !!(ﾒ￣ ￣)_θ☆°0°)/
+$pebs it really is a scam, save ur money fr
+$rom uk i have none right
+$pebs i think people should be PAID to play this garbage bin shit
+$pebs im giving 30 bucks to anyone that doesn't play it now
+$kumr im not gona play it now, just deleted the game
+$pebs okay i transferred the money
+<t 20:34>
+$pebs YOU KNOW I CAN SEE WHAT GAME YOU ARE PLAYING RIGHT
+$pebs you little shit
+$kumr hehe
+$kumr thx for the 30 tho
+$kumr probs can afford tea today
+
+<d 2024-09-17>
+<t 10:12>
+$rom when does school reopen for yaal?
+$kumr it already opened for me
+$rom fr?
+$kumr yeah
+$kumr wbu pebs
+$pebs still closed
+$pebs opening next week tho
+$pebs gonna be really busy afterwards
+$rom same
+$rom i mean im looking for new jobs qwq
+$rom so hard to find jobs in this shitty job market
+$rom i hate this
+$pebs im sure ull have that big break soon enough yeah
+$rom i hope so too qwq
+
+<d 2024-10-30>
+<t 23:12>
+$kumr this chat is stale
+$kumr pebs send sexy pics of you
+$pebs ew are you insane
+
+<d 2024-11-10>
+<t 19:12>
+$rom so get this
+$rom i got a job offer
+$rom they even arranged an interview
+$rom and i was so close to getting a job but they refused
+$rom WHY GIVE *ME* THE JOB OFFER IF YOU'RE GONNA REFUSE IN THE END?
+$rom i get if i sent them my letter and they refused but NO
+$rom god like whyyyy
+$pebs pricks
+$kumr fr
+$kumr i wish i could wipe this world clean with fucking employment officers
+$rom me2
+$rom ( ╥ω╥ )
+
+<d 2024-12-10>
+<t 19:45>
+$rom YOOOO I GOT A JOB
+$kumr CONGRATSSSS
+$pebs what is it?
+$rom its like a tiny gamedev company
+$rom they havent made any games yet though 
+$rom but yeah this could be my one shot at making it big as an artist
+$kumr im so happy for u fr :3
+$pebs do they have any open positions?
+$rom ill ask, idts theyd be willing to take on any new ppl cause like the owner himself came up to me and asked if *i* wanted to join
+$rom ill c
+$pebs anyway though yeah congrats fr
+$pebs let us play the game when it finishes yo :)
+$rom ofc (  = ⩊ =)
+
+<d 2025-1-6>
+<t 14:56>
+$rom just released Metal Cracker at {explink}
+$rom play it when u can :3 its free for the first week
+<t 18:12>
+$pebs yoooo that store page looks epic
+$kumr wow thank god i dont have epilepsy @_@
+$rom yeahhhh sorry about that haha
+$rom anyway let me know what you think 
+
+<d 2025-02-01>
+<t 19:12>
+$pebs finally had some time off to play the damn thing lmao
+$pebs its so goodd wtf
+$pebs probably the only arcade game i'll finish
+$rom not even CrazyPoker?
+$pebs not even CrazyPoker
+$rom damn
+$rom you like it that much?
+$pebs well yeah :)
+$pebs its a bit buggy but for a first game coming from a new company im hella impressed
+$pebs when will you be the next fieldbattle qwq
+$kumr ew
+$kumr i kinda like the company this way more ngl
+$kumr it being small is kinda charming 
+$pebs true that
+$rom anyway we're gonna take a small break before starting on a new game
+$rom we should meet sometime this week
+$kumr sunday? 3pm?
+$pebs but sunday is tmr
+$kumr ohh shit yeah
+$kumr yeah it works for me
+$pebs i think i can make it if i reschedule my classes
+$rom you have classes on sunday?
+$pebs yeah it sucks >:(
+$pebs ill tell u about it l8r
+$rom sounds good to me, where do we meet?
+$kumr uk ive never actually had piza from moji before
+$pebs oh yea me neither
+$rom well its right next to my office so yeah idm
+$rom cya all there :)"
+name = "Soviet Russia"
+alternate_name = ""
+last_message = "komrad"
+metadata/_custom_type_script = "uid://bifm388ef70uc"

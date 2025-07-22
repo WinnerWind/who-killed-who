@@ -1,4 +1,4 @@
-[gd_scene load_steps=83 format=3 uid="uid://di4bb10dtakdq"]
+[gd_scene load_steps=84 format=3 uid="uid://di4bb10dtakdq"]
 
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="1_xr8cy"]
 [ext_resource type="Resource" uid="uid://gmxp5mjhrbdg" path="res://Data and Resources/Users/romila.tres" id="2_f78nl"]
@@ -17,6 +17,7 @@
 [ext_resource type="Resource" uid="uid://cdvgtgls1c0dx" path="res://Data and Resources/Messages/importer-romila.tres" id="10_53p6d"]
 [ext_resource type="PackedScene" uid="uid://c4jynkn0t0o4u" path="res://Scenes/Window Types/audio_player.tscn" id="10_mv4s2"]
 [ext_resource type="PackedScene" uid="uid://8dhbm1w7fdt3" path="res://Scenes/Window Types/chats.tscn" id="11_jkww4"]
+[ext_resource type="Resource" uid="uid://dkv76hg064h55" path="res://Data and Resources/Messages/soviet_russia.tres" id="11_vkw88"]
 [ext_resource type="PackedScene" uid="uid://bxrho3xvynjrp" path="res://Scenes/Window Types/email.tscn" id="12_md6mi"]
 [ext_resource type="PackedScene" uid="uid://vxq4edum8thi" path="res://Scenes/Window Types/calculator.tscn" id="13_eua2p"]
 [ext_resource type="PackedScene" uid="uid://cjmgp7qnlk5kl" path="res://Scenes/Window Types/system_info.tscn" id="14_sytq0"]
@@ -498,6 +499,7 @@ current_user = ExtResource("2_f78nl")
 chat_username = "$rom"
 chat_realname = "romila160209"
 personal_chat_messages = Array[ExtResource("3_qk1qt")]([ExtResource("8_1h41d"), ExtResource("9_vqh4t"), ExtResource("10_53p6d")])
+group_chat_messages = Array[ExtResource("3_qk1qt")]([ExtResource("11_vkw88")])
 emails = Array[ExtResource("5_1h41d")]([SubResource("Resource_jt4cg"), SubResource("Resource_hgqbr"), SubResource("Resource_53p6d")])
 file_manager_window = ExtResource("6_vqh4t")
 image_viewer_window = ExtResource("7_53p6d")
