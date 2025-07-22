@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=3 uid="uid://071ts15ivw0y"]
+[gd_scene load_steps=55 format=3 uid="uid://071ts15ivw0y"]
 
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="1_tt7uf"]
 [ext_resource type="Theme" uid="uid://d2df2jma0gcpp" path="res://Art/Themes/catppuccin_light.tres" id="2_xkmop"]
@@ -29,8 +29,7 @@
 [ext_resource type="PackedScene" uid="uid://bj5x25ns3hxmd" path="res://Scenes/Other/power_prompt.tscn" id="26_y18f2"]
 [ext_resource type="PackedScene" uid="uid://b8jwsa53j715" path="res://Scenes/login.tscn" id="27_0pcl0"]
 [ext_resource type="Script" uid="uid://cmowc8flglqra" path="res://Scripts/Files and Folders/folders.gd" id="28_jmok5"]
-[ext_resource type="Script" uid="uid://6ahcfwj62g07" path="res://Scripts/Files and Folders/files.gd" id="29_x6lr2"]
-[ext_resource type="Script" uid="uid://betc7x5t62js8" path="res://Scripts/Resources and Files/Other/subtitles.gd" id="30_q6juk"]
+[ext_resource type="PackedScene" uid="uid://cfc7knki1mr1p" path="res://Scenes/File Systems/killer_games_server.tscn" id="30_tt7uf"]
 [ext_resource type="AudioStream" uid="uid://ctxac8gf3lly6" path="res://Art/Sound/Transitory SFX/intro_1.wav" id="31_gnf3h"]
 [ext_resource type="AudioStream" uid="uid://cr8605kdbhaom" path="res://Art/Sound/Transitory SFX/outro_1.wav" id="32_c675r"]
 [ext_resource type="Texture2D" uid="uid://dmdex3eijgfnc" path="res://Art/Placeholders/PS30TH_16x9_WALLPAPER.png" id="33_6012j"]
@@ -75,38 +74,6 @@ minute = 18
 day = 8
 month = 2
 year = 2025
-
-[sub_resource type="Resource" id="Resource_0halc"]
-script = ExtResource("30_q6juk")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
-
-[sub_resource type="Resource" id="Resource_rbnxd"]
-script = ExtResource("30_q6juk")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
-
-[sub_resource type="Resource" id="Resource_mbjwe"]
-script = ExtResource("30_q6juk")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
-
-[sub_resource type="Resource" id="Resource_ofxnu"]
-script = ExtResource("30_q6juk")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
 
 [sub_resource type="Animation" id="Animation_km1se"]
 length = 0.001
@@ -374,8 +341,8 @@ system_name = "All See OS"
 system_version = "v0.0.1"
 system_information = "Copyright WinnerWind"
 current_user = ExtResource("6_tt7uf")
-chat_username = "$rom"
-chat_realname = "Jeremy"
+chat_username = "$jrm"
+chat_realname = "Jeremy O'Brien"
 group_chat_messages = Array[ExtResource("7_tps5e")]([ExtResource("8_xkmop")])
 emails = Array[ExtResource("8_eqaup")]([SubResource("Resource_jt4cg"), SubResource("Resource_hgqbr")])
 file_manager_window = ExtResource("9_3021e")
@@ -403,33 +370,19 @@ login_scene = ExtResource("27_0pcl0")
 unique_name_in_owner = true
 script = ExtResource("28_jmok5")
 
-[node name="Desktop" type="Node" parent="Files"]
+[node name="Documents" type="Node" parent="Files"]
 script = ExtResource("28_jmok5")
+metadata/_custom_type_script = "uid://cmowc8flglqra"
 
-[node name="readme" type="Node" parent="Files/Desktop"]
-script = ExtResource("29_x6lr2")
-text = "Hey there!
-Welcome to Arc OS. Lets take a small tour around your new system.
+[node name="Programming" type="Node" parent="Files/Documents"]
+script = ExtResource("28_jmok5")
+password = "-_-_-_-"
 
-On the top left, you can see the users list. By clicking on it, you can access the other users on your system. If you do not have any users, the list will be blank. You can also access your power settings here.
-NOTE : The users feature requires an additional payment of 10$. 
+[node name="Killer Games Server" parent="Files/Documents/Programming" instance=ExtResource("30_tt7uf")]
 
-On the top right, you can see a list of installed apps. Do note that installing more apps requires the Arc Linux Installer CD that has come with your new computer. You will also require an internet connection.
-
-Happy Computing!
-- Arc Team.
-Note : We saw that you had a Notes file. We automatically backed this up for you. Be sure to check it for any anomalies. "
-audio_subtitles = SubResource("Resource_0halc")
-video_subtitles = SubResource("Resource_rbnxd")
-
-[node name="Notes" type="Node" parent="Files/Desktop"]
-script = ExtResource("29_x6lr2")
-text = "APPOINTMENTS:
-Today -> Robert (See Nicotine!) (Fix his folder problem!)
----
-I need to fix his computer. Apparantly he lost the password to some folder on his computer. This shouldn't take too long."
-audio_subtitles = SubResource("Resource_mbjwe")
-video_subtitles = SubResource("Resource_ofxnu")
+[node name="Downloads" type="Node" parent="Files"]
+script = ExtResource("28_jmok5")
+metadata/_custom_type_script = "uid://cmowc8flglqra"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -463,32 +416,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="Readme" parent="Desktop Icons" instance=ExtResource("34_y0yr3")]
-layout_mode = 1
-offset_left = -280.0
-offset_top = -123.0
-offset_right = -192.0
-offset_bottom = -38.0
-icon_name = &"file_icon"
-text = "readme.txt"
-tooltip = "/Desktop/readme.txt"
-open_file_instead = true
-file_path = "Desktop/readme"
-autoshift = true
-
-[node name="Notes" parent="Desktop Icons" instance=ExtResource("34_y0yr3")]
-layout_mode = 1
-offset_left = 141.0
-offset_top = 45.0
-offset_right = 229.0
-offset_bottom = 130.0
-icon_name = &"file_icon"
-text = "Notes.txt"
-tooltip = "/Desktop/Notes.txt"
-open_file_instead = true
-file_path = "Desktop/Notes"
-autoshift = true
 
 [node name="Panels" type="Control" parent="."]
 layout_mode = 1
