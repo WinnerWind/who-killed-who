@@ -1,4 +1,4 @@
-[gd_scene load_steps=56 format=3 uid="uid://071ts15ivw0y"]
+[gd_scene load_steps=60 format=3 uid="uid://071ts15ivw0y"]
 
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="1_tt7uf"]
 [ext_resource type="Theme" uid="uid://d2df2jma0gcpp" path="res://Art/Themes/catppuccin_light.tres" id="2_xkmop"]
@@ -33,7 +33,9 @@
 [ext_resource type="PackedScene" uid="uid://cfc7knki1mr1p" path="res://Scenes/File Systems/killer_games_server.tscn" id="30_tt7uf"]
 [ext_resource type="AudioStream" uid="uid://ctxac8gf3lly6" path="res://Art/Sound/Transitory SFX/intro_1.wav" id="31_gnf3h"]
 [ext_resource type="AudioStream" uid="uid://cr8605kdbhaom" path="res://Art/Sound/Transitory SFX/outro_1.wav" id="32_c675r"]
+[ext_resource type="Script" uid="uid://6ahcfwj62g07" path="res://Scripts/Files and Folders/files.gd" id="32_svcmh"]
 [ext_resource type="Texture2D" uid="uid://dmdex3eijgfnc" path="res://Art/Placeholders/PS30TH_16x9_WALLPAPER.png" id="33_6012j"]
+[ext_resource type="Script" uid="uid://betc7x5t62js8" path="res://Scripts/Resources and Files/Other/subtitles.gd" id="33_wdb6k"]
 [ext_resource type="PackedScene" uid="uid://bwgiv56py676e" path="res://Scenes/Other/desktop_icon.tscn" id="34_y0yr3"]
 [ext_resource type="Script" uid="uid://bumowvb75nl7b" path="res://Scripts/Desktop/desktop_panels.gd" id="35_2qski"]
 [ext_resource type="Script" uid="uid://cjrscc2gi8o1v" path="res://Scripts/Desktop/users_panel.gd" id="36_bf8rh"]
@@ -75,6 +77,22 @@ minute = 18
 day = 8
 month = 2
 year = 2025
+
+[sub_resource type="Resource" id="Resource_kvox0"]
+script = ExtResource("33_wdb6k")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_tps5e"]
+script = ExtResource("33_wdb6k")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
 
 [sub_resource type="Animation" id="Animation_km1se"]
 length = 0.001
@@ -371,20 +389,48 @@ login_scene = ExtResource("27_0pcl0")
 [node name="Files" type="Node" parent="."]
 unique_name_in_owner = true
 script = ExtResource("28_jmok5")
+month = 3
+day = 27
+hour = 17
+minute = 24
 
 [node name="Documents" type="Node" parent="Files"]
 script = ExtResource("28_jmok5")
+month = 3
+day = 27
+hour = 17
+minute = 24
 metadata/_custom_type_script = "uid://cmowc8flglqra"
 
 [node name="Programming" type="Node" parent="Files/Documents"]
 script = ExtResource("28_jmok5")
 password = "-_-_-_-"
+month = 3
+day = 27
+hour = 17
+minute = 24
 
 [node name="Killer Games Server" parent="Files/Documents/Programming" instance=ExtResource("30_tt7uf")]
 
 [node name="Downloads" type="Node" parent="Files"]
 script = ExtResource("28_jmok5")
+year = 24
+month = 11
+day = 12
+hour = 9
+minute = 45
 metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="GodotEngineEditor" type="Node" parent="Files/Downloads"]
+script = ExtResource("32_svcmh")
+audio_subtitles = SubResource("Resource_kvox0")
+video_subtitles = SubResource("Resource_tps5e")
+custom_type = "Executable"
+year = 24
+month = 11
+day = 12
+hour = 9
+minute = 45
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
