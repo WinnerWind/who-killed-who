@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=3 uid="uid://071ts15ivw0y"]
+[gd_scene load_steps=65 format=3 uid="uid://071ts15ivw0y"]
 
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="1_tt7uf"]
 [ext_resource type="Theme" uid="uid://d2df2jma0gcpp" path="res://Art/Themes/catppuccin_light.tres" id="2_xkmop"]
@@ -112,6 +112,22 @@ key_to_be_moved = 0
 index_to_be_moved_to = 0
 
 [sub_resource type="Resource" id="Resource_3021e"]
+script = ExtResource("33_wdb6k")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_wdb6k"]
+script = ExtResource("33_wdb6k")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_3lvtn"]
 script = ExtResource("33_wdb6k")
 subtitles = Dictionary[int, String]({})
 time_to_be_changed = 0
@@ -439,18 +455,17 @@ minute = 24
 
 [node name="Downloads" type="Node" parent="Files"]
 script = ExtResource("28_jmok5")
-year = 24
-month = 11
-day = 12
-hour = 9
-minute = 45
+month = 1
+day = 27
+hour = 10
+minute = 5
 metadata/_custom_type_script = "uid://cmowc8flglqra"
 
 [node name="GodotEngineEditor" type="Node" parent="Files/Downloads"]
 script = ExtResource("32_svcmh")
 audio_subtitles = SubResource("Resource_kvox0")
 video_subtitles = SubResource("Resource_tps5e")
-custom_type = "Executable"
+custom_type = "App"
 year = 24
 month = 11
 day = 12
@@ -459,6 +474,10 @@ minute = 45
 
 [node name="Soulseek" type="Node" parent="Files/Downloads"]
 script = ExtResource("28_jmok5")
+month = 1
+day = 27
+hour = 10
+minute = 5
 metadata/_custom_type_script = "uid://cmowc8flglqra"
 
 [node name="f160209" type="Node" parent="Files/Downloads/Soulseek"]
@@ -468,6 +487,11 @@ title = "Factorio"
 subtitle = "by WinnerWind"
 audio_subtitles = SubResource("Resource_eqaup")
 video_subtitles = SubResource("Resource_3021e")
+year = 24
+month = 7
+day = 17
+hour = 19
+minute = 23
 
 [node name="subtitles test" type="Node" parent="Files/Downloads/Soulseek"]
 script = ExtResource("32_svcmh")
@@ -476,6 +500,24 @@ title = "Factorio"
 subtitle = "by WinnerWind"
 audio_subtitles = SubResource("Resource_eqaup")
 video_subtitles = SubResource("Resource_3021e")
+month = 1
+day = 27
+hour = 10
+minute = 5
+
+[node name="persuasive writing" type="Node" parent="Files/Downloads"]
+script = ExtResource("32_svcmh")
+text = "- Promote a single, strong point of view,
+- users vivid imagery
+- varied sentences for effect
+- call to action"
+audio_subtitles = SubResource("Resource_wdb6k")
+video_subtitles = SubResource("Resource_3lvtn")
+year = 24
+month = 6
+day = 18
+hour = 19
+minute = 32
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
