@@ -8,7 +8,7 @@
 [ext_resource type="Resource" uid="uid://dwqseev5bc8ta" path="res://Data and Resources/Users/Demos/demo_robert.tres" id="6_umdms"]
 [ext_resource type="Texture2D" uid="uid://b46gufoiyflwo" path="res://Art/Pictures/OS Logos/anytable_small.svg" id="8_1na51"]
 [ext_resource type="PackedScene" uid="uid://bwgiv56py676e" path="res://Scenes/Other/desktop_icon.tscn" id="32_oa5lw"]
-[ext_resource type="AudioStream" uid="uid://bsomeolopdx06" path="res://Art/Placeholders/factorio.mp3" id="34_5viui"]
+[ext_resource type="AudioStream" uid="uid://bsomeolopdx06" path="res://Art/Sound/Music/factorio.mp3" id="34_5viui"]
 [ext_resource type="VideoStream" uid="uid://cyyri2jlqkvxw" path="res://Art/Placeholders/epic fail.mp4" id="37_o4ggh"]
 [ext_resource type="Script" uid="uid://betc7x5t62js8" path="res://Scripts/Resources and Files/Other/subtitles.gd" id="38_7gd06"]
 [ext_resource type="Resource" uid="uid://rmbk5c1ikg37" path="res://Data and Resources/Subtitles/test_subtitles.tres" id="38_47fub"]

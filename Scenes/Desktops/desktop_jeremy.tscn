@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=3 uid="uid://071ts15ivw0y"]
+[gd_scene load_steps=63 format=3 uid="uid://071ts15ivw0y"]
 
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="1_tt7uf"]
 [ext_resource type="Theme" uid="uid://d2df2jma0gcpp" path="res://Art/Themes/catppuccin_light.tres" id="2_xkmop"]
@@ -36,6 +36,7 @@
 [ext_resource type="Script" uid="uid://6ahcfwj62g07" path="res://Scripts/Files and Folders/files.gd" id="32_svcmh"]
 [ext_resource type="Texture2D" uid="uid://dmdex3eijgfnc" path="res://Art/Placeholders/PS30TH_16x9_WALLPAPER.png" id="33_6012j"]
 [ext_resource type="Script" uid="uid://betc7x5t62js8" path="res://Scripts/Resources and Files/Other/subtitles.gd" id="33_wdb6k"]
+[ext_resource type="AudioStream" uid="uid://bsomeolopdx06" path="res://Art/Sound/Music/factorio.mp3" id="34_wdb6k"]
 [ext_resource type="PackedScene" uid="uid://bwgiv56py676e" path="res://Scenes/Other/desktop_icon.tscn" id="34_y0yr3"]
 [ext_resource type="Script" uid="uid://bumowvb75nl7b" path="res://Scripts/Desktop/desktop_panels.gd" id="35_2qski"]
 [ext_resource type="Script" uid="uid://cjrscc2gi8o1v" path="res://Scripts/Desktop/users_panel.gd" id="36_bf8rh"]
@@ -87,6 +88,30 @@ key_to_be_moved = 0
 index_to_be_moved_to = 0
 
 [sub_resource type="Resource" id="Resource_tps5e"]
+script = ExtResource("33_wdb6k")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_eqaup"]
+script = ExtResource("33_wdb6k")
+subtitles = Dictionary[int, String]({
+1: "I'm trying to do something",
+2: "I'm trying to do something",
+3: "I'm trying to do something",
+4: "Subtitles to encode secret messages? Hmmmm",
+5: "Subtitles to encode secret messages? Hmmmm",
+6: "I might tell Satsu about this...",
+7: "I might tell Satsu about this..."
+})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_3021e"]
 script = ExtResource("33_wdb6k")
 subtitles = Dictionary[int, String]({})
 time_to_be_changed = 0
@@ -431,6 +456,26 @@ month = 11
 day = 12
 hour = 9
 minute = 45
+
+[node name="Soulseek" type="Node" parent="Files/Downloads"]
+script = ExtResource("28_jmok5")
+metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="f160209" type="Node" parent="Files/Downloads/Soulseek"]
+script = ExtResource("32_svcmh")
+music = ExtResource("34_wdb6k")
+title = "Factorio"
+subtitle = "by WinnerWind"
+audio_subtitles = SubResource("Resource_eqaup")
+video_subtitles = SubResource("Resource_3021e")
+
+[node name="subtitles test" type="Node" parent="Files/Downloads/Soulseek"]
+script = ExtResource("32_svcmh")
+music = ExtResource("34_wdb6k")
+title = "Factorio"
+subtitle = "by WinnerWind"
+audio_subtitles = SubResource("Resource_eqaup")
+video_subtitles = SubResource("Resource_3021e")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

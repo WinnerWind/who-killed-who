@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=3 uid="uid://c4jynkn0t0o4u"]
 
 [ext_resource type="Script" uid="uid://cgnaoh104a3jc" path="res://Scripts/Windows/music_player.gd" id="1_ay3lr"]
-[ext_resource type="AudioStream" uid="uid://bsomeolopdx06" path="res://Art/Placeholders/factorio.mp3" id="2_2cd82"]
+[ext_resource type="AudioStream" uid="uid://bsomeolopdx06" path="res://Art/Sound/Music/factorio.mp3" id="2_2cd82"]
 [ext_resource type="PackedScene" uid="uid://utagi2eh5w54" path="res://Scenes/Other/titlebar.tscn" id="2_kt4f0"]
 [ext_resource type="Resource" uid="uid://cdxq8ojxlityk" path="res://Data and Resources/Replacements/subtitles_replacement.tres" id="3_miy1k"]
 [ext_resource type="Texture2D" uid="uid://ccnia8nte46io" path="res://Art/Pictures/Desktop Icons/User1/Dark/music_file.svg" id="4_vkxex"]
