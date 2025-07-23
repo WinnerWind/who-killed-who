@@ -46,17 +46,19 @@ func _ready():
 	
 	# Use independent.
 	subtitles_shown = !SaveData.ram_save["settings_subtitles_shown"] #Essentially reverse it so the next function can set it to normal.
-	change_subtitle_state()
+	call_deferred(&"change_subtitle_state")
 
 func change_subtitle_state():
 	if subtitles_shown == true: #hide subs
-		size = starting_size
+		set_deferred(&"size",starting_size)
+		#size = starting_size
 		subtitles_shown = false
 		subtitle_text_node.hide()
 		desktop.notify_send("Subtitles have been disabled",name)
 	else:
 		subtitle_text_node.show()
-		size = subtitles_enabled_size
+		#size = subtitles_enabled_size
+		set_deferred(&"size",subtitles_enabled_size)
 		subtitles_shown = true
 		desktop.notify_send("Subtitles have been enabled",name)
 
@@ -65,9 +67,10 @@ func set_subtitles(stream_position:float):
 	var all_subs = audio_subtitles.subtitles
 	if all_subs.has(int_pos):
 		var text_to_display:String = all_subs[int_pos]
-		print(text_to_display)
+		#print(text_to_display)
 		if subtitles_shown or text_to_display.begins_with("<f>"):
-			size = subtitles_enabled_size
+			#size = subtitles_enabled_size
+			set_deferred(&"size",subtitles_enabled_size)
 			# Replace all names if they happen to exist.
 			for replacement in subtitle_replacements.replacements.keys(): #Used for names and stuff
 				if SaveData.ram_save["settings_subtitles_show_names"]:
@@ -92,16 +95,18 @@ func set_subtitles(stream_position:float):
 				subtitle_text_node.custom_minimum_size.y = line_count*font_size + margin
 		else:
 			subtitle_text_node.visible = false
-			size = starting_size
+			#size = starting_size
+			set_deferred(&"size",starting_size)
 	else:
 		if not subtitles_shown:
-			size = starting_size
+			#size = starting_size
+			set_deferred(&"size",starting_size)
 		subtitle_text_node.visible = false
 
 func set_image():
 	#I need a delay so that it gets set properly.
 	await get_tree().create_timer(0.1).timeout
-	print(image)
+	#print(image)
 	icon_node.texture = image
 
 #region Seeking
