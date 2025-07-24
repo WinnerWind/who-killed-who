@@ -1,4 +1,4 @@
-[gd_scene load_steps=74 format=3 uid="uid://071ts15ivw0y"]
+[gd_scene load_steps=81 format=3 uid="uid://071ts15ivw0y"]
 
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="1_tt7uf"]
 [ext_resource type="Theme" uid="uid://d2df2jma0gcpp" path="res://Art/Themes/catppuccin_light.tres" id="2_xkmop"]
@@ -10,7 +10,9 @@
 [ext_resource type="Resource" uid="uid://foqcvb0xt380" path="res://Data and Resources/Messages/jeremy-ranmara.tres" id="8_xfdso"]
 [ext_resource type="Resource" uid="uid://b2bepjl0eby00" path="res://Data and Resources/Messages/killer_games.tres" id="8_xkmop"]
 [ext_resource type="PackedScene" uid="uid://c6gqjqrkidn0b" path="res://Scenes/Window Types/file_manager.tscn" id="9_3021e"]
+[ext_resource type="Resource" uid="uid://ojolo7jwdakk" path="res://Data and Resources/Messages/jeremy-jeremy's brother.tres" id="9_wdb6k"]
 [ext_resource type="PackedScene" uid="uid://bmcafym2vhbv8" path="res://Scenes/Window Types/image_viewer.tscn" id="10_3lvtn"]
+[ext_resource type="Script" uid="uid://bfmnfev8k5uiw" path="res://Scripts/Resources and Files/For Desktop/emails.gd" id="11_kvox0"]
 [ext_resource type="PackedScene" uid="uid://heb52kbru40a" path="res://Scenes/Window Types/text_editor.tscn" id="11_tnhlv"]
 [ext_resource type="PackedScene" uid="uid://cxcs7lmcqhe63" path="res://Scenes/Window Types/video_player.tscn" id="12_dc6ub"]
 [ext_resource type="PackedScene" uid="uid://c4jynkn0t0o4u" path="res://Scenes/Window Types/audio_player.tscn" id="13_yisxo"]
@@ -45,6 +47,117 @@
 [ext_resource type="Texture2D" uid="uid://c7nvijstn4ujf" path="res://Art/Pictures/Desktop Icons/User1/Dark/logout.svg" id="40_vf2oy"]
 [ext_resource type="Script" uid="uid://cq8v8vfrqt7lp" path="res://Scripts/Desktop/clock_and_calendar.gd" id="41_o5rgc"]
 [ext_resource type="Texture2D" uid="uid://cajkgw7h5kb80" path="res://Art/Pictures/Editor Only/file.svg" id="42_tk811"]
+
+[sub_resource type="Resource" id="Resource_y18f2"]
+resource_name = "RE: <no subject> (4)"
+script = ExtResource("11_kvox0")
+content = "Hey,
+
+I think you did the right thing. Just try to give him some grace as well. 
+
+What he has done is truly unforgivable, for sure. Just try to give both him and your wife (Especially your wife) some grace on this matter. 
+
+She could be lying out of fear or out of defense. Try not to probe into her too much. Keep your trust with her good, but don't trust Ranmara.
+
+Also goes without saying that because he's your boss, you should probably hold off on insults and the fighting. Just calm down a little, but keep him at a distance.
+
+I know you'll do the right thing."
+subject = "RE: <no subject> (4)"
+sender = "$jbr"
+recipient = "$jrm"
+hour = 9
+minute = 5
+day = 23
+month = 2
+year = 2025
+metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
+
+[sub_resource type="Resource" id="Resource_y50up"]
+resource_name = "RE: <no subject> (3)"
+script = ExtResource("11_kvox0")
+content = "Hey,
+
+I think you might have been right about the cheating thing. I confronted Ranmara myself and he acts really guilty about it. He really does seem like the culprit.
+
+Today I went to his house and confronted him myself, and he just did not want to engage in debate.
+
+Overall I am somewhat distraught. I talked about this with her and she says she doesn't know anything, and honestly I don't blame her. 
+
+Jeremy
+Still, thank you for telling me about this."
+subject = "RE: <no subject> (3)"
+sender = "$jrm"
+recipient = "$jbr"
+hour = 23
+minute = 32
+day = 22
+month = 2
+year = 2025
+metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
+
+[sub_resource type="Resource" id="Resource_lkblj"]
+resource_name = "RE: <no subject> (2)"
+script = ExtResource("11_kvox0")
+content = "Hey,
+
+I wish i had saved the post before talking to her myself, but it's gone now. I can't really do anything about it. 
+
+You mentioned you really loved her when we chatted, and that is why seeing those photos made me sick. Honestly all of those are gone now from her private account, which make me really suspicious.
+
+I don't want to make any hard accusatons but I strongly reccomend you sit down and talk to her and Ranmara. It's probably nothing but have you noticed anything different about hte two?
+
+Look, I'm always here for you, even if work prevents me from messaging you.
+
+Also goes without saying but delete these emails when you're done. "
+subject = "RE: <no subject> (2)"
+sender = "$jbr"
+recipient = "$jrm"
+hour = 4
+minute = 54
+day = 17
+month = 2
+year = 2025
+metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
+
+[sub_resource type="Resource" id="Resource_rjgdx"]
+resource_name = "RE: <no subject>"
+script = ExtResource("11_kvox0")
+content = "Hello,
+
+No I don't know about this. Can you send me the stuff you saw online so I can verify it for myself before accusing her about it?
+
+I really love her but I don't want to cause a scene. 
+
+Jeremy"
+subject = "RE: <no subject>"
+sender = "$jrm"
+recipient = "$jbr"
+hour = 4
+minute = 38
+day = 17
+month = 2
+year = 2025
+metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
+
+[sub_resource type="Resource" id="Resource_am6wr"]
+resource_name = "<no subject>"
+script = ExtResource("11_kvox0")
+content = "Hey,
+
+I saw online that your wife was hanging out with this Ranmara fellow at a bar. Apparantly they have been doing this for a while? Do you know about this?
+
+I'm kind of worried about you. I don't know if you know how long they've been talking to each other. I feel as though she married Ranmara, and not you. Please reply as soon as you see this.
+
+I didn't want to bring it up but I felt it was important to tell you anyway."
+subject = "<no subject>"
+sender = "$jbr"
+recipient = "$jrm"
+hour = 3
+minute = 32
+day = 17
+month = 2
+year = 2025
+metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
 
 [sub_resource type="Resource" id="Resource_kvox0"]
 script = ExtResource("33_wdb6k")
@@ -466,8 +579,9 @@ system_information = "Copyright WinnerWind"
 current_user = ExtResource("6_tt7uf")
 chat_username = "$jrm"
 chat_realname = "Jeremy O'Brien"
-personal_chat_messages = Array[ExtResource("7_tps5e")]([ExtResource("8_xfdso")])
+personal_chat_messages = Array[ExtResource("7_tps5e")]([ExtResource("8_xfdso"), ExtResource("9_wdb6k")])
 group_chat_messages = Array[ExtResource("7_tps5e")]([ExtResource("8_xkmop")])
+emails = Array[ExtResource("11_kvox0")]([SubResource("Resource_y18f2"), SubResource("Resource_y50up"), SubResource("Resource_lkblj"), SubResource("Resource_rjgdx"), SubResource("Resource_am6wr")])
 file_manager_window = ExtResource("9_3021e")
 image_viewer_window = ExtResource("10_3lvtn")
 text_viewer_window = ExtResource("11_tnhlv")
@@ -494,8 +608,8 @@ unique_name_in_owner = true
 script = ExtResource("28_jmok5")
 month = 3
 day = 27
-hour = 17
-minute = 24
+hour = 23
+minute = 59
 
 [node name="Documents" type="Node" parent="Files"]
 script = ExtResource("28_jmok5")
@@ -583,6 +697,10 @@ minute = 32
 
 [node name="locationdata" type="Node" parent="Files"]
 script = ExtResource("28_jmok5")
+month = 3
+day = 27
+hour = 23
+minute = 59
 metadata/_custom_type_script = "uid://cmowc8flglqra"
 
 [node name="Welcome!" type="Node" parent="Files/locationdata"]

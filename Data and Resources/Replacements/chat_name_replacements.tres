@@ -13,6 +13,7 @@ replacements = Dictionary[String, String]({
 "$dul": "[[color=dark_orange]Liberica[/color]]:",
 "$dur": "[[color=teal]Rakesh[/color]]:",
 "$imp": "[[color=teal]importer[/color]]:",
+"$jbr": "[[color=steel_blue]Johan[/color]]:",
 "$jrm": "[[color=steel_blue]Jeremy[/color]]:",
 "$kumr": "[[color=olive]Kumar[/color]]:",
 "$m": "[Me]:",

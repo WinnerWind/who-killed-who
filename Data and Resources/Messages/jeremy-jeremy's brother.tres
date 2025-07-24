@@ -1,0 +1,72 @@
+[gd_resource type="Resource" script_class="ChatMessage" load_steps=2 format=3 uid="uid://ojolo7jwdakk"]
+
+[ext_resource type="Script" uid="uid://bifm388ef70uc" path="res://Scripts/Resources and Files/For Desktop/messages.gd" id="1_2vj61"]
+
+[resource]
+resource_name = "Johan O'Brien - "
+script = ExtResource("1_2vj61")
+content = "
+<d 2025-03-11>
+<t 15:45>
+$jbr Hey, is this Jeremy O'Brien?
+$jrm Yes, who is this?
+$jbr Oh, its me Johan
+$jbr Been a while huh.
+$jrm johan??? i thought you were dead
+$jrm how on earth have you been?
+$jrm where have you been all these days?
+$jbr I've kind of been on my own nowadays.
+$jbr Just living out of the back of a van in Venice
+$jrm venice?!
+$jrm jesus how on earth did you find the funds????
+$jbr Pulled a few strings.
+$jbr Anyway, that's besides the point
+$jbr I've been fine, I just wanted to check in on you.
+$jrm you don't know how much it means to hear from you again
+$jbr Well it is kind of early here so I'll text you later okay?
+$jbr Probably have a few meetings and deals to close.
+$jrm yeah no issues. pls text me whenever you feel like.
+$jrm there's so much to catch up on
+
+<d 2025-03-14>
+<t 19:12>
+$jbr Sorry, took me a hot minute.
+$jrm its alr
+$jrm so tell me
+$jrm how on earth did you end up there?
+$jbr Well lots of fate and lots of luck.
+$jbr I didn't have much money but I managed to hop onto a cruise ship that just happened to need a janitor
+$jbr After we reached, I took my leave and yeah, that's how I'm here now.
+$jrm sounds straight out of a novel
+$jbr It is, haha.
+$jrm how did you find my contact?
+$jbr Lots of sleuthing and lots of looking at public documents.
+$jbr Nice job on your new job by the way. 
+$jrm all that is public?
+$jrm god haha
+$jbr Anyway, tell me, what's up with your life?
+$jrm well since the last time we met...
+$jrm i got married! 
+$jbr Congrats! I already knew that though.
+$jrm what?!
+$jbr You know that there's a huge registry that just lets me see who got married to who, legally?
+$jrm i don't believe you.
+$jbr Don't because I lied.
+$jrm ha, what a relief.
+$jbr I didn't know that you got married. What is she like?
+$jrm she's the best :3
+$jrm my high school love
+$jbr Really?
+$jrm yeah :3
+$jrm she's just so smart, charming, etc. etc.
+$jrm you get what i mean
+$jbr I do
+$jbr It's difficult to describe all that. 
+$jrm exactly ^_^
+$jrm anyway gotta run.
+$jrm talk soon!
+$jbr Will do!"
+name = "Johan O'Brien"
+alternate_name = ""
+last_message = "Busy."
+metadata/_custom_type_script = "uid://bifm388ef70uc"
