@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=3 uid="uid://km3q1i4fcw0t"]
+[gd_scene load_steps=62 format=3 uid="uid://km3q1i4fcw0t"]
 
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="1_oo3qg"]
 [ext_resource type="Theme" uid="uid://dfp8tc3gbtaeo" path="res://Art/Themes/winxp.tres" id="2_6dpgf"]
@@ -6,13 +6,18 @@
 [ext_resource type="Resource" uid="uid://bn2xmponak4f7" path="res://Art/Pictures/Desktop Icons/Icon Sets/light_windowsxp.tres" id="4_vgvvn"]
 [ext_resource type="Resource" uid="uid://oshxy6cv5mi" path="res://Art/Pictures/Desktop Icons/Icon Sets/dark_windowsxp.tres" id="5_6k1xg"]
 [ext_resource type="Resource" uid="uid://brc2y1vuwf2io" path="res://Data and Resources/Users/satsu.tres" id="6_vgvvn"]
+[ext_resource type="Resource" uid="uid://ojolo7jwdakk" path="res://Data and Resources/Messages/jeremy-jeremy's brother.tres" id="8_vs436"]
+[ext_resource type="Resource" uid="uid://qytd0uftfts" path="res://Data and Resources/Messages/satsu-ranmara-chat.tres" id="9_trq6o"]
+[ext_resource type="Resource" uid="uid://blh3iryc756if" path="res://Data and Resources/Messages/satsu-romila.tres" id="10_6k1xg"]
+[ext_resource type="Resource" uid="uid://b2bepjl0eby00" path="res://Data and Resources/Messages/killer_games.tres" id="11_xw3pa"]
+[ext_resource type="Script" uid="uid://6ahcfwj62g07" path="res://Scripts/Files and Folders/files.gd" id="30_bms7w"]
+[ext_resource type="Script" uid="uid://betc7x5t62js8" path="res://Scripts/Resources and Files/Other/subtitles.gd" id="31_kin0s"]
+[ext_resource type="PackedScene" uid="uid://cfc7knki1mr1p" path="res://Scenes/File Systems/killer_games_server.tscn" id="32_kin0s"]
 [ext_resource type="Texture2D" uid="uid://djw8njr2vxjmy" path="res://Art/Pictures/Desktop Icons/WindowsXP/power_off.png" id="38_vgvvn"]
 [ext_resource type="Texture2D" uid="uid://tsw1lv5ecbhs" path="res://Art/Pictures/Desktop Icons/WindowsXP/reboot.png" id="39_s7hr2"]
 [ext_resource type="Texture2D" uid="uid://dubjsv5ovl0i7" path="res://Art/Pictures/Desktop Icons/WindowsXP/logout.png" id="40_bms7w"]
 [ext_resource type="Texture2D" uid="uid://dmdex3eijgfnc" path="res://Art/Placeholders/PS30TH_16x9_WALLPAPER.png" id="88_lnqyc"]
 [ext_resource type="Script" uid="uid://bifm388ef70uc" path="res://Scripts/Resources and Files/For Desktop/messages.gd" id="93_bkf2c"]
-[ext_resource type="Texture2D" uid="uid://cfc5dvttjjqet" path="res://Art/Placeholders/soham.png" id="94_r1tma"]
-[ext_resource type="Script" uid="uid://bfmnfev8k5uiw" path="res://Scripts/Resources and Files/For Desktop/emails.gd" id="95_gostb"]
 [ext_resource type="PackedScene" uid="uid://c6gqjqrkidn0b" path="res://Scenes/Window Types/file_manager.tscn" id="96_jupny"]
 [ext_resource type="PackedScene" uid="uid://bmcafym2vhbv8" path="res://Scenes/Window Types/image_viewer.tscn" id="97_ucyns"]
 [ext_resource type="PackedScene" uid="uid://heb52kbru40a" path="res://Scenes/Window Types/text_editor.tscn" id="98_uar5t"]
@@ -42,41 +47,21 @@
 [ext_resource type="Texture2D" uid="uid://cajkgw7h5kb80" path="res://Art/Pictures/Editor Only/file.svg" id="125_8yy84"]
 [ext_resource type="PackedScene" uid="uid://bwgiv56py676e" path="res://Scenes/Other/desktop_icon.tscn" id="126_ilos3"]
 
-[sub_resource type="Resource" id="Resource_whyey"]
-resource_name = "Actie - "
-script = ExtResource("93_bkf2c")
-content = "[winnerwind]: I really missed you
-[actie]: Aww, me too."
-icon = ExtResource("94_r1tma")
-name = "Actie"
-alternate_name = ""
-last_message = "What's never been has never been so."
+[sub_resource type="Resource" id="Resource_8l6bq"]
+script = ExtResource("31_kin0s")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
 
-[sub_resource type="Resource" id="Resource_k3fa1"]
-resource_name = "Hi - "
-script = ExtResource("93_bkf2c")
-content = "$a I am Amanda!
-$c I am clyde!
-<d> 2 Days ago </d>"
-name = "Hi"
-alternate_name = ""
-last_message = "owo"
-
-[sub_resource type="Resource" id="Resource_4464d"]
-resource_name = "Request for files."
-script = ExtResource("95_gostb")
-content = "Please send me the files by Monday.
-
-Cheers,
-	WinnerWind"
-subject = "Request for files."
-sender = "elbowsparse@gmail.com"
-recipient = "soham.gwh@gmail.com"
-hour = 23
-minute = 59
-day = 31
-month = 1
-year = 2025
+[sub_resource type="Resource" id="Resource_vs436"]
+script = ExtResource("31_kin0s")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
 
 [sub_resource type="Animation" id="Animation_km1se"]
 length = 0.001
@@ -333,9 +318,8 @@ system_name = "Dub XP"
 system_version = "v0.0.1"
 system_information = "Copyright WinnerWind"
 current_user = ExtResource("6_vgvvn")
-personal_chat_messages = Array[ExtResource("93_bkf2c")]([SubResource("Resource_whyey")])
-group_chat_messages = Array[ExtResource("93_bkf2c")]([SubResource("Resource_k3fa1")])
-emails = Array[ExtResource("95_gostb")]([SubResource("Resource_4464d")])
+personal_chat_messages = Array[ExtResource("93_bkf2c")]([ExtResource("8_vs436"), ExtResource("9_trq6o"), ExtResource("10_6k1xg")])
+group_chat_messages = Array[ExtResource("93_bkf2c")]([ExtResource("11_xw3pa")])
 file_manager_window = ExtResource("96_jupny")
 image_viewer_window = ExtResource("97_ucyns")
 text_viewer_window = ExtResource("98_uar5t")
@@ -361,6 +345,37 @@ login_scene = ExtResource("114_sa8px")
 unique_name_in_owner = true
 script = ExtResource("117_lv5nq")
 metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="passwords" type="Node" parent="Files"]
+script = ExtResource("117_lv5nq")
+metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="Users" type="Node" parent="Files/passwords"]
+script = ExtResource("117_lv5nq")
+
+[node name="jeremy" type="Node" parent="Files/passwords/Users"]
+script = ExtResource("30_bms7w")
+text = "jeremyobrien
+-_-_-_-"
+audio_subtitles = SubResource("Resource_8l6bq")
+video_subtitles = SubResource("Resource_vs436")
+month = 2
+day = 9
+hour = 19
+minute = 47
+
+[node name="ranmara" type="Node" parent="Files/passwords/Users"]
+script = ExtResource("30_bms7w")
+text = "ranmarar
+oSkdpdwW!!?"
+audio_subtitles = SubResource("Resource_8l6bq")
+video_subtitles = SubResource("Resource_vs436")
+month = 1
+day = 19
+hour = 3
+minute = 10
+
+[node name="games server" parent="Files" instance=ExtResource("32_kin0s")]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
