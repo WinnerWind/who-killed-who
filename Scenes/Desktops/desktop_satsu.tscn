@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=3 uid="uid://km3q1i4fcw0t"]
+[gd_scene load_steps=71 format=3 uid="uid://km3q1i4fcw0t"]
 
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="1_oo3qg"]
 [ext_resource type="Theme" uid="uid://dfp8tc3gbtaeo" path="res://Art/Themes/winxp.tres" id="2_6dpgf"]
@@ -18,6 +18,7 @@
 [ext_resource type="Texture2D" uid="uid://dubjsv5ovl0i7" path="res://Art/Pictures/Desktop Icons/WindowsXP/logout.png" id="40_bms7w"]
 [ext_resource type="Texture2D" uid="uid://dmdex3eijgfnc" path="res://Art/Placeholders/PS30TH_16x9_WALLPAPER.png" id="88_lnqyc"]
 [ext_resource type="Script" uid="uid://bifm388ef70uc" path="res://Scripts/Resources and Files/For Desktop/messages.gd" id="93_bkf2c"]
+[ext_resource type="Script" uid="uid://bfmnfev8k5uiw" path="res://Scripts/Resources and Files/For Desktop/emails.gd" id="95_gostb"]
 [ext_resource type="PackedScene" uid="uid://c6gqjqrkidn0b" path="res://Scenes/Window Types/file_manager.tscn" id="96_jupny"]
 [ext_resource type="PackedScene" uid="uid://bmcafym2vhbv8" path="res://Scenes/Window Types/image_viewer.tscn" id="97_ucyns"]
 [ext_resource type="PackedScene" uid="uid://heb52kbru40a" path="res://Scenes/Window Types/text_editor.tscn" id="98_uar5t"]
@@ -46,6 +47,199 @@
 [ext_resource type="Script" uid="uid://cq8v8vfrqt7lp" path="res://Scripts/Desktop/clock_and_calendar.gd" id="124_sbhmc"]
 [ext_resource type="Texture2D" uid="uid://cajkgw7h5kb80" path="res://Art/Pictures/Editor Only/file.svg" id="125_8yy84"]
 [ext_resource type="PackedScene" uid="uid://bwgiv56py676e" path="res://Scenes/Other/desktop_icon.tscn" id="126_ilos3"]
+
+[sub_resource type="Resource" id="Resource_trq6o"]
+resource_name = "1 New Reply on \"Making Alts\""
+script = ExtResource("95_gostb")
+content = "You have one new reply on your forum post:
+
+	Is it possible to make alt accounts on Nicotine Chat? I want to make one in order to preserve my privacy, and to seperate my work from my life.
+
+Reply by Strava:
+	why would you want to do that?
+	by default nicotine allows only one account to run on each computer. if you really wanted to make an alt though, you could buy a cheap tiny home computer, use anytable to remote connect into it, then run nicotine there. seems a bit obtuse to me though IMHO.
+	probs better off just using the upcoming tags feature.
+
+Read Original {explink}"
+subject = "1 New Reply on \"Making Alts\""
+sender = "$forum"
+recipient = "$sth"
+hour = 19
+minute = 19
+day = 4
+month = 2
+year = 2025
+metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
+
+[sub_resource type="Resource" id="Resource_6k1xg"]
+resource_name = "Juicy Info"
+script = ExtResource("95_gostb")
+content = "Hey,
+
+I'm Satsu Hito of the games studio Killer Games. You have probably heard our name floating around, especially after the massive success of Metal Cracker.
+
+There's someone on our team, Romila Ramesh, who is slowly turning into a liability. She's been missing deadlines, outbursts during meetings, and it's becoming harder for us to justify her actions.
+
+Just recently, it came to our knowledge that she's been taking hard drugs. I'm not sure how much, but judging by how prevalent she is on social media, an outburt is going to happen sooner or later.
+
+I'm telling you all this for two main reasons. First is that this story is going to break out one way or another, and as a person with substantial power at the studio, it is my responsibility to make sure that such a story is killed off in the shell before it spreads uncontrollably. Secondly, she's not well and I'm tired of pretending that everything is fine.
+
+If you want to talk, I'm open for a call. Anonymously of course.
+
+Satsu.
+
+
+"
+subject = "Juicy Info"
+sender = "$sth"
+recipient = "$reporter"
+hour = 23
+minute = 12
+day = 3
+month = 2
+year = 2025
+metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
+
+[sub_resource type="Resource" id="Resource_xw3pa"]
+resource_name = "RE: Juicy Info"
+script = ExtResource("95_gostb")
+content = "Hey Satsu,
+
+Thanks for telling me about internal issues at the company, and for trusting me with information this sensitive.
+
+Unfortunately I don't really have the time for calls. This correspondence will have to stay in our inboxes.
+
+***
+
+I don't really want to post a story with little information, so I'd like to ask a few questions:
+- Do you have any recent events (with evidence/documentation) that I can refer to?
+- Have you all taken any steps to mitigate this, or are you all trying to keep it under wraps?
+- How did you get to know about this? 
+
+Of course, I will not publish anything without your consent, and moreover, I will make sure to pass my drafts to you before doing so. I will also ensure to uphold anonymity. These E-mails will be deleted on my end 1 month from now.
+
+Mickey \"Mac\" McKenzie.
+
+{disclaimer}
+THIS EMAIL AND ALL ATTACHMENTS ARE FOR YOUR VIEWERSHIP ONLY. YOU ARE ADVISED TO NOT FORWARD THIS EMAIL UNLESS EXPLICITLY SPECIFIED. IF YOU ARE NOT THE INTENDED RECIPIENT, PLEASE INFORM THE SENDER AND PURGE THIS EMAIL POSTHASTE."
+subject = "RE: Juicy Info"
+sender = "$reporter"
+recipient = "$sth"
+hour = 23
+minute = 19
+day = 3
+month = 2
+year = 2025
+metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
+
+[sub_resource type="Resource" id="Resource_row4g"]
+resource_name = "RE: Juicy Info (2)"
+script = ExtResource("95_gostb")
+content = "Of course.
+
+I hope you do understand that I don't want to cause too much of a splash from this situation. I am also unable to share much hard evidence, but I have added a few attachments to this email. 
+
+There are not many recent, public, events that I can cite to show the situation. You will need to take my word for it.
+
+We have taken several steps to make sure that Romila is getting the care she needs, and is being rehabilitated properly. We have attempted to sign her up for some rehabilitation sessions.
+
+We got to know about this after a few officers came into our office and accused her of taking drugs. We thought it was bogus, but they had brought reciepts, and after further investigation of her belongings, we found packets of drugs. That is all I will say on the matter.
+
+I would like to reiterate that I don't want to create too much of a splash. I would prefer if everything I have said thus far is presented as rumor rather than fact. Internally things are messy and we need some time to sort things out, but I wish to cover all my bases.
+
+Satsu.
+
+{expattachment}
+{expattachment}
+{expattachment}"
+subject = "RE: Juicy Info (2)"
+sender = "$sth"
+recipient = "$reporter"
+hour = 23
+minute = 49
+day = 3
+month = 2
+year = 2025
+metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
+
+[sub_resource type="Resource" id="Resource_3lad6"]
+resource_name = "RE: Juicy Info (3)"
+script = ExtResource("95_gostb")
+content = "Hey Satsu,
+
+I see. Thank you for providing some evidence. I'll get back to you in an hour or so with a semi-complete draft. 
+
+Mickey \"Mac\" McKenzie.
+
+{disclaimer}
+THIS EMAIL AND ALL ATTACHMENTS ARE FOR YOUR VIEWERSHIP ONLY. YOU ARE ADVISED TO NOT FORWARD THIS EMAIL UNLESS EXPLICITLY SPECIFIED. IF YOU ARE NOT THE INTENDED RECIPIENT, PLEASE INFORM THE SENDER AND PURGE THIS EMAIL POSTHASTE."
+subject = "RE: Juicy Info (3)"
+sender = "$reporter"
+recipient = "$sth"
+hour = 23
+minute = 55
+day = 3
+month = 2
+year = 2025
+metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
+
+[sub_resource type="Resource" id="Resource_e5ji5"]
+resource_name = "RE: Juicy Info (4)"
+script = ExtResource("95_gostb")
+content = "Hey Satsu,
+
+I have finished my first draft at {explink}. Please read through it and let me know if you have any comments or corrections. I have made sure to frame the entire evidence as rumor, and intentionally keeping some details hidden.
+
+Mickey \"Mac\" McKenzie.
+
+{disclaimer}
+THIS EMAIL AND ALL ATTACHMENTS ARE FOR YOUR VIEWERSHIP ONLY. YOU ARE ADVISED TO NOT FORWARD THIS EMAIL UNLESS EXPLICITLY SPECIFIED. IF YOU ARE NOT THE INTENDED RECIPIENT, PLEASE INFORM THE SENDER AND PURGE THIS EMAIL POSTHASTE."
+subject = "RE: Juicy Info (4)"
+sender = "$reporter"
+recipient = "$sth"
+hour = 1
+minute = 45
+day = 4
+month = 2
+year = 2025
+metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
+
+[sub_resource type="Resource" id="Resource_5x16o"]
+resource_name = "RE: Juicy Info (5)"
+script = ExtResource("95_gostb")
+content = "Looks good to me. No comments on my end.
+
+Satsu."
+subject = "RE: Juicy Info (5)"
+sender = "$sth"
+recipient = "$reporter"
+hour = 2
+minute = 15
+day = 4
+month = 2
+year = 2025
+metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
+
+[sub_resource type="Resource" id="Resource_38x4a"]
+resource_name = "RE: Juicy Info (6)"
+script = ExtResource("95_gostb")
+content = "Hey Satsu,
+
+Noted. I'll publish this when I can.
+
+Mickey \"Mac\" McKenzie.
+
+{disclaimer}
+THIS EMAIL AND ALL ATTACHMENTS ARE FOR YOUR VIEWERSHIP ONLY. YOU ARE ADVISED TO NOT FORWARD THIS EMAIL UNLESS EXPLICITLY SPECIFIED. IF YOU ARE NOT THE INTENDED RECIPIENT, PLEASE INFORM THE SENDER AND PURGE THIS EMAIL POSTHASTE."
+subject = "RE: Juicy Info (6)"
+sender = "$reporter"
+recipient = "$sth"
+hour = 2
+minute = 17
+day = 4
+month = 2
+year = 2025
+metadata/_custom_type_script = "uid://bfmnfev8k5uiw"
 
 [sub_resource type="Resource" id="Resource_8l6bq"]
 script = ExtResource("31_kin0s")
@@ -320,6 +514,7 @@ system_information = "Copyright WinnerWind"
 current_user = ExtResource("6_vgvvn")
 personal_chat_messages = Array[ExtResource("93_bkf2c")]([ExtResource("8_vs436"), ExtResource("9_trq6o"), ExtResource("10_6k1xg")])
 group_chat_messages = Array[ExtResource("93_bkf2c")]([ExtResource("11_xw3pa")])
+emails = Array[ExtResource("95_gostb")]([SubResource("Resource_trq6o"), SubResource("Resource_6k1xg"), SubResource("Resource_xw3pa"), SubResource("Resource_row4g"), SubResource("Resource_3lad6"), SubResource("Resource_e5ji5"), SubResource("Resource_5x16o"), SubResource("Resource_38x4a")])
 file_manager_window = ExtResource("96_jupny")
 image_viewer_window = ExtResource("97_ucyns")
 text_viewer_window = ExtResource("98_uar5t")
