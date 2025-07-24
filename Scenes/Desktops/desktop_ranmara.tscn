@@ -1496,6 +1496,11 @@ minute = 12
 [node name="Transkriptor" type="Node" parent="Files"]
 script = ExtResource("34_w8q17")
 password = "ranmara@winnerwind.in"
+year = 24
+month = 11
+day = 31
+hour = 12
+minute = 30
 metadata/_custom_type_script = "uid://cmowc8flglqra"
 
 [node name="config" type="Node" parent="Files/Transkriptor"]
@@ -1509,9 +1514,18 @@ romila = romramsh
 never"
 audio_subtitles = SubResource("Resource_amo2v")
 video_subtitles = SubResource("Resource_2v7jc")
+year = 24
+month = 11
+day = 31
+hour = 12
+minute = 30
 
 [node name="Downloads" type="Node" parent="Files"]
 script = ExtResource("34_w8q17")
+month = 3
+day = 12
+hour = 12
+minute = 12
 metadata/_custom_type_script = "uid://cmowc8flglqra"
 
 [node name="godotcon-information" type="Node" parent="Files/Downloads"]
