@@ -1,4 +1,4 @@
-[gd_scene load_steps=71 format=3 uid="uid://km3q1i4fcw0t"]
+[gd_scene load_steps=79 format=3 uid="uid://km3q1i4fcw0t"]
 
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="1_oo3qg"]
 [ext_resource type="Theme" uid="uid://dfp8tc3gbtaeo" path="res://Art/Themes/winxp.tres" id="2_6dpgf"]
@@ -250,6 +250,70 @@ key_to_be_moved = 0
 index_to_be_moved_to = 0
 
 [sub_resource type="Resource" id="Resource_vs436"]
+script = ExtResource("31_kin0s")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_jyme2"]
+script = ExtResource("31_kin0s")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_w0m6e"]
+script = ExtResource("31_kin0s")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_dtwfv"]
+script = ExtResource("31_kin0s")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_rbimx"]
+script = ExtResource("31_kin0s")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_t2oab"]
+script = ExtResource("31_kin0s")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_ek62r"]
+script = ExtResource("31_kin0s")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_jv6gl"]
+script = ExtResource("31_kin0s")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_egm33"]
 script = ExtResource("31_kin0s")
 subtitles = Dictionary[int, String]({})
 time_to_be_changed = 0
@@ -571,6 +635,48 @@ hour = 3
 minute = 10
 
 [node name="games server" parent="Files" instance=ExtResource("32_kin0s")]
+
+[node name="Therapy Notes" type="Node" parent="Files"]
+script = ExtResource("117_lv5nq")
+
+[node name="1" type="Node" parent="Files/Therapy Notes"]
+script = ExtResource("30_bms7w")
+text = "Therapist told me that reflecting on therapy sessions after the fact boosts the effect of therapy."
+audio_subtitles = SubResource("Resource_jyme2")
+video_subtitles = SubResource("Resource_w0m6e")
+day = 7
+hour = 14
+minute = 12
+
+[node name="2" type="Node" parent="Files/Therapy Notes"]
+script = ExtResource("30_bms7w")
+text = "Sometimes, learning to let go is valuable. Jealousy is something that plagues everyone, but it is important to remember that everyone feels this from time to time. "
+audio_subtitles = SubResource("Resource_dtwfv")
+video_subtitles = SubResource("Resource_rbimx")
+day = 16
+hour = 19
+minute = 42
+
+[node name="3" type="Node" parent="Files/Therapy Notes"]
+script = ExtResource("30_bms7w")
+text = "It's okay to feel glum on some days, and it's even more okay to not have anything to talk about, or not want to talk about something."
+audio_subtitles = SubResource("Resource_t2oab")
+video_subtitles = SubResource("Resource_ek62r")
+day = 21
+hour = 15
+minute = 2
+
+[node name="4" type="Node" parent="Files/Therapy Notes"]
+script = ExtResource("30_bms7w")
+text = "I think I'm slowly getting into the groove of going to therapy. Today's session was quite interesting. 
+
+Unlike usual, I felt kind of attacked by her statements. It was weirdly refreshing but honestly difficult to describe. In a way it was negative too. "
+audio_subtitles = SubResource("Resource_jv6gl")
+video_subtitles = SubResource("Resource_egm33")
+month = 1
+day = 12
+hour = 15
+minute = 47
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
