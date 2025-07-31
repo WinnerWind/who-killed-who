@@ -1,8 +1,11 @@
-[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://d3tu0gwa7akvb"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_otj7y"]
+[gd_resource type="StyleBoxFlat" format=3 uid="uid://dg8tsg0jo6pk4"]
 
 [resource]
-texture = SubResource("CompressedTexture2D_otj7y")
-texture_margin_right = 5.0
-texture_margin_bottom = 5.0
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0.623529, 0.854902, 0.929412, 1)
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.0509804, 0.0509804, 0.0784314, 1)

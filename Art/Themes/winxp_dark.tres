@@ -1,8 +1,8 @@
 [gd_resource type="Theme" load_steps=39 format=3 uid="uid://dqccwaixn6vhy"]
 
 [ext_resource type="FontFile" uid="uid://l2iaannjtu0d" path="res://Art/Fonts/Tahoma/tahoma.ttf" id="1_jp0nu"]
-[ext_resource type="StyleBox" uid="uid://bkoo1itogdx02" path="res://Art/Themes/Styleboxes/WinXP/Dark/focus_button_stylebox.tres" id="2_jp0nu"]
-[ext_resource type="StyleBox" uid="uid://c2yct1jyfceci" path="res://Art/Themes/Styleboxes/WinXP/Dark/unfocus_button_stylebox.tres" id="3_jp0nu"]
+[ext_resource type="StyleBox" uid="uid://1gtetouv5ssd" path="res://Art/Themes/Styleboxes/WinXP/Dark/unfocus_button.tres" id="2_0aowo"]
+[ext_resource type="StyleBox" uid="uid://dv20stovbst3w" path="res://Art/Themes/Styleboxes/WinXP/Dark/focus_button.tres" id="3_l0baj"]
 [ext_resource type="Texture2D" uid="uid://bt41wn4g8dds8" path="res://Art/Pictures/Desktop Icons/WindowsXP/button on.png" id="4_0aowo"]
 [ext_resource type="StyleBox" uid="uid://dlrc03vugiyvv" path="res://Art/Themes/Styleboxes/WinXP/Dark/desktop_panel.tres" id="4_jp0nu"]
 [ext_resource type="Texture2D" uid="uid://5xuchjavkfw5" path="res://Art/Pictures/Desktop Icons/WindowsXP/button off.png" id="5_l0baj"]
@@ -123,19 +123,19 @@ content_margin_left = 10.0
 bg_color = Color(0.0941176, 0.0941176, 0.0941176, 1)
 
 [resource]
-Button/colors/font_color = Color(0, 0, 0, 1)
-Button/colors/font_focus_color = Color(0, 0, 0, 1)
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/colors/font_focus_color = Color(1, 1, 1, 1)
 Button/colors/font_hover_color = Color(0.147671, 0.147672, 0.147672, 1)
 Button/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-Button/colors/font_pressed_color = Color(0, 0, 0, 1)
+Button/colors/font_pressed_color = Color(1, 1, 1, 1)
 Button/constants/align_to_largest_stylebox = 1
 Button/fonts/font = ExtResource("1_jp0nu")
 Button/styles/disabled = SubResource("StyleBoxEmpty_o5i2e")
 Button/styles/focus = SubResource("StyleBoxEmpty_0aowo")
-Button/styles/hover = ExtResource("3_jp0nu")
-Button/styles/hover_pressed = ExtResource("2_jp0nu")
-Button/styles/normal = ExtResource("3_jp0nu")
-Button/styles/pressed = ExtResource("2_jp0nu")
+Button/styles/hover = ExtResource("2_0aowo")
+Button/styles/hover_pressed = ExtResource("2_0aowo")
+Button/styles/normal = ExtResource("3_l0baj")
+Button/styles/pressed = ExtResource("3_l0baj")
 CheckButton/constants/align_to_largest_stylebox = 1
 CheckButton/icons/checked = ExtResource("4_0aowo")
 CheckButton/icons/unchecked = ExtResource("5_l0baj")
