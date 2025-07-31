@@ -114,21 +114,20 @@ border_width_bottom = 2
 border_color = Color(0.623529, 0.854902, 0.929412, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tnce4"]
-bg_color = Color(1, 1, 1, 1)
-expand_margin_left = 10.0
+content_margin_left = 10.0
+bg_color = Color(0.674815, 0.674815, 0.674815, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rbyos"]
-bg_color = Color(1, 1, 1, 1)
-expand_margin_left = 10.0
+content_margin_left = 10.0
+bg_color = Color(0.67451, 0.67451, 0.67451, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e783k"]
-bg_color = Color(1, 1, 1, 1)
-expand_margin_left = 10.0
+content_margin_left = 10.0
+bg_color = Color(0.67451, 0.67451, 0.67451, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tb7tp"]
-content_margin_left = 0.0
-bg_color = Color(0.623529, 0.854902, 0.929412, 1)
-expand_margin_left = 10.0
+content_margin_left = 10.0
+bg_color = Color(0.623529, 0.854902, 0.929412, 0.466667)
 
 [resource]
 Button/colors/font_color = Color(0, 0, 0, 1)
