@@ -1,4 +1,4 @@
-[gd_scene load_steps=79 format=3 uid="uid://km3q1i4fcw0t"]
+[gd_scene load_steps=91 format=3 uid="uid://km3q1i4fcw0t"]
 
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="1_oo3qg"]
 [ext_resource type="Theme" uid="uid://dfp8tc3gbtaeo" path="res://Art/Themes/winxp.tres" id="2_6dpgf"]
@@ -314,6 +314,102 @@ key_to_be_moved = 0
 index_to_be_moved_to = 0
 
 [sub_resource type="Resource" id="Resource_egm33"]
+script = ExtResource("31_kin0s")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_ksd73"]
+script = ExtResource("31_kin0s")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_hjxys"]
+script = ExtResource("31_kin0s")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_nrlhu"]
+script = ExtResource("31_kin0s")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_h45h7"]
+script = ExtResource("31_kin0s")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_n8u7d"]
+script = ExtResource("31_kin0s")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_15ie2"]
+script = ExtResource("31_kin0s")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_i57l1"]
+script = ExtResource("31_kin0s")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_hkx33"]
+script = ExtResource("31_kin0s")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_5o4v8"]
+script = ExtResource("31_kin0s")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_11k3f"]
+script = ExtResource("31_kin0s")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_m0ark"]
+script = ExtResource("31_kin0s")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_qohlj"]
 script = ExtResource("31_kin0s")
 subtitles = Dictionary[int, String]({})
 time_to_be_changed = 0
@@ -677,6 +773,82 @@ month = 1
 day = 12
 hour = 15
 minute = 47
+
+[node name="5" type="Node" parent="Files/Therapy Notes"]
+script = ExtResource("30_bms7w")
+text = "I'm kinda busy today so I decided to go for a morning session instead.
+
+Today wasn't very interesting, though I really felt attacked by her questions, especially when she asked how my jealousy problem was doing. Suffice to say that I didn't really feel amazing today. "
+audio_subtitles = SubResource("Resource_ksd73")
+video_subtitles = SubResource("Resource_hjxys")
+month = 1
+day = 25
+hour = 12
+minute = 15
+
+[node name="6" type="Node" parent="Files/Therapy Notes"]
+script = ExtResource("30_bms7w")
+text = "I explained that my friend got caught doing drugs today. Surpriisngly, my therapist was very understanding about it. I thought she would antagonize me, but no.
+
+She said that I need to support her through this time, and that I can't do it alone. It sounds nice, but to me it sounds like a whole bunch of empty words. I wish that I was given more tangible advice that I could use."
+audio_subtitles = SubResource("Resource_nrlhu")
+video_subtitles = SubResource("Resource_h45h7")
+month = 2
+hour = 23
+minute = 45
+
+[node name="7" type="Node" parent="Files/Therapy Notes"]
+script = ExtResource("30_bms7w")
+text = "I finally told her about the knife I had, and the recent urges I've had to kill someone.
+
+My therapist was really really concerned and invited me to some tea, and to talk things more.
+
+The session dragged on for so much longer. I felt good in the end but still somewhat unsatisfied. The urges still stayed."
+audio_subtitles = SubResource("Resource_n8u7d")
+video_subtitles = SubResource("Resource_15ie2")
+month = 2
+day = 8
+hour = 19
+minute = 12
+
+[node name="8" type="Node" parent="Files/Therapy Notes"]
+script = ExtResource("30_bms7w")
+text = "We talked more about my urges to kill someone. I haven't mentioned to them that the person is Ranmara, because I'm afraid that they will tell him. SHe told me that it's okayt o have these urges, but that I shouldn't yield to them. She has a point, but I don't think she really understands my case. It's a lot harder than just \"Don't do that\".
+
+As a result, I'm thinking of just not going to her entirely."
+audio_subtitles = SubResource("Resource_i57l1")
+video_subtitles = SubResource("Resource_hkx33")
+month = 2
+day = 12
+hour = 17
+minute = 57
+
+[node name="9" type="Node" parent="Files/Therapy Notes"]
+script = ExtResource("30_bms7w")
+text = "I lied to him and told him that my urges had subsided when they had only gotten worse.
+
+As a result, today's session wasn't very enlightening. We just talked about life and work.
+
+I'm going to stop going to her from now on and just do whatever I want. Hopefully I feel better soon."
+audio_subtitles = SubResource("Resource_5o4v8")
+video_subtitles = SubResource("Resource_11k3f")
+month = 2
+day = 13
+hour = 18
+minute = 12
+
+[node name="trash" type="Node" parent="Files"]
+script = ExtResource("117_lv5nq")
+metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="confession" type="Node" parent="Files/trash"]
+script = ExtResource("30_bms7w")
+audio_subtitles = SubResource("Resource_m0ark")
+video_subtitles = SubResource("Resource_qohlj")
+month = 3
+day = 29
+hour = 23
+minute = 18
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
