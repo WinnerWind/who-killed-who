@@ -11,6 +11,30 @@ class_name VirtualFolder
 @export_tool_button("Sort Children Reverse Alphabetically", "RandomNumberGenerator") var rev_sort_function = reverse_sort_children_alphabetically
 @export_tool_button("Sort Children Alphabetically Recursively", "RandomNumberGenerator") var rec_sort_function = recursive_sort
 @export_tool_button("Sort Children Reverse Alphabetically Recursively", "RandomNumberGenerator") var rev_rec_sort_function = reverse_recursive_sort
+@export_tool_button("Sort by Folders First Then Files","RandomNumberGenerator") var folder_file_sort_function = sort_by_folders_first_then_files
+@export_tool_button("Sort By Folders The Files Recursively", "RandomNumberGenerator") var ff_sort_function_recursive = sort_by_folders_first_then_files_recursive
+
+func sort_by_folders_first_then_files_recursive():
+	sort_by_folders_first_then_files()
+	for child in get_children():
+		if child is VirtualFolder: child.sort_by_folders_first_then_files_recursive()
+
+func sort_by_folders_first_then_files():
+	var folders:Array[VirtualFolder]
+	var files:Array[VirtualFile]
+	for child in get_children():
+		if child is VirtualFile: files.append(child)
+		elif child is VirtualFolder: folders.append(child)
+		else: printerr("Object %s was neither file nor folder! Please check your file system tree."%child.name)
+	
+	# Sort alphabetically
+	files.sort()
+	folders.sort()
+	
+	for child in get_children():
+		if child is VirtualFile: move_child(child,files.find(child)+folders.size())
+		else: move_child(child,folders.find(child))
+
 func recursive_sort():
 	sort_children_alphabetically()
 	for child in get_children():
