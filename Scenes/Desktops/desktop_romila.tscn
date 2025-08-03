@@ -1,4 +1,4 @@
-[gd_scene load_steps=85 format=3 uid="uid://di4bb10dtakdq"]
+[gd_scene load_steps=86 format=3 uid="uid://di4bb10dtakdq"]
 
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="1_xr8cy"]
 [ext_resource type="Resource" uid="uid://gmxp5mjhrbdg" path="res://Data and Resources/Users/romila.tres" id="2_f78nl"]
@@ -56,6 +56,7 @@
 [ext_resource type="Texture2D" uid="uid://scco86wk7weo" path="res://Art/Pictures/Drawings/Ooty.png" id="39_vkw88"]
 [ext_resource type="Texture2D" uid="uid://cvtg7nvn2a1om" path="res://Art/Pictures/Drawings/sketching_practice.jpg" id="40_cueay"]
 [ext_resource type="Texture2D" uid="uid://c7nvijstn4ujf" path="res://Art/Pictures/Desktop Icons/User1/Dark/logout.svg" id="40_md6mi"]
+[ext_resource type="PackedScene" uid="uid://dpsvuj4bhgvyp" path="res://Scenes/File Systems/incident_report.tscn" id="45_cueay"]
 
 [sub_resource type="Resource" id="Resource_hgqbr"]
 resource_name = "Unsubscribe"
@@ -652,6 +653,8 @@ day = 26
 hour = 18
 minute = 32
 metadata/_custom_type_script = "uid://6ahcfwj62g07"
+
+[node name="confidential-evidence" parent="Files" instance=ExtResource("45_cueay")]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

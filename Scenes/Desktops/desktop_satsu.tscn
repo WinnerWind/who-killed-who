@@ -1,4 +1,4 @@
-[gd_scene load_steps=91 format=3 uid="uid://km3q1i4fcw0t"]
+[gd_scene load_steps=92 format=3 uid="uid://km3q1i4fcw0t"]
 
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="1_oo3qg"]
 [ext_resource type="Theme" uid="uid://dfp8tc3gbtaeo" path="res://Art/Themes/winxp.tres" id="2_6dpgf"]
@@ -13,6 +13,7 @@
 [ext_resource type="Script" uid="uid://6ahcfwj62g07" path="res://Scripts/Files and Folders/files.gd" id="30_bms7w"]
 [ext_resource type="Script" uid="uid://betc7x5t62js8" path="res://Scripts/Resources and Files/Other/subtitles.gd" id="31_kin0s"]
 [ext_resource type="PackedScene" uid="uid://cfc7knki1mr1p" path="res://Scenes/File Systems/killer_games_server.tscn" id="32_kin0s"]
+[ext_resource type="PackedScene" uid="uid://dpsvuj4bhgvyp" path="res://Scenes/File Systems/incident_report.tscn" id="36_6k1xg"]
 [ext_resource type="Texture2D" uid="uid://djw8njr2vxjmy" path="res://Art/Pictures/Desktop Icons/WindowsXP/power_off.png" id="38_vgvvn"]
 [ext_resource type="Texture2D" uid="uid://tsw1lv5ecbhs" path="res://Art/Pictures/Desktop Icons/WindowsXP/reboot.png" id="39_s7hr2"]
 [ext_resource type="Texture2D" uid="uid://dubjsv5ovl0i7" path="res://Art/Pictures/Desktop Icons/WindowsXP/logout.png" id="40_bms7w"]
@@ -851,6 +852,8 @@ month = 3
 day = 29
 hour = 23
 minute = 18
+
+[node name="confidential-evidence" parent="Files" instance=ExtResource("36_6k1xg")]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

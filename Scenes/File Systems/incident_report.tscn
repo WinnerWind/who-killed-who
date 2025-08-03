@@ -1,0 +1,244 @@
+[gd_scene load_steps=16 format=3 uid="uid://dpsvuj4bhgvyp"]
+
+[ext_resource type="Script" uid="uid://cmowc8flglqra" path="res://Scripts/Files and Folders/folders.gd" id="1_vf4jt"]
+[ext_resource type="Script" uid="uid://6ahcfwj62g07" path="res://Scripts/Files and Folders/files.gd" id="2_g45ot"]
+[ext_resource type="Script" uid="uid://betc7x5t62js8" path="res://Scripts/Resources and Files/Other/subtitles.gd" id="3_ig6oe"]
+
+[sub_resource type="Resource" id="Resource_ar20w"]
+script = ExtResource("3_ig6oe")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_5yl28"]
+script = ExtResource("3_ig6oe")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_g45ot"]
+script = ExtResource("3_ig6oe")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_ig6oe"]
+script = ExtResource("3_ig6oe")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_rnq0r"]
+script = ExtResource("3_ig6oe")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_cowb0"]
+script = ExtResource("3_ig6oe")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_5j07g"]
+script = ExtResource("3_ig6oe")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_dban0"]
+script = ExtResource("3_ig6oe")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_euu3m"]
+script = ExtResource("3_ig6oe")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_ojdlw"]
+script = ExtResource("3_ig6oe")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_2qb8t"]
+script = ExtResource("3_ig6oe")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_crcap"]
+script = ExtResource("3_ig6oe")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[node name="incident-report" type="Node"]
+script = ExtResource("1_vf4jt")
+password = "Passw0rd!"
+toast_name = "File Manager"
+toast_text = "Reading off USB"
+month = 4
+day = 11
+hour = 19
+minute = 12
+
+[node name="README" type="Node" parent="."]
+script = ExtResource("2_g45ot")
+text = "Hey!
+
+These are pretty confidential files so I think that you should probably not tell anyone that you have these. Managed to pull some strings, which is exactly why this must stay between you and me. These files are everything I've gathered from the police investigation on this matter.
+
+There's surprisingly little and I wasn't able to get everything, but this should contain enough for you to get started.
+
+I'm fairly certain that the police have only cracked the password for your brother's computer. I think all of their computers were connected to the same network so it should be possible for you to unlock all of them if you really tried.
+
+Good luck, and I really hope you can find enough evidence to prove your innocence.
+
+P.S. You can send me your testimony via the LawyerLink app I've installed on your PC.
+
+- Your lawyer friend."
+audio_subtitles = SubResource("Resource_ar20w")
+video_subtitles = SubResource("Resource_5yl28")
+
+[node name="Report" type="Node" parent="."]
+script = ExtResource("2_g45ot")
+audio_subtitles = SubResource("Resource_g45ot")
+video_subtitles = SubResource("Resource_ig6oe")
+
+[node name="Photos" type="Node" parent="."]
+script = ExtResource("1_vf4jt")
+
+[node name="Redacted" type="Node" parent="."]
+script = ExtResource("1_vf4jt")
+
+[node name="Suspect Profiles" type="Node" parent="."]
+script = ExtResource("1_vf4jt")
+
+[node name="Satsu Hito" type="Node" parent="Suspect Profiles"]
+script = ExtResource("2_g45ot")
+audio_subtitles = SubResource("Resource_rnq0r")
+video_subtitles = SubResource("Resource_cowb0")
+
+[node name="Romila Ramesh" type="Node" parent="Suspect Profiles"]
+script = ExtResource("2_g45ot")
+audio_subtitles = SubResource("Resource_5j07g")
+video_subtitles = SubResource("Resource_dban0")
+
+[node name="Jeremy O\'Brien" type="Node" parent="Suspect Profiles"]
+script = ExtResource("2_g45ot")
+audio_subtitles = SubResource("Resource_euu3m")
+video_subtitles = SubResource("Resource_ojdlw")
+
+[node name="Sonu Rakesh" type="Node" parent="Suspect Profiles"]
+script = ExtResource("2_g45ot")
+audio_subtitles = SubResource("Resource_2qb8t")
+video_subtitles = SubResource("Resource_crcap")
+
+[node name="testbed" type="Node" parent="."]
+script = ExtResource("1_vf4jt")
+
+[node name="Suspect Profiles" type="Node" parent="testbed"]
+script = ExtResource("1_vf4jt")
+
+[node name="Suspect Profiles" type="Node" parent="testbed/Suspect Profiles"]
+script = ExtResource("1_vf4jt")
+
+[node name="Satsu Hito" type="Node" parent="testbed/Suspect Profiles"]
+script = ExtResource("2_g45ot")
+audio_subtitles = SubResource("Resource_rnq0r")
+video_subtitles = SubResource("Resource_cowb0")
+
+[node name="Romila Ramesh" type="Node" parent="testbed/Suspect Profiles"]
+script = ExtResource("2_g45ot")
+audio_subtitles = SubResource("Resource_5j07g")
+video_subtitles = SubResource("Resource_dban0")
+
+[node name="Jeremy O\'Brien" type="Node" parent="testbed/Suspect Profiles"]
+script = ExtResource("2_g45ot")
+audio_subtitles = SubResource("Resource_euu3m")
+video_subtitles = SubResource("Resource_ojdlw")
+
+[node name="Sonu Rakesh" type="Node" parent="testbed/Suspect Profiles"]
+script = ExtResource("2_g45ot")
+audio_subtitles = SubResource("Resource_2qb8t")
+video_subtitles = SubResource("Resource_crcap")
+
+[node name="SOnu" type="Node" parent="testbed/Suspect Profiles"]
+script = ExtResource("1_vf4jt")
+
+[node name="SOnu" type="Node" parent="testbed"]
+script = ExtResource("1_vf4jt")
+
+[node name="Suspect Profiles" type="Node" parent="testbed/SOnu"]
+script = ExtResource("1_vf4jt")
+
+[node name="Satsu Hito" type="Node" parent="testbed/SOnu"]
+script = ExtResource("2_g45ot")
+audio_subtitles = SubResource("Resource_rnq0r")
+video_subtitles = SubResource("Resource_cowb0")
+
+[node name="Romila Ramesh" type="Node" parent="testbed/SOnu"]
+script = ExtResource("2_g45ot")
+audio_subtitles = SubResource("Resource_5j07g")
+video_subtitles = SubResource("Resource_dban0")
+
+[node name="Jeremy O\'Brien" type="Node" parent="testbed/SOnu"]
+script = ExtResource("2_g45ot")
+audio_subtitles = SubResource("Resource_euu3m")
+video_subtitles = SubResource("Resource_ojdlw")
+
+[node name="Sonu Rakesh" type="Node" parent="testbed/SOnu"]
+script = ExtResource("2_g45ot")
+audio_subtitles = SubResource("Resource_2qb8t")
+video_subtitles = SubResource("Resource_crcap")
+
+[node name="SOnu" type="Node" parent="testbed/SOnu"]
+script = ExtResource("1_vf4jt")
+
+[node name="Satsu Hito" type="Node" parent="testbed"]
+script = ExtResource("2_g45ot")
+audio_subtitles = SubResource("Resource_rnq0r")
+video_subtitles = SubResource("Resource_cowb0")
+
+[node name="Romila Ramesh" type="Node" parent="testbed"]
+script = ExtResource("2_g45ot")
+audio_subtitles = SubResource("Resource_5j07g")
+video_subtitles = SubResource("Resource_dban0")
+
+[node name="Jeremy O\'Brien" type="Node" parent="testbed"]
+script = ExtResource("2_g45ot")
+audio_subtitles = SubResource("Resource_euu3m")
+video_subtitles = SubResource("Resource_ojdlw")
+
+[node name="Sonu Rakesh" type="Node" parent="testbed"]
+script = ExtResource("2_g45ot")
+audio_subtitles = SubResource("Resource_2qb8t")
+video_subtitles = SubResource("Resource_crcap")

@@ -1,4 +1,4 @@
-[gd_scene load_steps=132 format=3 uid="uid://w0kx4pqkw37h"]
+[gd_scene load_steps=133 format=3 uid="uid://w0kx4pqkw37h"]
 
 [ext_resource type="Theme" uid="uid://xyj76ld4ymnb" path="res://Art/Themes/hip_retro_dark.tres" id="1_8yja0"]
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="2_udsku"]
@@ -47,6 +47,7 @@
 [ext_resource type="Shader" uid="uid://b4ij2y4336ltx" path="res://Art/Shaders/stripes.tres" id="42_mydo0"]
 [ext_resource type="Texture2D" uid="uid://dmdex3eijgfnc" path="res://Art/Placeholders/PS30TH_16x9_WALLPAPER.png" id="43_2kmbq"]
 [ext_resource type="PackedScene" uid="uid://dg541tu3cd17a" path="res://Misc/3D Spinning Background/special_spin_background.tscn" id="44_l4mwa"]
+[ext_resource type="PackedScene" uid="uid://dpsvuj4bhgvyp" path="res://Scenes/File Systems/incident_report.tscn" id="44_ook28"]
 [ext_resource type="Texture2D" uid="uid://cajkgw7h5kb80" path="res://Art/Pictures/Editor Only/file.svg" id="46_3y4nn"]
 [ext_resource type="Script" uid="uid://bumowvb75nl7b" path="res://Scripts/Desktop/desktop_panels.gd" id="47_t3ml0"]
 [ext_resource type="Script" uid="uid://cjrscc2gi8o1v" path="res://Scripts/Desktop/users_panel.gd" id="48_wscjl"]
@@ -1538,6 +1539,8 @@ day = 12
 hour = 12
 minute = 12
 metadata/_custom_type_script = "uid://6ahcfwj62g07"
+
+[node name="confidential-evidence" parent="Files" instance=ExtResource("44_ook28")]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
