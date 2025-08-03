@@ -165,78 +165,78 @@ video_subtitles = SubResource("Resource_crcap")
 [node name="testbed" type="Node" parent="."]
 script = ExtResource("1_vf4jt")
 
-[node name="Suspect Profiles" type="Node" parent="testbed"]
-script = ExtResource("1_vf4jt")
-
-[node name="Suspect Profiles" type="Node" parent="testbed/Suspect Profiles"]
-script = ExtResource("1_vf4jt")
-
-[node name="Satsu Hito" type="Node" parent="testbed/Suspect Profiles"]
-script = ExtResource("2_g45ot")
-audio_subtitles = SubResource("Resource_rnq0r")
-video_subtitles = SubResource("Resource_cowb0")
-
-[node name="Romila Ramesh" type="Node" parent="testbed/Suspect Profiles"]
-script = ExtResource("2_g45ot")
-audio_subtitles = SubResource("Resource_5j07g")
-video_subtitles = SubResource("Resource_dban0")
-
-[node name="Jeremy O\'Brien" type="Node" parent="testbed/Suspect Profiles"]
-script = ExtResource("2_g45ot")
-audio_subtitles = SubResource("Resource_euu3m")
-video_subtitles = SubResource("Resource_ojdlw")
-
-[node name="Sonu Rakesh" type="Node" parent="testbed/Suspect Profiles"]
-script = ExtResource("2_g45ot")
-audio_subtitles = SubResource("Resource_2qb8t")
-video_subtitles = SubResource("Resource_crcap")
-
-[node name="SOnu" type="Node" parent="testbed/Suspect Profiles"]
-script = ExtResource("1_vf4jt")
-
 [node name="SOnu" type="Node" parent="testbed"]
+script = ExtResource("1_vf4jt")
+
+[node name="SOnu" type="Node" parent="testbed/SOnu"]
 script = ExtResource("1_vf4jt")
 
 [node name="Suspect Profiles" type="Node" parent="testbed/SOnu"]
 script = ExtResource("1_vf4jt")
-
-[node name="Satsu Hito" type="Node" parent="testbed/SOnu"]
-script = ExtResource("2_g45ot")
-audio_subtitles = SubResource("Resource_rnq0r")
-video_subtitles = SubResource("Resource_cowb0")
-
-[node name="Romila Ramesh" type="Node" parent="testbed/SOnu"]
-script = ExtResource("2_g45ot")
-audio_subtitles = SubResource("Resource_5j07g")
-video_subtitles = SubResource("Resource_dban0")
 
 [node name="Jeremy O\'Brien" type="Node" parent="testbed/SOnu"]
 script = ExtResource("2_g45ot")
 audio_subtitles = SubResource("Resource_euu3m")
 video_subtitles = SubResource("Resource_ojdlw")
 
+[node name="Romila Ramesh" type="Node" parent="testbed/SOnu"]
+script = ExtResource("2_g45ot")
+audio_subtitles = SubResource("Resource_5j07g")
+video_subtitles = SubResource("Resource_dban0")
+
+[node name="Satsu Hito" type="Node" parent="testbed/SOnu"]
+script = ExtResource("2_g45ot")
+audio_subtitles = SubResource("Resource_rnq0r")
+video_subtitles = SubResource("Resource_cowb0")
+
 [node name="Sonu Rakesh" type="Node" parent="testbed/SOnu"]
 script = ExtResource("2_g45ot")
 audio_subtitles = SubResource("Resource_2qb8t")
 video_subtitles = SubResource("Resource_crcap")
 
-[node name="SOnu" type="Node" parent="testbed/SOnu"]
+[node name="Suspect Profiles" type="Node" parent="testbed"]
 script = ExtResource("1_vf4jt")
 
-[node name="Satsu Hito" type="Node" parent="testbed"]
+[node name="SOnu" type="Node" parent="testbed/Suspect Profiles"]
+script = ExtResource("1_vf4jt")
+
+[node name="Suspect Profiles" type="Node" parent="testbed/Suspect Profiles"]
+script = ExtResource("1_vf4jt")
+
+[node name="Jeremy O\'Brien" type="Node" parent="testbed/Suspect Profiles"]
+script = ExtResource("2_g45ot")
+audio_subtitles = SubResource("Resource_euu3m")
+video_subtitles = SubResource("Resource_ojdlw")
+
+[node name="Romila Ramesh" type="Node" parent="testbed/Suspect Profiles"]
+script = ExtResource("2_g45ot")
+audio_subtitles = SubResource("Resource_5j07g")
+video_subtitles = SubResource("Resource_dban0")
+
+[node name="Satsu Hito" type="Node" parent="testbed/Suspect Profiles"]
 script = ExtResource("2_g45ot")
 audio_subtitles = SubResource("Resource_rnq0r")
 video_subtitles = SubResource("Resource_cowb0")
+
+[node name="Sonu Rakesh" type="Node" parent="testbed/Suspect Profiles"]
+script = ExtResource("2_g45ot")
+audio_subtitles = SubResource("Resource_2qb8t")
+video_subtitles = SubResource("Resource_crcap")
+
+[node name="Jeremy O\'Brien" type="Node" parent="testbed"]
+script = ExtResource("2_g45ot")
+audio_subtitles = SubResource("Resource_euu3m")
+video_subtitles = SubResource("Resource_ojdlw")
 
 [node name="Romila Ramesh" type="Node" parent="testbed"]
 script = ExtResource("2_g45ot")
 audio_subtitles = SubResource("Resource_5j07g")
 video_subtitles = SubResource("Resource_dban0")
 
-[node name="Jeremy O\'Brien" type="Node" parent="testbed"]
+[node name="Satsu Hito" type="Node" parent="testbed"]
 script = ExtResource("2_g45ot")
-audio_subtitles = SubResource("Resource_euu3m")
-video_subtitles = SubResource("Resource_ojdlw")
+audio_subtitles = SubResource("Resource_rnq0r")
+video_subtitles = SubResource("Resource_cowb0")
 
 [node name="Sonu Rakesh" type="Node" parent="testbed"]
 script = ExtResource("2_g45ot")
