@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://ctxac8gf3lly6"
-path="res://.godot/imported/intro_1.wav-305d01f1e878aedc2bfb2552a04d4efa.sample"
+path="res://.godot/imported/intro_catppuccin.wav-09478ae1eaf7a314e5dd7791a071c7b1.sample"
 
 [deps]
 
-source_file="res://Art/Sound/Transitory SFX/intro_1.wav"
-dest_files=["res://.godot/imported/intro_1.wav-305d01f1e878aedc2bfb2552a04d4efa.sample"]
+source_file="res://Art/Sound/Transitory SFX/intro_catppuccin.wav"
+dest_files=["res://.godot/imported/intro_catppuccin.wav-09478ae1eaf7a314e5dd7791a071c7b1.sample"]
 
 [params]
 

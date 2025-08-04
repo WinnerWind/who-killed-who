@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://cwi5v7c5sfqml"
-path="res://.godot/imported/hipretro outro.wav-65cbdb32fd6ebc414dbe9ea0a32d9fbe.sample"
+path="res://.godot/imported/outro_hip.wav-a777c3b194d1636ac7d14937966590cc.sample"
 
 [deps]
 
-source_file="res://Art/Sound/Transitory SFX/hipretro outro.wav"
-dest_files=["res://.godot/imported/hipretro outro.wav-65cbdb32fd6ebc414dbe9ea0a32d9fbe.sample"]
+source_file="res://Art/Sound/Transitory SFX/outro_hip.wav"
+dest_files=["res://.godot/imported/outro_hip.wav-a777c3b194d1636ac7d14937966590cc.sample"]
 
 [params]
 
