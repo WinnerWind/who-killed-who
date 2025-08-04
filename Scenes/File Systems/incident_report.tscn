@@ -6,38 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://w50pxf6wl5rg" path="res://Art/Pictures/Photographs/butterfly-knife.jpg" id="4_ig6oe"]
 [ext_resource type="Texture2D" uid="uid://d8d10utmvjfg" path="res://Art/Pictures/Photographs/body-found.png" id="5_ar20w"]
 
-[sub_resource type="Resource" id="Resource_ar20w"]
-script = ExtResource("3_ig6oe")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
-
-[sub_resource type="Resource" id="Resource_5yl28"]
-script = ExtResource("3_ig6oe")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
-
-[sub_resource type="Resource" id="Resource_g45ot"]
-script = ExtResource("3_ig6oe")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
-
-[sub_resource type="Resource" id="Resource_ig6oe"]
-script = ExtResource("3_ig6oe")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
-
 [sub_resource type="Resource" id="Resource_cod41"]
 script = ExtResource("3_ig6oe")
 subtitles = Dictionary[int, String]({})
@@ -63,6 +31,102 @@ key_to_be_moved = 0
 index_to_be_moved_to = 0
 
 [sub_resource type="Resource" id="Resource_4plf6"]
+script = ExtResource("3_ig6oe")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_euu3m"]
+script = ExtResource("3_ig6oe")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_ojdlw"]
+script = ExtResource("3_ig6oe")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_5j07g"]
+script = ExtResource("3_ig6oe")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_dban0"]
+script = ExtResource("3_ig6oe")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_rnq0r"]
+script = ExtResource("3_ig6oe")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_cowb0"]
+script = ExtResource("3_ig6oe")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_2qb8t"]
+script = ExtResource("3_ig6oe")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_crcap"]
+script = ExtResource("3_ig6oe")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_ar20w"]
+script = ExtResource("3_ig6oe")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_5yl28"]
+script = ExtResource("3_ig6oe")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_ysqan"]
+script = ExtResource("3_ig6oe")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_83t6h"]
 script = ExtResource("3_ig6oe")
 subtitles = Dictionary[int, String]({})
 time_to_be_changed = 0
@@ -102,7 +166,7 @@ change_time_to = 0
 key_to_be_moved = 0
 index_to_be_moved_to = 0
 
-[sub_resource type="Resource" id="Resource_ysqan"]
+[sub_resource type="Resource" id="Resource_g45ot"]
 script = ExtResource("3_ig6oe")
 subtitles = Dictionary[int, String]({})
 time_to_be_changed = 0
@@ -110,71 +174,7 @@ change_time_to = 0
 key_to_be_moved = 0
 index_to_be_moved_to = 0
 
-[sub_resource type="Resource" id="Resource_83t6h"]
-script = ExtResource("3_ig6oe")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
-
-[sub_resource type="Resource" id="Resource_rnq0r"]
-script = ExtResource("3_ig6oe")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
-
-[sub_resource type="Resource" id="Resource_cowb0"]
-script = ExtResource("3_ig6oe")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
-
-[sub_resource type="Resource" id="Resource_5j07g"]
-script = ExtResource("3_ig6oe")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
-
-[sub_resource type="Resource" id="Resource_dban0"]
-script = ExtResource("3_ig6oe")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
-
-[sub_resource type="Resource" id="Resource_euu3m"]
-script = ExtResource("3_ig6oe")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
-
-[sub_resource type="Resource" id="Resource_ojdlw"]
-script = ExtResource("3_ig6oe")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
-
-[sub_resource type="Resource" id="Resource_2qb8t"]
-script = ExtResource("3_ig6oe")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
-
-[sub_resource type="Resource" id="Resource_crcap"]
+[sub_resource type="Resource" id="Resource_ig6oe"]
 script = ExtResource("3_ig6oe")
 subtitles = Dictionary[int, String]({})
 time_to_be_changed = 0
@@ -191,41 +191,6 @@ month = 4
 day = 28
 hour = 12
 minute = 10
-
-[node name="README" type="Node" parent="."]
-script = ExtResource("2_g45ot")
-text = "Hey!
-
-These are pretty confidential files so I think that you should probably not tell anyone that you have these. Managed to pull some strings, which is exactly why this must stay between you and me. These files are everything I've gathered from the police investigation on this matter.
-
-There's surprisingly little and I wasn't able to get everything, but this should contain enough for you to get started.
-
-I'm fairly certain that the police have only cracked the password for your brother's computer. I think all of their computers were connected to the same network so it should be possible for you to unlock all of them if you really tried.
-
-Good luck, and I really hope you can find enough evidence to prove your innocence.
-
-P.S. You can send me your testimony via the LawyerLink app I've installed on your PC.
-
-- Your lawyer friend."
-audio_subtitles = SubResource("Resource_ar20w")
-video_subtitles = SubResource("Resource_5yl28")
-month = 4
-hour = 14
-minute = 52
-
-[node name="Report" type="Node" parent="."]
-script = ExtResource("2_g45ot")
-text = "Victim Ranmara Rohith was found dead in his house on 28th April at 6:30AM by Satsu Hito, a colleague. Neighbors reported screaming coming from his house the previous night.
-
-Ranmara was found dead near his sofa. Post mortem reports say that he was stabbed three times before dying. No signs of a struggle were found. It is unknown what knife was used, but a butterfly knife was found at the scene, which was clean when it was discovered.
-
-Lab says that no fingerprints were found in the scene. "
-audio_subtitles = SubResource("Resource_g45ot")
-video_subtitles = SubResource("Resource_ig6oe")
-month = 3
-day = 28
-hour = 21
-minute = 52
 
 [node name="Photos" type="Node" parent="."]
 script = ExtResource("1_vf4jt")
@@ -254,37 +219,103 @@ day = 28
 hour = 10
 minute = 5
 
+[node name="Profiles" type="Node" parent="."]
+script = ExtResource("1_vf4jt")
+month = 3
+day = 28
+hour = 20
+minute = 51
+
+[node name="Jeremy O\'Brien" type="Node" parent="Profiles"]
+script = ExtResource("2_g45ot")
+text = "GENDER : Male
+AGE : Early 30s
+HEIGHT : Average height
+WEIGHT : Average weight
+
+Has had several fights with Ranmara, though never physical. Jeremy accuses Ranmara of having an affair with his wife. Has had a long history at Killer Games. "
+audio_subtitles = SubResource("Resource_euu3m")
+video_subtitles = SubResource("Resource_ojdlw")
+month = 3
+day = 28
+hour = 20
+minute = 14
+
+[node name="Romila Ramesh" type="Node" parent="Profiles"]
+script = ExtResource("2_g45ot")
+text = "GENDER : Female
+AGE : Mid 20s
+HEIGHT : Tall
+WEIGHT : Light weight
+NOTES : History of drug abuse.
+
+Has a long history of substance abuse, and has had frequent episodes of mental breakdowns and psychotic episodes. Satsu states that two days before the incident, Romila and Ranmara had gotten into a fist fight. Was fired from Killer Games because of this."
+audio_subtitles = SubResource("Resource_5j07g")
+video_subtitles = SubResource("Resource_dban0")
+month = 3
+day = 28
+hour = 19
+minute = 31
+
+[node name="Satsu Hito" type="Node" parent="Profiles"]
+script = ExtResource("2_g45ot")
+text = "GENDER : Male
+AGE : Mid 20s
+HEIGHT : Average height
+WEIGHT : Heavy weight; not obese.
+
+Close friend of Ranmara's. Used to visit a therapist. Met Ranmara for dinner every 2 or 3 weeks before the incident. Worked in the same company, Killer Games."
+audio_subtitles = SubResource("Resource_rnq0r")
+video_subtitles = SubResource("Resource_cowb0")
+month = 3
+day = 28
+hour = 19
+minute = 10
+
+[node name="Sonu Rakesh" type="Node" parent="Profiles"]
+script = ExtResource("2_g45ot")
+text = "GENDER : Non-Binary
+AGE : Mid 20s
+HEIGHT : Average height
+WEIGHT : Average weight
+
+Ranmara's younger sibling. Family states that the two had not talked to each other in years. Will states that Sonu would have received majority shares in Killer Games following the death of Ranmara, although the will had no stamp. 
+
+Only came to the city after hearing about the incident from police."
+audio_subtitles = SubResource("Resource_2qb8t")
+video_subtitles = SubResource("Resource_crcap")
+month = 3
+day = 28
+hour = 20
+minute = 51
+
+[node name="README" type="Node" parent="."]
+script = ExtResource("2_g45ot")
+text = "Hey!
+
+These are pretty confidential files so I think that you should probably not tell anyone that you have these. Managed to pull some strings, which is exactly why this must stay between you and me. These files are everything I've gathered from the police investigation on this matter.
+
+There's surprisingly little and I wasn't able to get everything, but this should contain enough for you to get started.
+
+I'm fairly certain that the police have only cracked the password for your brother's computer. I think all of their computers were connected to the same network so it should be possible for you to unlock all of them if you really tried.
+
+Good luck, and I really hope you can find enough evidence to prove your innocence.
+
+P.S. You can send me your testimony via the LawyerLink app I've installed on your PC.
+
+- Your lawyer friend."
+audio_subtitles = SubResource("Resource_ar20w")
+video_subtitles = SubResource("Resource_5yl28")
+month = 4
+hour = 14
+minute = 52
+
 [node name="Redacted" type="Node" parent="."]
 script = ExtResource("1_vf4jt")
 month = 3
 day = 30
 hour = 16
 minute = 10
-
-[node name="log-300425" type="Node" parent="Redacted"]
-script = ExtResource("2_g45ot")
-text = "[[MESSAGE LOG 30/4/25]]
-<630d0a> i thought the investigators took more photographs? where are they? i cant seem to find them except the living room photo and the knife photo.
-<716572> well they did take more photos its just that they've been witheld looking for further evidence
-<630d0a> withheld? i NEED those photos"
-audio_subtitles = SubResource("Resource_ky3hv")
-video_subtitles = SubResource("Resource_hwwu2")
-month = 3
-day = 30
-hour = 16
-minute = 10
-
-[node name="memo-report" type="Node" parent="Redacted"]
-script = ExtResource("2_g45ot")
-text = "INFORMATION REGARDING THE KNIFE
-
-Finding a butterfly knife in these parts is quite difficult. The last time a butterfly knife was found in conjunction to a case was back in 2014. As a result, we should probably view anyone who possessed this object with suspicion."
-audio_subtitles = SubResource("Resource_54g1r")
-video_subtitles = SubResource("Resource_nfe3a")
-month = 3
-day = 28
-hour = 17
-minute = 19
 
 [node name="email-290425" type="Node" parent="Redacted"]
 script = ExtResource("2_g45ot")
@@ -316,72 +347,41 @@ day = 29
 hour = 10
 minute = 10
 
-[node name="Profiles" type="Node" parent="."]
-script = ExtResource("1_vf4jt")
-month = 3
-day = 28
-hour = 20
-minute = 51
-
-[node name="Satsu Hito" type="Node" parent="Profiles"]
+[node name="log-300425" type="Node" parent="Redacted"]
 script = ExtResource("2_g45ot")
-text = "GENDER : Male
-AGE : Mid 20s
-HEIGHT : Average height
-WEIGHT : Heavy weight; not obese.
-
-Close friend of Ranmara's. Used to visit a therapist. Met Ranmara for dinner every 2 or 3 weeks before the incident. Worked in the same company, Killer Games."
-audio_subtitles = SubResource("Resource_rnq0r")
-video_subtitles = SubResource("Resource_cowb0")
+text = "[[MESSAGE LOG 30/4/25]]
+<630d0a> i thought the investigators took more photographs? where are they? i cant seem to find them except the living room photo and the knife photo.
+<716572> well they did take more photos its just that they've been witheld looking for further evidence
+<630d0a> withheld? i NEED those photos"
+audio_subtitles = SubResource("Resource_ky3hv")
+video_subtitles = SubResource("Resource_hwwu2")
 month = 3
-day = 28
-hour = 19
+day = 30
+hour = 16
 minute = 10
 
-[node name="Romila Ramesh" type="Node" parent="Profiles"]
+[node name="memo-report" type="Node" parent="Redacted"]
 script = ExtResource("2_g45ot")
-text = "GENDER : Female
-AGE : Mid 20s
-HEIGHT : Tall
-WEIGHT : Light weight
-NOTES : History of drug abuse.
+text = "INFORMATION REGARDING THE KNIFE
 
-Has a long history of substance abuse, and has had frequent episodes of mental breakdowns and psychotic episodes. Satsu states that two days before the incident, Romila and Ranmara had gotten into a fist fight. Was fired from Killer Games because of this."
-audio_subtitles = SubResource("Resource_5j07g")
-video_subtitles = SubResource("Resource_dban0")
+Finding a butterfly knife in these parts is quite difficult. The last time a butterfly knife was found in conjunction to a case was back in 2014. As a result, we should probably view anyone who possessed this object with suspicion."
+audio_subtitles = SubResource("Resource_54g1r")
+video_subtitles = SubResource("Resource_nfe3a")
 month = 3
 day = 28
-hour = 19
-minute = 31
+hour = 17
+minute = 19
 
-[node name="Jeremy O\'Brien" type="Node" parent="Profiles"]
+[node name="Report" type="Node" parent="."]
 script = ExtResource("2_g45ot")
-text = "GENDER : Male
-AGE : Early 30s
-HEIGHT : Average height
-WEIGHT : Average weight
+text = "Victim Ranmara Rohith was found dead in his house on 28th April at 6:30AM by Satsu Hito, a colleague. Neighbors reported screaming coming from his house the previous night.
 
-Has had several fights with Ranmara, though never physical. Jeremy accuses Ranmara of having an affair with his wife. Has had a long history at Killer Games. "
-audio_subtitles = SubResource("Resource_euu3m")
-video_subtitles = SubResource("Resource_ojdlw")
+Ranmara was found dead near his sofa. Post mortem reports say that he was stabbed three times before dying. No signs of a struggle were found. It is unknown what knife was used, but a butterfly knife was found at the scene, which was clean when it was discovered.
+
+Lab says that no fingerprints were found in the scene. "
+audio_subtitles = SubResource("Resource_g45ot")
+video_subtitles = SubResource("Resource_ig6oe")
 month = 3
 day = 28
-hour = 20
-minute = 14
-
-[node name="Sonu Rakesh" type="Node" parent="Profiles"]
-script = ExtResource("2_g45ot")
-text = "GENDER : Non-Binary
-AGE : Mid 20s
-HEIGHT : Average height
-WEIGHT : Average weight
-
-Ranmara's younger sibling. Family states that the two had not talked to each other in years. Will states that Sonu would have received majority shares in Killer Games following the death of Ranmara, although the will had no stamp. 
-
-Only came to the city after hearing about the incident from police."
-audio_subtitles = SubResource("Resource_2qb8t")
-video_subtitles = SubResource("Resource_crcap")
-month = 3
-day = 28
-hour = 20
-minute = 51
+hour = 21
+minute = 52
