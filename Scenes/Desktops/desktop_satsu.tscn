@@ -14,7 +14,9 @@
 [ext_resource type="Script" uid="uid://betc7x5t62js8" path="res://Scripts/Resources and Files/Other/subtitles.gd" id="31_kin0s"]
 [ext_resource type="PackedScene" uid="uid://cfc7knki1mr1p" path="res://Scenes/File Systems/killer_games_server.tscn" id="32_kin0s"]
 [ext_resource type="PackedScene" uid="uid://dpsvuj4bhgvyp" path="res://Scenes/File Systems/incident_report.tscn" id="36_6k1xg"]
+[ext_resource type="AudioStream" uid="uid://bicvw7y4rirve" path="res://Art/Sound/Transitory SFX/intro_retro.wav" id="37_6k1xg"]
 [ext_resource type="Texture2D" uid="uid://djw8njr2vxjmy" path="res://Art/Pictures/Desktop Icons/WindowsXP/power_off.png" id="38_vgvvn"]
+[ext_resource type="AudioStream" uid="uid://cm0upo68h1h50" path="res://Art/Sound/Transitory SFX/outro_retro.wav" id="38_xw3pa"]
 [ext_resource type="Texture2D" uid="uid://tsw1lv5ecbhs" path="res://Art/Pictures/Desktop Icons/WindowsXP/reboot.png" id="39_s7hr2"]
 [ext_resource type="Texture2D" uid="uid://dubjsv5ovl0i7" path="res://Art/Pictures/Desktop Icons/WindowsXP/logout.png" id="40_bms7w"]
 [ext_resource type="Texture2D" uid="uid://dmdex3eijgfnc" path="res://Art/Placeholders/PS30TH_16x9_WALLPAPER.png" id="88_lnqyc"]
@@ -40,8 +42,6 @@
 [ext_resource type="PackedScene" uid="uid://bj5x25ns3hxmd" path="res://Scenes/Other/power_prompt.tscn" id="113_cgydy"]
 [ext_resource type="PackedScene" uid="uid://b8jwsa53j715" path="res://Scenes/login.tscn" id="114_sa8px"]
 [ext_resource type="Script" uid="uid://cmowc8flglqra" path="res://Scripts/Files and Folders/folders.gd" id="117_lv5nq"]
-[ext_resource type="AudioStream" uid="uid://ctxac8gf3lly6" path="res://Art/Sound/Transitory SFX/intro_catppuccin.wav" id="119_jhkfr"]
-[ext_resource type="AudioStream" uid="uid://cr8605kdbhaom" path="res://Art/Sound/Transitory SFX/outro_catppuccin.wav" id="120_8k6dx"]
 [ext_resource type="Script" uid="uid://bumowvb75nl7b" path="res://Scripts/Desktop/desktop_panels.gd" id="121_qqg7f"]
 [ext_resource type="Script" uid="uid://cjrscc2gi8o1v" path="res://Scripts/Desktop/users_panel.gd" id="122_ib12v"]
 [ext_resource type="PackedScene" uid="uid://dqpce0a7r6slg" path="res://Scenes/Other/users_row.tscn" id="123_k7xhd"]
@@ -496,10 +496,24 @@ tracks/2/keys = {
 "update": 1,
 "values": [false, true]
 }
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SFX/IntroSFX")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(1.16667),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [0.0],
+"method": &"play"
+}]
+}
 
 [sub_resource type="Animation" id="Animation_vgvvn"]
 resource_name = "outro_animation"
-length = 0.7
+length = 3.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -535,6 +549,20 @@ tracks/2/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 1,
 "values": [true, false]
+}
+tracks/3/type = "method"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("SFX/OutroSFX")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.166667),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [0.0],
+"method": &"play"
+}]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_e48td"]
@@ -864,10 +892,10 @@ libraries = {
 unique_name_in_owner = true
 
 [node name="IntroSFX" type="AudioStreamPlayer" parent="SFX"]
-stream = ExtResource("119_jhkfr")
+stream = ExtResource("37_6k1xg")
 
 [node name="OutroSFX" type="AudioStreamPlayer" parent="SFX"]
-stream = ExtResource("120_8k6dx")
+stream = ExtResource("38_xw3pa")
 
 [node name="Wallpaper" type="TextureRect" parent="."]
 visible = false
