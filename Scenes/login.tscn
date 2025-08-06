@@ -1,7 +1,6 @@
-[gd_scene load_steps=11 format=3 uid="uid://b8jwsa53j715"]
+[gd_scene load_steps=10 format=3 uid="uid://b8jwsa53j715"]
 
-[ext_resource type="Texture2D" uid="uid://dmdex3eijgfnc" path="res://Art/Placeholders/PS30TH_16x9_WALLPAPER.png" id="1_deejb"]
-[ext_resource type="Theme" uid="uid://b3noirgemj1q8" path="res://Art/Themes/catppuccin_dark.tres" id="1_f54m6"]
+[ext_resource type="Theme" uid="uid://dhcuyosshf5le" path="res://Art/Themes/login.tres" id="1_88cqn"]
 [ext_resource type="Script" uid="uid://demwedd65al7v" path="res://Scripts/Desktop/login.gd" id="2_e16x6"]
 [ext_resource type="PackedScene" uid="uid://dqpce0a7r6slg" path="res://Scenes/Other/users_row.tscn" id="2_svafm"]
 [ext_resource type="Texture2D" uid="uid://cfc5dvttjjqet" path="res://Art/Placeholders/soham.png" id="3_p8di1"]
@@ -103,8 +102,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme = ExtResource("1_f54m6")
-texture = ExtResource("1_deejb")
+theme = ExtResource("1_88cqn")
 expand_mode = 2
 stretch_mode = 6
 script = ExtResource("2_e16x6")
