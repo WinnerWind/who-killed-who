@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=3 uid="uid://ja0iaxhopt5e"]
+[gd_scene load_steps=59 format=3 uid="uid://ja0iaxhopt5e"]
 
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="1_mmul2"]
 [ext_resource type="Theme" uid="uid://dfp8tc3gbtaeo" path="res://Art/Themes/winxp.tres" id="2_pkkam"]
@@ -58,6 +58,22 @@ change_time_to = 0
 key_to_be_moved = 0
 index_to_be_moved_to = 0
 
+[sub_resource type="Resource" id="Resource_6crtp"]
+script = ExtResource("34_if8uj")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_naixv"]
+script = ExtResource("34_if8uj")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
 [sub_resource type="Animation" id="Animation_km1se"]
 length = 0.001
 tracks/0/type = "value"
@@ -70,7 +86,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [false]
+"values": [true]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -338,8 +354,12 @@ dark_theme = ExtResource("3_4q0f8")
 light_icons = ExtResource("4_wuntp")
 dark_icons = ExtResource("5_8xx8f")
 system_name = "Dub XP"
-system_version = "v0.0.1"
-system_information = "Copyright WinnerWind"
+system_version = "v1.2"
+system_information = "(c) WinnerWind 2025
+
+There is no licence agreement. Do not try to find the licence. That's impossible. Instead, realize that it is not the licence that exists, only you.
+
+Just remember that the answers are all here, and within you."
 current_user = ExtResource("6_bl6qg")
 chat_username = "$sth"
 chat_realname = "Satsu Hito"
@@ -376,7 +396,29 @@ script = ExtResource("32_7yiay")
 
 [node name="README" type="Node" parent="Files/Desktop"]
 script = ExtResource("33_vu1kh")
-text = "Hello.
+text = "WELCOME TO YOUR NEW ANYTABLE DESKTOP!
+
+If you are reading this file, this means that your system has been fully set up and ready to go!
+
+If this is your first time using AnyTable Desktop, here are a few pointers to get you started:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+> App Drawer
+Most instances of AnyTable Desktop will have an App Drawer (usually in the bottom left) to browse an open applications. Here you'll find the essentials; file manager, Emails, and even a note taking app.
+
+> File Manager
+All your files can be found in the file manager. It's a really convenient and minimalist way to deal with all your important documents, downloads, music, whatever need be. Take a look at it when you can.
+
+> Calendar
+You can click on the time in your desktop panels to reveal a month calendar. 
+
+> Help & Support
+If you ever feel lost, remember that AnyTable is designed to be as close to a real system as possible. Your instincts will come in handy.
+
+Cheers,
+AnyTable Team.
+
 "
 audio_subtitles = SubResource("Resource_0lcfo")
 video_subtitles = SubResource("Resource_mmul2")
@@ -385,6 +427,26 @@ month = 8
 day = 19
 hour = 18
 minute = 32
+
+[node name="email" type="Node" parent="Files/Desktop"]
+script = ExtResource("33_vu1kh")
+text = "Hey! 
+
+It's me, your lawyer friend. I gave you this system to share some rather confidential information regarding Ranmara Rakesh's murder, who is your brother. Because of the nature of the information I'm giving you, I thought it was necessary to give you a dedicated computer. We cannot risk information being leaked or intercepted. This device is completely isolated from your other devices. 
+
+Moreover, Law enforcement could subpoena your personal computer, which might lead to us losing all of our investigation data. I've also locked down unncessary apps so that you don't accidentally delete or edit cruical files, which should help our credibility in court.
+
+Anyway, I have put everything that I have gathered in a folder called confidential-files in your file manager. Please do take a look at it. For safety reasons, I've set the password of that folder to Passw0rd! .
+
+Oh and one more thing, you probably should access your brother's computer. You should probably do this from Anytable, which you should find in the app drawer. I believe the details to login are:
+
+IP Address : 192.168.43.89
+Username   : ranmarar
+password   : oSkdpdwW!!?
+
+- Your lawyer friend"
+audio_subtitles = SubResource("Resource_6crtp")
+video_subtitles = SubResource("Resource_naixv")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -401,7 +463,6 @@ stream = ExtResource("34_tbbll")
 stream = ExtResource("35_28g1i")
 
 [node name="Wallpaper" type="TextureRect" parent="."]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -411,6 +472,40 @@ grow_vertical = 2
 texture = ExtResource("39_80ff8")
 expand_mode = 1
 stretch_mode = 6
+
+[node name="Desktop Icons" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="README" parent="Desktop Icons" instance=ExtResource("44_ot5f1")]
+layout_mode = 1
+offset_left = -409.0
+offset_top = -39.0
+offset_right = -321.0
+offset_bottom = 46.0
+icon_name = &"file_icon"
+text = "README"
+tooltip = "README.txt"
+open_file_instead = true
+file_path = "Desktop/README"
+autoshift = true
+
+[node name="email" parent="Desktop Icons" instance=ExtResource("44_ot5f1")]
+layout_mode = 1
+offset_left = 415.0
+offset_top = -317.0
+offset_right = 503.0
+offset_bottom = -232.0
+icon_name = &"file_icon"
+text = "email"
+tooltip = "email.txt"
+open_file_instead = true
+file_path = "Desktop/email"
+autoshift = true
 
 [node name="Notifications Container" type="Control" parent="."]
 custom_minimum_size = Vector2(150, 0)
@@ -519,30 +614,6 @@ size_flags_horizontal = 1
 icon_name = &"file_manager"
 text = "File Manager"
 tooltip = "Manage your files in style!"
-
-[node name="Chats" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container/GridContainer" instance=ExtResource("44_ot5f1")]
-layout_mode = 2
-size_flags_horizontal = 1
-type = 1
-icon_name = &"chat"
-text = "Nicotine"
-tooltip = "Chat with your friends!"
-
-[node name="Emails" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container/GridContainer" instance=ExtResource("44_ot5f1")]
-layout_mode = 2
-size_flags_horizontal = 1
-type = 2
-icon_name = &"emails"
-text = "Tsundrebird"
-tooltip = "Will not kill you"
-
-[node name="Calc" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container/GridContainer" instance=ExtResource("44_ot5f1")]
-layout_mode = 2
-size_flags_horizontal = 1
-type = 3
-icon_name = &"calculator"
-text = "Calculator"
-tooltip = "Do Basic Arithmetic"
 
 [node name="Info" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container/GridContainer" instance=ExtResource("44_ot5f1")]
 layout_mode = 2
@@ -805,9 +876,33 @@ libraries = {
 [node name="Gnome Scribe" parent="." node_paths=PackedStringArray("desktop") instance=ExtResource("15_4r53t")]
 layout_mode = 0
 anchors_preset = 0
-text = "Hello!
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 0.0
+offset_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1
+text = "WELCOME TO YOUR NEW ANYTABLE DESKTOP!
 
-Welcome to your new system."
+If you are reading this file, this means that your system has been fully set up and ready to go!
+
+If this is your first time using AnyTable Desktop, here are a few pointers to get you started:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+> App Drawer
+Most instances of AnyTable Desktop will have an App Drawer (usually in the bottom left) to browse an open applications. Here you'll find the essentials; file manager, Emails, and even a note taking app.
+
+> File Manager
+All your files can be found in the file manager. It's a really convenient and minimalist way to deal with all your important documents, downloads, music, whatever need be. Take a look at it when you can.
+
+> Help & Support
+If you ever feel lost, remember that AnyTable is designed to be as close to a real system as possible. Your instincts will come in handy.
+
+Cheers,
+AnyTable Team.
+
+"
 directory_path_text = ">> /Desktop/README.txt"
 desktop = NodePath("..")
 
