@@ -102,22 +102,6 @@ change_time_to = 0
 key_to_be_moved = 0
 index_to_be_moved_to = 0
 
-[sub_resource type="Resource" id="Resource_ar20w"]
-script = ExtResource("3_ig6oe")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
-
-[sub_resource type="Resource" id="Resource_5yl28"]
-script = ExtResource("3_ig6oe")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
-
 [sub_resource type="Resource" id="Resource_ysqan"]
 script = ExtResource("3_ig6oe")
 subtitles = Dictionary[int, String]({})
@@ -159,6 +143,22 @@ key_to_be_moved = 0
 index_to_be_moved_to = 0
 
 [sub_resource type="Resource" id="Resource_nfe3a"]
+script = ExtResource("3_ig6oe")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_ar20w"]
+script = ExtResource("3_ig6oe")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_5yl28"]
 script = ExtResource("3_ig6oe")
 subtitles = Dictionary[int, String]({})
 time_to_be_changed = 0
@@ -289,27 +289,6 @@ day = 28
 hour = 20
 minute = 51
 
-[node name="README" type="Node" parent="."]
-script = ExtResource("2_g45ot")
-text = "Hey!
-
-These are pretty confidential files so I think that you should probably not tell anyone that you have these. Managed to pull some strings, which is exactly why this must stay between you and me. These files are everything I've gathered from the police investigation on this matter.
-
-There's surprisingly little and I wasn't able to get everything, but this should contain enough for you to get started.
-
-I'm fairly certain that the police have only cracked the password for your brother's computer. I think all of their computers were connected to the same network so it should be possible for you to unlock all of them if you really tried.
-
-Good luck, and I really hope you can find enough evidence to prove your innocence.
-
-P.S. You can send me your testimony via the LawyerLink app I've installed on your PC.
-
-- Your lawyer friend."
-audio_subtitles = SubResource("Resource_ar20w")
-video_subtitles = SubResource("Resource_5yl28")
-month = 4
-hour = 14
-minute = 52
-
 [node name="Redacted" type="Node" parent="."]
 script = ExtResource("1_vf4jt")
 month = 3
@@ -371,6 +350,27 @@ month = 3
 day = 28
 hour = 17
 minute = 19
+
+[node name="README" type="Node" parent="."]
+script = ExtResource("2_g45ot")
+text = "Hey!
+
+These are pretty confidential files so I think that you should probably not tell anyone that you have these. Managed to pull some strings, which is exactly why this must stay between you and me. These files are everything I've gathered from the police investigation on this matter.
+
+There's surprisingly little and I wasn't able to get everything, but this should contain enough for you to get started.
+
+I'm fairly certain that the police have only cracked the password for your brother's computer. I think all of their computers were connected to the same network so it should be possible for you to unlock all of them if you really tried.
+
+Good luck, and I really hope you can find enough evidence to prove your innocence.
+
+P.S. You can send me your testimony via the LawyerLink app I've installed on your PC.
+
+- Your lawyer friend."
+audio_subtitles = SubResource("Resource_ar20w")
+video_subtitles = SubResource("Resource_5yl28")
+month = 4
+hour = 14
+minute = 52
 
 [node name="Report" type="Node" parent="."]
 script = ExtResource("2_g45ot")
