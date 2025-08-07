@@ -5,7 +5,7 @@
 [ext_resource type="Theme" uid="uid://dqccwaixn6vhy" path="res://Art/Themes/winxp_dark.tres" id="3_4q0f8"]
 [ext_resource type="Resource" uid="uid://bn2xmponak4f7" path="res://Art/Pictures/Desktop Icons/Icon Sets/light_windowsxp.tres" id="4_wuntp"]
 [ext_resource type="Resource" uid="uid://oshxy6cv5mi" path="res://Art/Pictures/Desktop Icons/Icon Sets/dark_windowsxp.tres" id="5_8xx8f"]
-[ext_resource type="Resource" uid="uid://brc2y1vuwf2io" path="res://Data and Resources/Users/satsu.tres" id="6_bl6qg"]
+[ext_resource type="Resource" uid="uid://bwu1n3phbct1q" path="res://Data and Resources/Users/tutorial.tres" id="6_6crtp"]
 [ext_resource type="PackedScene" uid="uid://c6gqjqrkidn0b" path="res://Scenes/Window Types/file_manager.tscn" id="13_wunhk"]
 [ext_resource type="PackedScene" uid="uid://bmcafym2vhbv8" path="res://Scenes/Window Types/image_viewer.tscn" id="14_bf8wr"]
 [ext_resource type="PackedScene" uid="uid://heb52kbru40a" path="res://Scenes/Window Types/text_editor.tscn" id="15_4r53t"]
@@ -360,7 +360,7 @@ system_information = "(c) WinnerWind 2025
 There is no licence agreement. Do not try to find the licence. That's impossible. Instead, realize that it is not the licence that exists, only you.
 
 Just remember that the answers are all here, and within you."
-current_user = ExtResource("6_bl6qg")
+current_user = ExtResource("6_6crtp")
 chat_username = "$sth"
 chat_realname = "Satsu Hito"
 file_manager_window = ExtResource("13_wunhk")

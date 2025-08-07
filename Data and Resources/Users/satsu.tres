@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bp2s3w6y8x40x" path="res://Art/Pictures/OS Logos/ale_large.svg" id="2_vbplk"]
 [ext_resource type="Texture2D" uid="uid://bxldhmj1n2syr" path="res://Art/Pictures/OS Logos/ale_looper.svg" id="3_luxa2"]
 [ext_resource type="Script" uid="uid://cr6b45oclcbh4" path="res://Scripts/Resources and Files/Bootup/bootup_sequence.gd" id="4_my2va"]
-[ext_resource type="Texture2D" uid="uid://cfc5dvttjjqet" path="res://Art/Placeholders/soham.png" id="5_fwad1"]
+[ext_resource type="Texture2D" uid="uid://dthxlqmv55wky" path="res://Art/Pictures/Portraits/satsu.jpg" id="5_iapiv"]
 [ext_resource type="Script" uid="uid://ds65yghua76jy" path="res://Scripts/Resources and Files/Other/user_metadata.gd" id="6_ub7su"]
 
 [sub_resource type="Resource" id="Resource_ytr1a"]
@@ -36,12 +36,12 @@ is_intro = false
 [resource]
 script = ExtResource("6_ub7su")
 is_part_of_main_game = true
-image = ExtResource("5_fwad1")
+image = ExtResource("5_iapiv")
 name = "Satsu"
-subtext = "Wishing Well"
-password = "a"
+subtext = "Wishing Well."
+password = "yXpn892-!"
 scene_path = "uid://km3q1i4fcw0t"
 boot_sequence = SubResource("Resource_rdjsr")
 shutdown_sequence = SubResource("Resource_bkkte")
-ip_address = "192.168.1.0"
-username = "soham"
+ip_address = "192.168.92.85"
+username = "satsu"

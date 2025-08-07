@@ -87,7 +87,8 @@ var all_user_ids:Dictionary[int,String] = {
 	0: "res://Data and Resources/Users/ranmara.tres",
 	1: "res://Data and Resources/Users/romila.tres",
 	2: "res://Data and Resources/Users/jeremy.tres",
-	3: "res://Data and Resources/Users/satsu.tres"
+	3: "res://Data and Resources/Users/satsu.tres",
+	4: "res://Data and Resources/Users/tutorial.tres",
 }
 var user_list:Array[UserMetadata]:
 	get:

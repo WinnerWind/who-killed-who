@@ -3,8 +3,8 @@
 [ext_resource type="Theme" uid="uid://dhcuyosshf5le" path="res://Art/Themes/login.tres" id="1_88cqn"]
 [ext_resource type="Script" uid="uid://demwedd65al7v" path="res://Scripts/Desktop/login.gd" id="2_e16x6"]
 [ext_resource type="PackedScene" uid="uid://dqpce0a7r6slg" path="res://Scenes/Other/users_row.tscn" id="2_svafm"]
+[ext_resource type="Resource" uid="uid://bwu1n3phbct1q" path="res://Data and Resources/Users/tutorial.tres" id="3_5iow8"]
 [ext_resource type="Texture2D" uid="uid://cfc5dvttjjqet" path="res://Art/Placeholders/soham.png" id="3_p8di1"]
-[ext_resource type="Resource" uid="uid://f8jl5nasiqhi" path="res://Data and Resources/Users/ranmara.tres" id="4_88cqn"]
 
 [sub_resource type="Animation" id="Animation_eujq6"]
 length = 0.001
@@ -106,7 +106,7 @@ theme = ExtResource("1_88cqn")
 expand_mode = 2
 stretch_mode = 6
 script = ExtResource("2_e16x6")
-default_user = ExtResource("4_88cqn")
+default_user = ExtResource("3_5iow8")
 users_row = ExtResource("2_svafm")
 bootup_scene_path = "res://Scenes/bootup.tscn"
 user_container = NodePath("MarginContainer/HBoxContainer/Users Container")
