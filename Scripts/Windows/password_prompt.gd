@@ -1,4 +1,5 @@
 extends VirtualWindow
+class_name PasswordPromptWindow
 
 var correct_password:String
 var path:String
