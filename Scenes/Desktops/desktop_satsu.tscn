@@ -985,6 +985,7 @@ size_flags_vertical = 3
 layout_mode = 2
 size_flags_horizontal = 3
 script = ExtResource("122_ib12v")
+slice = 0
 users_row = ExtResource("123_k7xhd")
 sorter = NodePath(".")
 
