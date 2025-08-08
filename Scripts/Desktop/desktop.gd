@@ -340,13 +340,21 @@ func open_window(type:int):
 #endregion
 
 func change_users(user:UserMetadata):
-	var new_password_window = users_password_prompt.instantiate()
+	var new_password_window
+	for child in get_children():
+		if child.name == "User Password Prompt":
+			new_password_window = child
+			break
+	# Start a new password window if it was null because there exists no password window.
+	new_password_window = new_password_window if new_password_window != null else users_password_prompt.instantiate()
+	#var new_password_window = users_password_prompt.instantiate() if for child in get_children(): if child is PasswordPrompt: 
 	var new_password_window_script = new_password_window.get_node("Panel")
 	# Set all the images and stuff
 	new_password_window_script.image_node.texture = user.image
 	new_password_window_script.name_label.text = user.username
 	new_password_window_script.subtext_label.text = user.subtext
-	add_child(new_password_window)
+	if not get_children().has(new_password_window):
+		add_child(new_password_window)
 	# Wait for password to be given using await.
 	# I'm so smart!
 	var submitted_password = await new_password_window_script.input.text_submitted

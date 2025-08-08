@@ -1,4 +1,5 @@
 extends Panel
+class_name UserPasswordPrompt
 
 @export var title_label:Label
 @export var name_label:Label
