@@ -112,7 +112,7 @@ var user_scene_path_list:Array[String]:
 		return returning_path_list
 
 func register_user(user:UserMetadata):
-	if not user_scene_path_list.has(user.scene_path): #make sure that it already is not in the array
+	if not user_id_list.has(all_user_ids.find_key(user.resource_path)): #make sure that it already is not in the array
 		user_id_list.append(all_user_ids.find_key(user.resource_path))
 	ram_save["users"] = user_id_list.duplicate() #save it to ram data
 	SaveData.save() #save the ram to disk
