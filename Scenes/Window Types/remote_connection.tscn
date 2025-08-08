@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://cn45gtkcdls2w"]
+[gd_scene load_steps=8 format=3 uid="uid://cn45gtkcdls2w"]
 
 [ext_resource type="Script" uid="uid://bwxvw56c8f4rs" path="res://Scripts/Windows/remote_connection.gd" id="1_jbxaj"]
 [ext_resource type="PackedScene" uid="uid://utagi2eh5w54" path="res://Scenes/Other/titlebar.tscn" id="2_nmtrj"]
 [ext_resource type="Script" uid="uid://ds65yghua76jy" path="res://Scripts/Resources and Files/Other/user_metadata.gd" id="2_x1qqv"]
-[ext_resource type="Resource" uid="uid://dwqseev5bc8ta" path="res://Data and Resources/Users/Demos/demo_robert.tres" id="3_q2kbw"]
+[ext_resource type="Resource" uid="uid://01qrbf158lml" path="res://Data and Resources/Users/jeremy.tres" id="3_in6rc"]
+[ext_resource type="Resource" uid="uid://f8jl5nasiqhi" path="res://Data and Resources/Users/ranmara.tres" id="4_ci8wp"]
+[ext_resource type="Resource" uid="uid://gmxp5mjhrbdg" path="res://Data and Resources/Users/romila.tres" id="5_28s3c"]
+[ext_resource type="Resource" uid="uid://brc2y1vuwf2io" path="res://Data and Resources/Users/satsu.tres" id="6_kgt0u"]
 
 [node name="Anytable Discovery" type="Panel" node_paths=PackedStringArray("username_input", "password_input", "ip_address_inputs")]
 anchors_preset = 15
@@ -14,7 +17,7 @@ offset_bottom = -348.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_jbxaj")
-unlockable_users = Array[ExtResource("2_x1qqv")]([ExtResource("3_q2kbw")])
+unlockable_users = Array[ExtResource("2_x1qqv")]([ExtResource("3_in6rc"), ExtResource("4_ci8wp"), ExtResource("5_28s3c"), ExtResource("6_kgt0u")])
 username_input = NodePath("Sorter/Contents/Sorter/Username")
 password_input = NodePath("Sorter/Contents/Sorter/Password with Show Button/Password")
 ip_address_inputs = NodePath("Sorter/Contents/Sorter/IP Address Nodes")
