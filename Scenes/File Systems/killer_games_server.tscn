@@ -4,22 +4,6 @@
 [ext_resource type="Script" uid="uid://6ahcfwj62g07" path="res://Scripts/Files and Folders/files.gd" id="2_h76ia"]
 [ext_resource type="Script" uid="uid://betc7x5t62js8" path="res://Scripts/Resources and Files/Other/subtitles.gd" id="3_oemh0"]
 
-[sub_resource type="Resource" id="Resource_8w2qy"]
-script = ExtResource("3_oemh0")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
-
-[sub_resource type="Resource" id="Resource_krgcv"]
-script = ExtResource("3_oemh0")
-subtitles = Dictionary[int, String]({})
-time_to_be_changed = 0
-change_time_to = 0
-key_to_be_moved = 0
-index_to_be_moved_to = 0
-
 [sub_resource type="Resource" id="Resource_ew2rf"]
 script = ExtResource("3_oemh0")
 subtitles = Dictionary[int, String]({})
@@ -45,6 +29,22 @@ key_to_be_moved = 0
 index_to_be_moved_to = 0
 
 [sub_resource type="Resource" id="Resource_kh8wk"]
+script = ExtResource("3_oemh0")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_8w2qy"]
+script = ExtResource("3_oemh0")
+subtitles = Dictionary[int, String]({})
+time_to_be_changed = 0
+change_time_to = 0
+key_to_be_moved = 0
+index_to_be_moved_to = 0
+
+[sub_resource type="Resource" id="Resource_krgcv"]
 script = ExtResource("3_oemh0")
 subtitles = Dictionary[int, String]({})
 time_to_be_changed = 0
@@ -80,31 +80,6 @@ hour = 17
 minute = 24
 metadata/_custom_type_script = "uid://cmowc8flglqra"
 
-[node name="Projects" type="Node" parent="."]
-script = ExtResource("1_2m0ra")
-month = 3
-day = 27
-hour = 17
-minute = 24
-metadata/_custom_type_script = "uid://cmowc8flglqra"
-
-[node name="Metal Cracker" type="Node" parent="Projects"]
-script = ExtResource("1_2m0ra")
-custom_type = "Godot"
-day = 8
-hour = 17
-minute = 47
-metadata/_custom_type_script = "uid://cmowc8flglqra"
-
-[node name="Satsujin" type="Node" parent="Projects"]
-script = ExtResource("1_2m0ra")
-custom_type = "Godot"
-month = 3
-day = 27
-hour = 17
-minute = 24
-metadata/_custom_type_script = "uid://cmowc8flglqra"
-
 [node name="HR" type="Node" parent="."]
 script = ExtResource("1_2m0ra")
 month = 2
@@ -112,18 +87,6 @@ day = 26
 hour = 15
 minute = 5
 metadata/_custom_type_script = "uid://cmowc8flglqra"
-
-[node name="Satsu Hito" type="Node" parent="HR"]
-script = ExtResource("2_h76ia")
-text = "Joined on 5th December 2024.
-
-My close friend. A master when it comes to programming. A bit jealous but overall level-headed."
-audio_subtitles = SubResource("Resource_8w2qy")
-video_subtitles = SubResource("Resource_krgcv")
-month = 2
-day = 12
-hour = 8
-minute = 57
 
 [node name="Jeremy" type="Node" parent="HR"]
 script = ExtResource("2_h76ia")
@@ -151,6 +114,43 @@ month = 2
 day = 26
 hour = 15
 minute = 5
+
+[node name="Satsu Hito" type="Node" parent="HR"]
+script = ExtResource("2_h76ia")
+text = "Joined on 5th December 2024.
+
+My close friend. A master when it comes to programming. A bit jealous but overall level-headed."
+audio_subtitles = SubResource("Resource_8w2qy")
+video_subtitles = SubResource("Resource_krgcv")
+month = 2
+day = 12
+hour = 8
+minute = 57
+
+[node name="Projects" type="Node" parent="."]
+script = ExtResource("1_2m0ra")
+month = 3
+day = 27
+hour = 17
+minute = 24
+metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="Metal Cracker" type="Node" parent="Projects"]
+script = ExtResource("1_2m0ra")
+custom_type = "Godot"
+day = 8
+hour = 17
+minute = 47
+metadata/_custom_type_script = "uid://cmowc8flglqra"
+
+[node name="Satsujin" type="Node" parent="Projects"]
+script = ExtResource("1_2m0ra")
+custom_type = "Godot"
+month = 3
+day = 27
+hour = 17
+minute = 24
+metadata/_custom_type_script = "uid://cmowc8flglqra"
 
 [node name="logs" type="Node" parent="."]
 script = ExtResource("2_h76ia")
