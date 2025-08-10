@@ -2,7 +2,7 @@ extends VBoxContainer
 
 @onready var desktop:Desktop = get_owner() #get_tree().root.get_child(1)
 
-enum window_types {FILE_MANAGER,CHAT,EMAIL,CALCULATOR,SYSTEM_INFORMATION,SETTINGS,NOTEPAD,SSH,GAME_LIST}
+enum window_types {FILE_MANAGER,CHAT,EMAIL,CALCULATOR,SYSTEM_INFORMATION,SETTINGS,NOTEPAD,SSH,GAME_LIST,ANSWER_INPUT,WEB_RADIO}
 @export var type:window_types
 @export var custom_code:int
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=92 format=3 uid="uid://km3q1i4fcw0t"]
+[gd_scene load_steps=94 format=3 uid="uid://km3q1i4fcw0t"]
 
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="1_oo3qg"]
 [ext_resource type="Theme" uid="uid://dfp8tc3gbtaeo" path="res://Art/Themes/winxp.tres" id="2_6dpgf"]
@@ -10,6 +10,8 @@
 [ext_resource type="Resource" uid="uid://qytd0uftfts" path="res://Data and Resources/Messages/satsu-ranmara-chat.tres" id="9_trq6o"]
 [ext_resource type="Resource" uid="uid://blh3iryc756if" path="res://Data and Resources/Messages/satsu-romila.tres" id="10_6k1xg"]
 [ext_resource type="Resource" uid="uid://b2bepjl0eby00" path="res://Data and Resources/Messages/killer_games.tres" id="11_xw3pa"]
+[ext_resource type="PackedScene" uid="uid://bxer3ixxydvvu" path="res://Scenes/Window Types/docs_viewer.tscn" id="18_row4g"]
+[ext_resource type="PackedScene" uid="uid://c557cq0fkyke3" path="res://Scenes/Window Types/answer_input.tscn" id="26_3lad6"]
 [ext_resource type="Script" uid="uid://6ahcfwj62g07" path="res://Scripts/Files and Folders/files.gd" id="30_bms7w"]
 [ext_resource type="Script" uid="uid://betc7x5t62js8" path="res://Scripts/Resources and Files/Other/subtitles.gd" id="31_kin0s"]
 [ext_resource type="PackedScene" uid="uid://cfc7knki1mr1p" path="res://Scenes/File Systems/killer_games_server.tscn" id="32_kin0s"]
@@ -711,6 +713,7 @@ image_viewer_window = ExtResource("97_ucyns")
 text_viewer_window = ExtResource("98_uar5t")
 video_player_window = ExtResource("99_whbjg")
 music_player_window = ExtResource("100_ls62y")
+document_viewer_window = ExtResource("18_row4g")
 chat_app_window = ExtResource("101_sfphb")
 email_app_window = ExtResource("102_n7qo2")
 calculator_window = ExtResource("103_3g4d1")
@@ -718,6 +721,7 @@ system_information_window = ExtResource("104_ial8o")
 settings_window = ExtResource("105_22bj1")
 notepad_window = ExtResource("106_3ptpb")
 remote_connection_window = ExtResource("107_4156y")
+answer_input_window = ExtResource("26_3lad6")
 virtual_notification = ExtResource("108_5o3fo")
 popup = ExtResource("109_efh71")
 password_prompt = ExtResource("110_8ox7r")
@@ -1093,6 +1097,14 @@ type = 7
 icon_name = &"remote_connection"
 text = "Anytable"
 tooltip = "Connecting your systems since 2004"
+
+[node name="Radio" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container/GridContainer" instance=ExtResource("126_ilos3")]
+layout_mode = 2
+size_flags_horizontal = 1
+type = 9
+icon_name = &"police_radio"
+text = "LawyerLink"
+tooltip = "Make conclusions from your investigations."
 
 [node name="Panel" type="Panel" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container"]
 layout_mode = 2

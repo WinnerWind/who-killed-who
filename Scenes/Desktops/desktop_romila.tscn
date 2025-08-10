@@ -1146,6 +1146,18 @@ icon_name = &"system_information"
 text = "System Info."
 tooltip = "View information about your system."
 
+[node name="3rd Row" type="HBoxContainer" parent="Panels/Top Panel/Container/App Starter/Panel/Main Container/Apps Row"]
+layout_mode = 2
+alignment = 1
+
+[node name="Radio" parent="Panels/Top Panel/Container/App Starter/Panel/Main Container/Apps Row/3rd Row" instance=ExtResource("33_vgd67")]
+layout_mode = 2
+size_flags_horizontal = 1
+type = 9
+icon_name = &"police_radio"
+text = "LawyerLink"
+tooltip = "Make conclusions from your investigations."
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Panels/Top Panel/Container/App Starter"]
 libraries = {
 &"": SubResource("AnimationLibrary_65abu")

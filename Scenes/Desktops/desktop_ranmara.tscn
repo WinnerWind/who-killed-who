@@ -1803,7 +1803,7 @@ desktop = NodePath("../../../../../../../../..")
 [node name="Police Radio" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Apps Container/Sorter" node_paths=PackedStringArray("desktop") instance=ExtResource("53_nwur7")]
 layout_mode = 2
 current_type = 9
-main_text_string = "Police Radio"
+main_text_string = "LawyerLink"
 sub_text_string = "Draw conclusions from your investigations."
 speed = 0.1
 desktop = NodePath("../../../../../../../../..")

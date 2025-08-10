@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=3 uid="uid://ja0iaxhopt5e"]
+[gd_scene load_steps=60 format=3 uid="uid://ja0iaxhopt5e"]
 
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="1_mmul2"]
 [ext_resource type="Theme" uid="uid://dfp8tc3gbtaeo" path="res://Art/Themes/winxp.tres" id="2_pkkam"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://c4jynkn0t0o4u" path="res://Scenes/Window Types/audio_player.tscn" id="17_fw4oe"]
 [ext_resource type="PackedScene" uid="uid://8dhbm1w7fdt3" path="res://Scenes/Window Types/chats.tscn" id="18_yirkk"]
 [ext_resource type="PackedScene" uid="uid://bxrho3xvynjrp" path="res://Scenes/Window Types/email.tscn" id="19_lpfl1"]
+[ext_resource type="PackedScene" uid="uid://c557cq0fkyke3" path="res://Scenes/Window Types/answer_input.tscn" id="19_naixv"]
 [ext_resource type="PackedScene" uid="uid://vxq4edum8thi" path="res://Scenes/Window Types/calculator.tscn" id="20_bvshp"]
 [ext_resource type="PackedScene" uid="uid://cjmgp7qnlk5kl" path="res://Scenes/Window Types/system_info.tscn" id="21_46cu2"]
 [ext_resource type="PackedScene" uid="uid://bjitvivxr8hkq" path="res://Scenes/Window Types/settings.tscn" id="22_xkmdr"]
@@ -375,6 +376,7 @@ system_information_window = ExtResource("21_46cu2")
 settings_window = ExtResource("22_xkmdr")
 notepad_window = ExtResource("23_vlnre")
 remote_connection_window = ExtResource("24_vrm0v")
+answer_input_window = ExtResource("19_naixv")
 virtual_notification = ExtResource("25_arnp5")
 popup = ExtResource("26_5f7mm")
 password_prompt = ExtResource("27_y2h6t")
@@ -651,6 +653,14 @@ type = 7
 icon_name = &"remote_connection"
 text = "Anytable"
 tooltip = "Connecting your systems since 2004"
+
+[node name="Radio" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container/GridContainer" instance=ExtResource("44_ot5f1")]
+layout_mode = 2
+size_flags_horizontal = 1
+type = 9
+icon_name = &"police_radio"
+text = "LawyerLink"
+tooltip = "Make conclusions from your investigations."
 
 [node name="Panel" type="Panel" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container"]
 layout_mode = 2

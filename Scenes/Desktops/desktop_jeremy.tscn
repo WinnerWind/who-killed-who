@@ -1,4 +1,4 @@
-[gd_scene load_steps=82 format=3 uid="uid://071ts15ivw0y"]
+[gd_scene load_steps=83 format=3 uid="uid://071ts15ivw0y"]
 
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="1_tt7uf"]
 [ext_resource type="Theme" uid="uid://d2df2jma0gcpp" path="res://Art/Themes/catppuccin_light.tres" id="2_xkmop"]
@@ -26,6 +26,7 @@
 [ext_resource type="PackedScene" uid="uid://c2md68ibvvoxk" path="res://Scenes/Other/notification.tscn" id="21_6lo6j"]
 [ext_resource type="PackedScene" uid="uid://fal2iityh6i6" path="res://Scenes/Window Types/popup.tscn" id="22_am6wr"]
 [ext_resource type="PackedScene" uid="uid://c8t5wkgn4r6wi" path="res://Scenes/Window Types/password_prompt.tscn" id="23_rjgdx"]
+[ext_resource type="PackedScene" uid="uid://c557cq0fkyke3" path="res://Scenes/Window Types/answer_input.tscn" id="24_eqaup"]
 [ext_resource type="PackedScene" uid="uid://d2c8qnwy6t3gx" path="res://Scenes/Other/app_tray_icon.tscn" id="24_lkblj"]
 [ext_resource type="PackedScene" uid="uid://g84qji3yh2sm" path="res://Scenes/Other/user_password_prompt.tscn" id="25_y50up"]
 [ext_resource type="PackedScene" uid="uid://bj5x25ns3hxmd" path="res://Scenes/Other/power_prompt.tscn" id="26_y18f2"]
@@ -595,6 +596,7 @@ system_information_window = ExtResource("17_swkq2")
 settings_window = ExtResource("18_jmaig")
 notepad_window = ExtResource("19_b5bot")
 remote_connection_window = ExtResource("20_sqbi3")
+answer_input_window = ExtResource("24_eqaup")
 virtual_notification = ExtResource("21_6lo6j")
 popup = ExtResource("22_am6wr")
 password_prompt = ExtResource("23_rjgdx")
@@ -1255,6 +1257,18 @@ type = 4
 icon_name = &"system_information"
 text = "System Info."
 tooltip = "View information about your system."
+
+[node name="3rd Row" type="HBoxContainer" parent="Panels/Top Panel/Container/App Starter/Panel/Main Container/Apps Row"]
+layout_mode = 2
+alignment = 1
+
+[node name="Radio" parent="Panels/Top Panel/Container/App Starter/Panel/Main Container/Apps Row/3rd Row" instance=ExtResource("34_y0yr3")]
+layout_mode = 2
+size_flags_horizontal = 1
+type = 9
+icon_name = &"police_radio"
+text = "LawyerLink"
+tooltip = "Make conclusions from your investigations."
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Panels/Top Panel/Container/App Starter"]
 libraries = {
