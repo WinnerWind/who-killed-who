@@ -1,32 +1,16 @@
-[gd_scene load_steps=8 format=3 uid="uid://c557cq0fkyke3"]
+[gd_scene load_steps=9 format=3 uid="uid://c557cq0fkyke3"]
 
 [ext_resource type="Script" uid="uid://b6d685ce5kdmp" path="res://Scripts/Windows/answer_input.gd" id="1_083qw"]
 [ext_resource type="PackedScene" uid="uid://utagi2eh5w54" path="res://Scenes/Other/titlebar.tscn" id="2_j30vd"]
 [ext_resource type="Script" uid="uid://bu4x7bccn1iiu" path="res://Scripts/Resources and Files/Other/qna_resource.gd" id="2_miarm"]
 [ext_resource type="PackedScene" uid="uid://bj0ggtv30md6n" path="res://Scenes/Other/answer_confirmation_row.tscn" id="3_op88k"]
 
-[sub_resource type="Resource" id="Resource_pcs0e"]
-script = ExtResource("2_miarm")
-type = 2
-title = "Ans is 69"
-correct_answer = ""
-submitted_text = ""
-option1_text = ""
-option2_text = ""
-option3_text = ""
-option4_text = ""
-option5_text = ""
-option6_text = ""
-correct_option = 0
-submitted_option = 0
-correct_number = 69
-submitted_number = 0
-
-[sub_resource type="Resource" id="Resource_3jc0l"]
+[sub_resource type="Resource" id="Resource_xelsm"]
+resource_name = "What is your first name? (Use small letters only. Do not leave a trailing space.)"
 script = ExtResource("2_miarm")
 type = 0
-title = "Ans is Hello World"
-correct_answer = "Hello World"
+title = "What is your first name?"
+correct_answer = "sonu"
 submitted_text = ""
 option1_text = ""
 option2_text = ""
@@ -40,25 +24,64 @@ correct_number = 0
 submitted_number = 0
 metadata/_custom_type_script = "uid://bu4x7bccn1iiu"
 
-[sub_resource type="Resource" id="Resource_xelsm"]
+[sub_resource type="Resource" id="Resource_3jc0l"]
+resource_name = "Who, in your opinion, had a motive to kill Ranmara Rakesh?"
 script = ExtResource("2_miarm")
 type = 1
-title = "Ans is Hipxel is the best."
+title = "Who, in your opinion, had a motive to kill Ranmara Rakesh?"
 correct_answer = ""
 submitted_text = ""
-option1_text = "Hipxel is the worst"
-option2_text = "Hipxel is the best"
-option3_text = "GO GO ENGLAND"
-option4_text = "uwu"
-option5_text = "WHAT?!"
-option6_text = "何？！"
-correct_option = 1
+option1_text = "Satsu Hito"
+option2_text = "Jeremy O'Brien"
+option3_text = "Romila Ramesh"
+option4_text = "It was a suicide"
+option5_text = ""
+option6_text = ""
+correct_option = 0
+submitted_option = 5
+correct_number = 0
+submitted_number = 0
+metadata/_custom_type_script = "uid://bu4x7bccn1iiu"
+
+[sub_resource type="Resource" id="Resource_31ov4"]
+resource_name = "As of 27th April 2025, how many people worked at Killer Games?"
+script = ExtResource("2_miarm")
+type = 2
+title = "As of 25th April 2025, how many people worked at Killer Games?"
+correct_answer = ""
+submitted_text = ""
+option1_text = ""
+option2_text = ""
+option3_text = ""
+option4_text = ""
+option5_text = ""
+option6_text = ""
+correct_option = 0
+submitted_option = 0
+correct_number = 3
+submitted_number = 0
+metadata/_custom_type_script = "uid://bu4x7bccn1iiu"
+
+[sub_resource type="Resource" id="Resource_p4ejc"]
+resource_name = "Who started the rumors about Romila Ramesh?"
+script = ExtResource("2_miarm")
+type = 1
+title = "Who started the rumors about Romila Ramesh?"
+correct_answer = ""
+submitted_text = ""
+option1_text = "Ranmara Rakesh"
+option2_text = "Romila Ramesh"
+option3_text = "Jeremy O'Brien"
+option4_text = "Sonu Rakesh"
+option5_text = "Satsu Hito"
+option6_text = "None of the above"
+correct_option = 4
 submitted_option = 0
 correct_number = 0
 submitted_number = 0
 metadata/_custom_type_script = "uid://bu4x7bccn1iiu"
 
-[node name="Police Radio" type="Panel" node_paths=PackedStringArray("main_input_field", "title_node", "ending_confirmation", "next_button", "previous_button")]
+[node name="LawyerLink" type="Panel" node_paths=PackedStringArray("main_input_field", "title_node", "ending_confirmation", "next_button", "previous_button")]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -67,7 +90,7 @@ offset_bottom = -348.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_083qw")
-questions = Array[ExtResource("2_miarm")]([SubResource("Resource_pcs0e"), SubResource("Resource_3jc0l"), SubResource("Resource_xelsm")])
+questions = Array[ExtResource("2_miarm")]([SubResource("Resource_xelsm"), SubResource("Resource_3jc0l"), SubResource("Resource_31ov4"), SubResource("Resource_p4ejc")])
 main_input_field = NodePath("Sorter/MarginContainer/Contents/Inputs")
 title_node = NodePath("Sorter/MarginContainer/Contents/Question")
 ending_confirmation = NodePath("Ending Confirmation")
