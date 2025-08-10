@@ -22,4 +22,4 @@ enum types {TEXTINPUT,MCQ,NUMBERINPUT}
 var is_correct:bool:
 	get:
 		return (correct_number == submitted_number) and (correct_option == submitted_option) and\
-		(correct_answer == submitted_text)
+		(correct_answer.to_lower() == submitted_text.to_lower().strip_edges())
