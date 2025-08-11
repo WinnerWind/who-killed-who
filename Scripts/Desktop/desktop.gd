@@ -397,7 +397,8 @@ func power_strip_pressed(type:StringName,user:UserMetadata = null):
 	prompt_script.no_button.pressed.connect(new_prompt.queue_free) #Tell it to queue free if user says no
 	
 	#set icon
-	prompt_script.image_to_use = fetch_icon(type)
+	# use logout icon for ending
+	prompt_script.image_to_use = fetch_icon(type if type != &"ending" else &"logout")
 	
 	prompt_script.use_alternate_icon = use_alternate_icon_for_power_prompt
 	match type: 
@@ -420,6 +421,7 @@ func power_strip_pressed(type:StringName,user:UserMetadata = null):
 			new_bootup.sequence = user.boot_sequence
 			new_bootup.scene_to_start = user.scene
 			prompt_script.main_text.text = "You must log out and see the ending."
+			prompt_script.no_button.queue_free()
 	add_child(new_prompt) #show prompt
 	
 	await prompt_script.yes_button.pressed #when pressed, do below
