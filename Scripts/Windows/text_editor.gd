@@ -1,4 +1,5 @@
 extends VirtualWindow
+class_name TextViewer
 
 @export var padding_size:Vector2 = Vector2(10,10)
 @export_multiline var text:String
