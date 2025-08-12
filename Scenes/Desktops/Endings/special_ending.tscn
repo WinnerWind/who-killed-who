@@ -1,6 +1,7 @@
-[gd_scene load_steps=48 format=3 uid="uid://bkqgcmwrffhrp"]
+[gd_scene load_steps=49 format=3 uid="uid://bkqgcmwrffhrp"]
 
 [ext_resource type="Script" uid="uid://d0oqhtrr0rtur" path="res://Scripts/Desktop/endings.gd" id="1_brvf0"]
+[ext_resource type="PackedScene" uid="uid://cibxgh62a0ncg" path="res://Scenes/Window Types/credits.tscn" id="2_uv2mx"]
 [ext_resource type="Theme" uid="uid://dqccwaixn6vhy" path="res://Art/Themes/winxp_dark.tres" id="3_paku0"]
 [ext_resource type="Resource" uid="uid://bn2xmponak4f7" path="res://Art/Pictures/Desktop Icons/Icon Sets/light_windowsxp.tres" id="4_lacub"]
 [ext_resource type="Resource" uid="uid://oshxy6cv5mi" path="res://Art/Pictures/Desktop Icons/Icon Sets/dark_windowsxp.tres" id="5_lrsj5"]
@@ -308,6 +309,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_brvf0")
+credits_window = ExtResource("2_uv2mx")
 theme_switch_nodes = [NodePath("Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Panel/Power Strip/power_off"), NodePath("Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Panel/Power Strip/restart"), NodePath("Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Panel/Power Strip/logout")]
 active_edges = Array[int]([1, 1, 45, 1])
 app_icon_container = NodePath("Panels/Bottom Panel/Container/Apps Container/Apps Container")
