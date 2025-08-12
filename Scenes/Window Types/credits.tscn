@@ -1,0 +1,113 @@
+[gd_scene load_steps=7 format=3 uid="uid://cibxgh62a0ncg"]
+
+[ext_resource type="Script" uid="uid://dbg7wv33t8cw5" path="res://Scripts/Windows/credits.gd" id="1_pfk0k"]
+[ext_resource type="Script" uid="uid://be5e2vas1np7c" path="res://Scripts/Resources and Files/Other/replacement_list.gd" id="2_b7gwv"]
+[ext_resource type="PackedScene" uid="uid://utagi2eh5w54" path="res://Scenes/Other/titlebar.tscn" id="2_jeyeu"]
+[ext_resource type="PackedScene" uid="uid://071ts15ivw0y" path="res://Scenes/Desktops/desktop_jeremy.tscn" id="4_b7gwv"]
+[ext_resource type="Theme" uid="uid://dqccwaixn6vhy" path="res://Art/Themes/winxp_dark.tres" id="4_lhehj"]
+
+[sub_resource type="Resource" id="Resource_lhehj"]
+script = ExtResource("2_b7gwv")
+replacements = Dictionary[String, String]({
+"{/h}": "[/font_size][/center]",
+"{/subh}": "[/i][/u][/font_size][/center]",
+"{banner}": "[center][img=250]res://Art/Pictures/Editor Only/banner.png[/img][/center]",
+"{h1}": "[center][font_size=35]",
+"{h2}": "[center][font_size=30]",
+"{hr}": "[center][font_size=20]=== --- ~~~ --- ===[/font_size][/center]",
+"{logo}": "[center][img]res://Art/Pictures/Editor Only/icon.svg[/img][/center]",
+"{me}": "[b]Soham Dash[/b] (WinnerWind) ([url=https://winnerwind.in]Website[/url])",
+"{subh}": "[center][font_size=25][u][i]"
+})
+key_to_be_renamed = "{/h1}"
+rename_key_to = "{/h}"
+key_to_be_moved = ""
+index_to_be_moved_to = 0
+metadata/_custom_type_script = "uid://be5e2vas1np7c"
+
+[node name="Credits" type="Panel" node_paths=PackedStringArray("contents_node", "desktop")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -752.0
+offset_bottom = -348.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_lhehj")
+script = ExtResource("1_pfk0k")
+replacements = SubResource("Resource_lhehj")
+contents_node = NodePath("Sorter/MarginContainer/Contents")
+desktop = NodePath("Jeremy")
+starting_size = Vector2(400, 300)
+
+[node name="Sorter" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Titlebar" parent="Sorter" instance=ExtResource("2_jeyeu")]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Sorter"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Contents" type="RichTextLabel" parent="Sorter/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[font_size=18]{h1} Who Killed Who {/h}
+{logo}
+{subh} My first ever game {/subh}
+
+{hr}
+
+{subh} Made and developed by {/subh}
+{me}
+
+{hr}
+
+{subh} Testers {/subh}
+[i] REPLACE THESE PLACEHOLDER VALUES!!! [/i]
+[b]NAMEHERE[/b]
+[b]NAMEHERE[/b]
+
+{subh} SFX {/subh}
+{me}
+
+{subh} Design and Iconography {/subh}
+{me}
+
+{subh} Story {/subh}
+{me}
+
+{subh} Image Attribution {/subh}
+Butterfly Knife - [b]Ishant Turaga[/b] 
+
+{h2} Special Thanks {/h}
+My parents and family for being there for me, always.
+A.A.K., for constantly being happy despite everything going on.
+A.V., for being the goofball we all need.
+K.G., for just being the best cousin I could ask for.
+All my friends, who have been there for me whenever I needed them the most. I may not have mentioned you specially, but I always cherish you in my heart.
+T.J. for helping me with some of the writing stuff.
+
+{hr}
+
+{subh} Made with Godot {/subh}
+All Rights Reserved [b] Soham Dash [/b] © 2025
+
+{h1} Thank you for playing my game {/h}
+{banner}
+	"
+
+[node name="Jeremy" parent="." instance=ExtResource("4_b7gwv")]
+visible = false
+layout_mode = 1
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
+[connection signal="meta_clicked" from="Sorter/MarginContainer/Contents" to="." method="_on_contents_meta_clicked"]

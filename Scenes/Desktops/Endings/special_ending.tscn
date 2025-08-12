@@ -1,24 +1,10 @@
-[gd_scene load_steps=62 format=3 uid="uid://bkqgcmwrffhrp"]
+[gd_scene load_steps=48 format=3 uid="uid://bkqgcmwrffhrp"]
 
-[ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="1_41clm"]
-[ext_resource type="Theme" uid="uid://dfp8tc3gbtaeo" path="res://Art/Themes/winxp.tres" id="2_mhbjr"]
+[ext_resource type="Script" uid="uid://d0oqhtrr0rtur" path="res://Scripts/Desktop/endings.gd" id="1_brvf0"]
 [ext_resource type="Theme" uid="uid://dqccwaixn6vhy" path="res://Art/Themes/winxp_dark.tres" id="3_paku0"]
 [ext_resource type="Resource" uid="uid://bn2xmponak4f7" path="res://Art/Pictures/Desktop Icons/Icon Sets/light_windowsxp.tres" id="4_lacub"]
 [ext_resource type="Resource" uid="uid://oshxy6cv5mi" path="res://Art/Pictures/Desktop Icons/Icon Sets/dark_windowsxp.tres" id="5_lrsj5"]
 [ext_resource type="Resource" uid="uid://bwu1n3phbct1q" path="res://Data and Resources/Users/tutorial.tres" id="6_vjiyk"]
-[ext_resource type="PackedScene" uid="uid://c6gqjqrkidn0b" path="res://Scenes/Window Types/file_manager.tscn" id="7_eim6p"]
-[ext_resource type="PackedScene" uid="uid://bmcafym2vhbv8" path="res://Scenes/Window Types/image_viewer.tscn" id="8_2j3ow"]
-[ext_resource type="PackedScene" uid="uid://heb52kbru40a" path="res://Scenes/Window Types/text_editor.tscn" id="9_y6pff"]
-[ext_resource type="PackedScene" uid="uid://cxcs7lmcqhe63" path="res://Scenes/Window Types/video_player.tscn" id="10_dw118"]
-[ext_resource type="PackedScene" uid="uid://c4jynkn0t0o4u" path="res://Scenes/Window Types/audio_player.tscn" id="11_5phe6"]
-[ext_resource type="PackedScene" uid="uid://8dhbm1w7fdt3" path="res://Scenes/Window Types/chats.tscn" id="12_ja1td"]
-[ext_resource type="PackedScene" uid="uid://bxrho3xvynjrp" path="res://Scenes/Window Types/email.tscn" id="13_gbybw"]
-[ext_resource type="PackedScene" uid="uid://vxq4edum8thi" path="res://Scenes/Window Types/calculator.tscn" id="14_xu4rd"]
-[ext_resource type="PackedScene" uid="uid://cjmgp7qnlk5kl" path="res://Scenes/Window Types/system_info.tscn" id="15_2l62j"]
-[ext_resource type="PackedScene" uid="uid://bjitvivxr8hkq" path="res://Scenes/Window Types/settings.tscn" id="16_ueffp"]
-[ext_resource type="PackedScene" uid="uid://lak0kkn5lipk" path="res://Scenes/Window Types/notepad.tscn" id="17_dkyr2"]
-[ext_resource type="PackedScene" uid="uid://cn45gtkcdls2w" path="res://Scenes/Window Types/remote_connection.tscn" id="18_gmhmg"]
-[ext_resource type="PackedScene" uid="uid://c557cq0fkyke3" path="res://Scenes/Window Types/answer_input.tscn" id="19_oyb6c"]
 [ext_resource type="PackedScene" uid="uid://c2md68ibvvoxk" path="res://Scenes/Other/notification.tscn" id="20_rwhod"]
 [ext_resource type="PackedScene" uid="uid://fal2iityh6i6" path="res://Scenes/Window Types/popup.tscn" id="21_34bui"]
 [ext_resource type="PackedScene" uid="uid://c8t5wkgn4r6wi" path="res://Scenes/Window Types/password_prompt.tscn" id="22_4gcca"]
@@ -321,17 +307,18 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_41clm")
+script = ExtResource("1_brvf0")
 theme_switch_nodes = [NodePath("Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Panel/Power Strip/power_off"), NodePath("Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Panel/Power Strip/restart"), NodePath("Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Panel/Power Strip/logout")]
 active_edges = Array[int]([1, 1, 45, 1])
 app_icon_container = NodePath("Panels/Bottom Panel/Container/Apps Container/Apps Container")
 wallpaper_node = NodePath("Wallpaper")
 users_panel = NodePath("Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Users Sorter")
 dictionary_key = "satsu"
-light_theme = ExtResource("2_mhbjr")
+light_theme = ExtResource("3_paku0")
 dark_theme = ExtResource("3_paku0")
 light_icons = ExtResource("4_lacub")
 dark_icons = ExtResource("5_lrsj5")
+is_dark_theme = true
 system_name = "Dub XP"
 system_version = "v1.2"
 system_information = "(c) WinnerWind 2025
@@ -342,19 +329,6 @@ Just remember that the answers are all here, and within you."
 current_user = ExtResource("6_vjiyk")
 chat_username = "$sth"
 chat_realname = "Satsu Hito"
-file_manager_window = ExtResource("7_eim6p")
-image_viewer_window = ExtResource("8_2j3ow")
-text_viewer_window = ExtResource("9_y6pff")
-video_player_window = ExtResource("10_dw118")
-music_player_window = ExtResource("11_5phe6")
-chat_app_window = ExtResource("12_ja1td")
-email_app_window = ExtResource("13_gbybw")
-calculator_window = ExtResource("14_xu4rd")
-system_information_window = ExtResource("15_2l62j")
-settings_window = ExtResource("16_ueffp")
-notepad_window = ExtResource("17_dkyr2")
-remote_connection_window = ExtResource("18_gmhmg")
-answer_input_window = ExtResource("19_oyb6c")
 virtual_notification = ExtResource("20_rwhod")
 popup = ExtResource("21_34bui")
 password_prompt = ExtResource("22_4gcca")
