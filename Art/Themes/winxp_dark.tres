@@ -1,6 +1,5 @@
-[gd_resource type="Theme" load_steps=39 format=3 uid="uid://dqccwaixn6vhy"]
+[gd_resource type="Theme" load_steps=41 format=3 uid="uid://dqccwaixn6vhy"]
 
-[ext_resource type="FontFile" uid="uid://l2iaannjtu0d" path="res://Art/Fonts/Tahoma/tahoma.ttf" id="1_jp0nu"]
 [ext_resource type="StyleBox" uid="uid://1gtetouv5ssd" path="res://Art/Themes/Styleboxes/WinXP/Dark/unfocus_button.tres" id="2_0aowo"]
 [ext_resource type="StyleBox" uid="uid://dv20stovbst3w" path="res://Art/Themes/Styleboxes/WinXP/Dark/focus_button.tres" id="3_l0baj"]
 [ext_resource type="Texture2D" uid="uid://bt41wn4g8dds8" path="res://Art/Pictures/Desktop Icons/WindowsXP/button on.png" id="4_0aowo"]
@@ -10,6 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://cdovp13n2ny3l" path="res://Art/Pictures/Desktop Icons/WindowsXP/button_preessed.jpeg" id="6_semxr"]
 [ext_resource type="StyleBox" uid="uid://ctirtmfsnk248" path="res://Art/Themes/Styleboxes/WinXP/Dark/window_bg.tres" id="7_jp0nu"]
 [ext_resource type="StyleBox" uid="uid://fxfiqpk2v5y8" path="res://Art/Themes/Styleboxes/WinXP/Dark/titlebar.tres" id="8_k5qwe"]
+[ext_resource type="FontFile" uid="uid://7rp7j02bo81v" path="res://Art/Fonts/Fira Sans/FiraSans-Bold.ttf" id="10_semxr"]
+[ext_resource type="FontFile" uid="uid://by72co7agu7fu" path="res://Art/Fonts/Fira Sans/FiraSans-Italic.ttf" id="11_sjl4t"]
+[ext_resource type="FontFile" uid="uid://c0etqdjobgy4p" path="res://Art/Fonts/Fira Sans/FiraSans-Regular.ttf" id="12_dql34"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o5i2e"]
 
@@ -129,7 +131,7 @@ Button/colors/font_hover_color = Color(0.147671, 0.147672, 0.147672, 1)
 Button/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 Button/colors/font_pressed_color = Color(1, 1, 1, 1)
 Button/constants/align_to_largest_stylebox = 1
-Button/fonts/font = ExtResource("1_jp0nu")
+Button/fonts/font = ExtResource("12_dql34")
 Button/styles/disabled = SubResource("StyleBoxEmpty_o5i2e")
 Button/styles/focus = SubResource("StyleBoxEmpty_0aowo")
 Button/styles/hover = ExtResource("2_0aowo")
@@ -159,11 +161,11 @@ HSlider/styles/grabber_area_highlight = SubResource("StyleBoxFlat_w7uvl")
 HSlider/styles/slider = SubResource("StyleBoxFlat_e8x3j")
 Label/colors/font_color = Color(1, 1, 1, 1)
 Label/constants/outline_size = 2
-Label/fonts/font = ExtResource("1_jp0nu")
+Label/fonts/font = ExtResource("12_dql34")
 LineEdit/colors/font_color = Color(0, 0, 0, 1)
 LineEdit/colors/font_placeholder_color = Color(0, 0, 0, 0.6)
 LineEdit/colors/font_uneditable_color = Color(0, 0, 0, 1)
-LineEdit/fonts/font = ExtResource("1_jp0nu")
+LineEdit/fonts/font = ExtResource("12_dql34")
 LineEdit/styles/focus = SubResource("StyleBoxEmpty_e8x3j")
 LineEdit/styles/normal = SubResource("StyleBoxTexture_rbyos")
 LineEdit/styles/read_only = SubResource("StyleBoxTexture_e783k")
@@ -179,7 +181,9 @@ NegativeButton/styles/normal = SubResource("StyleBoxEmpty_rbyos")
 Panel/styles/panel = ExtResource("7_jp0nu")
 RichTextLabel/colors/default_color = Color(1, 1, 1, 1)
 RichTextLabel/constants/outline_size = 1
-RichTextLabel/fonts/normal_font = ExtResource("1_jp0nu")
+RichTextLabel/fonts/bold_font = ExtResource("10_semxr")
+RichTextLabel/fonts/italics_font = ExtResource("11_sjl4t")
+RichTextLabel/fonts/normal_font = ExtResource("12_dql34")
 SaturdayLabel/base_type = &"Label"
 SaturdayLabel/colors/font_color = Color(0.260016, 0.479397, 1, 1)
 ScrollbarMargins/base_type = &"MarginContainer"
@@ -189,7 +193,7 @@ SundayLabel/colors/font_color = Color(1, 0, 0, 1)
 TabContainer/colors/font_hovered_color = Color(0, 0, 0, 1)
 TabContainer/colors/font_selected_color = Color(0, 0, 0, 1)
 TabContainer/colors/font_unselected_color = Color(1, 1, 1, 1)
-TabContainer/fonts/font = ExtResource("1_jp0nu")
+TabContainer/fonts/font = ExtResource("10_semxr")
 TabContainer/styles/panel = SubResource("StyleBoxFlat_4oij8")
 TabContainer/styles/tab_focus = SubResource("StyleBoxEmpty_k5qwe")
 TabContainer/styles/tab_hovered = SubResource("StyleBoxFlat_ngbrw")
@@ -200,7 +204,7 @@ TextEdit/colors/current_line_color = Color(0, 0.266667, 0.419608, 0.32549)
 TextEdit/colors/font_color = Color(1, 1, 1, 1)
 TextEdit/colors/font_outline_color = Color(0, 0, 0, 1)
 TextEdit/font_sizes/font_size = 18
-TextEdit/fonts/font = ExtResource("1_jp0nu")
+TextEdit/fonts/font = ExtResource("12_dql34")
 TextEdit/styles/normal = SubResource("StyleBoxEmpty_6lxlx")
 Titlebar/base_type = &"Panel"
 Titlebar/styles/panel = ExtResource("8_k5qwe")
