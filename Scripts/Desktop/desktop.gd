@@ -196,7 +196,7 @@ func hand_over_file(path:String):
 
 var sfx_node:Node
 func play_sound(sound_name:StringName):
-	var sound_path = StringName(sound_name)
+	var sound_path = NodePath(StringName(sound_name))
 	sfx_node.get_node(sound_path).play()
 
 func notify_send(text:String, app_name:String = "Notification"):
