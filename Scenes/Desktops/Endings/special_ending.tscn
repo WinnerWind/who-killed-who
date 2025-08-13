@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=3 uid="uid://bkqgcmwrffhrp"]
+[gd_scene load_steps=48 format=3 uid="uid://bkqgcmwrffhrp"]
 
 [ext_resource type="Script" uid="uid://d0oqhtrr0rtur" path="res://Scripts/Desktop/endings.gd" id="1_brvf0"]
 [ext_resource type="PackedScene" uid="uid://cibxgh62a0ncg" path="res://Scenes/Window Types/credits.tscn" id="2_uv2mx"]
@@ -6,6 +6,7 @@
 [ext_resource type="Resource" uid="uid://bn2xmponak4f7" path="res://Art/Pictures/Desktop Icons/Icon Sets/light_windowsxp.tres" id="4_lacub"]
 [ext_resource type="Resource" uid="uid://oshxy6cv5mi" path="res://Art/Pictures/Desktop Icons/Icon Sets/dark_windowsxp.tres" id="5_lrsj5"]
 [ext_resource type="Resource" uid="uid://bwu1n3phbct1q" path="res://Data and Resources/Users/tutorial.tres" id="6_vjiyk"]
+[ext_resource type="AudioStream" uid="uid://bsomeolopdx06" path="res://Art/Sound/Music/factorio.mp3" id="20_qj11v"]
 [ext_resource type="PackedScene" uid="uid://c2md68ibvvoxk" path="res://Scenes/Other/notification.tscn" id="20_rwhod"]
 [ext_resource type="PackedScene" uid="uid://fal2iityh6i6" path="res://Scenes/Window Types/popup.tscn" id="21_34bui"]
 [ext_resource type="PackedScene" uid="uid://c8t5wkgn4r6wi" path="res://Scenes/Window Types/password_prompt.tscn" id="22_4gcca"]
@@ -17,8 +18,6 @@
 [ext_resource type="Script" uid="uid://6ahcfwj62g07" path="res://Scripts/Files and Folders/files.gd" id="28_81od0"]
 [ext_resource type="Script" uid="uid://betc7x5t62js8" path="res://Scripts/Resources and Files/Other/subtitles.gd" id="29_8fasn"]
 [ext_resource type="PackedScene" uid="uid://dpsvuj4bhgvyp" path="res://Scenes/File Systems/incident_report.tscn" id="30_w615o"]
-[ext_resource type="AudioStream" uid="uid://bicvw7y4rirve" path="res://Art/Sound/Transitory SFX/intro_retro.wav" id="31_tula4"]
-[ext_resource type="AudioStream" uid="uid://cm0upo68h1h50" path="res://Art/Sound/Transitory SFX/outro_retro.wav" id="32_8yyoi"]
 [ext_resource type="Texture2D" uid="uid://dmdex3eijgfnc" path="res://Art/Placeholders/PS30TH_16x9_WALLPAPER.png" id="33_qjtbf"]
 [ext_resource type="PackedScene" uid="uid://bwgiv56py676e" path="res://Scenes/Other/desktop_icon.tscn" id="34_j8ies"]
 [ext_resource type="Texture2D" uid="uid://cajkgw7h5kb80" path="res://Art/Pictures/Editor Only/file.svg" id="35_haami"]
@@ -311,7 +310,7 @@ grow_vertical = 2
 script = ExtResource("1_brvf0")
 credits_window = ExtResource("2_uv2mx")
 theme_switch_nodes = [NodePath("Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Panel/Power Strip/power_off"), NodePath("Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Panel/Power Strip/restart"), NodePath("Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Panel/Power Strip/logout")]
-active_edges = Array[int]([1, 1, 45, 1])
+active_edges = Array[int]([50, 50, 50, 50])
 app_icon_container = NodePath("Panels/Bottom Panel/Container/Apps Container/Apps Container")
 wallpaper_node = NodePath("Wallpaper")
 users_panel = NodePath("Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Users Sorter")
@@ -437,10 +436,11 @@ libraries = {
 unique_name_in_owner = true
 
 [node name="IntroSFX" type="AudioStreamPlayer" parent="SFX"]
-stream = ExtResource("31_tula4")
 
 [node name="OutroSFX" type="AudioStreamPlayer" parent="SFX"]
-stream = ExtResource("32_8yyoi")
+
+[node name="EndingSong" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("20_qj11v")
 
 [node name="Wallpaper" type="TextureRect" parent="."]
 visible = false

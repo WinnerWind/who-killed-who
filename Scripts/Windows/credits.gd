@@ -1,4 +1,6 @@
+@tool
 extends VirtualWindow
+class_name CreditsWindow
 
 @export var replacements:ReplacementList
 
@@ -6,26 +8,46 @@ extends VirtualWindow
 
 @export var debug_mode:bool = false
 
-func _ready() -> void:
-	super()
-	titlebar.close_button.queue_free()
-	titlebar.minimize_button.queue_free()
-	#Replacements
+@export_multiline var text:String
+@export_tool_button("Compile Text") var compile_func = compile_text
+
+func compile_text():
+	contents_node.text = text
 	for replacement in replacements.replacements:
 		contents_node.text = contents_node.text.replace(replacement, replacements.replacements[replacement])
 	
-	roll_credits()
+func _ready() -> void:
+	if not Engine.is_editor_hint():
+		super()
+		position.x = desktop.size.x + 500 #Desktop's size reflects the game size.
+		titlebar.close_button.queue_free()
+		titlebar.minimize_button.queue_free()
+		#Replacements
+		#for replacement in replacements.replacements:
+			#contents_node.text = contents_node.text.replace(replacement, replacements.replacements[replacement])
 
-@export var current_scroll_count:float:
-	set(new_value):
-		current_scroll_count = new_value
-		contents_node.get_v_scroll_bar().value = new_value
+		roll_credits()
+
+func animate_to_view(_to:int = 0) -> void:
+	pass
+	# Do not animate to view.
+
+func _process(delta) -> void:
+	if debug_mode: print(contents_node.get_content_height())
+	if not Engine.is_editor_hint():
+		super(delta)
 
 func roll_credits():
+	await contents_node.finished
+	await get_tree().process_frame
 	await create_tween().tween_interval(2).finished
+	
+	if debug_mode: print(contents_node.get_content_height())
+	
 	var tween:Tween = create_tween()
 	var scroll_bar:VScrollBar = contents_node.get_v_scroll_bar()
 	#var content_height = 1335 #unfortunately contents_node.get_content_height() returns a wrong value.
+	#var content_height = 1344
 	var content_height = 1344
 	
 	var acceleration_ratio:float = 3.0/25.0
@@ -34,16 +56,17 @@ func roll_credits():
 	var acceleration_distance := 25
 	var deceleration_distance := 50
 	
-	var acceleration_time = acceleration_ratio * acceleration_distance
-	var deceleration_time = deceleration_ratio * deceleration_distance
-	#var acceleration_time = 1.5
-	#var deceleration_time = 3
-	var scroll_time:float = 20
+	var acceleration_time = 0.5*acceleration_ratio * acceleration_distance
+	var deceleration_time = 0.5*deceleration_ratio * deceleration_distance
+	#acceleration_time = 1.5
+	#deceleration_time = 3
+	var scroll_time:float = 25
 	
 	tween.tween_property(scroll_bar, "value", acceleration_distance, acceleration_time).set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_IN)
 	tween.tween_property(scroll_bar, "value", content_height - deceleration_distance, scroll_time).set_trans(Tween.TRANS_LINEAR)
 	tween.tween_property(scroll_bar, "value", content_height, deceleration_time).set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_OUT)
 	
-	if debug_mode: print(contents_node.get_content_height())
+	await tween.finished
+	desktop.open_popup("Congratulations!","You've beat the game! There's nothing else to do. If you wish to continue with your investigation, restart the game.","Ending",CompressedTexture2D.new())
 func _on_contents_meta_clicked(meta: Variant) -> void:
 	OS.shell_open(meta)

@@ -1,10 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://cibxgh62a0ncg"]
+[gd_scene load_steps=6 format=3 uid="uid://cibxgh62a0ncg"]
 
 [ext_resource type="Script" uid="uid://dbg7wv33t8cw5" path="res://Scripts/Windows/credits.gd" id="1_pfk0k"]
 [ext_resource type="Script" uid="uid://be5e2vas1np7c" path="res://Scripts/Resources and Files/Other/replacement_list.gd" id="2_b7gwv"]
 [ext_resource type="PackedScene" uid="uid://utagi2eh5w54" path="res://Scenes/Other/titlebar.tscn" id="2_jeyeu"]
 [ext_resource type="Theme" uid="uid://dqccwaixn6vhy" path="res://Art/Themes/winxp_dark.tres" id="4_lhehj"]
-[ext_resource type="PackedScene" uid="uid://km3q1i4fcw0t" path="res://Scenes/Desktops/desktop_satsu.tscn" id="5_lhehj"]
 
 [sub_resource type="Resource" id="Resource_lhehj"]
 script = ExtResource("2_b7gwv")
@@ -25,43 +24,6 @@ key_to_be_moved = ""
 index_to_be_moved_to = 0
 metadata/_custom_type_script = "uid://be5e2vas1np7c"
 
-[sub_resource type="Animation" id="Animation_lhehj"]
-resource_name = "roll_credits"
-length = 10.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:current_scroll_count")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 5.16667),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 1330.0]
-}
-
-[sub_resource type="Animation" id="Animation_sc5ud"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:current_scroll_count")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_sc5ud"]
-_data = {
-&"RESET": SubResource("Animation_sc5ud"),
-&"roll_credits": SubResource("Animation_lhehj")
-}
-
 [node name="Credits" type="Panel" node_paths=PackedStringArray("contents_node", "desktop")]
 anchors_preset = 15
 anchor_right = 1.0
@@ -76,28 +38,6 @@ theme = ExtResource("4_lhehj")
 script = ExtResource("1_pfk0k")
 replacements = SubResource("Resource_lhehj")
 contents_node = NodePath("Sorter/MarginContainer/Contents")
-desktop = NodePath("Satsu")
-starting_size = Vector2(400, 300)
-
-[node name="Sorter" type="VBoxContainer" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="Titlebar" parent="Sorter" instance=ExtResource("2_jeyeu")]
-layout_mode = 2
-
-[node name="MarginContainer" type="MarginContainer" parent="Sorter"]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="Contents" type="RichTextLabel" parent="Sorter/MarginContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-bbcode_enabled = true
 text = "[font_size=18]{h1} Who Killed Who {/h}
 {logo}
 {subh} My first ever game {/subh}
@@ -144,15 +84,76 @@ All Rights Reserved [b] Soham Dash [/b] © 2025
 {h2}
 {banner}
 "
+desktop = NodePath("")
+starting_size = Vector2(400, 300)
 
-[node name="Satsu" parent="." instance=ExtResource("5_lhehj")]
-visible = false
+[node name="Sorter" type="VBoxContainer" parent="."]
 layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_sc5ud")
-}
+[node name="Titlebar" parent="Sorter" instance=ExtResource("2_jeyeu")]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Sorter"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Contents" type="RichTextLabel" parent="Sorter/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "[font_size=18][center][font_size=35] Who Killed Who [/font_size][/center]
+[center][img]res://Art/Pictures/Editor Only/icon.svg[/img][/center]
+[center][font_size=25][u][i] My first ever game [/i][/u][/font_size][/center]
+
+[center][font_size=20]=== --- ~~~ --- ===[/font_size][/center]
+
+[center][font_size=30] Made and developed by [/font_size][/center]
+[b]Soham Dash[/b] (WinnerWind) ([url=https://winnerwind.in]Website[/url])
+
+[center][font_size=20]=== --- ~~~ --- ===[/font_size][/center]
+
+[center][font_size=30] Testers [/font_size][/center]
+[i] REPLACE THESE PLACEHOLDER VALUES!!! [/i]
+[b]NAMEHERE[/b]
+[b]NAMEHERE[/b]
+
+[center][font_size=30] SFX [/font_size][/center]
+[b]Soham Dash[/b] (WinnerWind) ([url=https://winnerwind.in]Website[/url])
+
+[center][font_size=30] Design and Iconography [/font_size][/center]
+[b]Soham Dash[/b] (WinnerWind) ([url=https://winnerwind.in]Website[/url])
+
+[center][font_size=30] Story [/font_size][/center]
+[b]Soham Dash[/b] (WinnerWind) ([url=https://winnerwind.in]Website[/url])
+
+[center][font_size=30] Image Attribution [/font_size][/center]
+Butterfly Knife - [b]Ishant Turaga[/b] 
+
+[center][font_size=30] Special Thanks [/font_size][/center]
+My parents and family for being there for me, always.
+A.A.K., for constantly being happy despite everything going on.
+A.V., for being the goofball we all need.
+K.G., for just being the best cousin I could ask for.
+All my friends, who have been there for me whenever I needed them the most. I may not have mentioned you specially, but I always cherish you in my heart.
+T.J. for helping me with some of the writing stuff.
+
+[center][font_size=20]=== --- ~~~ --- ===[/font_size][/center]
+
+[center][font_size=25][u][i] Made with Godot [/i][/u][/font_size][/center]
+All Rights Reserved [b] Soham Dash [/b] © 2025
+
+
+[center][font_size=35] Thank you for playing my game [/font_size][/center]
+[center][font_size=30]
+[center][img=250]res://Art/Pictures/Editor Only/banner.png[/img][/center]
+"
+scroll_active = false
+threaded = true
 
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

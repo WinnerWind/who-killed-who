@@ -10,3 +10,4 @@ func _ready() -> void:
 
 func start_credits_scene():
 	print("CREDIT START")
+	desktop.call_thread_safe(&"roll_credits")

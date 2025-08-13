@@ -1,9 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://c557cq0fkyke3"]
+[gd_scene load_steps=11 format=3 uid="uid://c557cq0fkyke3"]
 
 [ext_resource type="Script" uid="uid://b6d685ce5kdmp" path="res://Scripts/Windows/answer_input.gd" id="1_083qw"]
 [ext_resource type="PackedScene" uid="uid://utagi2eh5w54" path="res://Scenes/Other/titlebar.tscn" id="2_j30vd"]
 [ext_resource type="Script" uid="uid://bu4x7bccn1iiu" path="res://Scripts/Resources and Files/Other/qna_resource.gd" id="2_miarm"]
+[ext_resource type="Script" uid="uid://ds65yghua76jy" path="res://Scripts/Resources and Files/Other/user_metadata.gd" id="3_31ov4"]
 [ext_resource type="PackedScene" uid="uid://bj0ggtv30md6n" path="res://Scenes/Other/answer_confirmation_row.tscn" id="3_op88k"]
+[ext_resource type="Resource" uid="uid://cktwl3fs1yab3" path="res://Data and Resources/Users/special_ending.tres" id="4_31ov4"]
 
 [sub_resource type="Resource" id="Resource_xelsm"]
 resource_name = "What is your first name? (Use small letters only. Do not leave a trailing space.)"
@@ -91,6 +93,9 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_083qw")
 questions = Array[ExtResource("2_miarm")]([SubResource("Resource_xelsm"), SubResource("Resource_3jc0l"), SubResource("Resource_31ov4"), SubResource("Resource_p4ejc")])
+endings_dictionary = Dictionary[PackedInt32Array, ExtResource("3_31ov4")]({
+PackedInt32Array(0, 5): ExtResource("4_31ov4")
+})
 main_input_field = NodePath("Sorter/MarginContainer/Contents/Inputs")
 title_node = NodePath("Sorter/MarginContainer/Contents/Question")
 ending_confirmation = NodePath("Ending Confirmation")
