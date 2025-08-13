@@ -67,6 +67,8 @@ func roll_credits():
 	tween.tween_property(scroll_bar, "value", content_height, deceleration_time).set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_OUT)
 	
 	await tween.finished
-	desktop.open_popup("Congratulations!","You've beat the game! There's nothing else to do. If you wish to continue with your investigation, restart the game.","Ending",CompressedTexture2D.new())
+	desktop.open_popup("Congratulations!","You've beat the game! There's nothing else to do. You will be sent back in 15 seconds.","Ending",CompressedTexture2D.new())
+	desktop.credits_ended()
+
 func _on_contents_meta_clicked(meta: Variant) -> void:
 	OS.shell_open(meta)

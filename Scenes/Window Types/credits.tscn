@@ -24,7 +24,7 @@ key_to_be_moved = ""
 index_to_be_moved_to = 0
 metadata/_custom_type_script = "uid://be5e2vas1np7c"
 
-[node name="Credits" type="Panel" node_paths=PackedStringArray("contents_node", "desktop")]
+[node name="Credits" type="Panel" node_paths=PackedStringArray("contents_node")]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -84,7 +84,6 @@ All Rights Reserved [b] Soham Dash [/b] © 2025
 {h2}
 {banner}
 "
-desktop = NodePath("")
 starting_size = Vector2(400, 300)
 
 [node name="Sorter" type="VBoxContainer" parent="."]
