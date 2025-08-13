@@ -12,9 +12,12 @@
 [ext_resource type="PackedScene" uid="uid://c8t5wkgn4r6wi" path="res://Scenes/Window Types/password_prompt.tscn" id="22_4gcca"]
 [ext_resource type="PackedScene" uid="uid://d2c8qnwy6t3gx" path="res://Scenes/Other/app_tray_icon.tscn" id="23_l1ynk"]
 [ext_resource type="PackedScene" uid="uid://g84qji3yh2sm" path="res://Scenes/Other/user_password_prompt.tscn" id="24_6sl2a"]
+[ext_resource type="Texture2D" uid="uid://66g6nhllimbn" path="res://Art/Pictures/Desktop Icons/WindowsXP/power_off_dark.png" id="25_x5jvr"]
 [ext_resource type="PackedScene" uid="uid://bj5x25ns3hxmd" path="res://Scenes/Other/power_prompt.tscn" id="25_y0cdw"]
 [ext_resource type="PackedScene" uid="uid://b8jwsa53j715" path="res://Scenes/login.tscn" id="26_mvv5o"]
+[ext_resource type="Texture2D" uid="uid://cm77q0q52oq5e" path="res://Art/Pictures/Desktop Icons/WindowsXP/reboot_dark.png" id="26_uv2mx"]
 [ext_resource type="Script" uid="uid://cmowc8flglqra" path="res://Scripts/Files and Folders/folders.gd" id="27_ob46a"]
+[ext_resource type="Texture2D" uid="uid://dyc1x8bwj4t6j" path="res://Art/Pictures/Desktop Icons/WindowsXP/logout_dark.png" id="27_qj11v"]
 [ext_resource type="Script" uid="uid://6ahcfwj62g07" path="res://Scripts/Files and Folders/files.gd" id="28_81od0"]
 [ext_resource type="Script" uid="uid://betc7x5t62js8" path="res://Scripts/Resources and Files/Other/subtitles.gd" id="29_8fasn"]
 [ext_resource type="PackedScene" uid="uid://dpsvuj4bhgvyp" path="res://Scenes/File Systems/incident_report.tscn" id="30_w615o"]
@@ -24,9 +27,6 @@
 [ext_resource type="Script" uid="uid://bumowvb75nl7b" path="res://Scripts/Desktop/desktop_panels.gd" id="36_nvj5v"]
 [ext_resource type="Script" uid="uid://cjrscc2gi8o1v" path="res://Scripts/Desktop/users_panel.gd" id="37_fs87g"]
 [ext_resource type="PackedScene" uid="uid://dqpce0a7r6slg" path="res://Scenes/Other/users_row.tscn" id="38_hwx7e"]
-[ext_resource type="Texture2D" uid="uid://djw8njr2vxjmy" path="res://Art/Pictures/Desktop Icons/WindowsXP/power_off.png" id="39_dim65"]
-[ext_resource type="Texture2D" uid="uid://tsw1lv5ecbhs" path="res://Art/Pictures/Desktop Icons/WindowsXP/reboot.png" id="40_cwg24"]
-[ext_resource type="Texture2D" uid="uid://dubjsv5ovl0i7" path="res://Art/Pictures/Desktop Icons/WindowsXP/logout.png" id="41_8ctvh"]
 [ext_resource type="Script" uid="uid://cq8v8vfrqt7lp" path="res://Scripts/Desktop/clock_and_calendar.gd" id="42_xbyhi"]
 [ext_resource type="PackedScene" uid="uid://demfdsp570gsd" path="res://Scenes/Window Types/ending_text_editor.tscn" id="43_6mngw"]
 [ext_resource type="PackedScene" uid="uid://cf0woduy5x8pf" path="res://Scenes/Window Types/games_list.tscn" id="44_bwgr5"]
@@ -309,6 +309,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_brvf0")
 credits_window = ExtResource("2_uv2mx")
+game_restart_user = ExtResource("6_vjiyk")
 theme_switch_nodes = [NodePath("Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Panel/Power Strip/power_off"), NodePath("Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Panel/Power Strip/restart"), NodePath("Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Panel/Power Strip/logout")]
 active_edges = Array[int]([50, 50, 50, 50])
 app_icon_container = NodePath("Panels/Bottom Panel/Container/Apps Container/Apps Container")
@@ -673,7 +674,7 @@ alignment = 1
 custom_minimum_size = Vector2(40, 0)
 layout_mode = 2
 mouse_filter = 1
-icon = ExtResource("39_dim65")
+icon = ExtResource("25_x5jvr")
 flat = true
 icon_alignment = 1
 expand_icon = true
@@ -682,7 +683,7 @@ expand_icon = true
 custom_minimum_size = Vector2(40, 0)
 layout_mode = 2
 mouse_filter = 1
-icon = ExtResource("40_cwg24")
+icon = ExtResource("26_uv2mx")
 flat = true
 icon_alignment = 1
 expand_icon = true
@@ -691,7 +692,7 @@ expand_icon = true
 custom_minimum_size = Vector2(40, 0)
 layout_mode = 2
 mouse_filter = 1
-icon = ExtResource("41_8ctvh")
+icon = ExtResource("27_qj11v")
 flat = true
 icon_alignment = 1
 expand_icon = true
