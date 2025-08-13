@@ -187,7 +187,8 @@ func set_icons():
 	icon = fetch_icon(window_icon_name,true)
 	
 	# Set all titlebar icons
-	titlebar.close_button.icon = fetch_icon(&"close_button")
+	if not titlebar.close_button == null:
+		titlebar.close_button.icon = fetch_icon(&"close_button")
 	if not titlebar.minimize_button == null: #Safety check to ensure that this doesnt break on the popup window class
 		titlebar.minimize_button.icon = fetch_icon(&"minimize_button")
 
