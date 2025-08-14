@@ -988,7 +988,7 @@ anchor_top = 1.0
 anchor_bottom = 1.0
 offset_left = 1.0
 offset_top = -394.0
-offset_right = 436.0
+offset_right = 508.0
 offset_bottom = -50.0
 grow_vertical = 0
 theme_type_variation = &"DesktopFloatingPanel"
@@ -1033,18 +1033,20 @@ size_flags_vertical = 3
 
 [node name="GridContainer" type="GridContainer" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container"]
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 columns = 3
 
 [node name="Files Icon" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container/GridContainer" instance=ExtResource("126_ilos3")]
 layout_mode = 2
-size_flags_horizontal = 1
+size_flags_vertical = 3
 icon_name = &"file_manager"
 text = "File Manager"
 tooltip = "Manage your files in style!"
 
 [node name="Chats" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container/GridContainer" instance=ExtResource("126_ilos3")]
 layout_mode = 2
-size_flags_horizontal = 1
+size_flags_vertical = 3
 type = 1
 icon_name = &"chat"
 text = "Nicotine"
@@ -1052,7 +1054,7 @@ tooltip = "Chat with your friends!"
 
 [node name="Emails" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container/GridContainer" instance=ExtResource("126_ilos3")]
 layout_mode = 2
-size_flags_horizontal = 1
+size_flags_vertical = 3
 type = 2
 icon_name = &"emails"
 text = "Tsundrebird"
@@ -1060,7 +1062,7 @@ tooltip = "Will not kill you"
 
 [node name="Calc" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container/GridContainer" instance=ExtResource("126_ilos3")]
 layout_mode = 2
-size_flags_horizontal = 1
+size_flags_vertical = 3
 type = 3
 icon_name = &"calculator"
 text = "Calculator"
@@ -1068,7 +1070,7 @@ tooltip = "Do Basic Arithmetic"
 
 [node name="Info" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container/GridContainer" instance=ExtResource("126_ilos3")]
 layout_mode = 2
-size_flags_horizontal = 1
+size_flags_vertical = 3
 type = 4
 icon_name = &"system_information"
 text = "About"
@@ -1076,7 +1078,7 @@ tooltip = "About your system"
 
 [node name="Settings" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container/GridContainer" instance=ExtResource("126_ilos3")]
 layout_mode = 2
-size_flags_horizontal = 1
+size_flags_vertical = 3
 type = 5
 icon_name = &"settings"
 text = "Settings"
@@ -1084,7 +1086,7 @@ tooltip = "Configure your system"
 
 [node name="Notepad" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container/GridContainer" instance=ExtResource("126_ilos3")]
 layout_mode = 2
-size_flags_horizontal = 1
+size_flags_vertical = 3
 type = 6
 icon_name = &"notepad"
 text = "Notepad"
@@ -1092,7 +1094,7 @@ tooltip = "Take notes in style."
 
 [node name="Remote Connect" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container/GridContainer" instance=ExtResource("126_ilos3")]
 layout_mode = 2
-size_flags_horizontal = 1
+size_flags_vertical = 3
 type = 7
 icon_name = &"remote_connection"
 text = "Anytable"
@@ -1100,7 +1102,7 @@ tooltip = "Connecting your systems since 2004"
 
 [node name="Radio" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container/GridContainer" instance=ExtResource("126_ilos3")]
 layout_mode = 2
-size_flags_horizontal = 1
+size_flags_vertical = 3
 type = 9
 icon_name = &"police_radio"
 text = "LawyerLink"
