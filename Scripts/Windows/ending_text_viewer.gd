@@ -4,6 +4,7 @@ class_name EndingTextViewer
 func _ready() -> void:
 	super()
 	titlebar.close_button.pressed.connect(start_credits_scene)
+	titlebar.minimize_button.queue_free()
 	
 
 func start_credits_scene():
