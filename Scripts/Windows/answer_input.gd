@@ -5,8 +5,7 @@ var current_question:SingleQNA:
 	get:
 		return questions[question_number]
 
-## Int format is [Number of Correct Answers, Unlocked Number of Users]
-@export var endings_dictionary:Dictionary[PackedInt32Array,UserMetadata]
+@export var endings_dictionary:Dictionary[PackedInt32Array,UserMetadata] ## Int format is [Number of Correct Answers, Unlocked Number of Users]
 @export var main_input_field:Control
 @export var title_node:Label
 @export var ending_confirmation:Panel
