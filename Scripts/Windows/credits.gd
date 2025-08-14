@@ -7,8 +7,6 @@ class_name CreditsWindow
 @export var contents_node:RichTextLabel
 @export var scroll_container:ScrollContainer
 
-@export var debug_mode:bool = false
-
 @export_multiline var text:String
 @export_tool_button("Compile Text") var compile_func = compile_text
 
@@ -36,16 +34,13 @@ func animate_to_view(_to:int = 0) -> void:
 	# Do not animate to view.
 
 func _process(delta) -> void:
-	if debug_mode: print(contents_node.get_content_height())
 	if not Engine.is_editor_hint():
 		super(delta)
 
 func roll_credits():
 	await get_tree().process_frame
 	await create_tween().tween_interval(initial_delay).finished
-	
-	if debug_mode: print(contents_node.get_content_height())
-	
+		
 	var tween:Tween = create_tween()
 	var scroll_bar:VScrollBar = scroll_container.get_v_scroll_bar()
 	#var content_height = 1335 #unfortunately contents_node.get_content_height() returns a wrong value.
