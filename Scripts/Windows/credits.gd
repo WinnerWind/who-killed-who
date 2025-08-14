@@ -5,6 +5,7 @@ class_name CreditsWindow
 @export var replacements:ReplacementList
 
 @export var contents_node:RichTextLabel
+@export var scroll_container:ScrollContainer
 
 @export var debug_mode:bool = false
 
@@ -17,7 +18,7 @@ func compile_text():
 	contents_node.text = text
 	for replacement in replacements.replacements:
 		contents_node.text = contents_node.text.replace(replacement, replacements.replacements[replacement])
-	
+
 func _ready() -> void:
 	if not Engine.is_editor_hint():
 		super()
@@ -27,7 +28,7 @@ func _ready() -> void:
 		#Replacements
 		#for replacement in replacements.replacements:
 			#contents_node.text = contents_node.text.replace(replacement, replacements.replacements[replacement])
-
+		
 		roll_credits()
 
 func animate_to_view(_to:int = 0) -> void:
@@ -40,17 +41,19 @@ func _process(delta) -> void:
 		super(delta)
 
 func roll_credits():
-	await contents_node.finished
 	await get_tree().process_frame
 	await create_tween().tween_interval(initial_delay).finished
 	
 	if debug_mode: print(contents_node.get_content_height())
 	
 	var tween:Tween = create_tween()
-	var scroll_bar:VScrollBar = contents_node.get_v_scroll_bar()
+	var scroll_bar:VScrollBar = scroll_container.get_v_scroll_bar()
 	#var content_height = 1335 #unfortunately contents_node.get_content_height() returns a wrong value.
 	#var content_height = 1344
-	var content_height = 1344
+	# calculate scroll height using workaround
+	scroll_bar.value = 9999999
+	var content_height = scroll_bar.value
+	scroll_bar.value = 0
 	
 	var acceleration_ratio:float = 3.0/25.0
 	var deceleration_ratio:float = 3.0/25.0

@@ -24,7 +24,7 @@ key_to_be_moved = ""
 index_to_be_moved_to = 0
 metadata/_custom_type_script = "uid://be5e2vas1np7c"
 
-[node name="Credits" type="Panel" node_paths=PackedStringArray("contents_node")]
+[node name="Credits" type="Panel" node_paths=PackedStringArray("contents_node", "scroll_container")]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -37,7 +37,8 @@ grow_vertical = 2
 theme = ExtResource("4_lhehj")
 script = ExtResource("1_pfk0k")
 replacements = SubResource("Resource_lhehj")
-contents_node = NodePath("Sorter/MarginContainer/Contents")
+contents_node = NodePath("Sorter/MarginContainer/ScrollContainer/Contents")
+scroll_container = NodePath("Sorter/MarginContainer/ScrollContainer")
 text = "[font_size=18]{h1} Who Killed Who {/h}
 {logo}
 {subh} My first ever game {/subh}
@@ -102,8 +103,15 @@ layout_mode = 2
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="Contents" type="RichTextLabel" parent="Sorter/MarginContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="Sorter/MarginContainer"]
 layout_mode = 2
+mouse_filter = 2
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 3
+
+[node name="Contents" type="RichTextLabel" parent="Sorter/MarginContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
 size_flags_vertical = 3
 bbcode_enabled = true
 text = "[font_size=18][center][font_size=35] Who Killed Who [/font_size][/center]
@@ -152,9 +160,9 @@ All Rights Reserved [b] Soham Dash [/b] © 2025
 [center][font_size=30]
 [center][img=250]res://Art/Pictures/Editor Only/banner.png[/img][/center]
 "
+fit_content = true
 scroll_active = false
-threaded = true
 
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
-[connection signal="meta_clicked" from="Sorter/MarginContainer/Contents" to="." method="_on_contents_meta_clicked"]
+[connection signal="meta_clicked" from="Sorter/MarginContainer/ScrollContainer/Contents" to="." method="_on_contents_meta_clicked"]
