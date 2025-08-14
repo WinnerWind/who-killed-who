@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DesktopIcons" load_steps=45 format=3 uid="uid://oshxy6cv5mi"]
+[gd_resource type="Resource" script_class="DesktopIcons" load_steps=46 format=3 uid="uid://oshxy6cv5mi"]
 
 [ext_resource type="Texture2D" uid="uid://bmcebumnak5s7" path="res://Art/Pictures/Desktop Icons/WindowsXP/app_starter_dark.png" id="1_kn4mv"]
 [ext_resource type="Texture2D" uid="uid://c8trifgkl8eb2" path="res://Art/Pictures/Desktop Icons/WindowsXP/audio.png" id="2_puhs0"]
@@ -25,6 +25,7 @@
 [ext_resource type="Texture2D" uid="uid://bocojepwjw6ap" path="res://Art/Pictures/Desktop Icons/WindowsXP/pause.png" id="23_4bd83"]
 [ext_resource type="Texture2D" uid="uid://bavvet86831p5" path="res://Art/Pictures/Desktop Icons/WindowsXP/play.png" id="24_ag7eb"]
 [ext_resource type="Texture2D" uid="uid://66g6nhllimbn" path="res://Art/Pictures/Desktop Icons/WindowsXP/power_off_dark.png" id="25_oi40s"]
+[ext_resource type="Texture2D" uid="uid://bjjnaypwcpetg" path="res://Art/Pictures/Desktop Icons/WindowsXP/LawyerLink.png" id="25_puhs0"]
 [ext_resource type="Texture2D" uid="uid://b40qtoadyu6hg" path="res://Art/Pictures/Desktop Icons/WindowsXP/remote connect.png" id="26_tssnh"]
 [ext_resource type="Texture2D" uid="uid://g2rcowiqdd0e" path="res://Art/Pictures/Desktop Icons/WindowsXP/rename.png" id="27_xncx6"]
 [ext_resource type="Texture2D" uid="uid://cm77q0q52oq5e" path="res://Art/Pictures/Desktop Icons/WindowsXP/reboot_dark.png" id="28_png2w"]
@@ -85,6 +86,7 @@ file_manager = ExtResource("11_c5mul")
 emails = ExtResource("9_qnejg")
 chat = ExtResource("5_hcnrf")
 calculator = ExtResource("4_png2w")
+police_radio = ExtResource("25_puhs0")
 remote_connection = ExtResource("26_tssnh")
 system_information = ExtResource("35_gsao8")
 settings = ExtResource("31_bbo64")
