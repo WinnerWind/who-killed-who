@@ -173,6 +173,7 @@ threaded = true
 [node name="Player" type="AudioStreamPlayer" parent="."]
 process_mode = 3
 autoplay = true
+bus = &"Computer Sounds"
 playback_type = 1
 
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]

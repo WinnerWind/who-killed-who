@@ -35,6 +35,8 @@ func _ready():
 	titlebar.close_button.pressed.connect(close_window)
 	titlebar.minimize_button.pressed.connect(minimize_window)
 	
+	visibility_changed.connect(func(): if visible: desktop.play_sound("Open")) # Plays the open SFX when un minimized
+	
 	#Gets viewport size for later maths
 	get_tree().get_root().size_changed.connect(game_resized) 
 	
@@ -64,7 +66,8 @@ func _ready():
 	await get_tree().create_timer(0.1).timeout
 	desktop.move_child(self,-1) #-2 so that it doesnt get shadowed by the panels
 	set_deferred("size",starting_size)
-
+	
+	desktop.play_sound("Open")
 
 func _process(delta):
 	var mouse_position:Vector2 = get_viewport().get_mouse_position()
@@ -162,10 +165,12 @@ func change_titlebar_text(new_name:String):
 	
 func close_window(): 
 	animate_to_view(-1500)
+	desktop.play_sound("Close")
 	await get_tree().create_timer(0.5).timeout #Delay or else the window is poofed instantly
 	queue_free()
 func minimize_window():
 	var tween = create_tween()
+	desktop.play_sound("Minimize")
 	tween.tween_property(self,"position:y",-1500,0.4)
 	await get_tree().create_timer(0.5).timeout
 	hide()

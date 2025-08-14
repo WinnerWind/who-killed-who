@@ -1,4 +1,4 @@
-[gd_scene load_steps=133 format=3 uid="uid://w0kx4pqkw37h"]
+[gd_scene load_steps=137 format=3 uid="uid://w0kx4pqkw37h"]
 
 [ext_resource type="Theme" uid="uid://xyj76ld4ymnb" path="res://Art/Themes/hip_retro_dark.tres" id="1_8yja0"]
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="2_udsku"]
@@ -49,8 +49,12 @@
 [ext_resource type="PackedScene" uid="uid://dg541tu3cd17a" path="res://Misc/3D Spinning Background/special_spin_background.tscn" id="44_l4mwa"]
 [ext_resource type="PackedScene" uid="uid://dpsvuj4bhgvyp" path="res://Scenes/File Systems/incident_report.tscn" id="44_ook28"]
 [ext_resource type="Texture2D" uid="uid://cajkgw7h5kb80" path="res://Art/Pictures/Editor Only/file.svg" id="46_3y4nn"]
+[ext_resource type="AudioStream" uid="uid://lugfag34xms" path="res://Art/Sound/SFX/hip_hover.wav" id="47_k7xhl"]
 [ext_resource type="Script" uid="uid://bumowvb75nl7b" path="res://Scripts/Desktop/desktop_panels.gd" id="47_t3ml0"]
+[ext_resource type="AudioStream" uid="uid://i4bux82tcptt" path="res://Art/Sound/SFX/hip_close.wav" id="48_e4ydr"]
+[ext_resource type="AudioStream" uid="uid://8sue4ishmrp" path="res://Art/Sound/SFX/hip_open.wav" id="48_krgcv"]
 [ext_resource type="Script" uid="uid://cjrscc2gi8o1v" path="res://Scripts/Desktop/users_panel.gd" id="48_wscjl"]
+[ext_resource type="AudioStream" uid="uid://6jnw0fqc0eaw" path="res://Art/Sound/SFX/hip_minimize.wav" id="49_8w2qy"]
 [ext_resource type="PackedScene" uid="uid://dqpce0a7r6slg" path="res://Scenes/Other/users_row.tscn" id="49_foch4"]
 [ext_resource type="Texture2D" uid="uid://daoq4jyauc5hv" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/poweroff.png" id="50_sc3pf"]
 [ext_resource type="Texture2D" uid="uid://dxw7k1xlbnq8x" path="res://Art/Pictures/Desktop Icons/Monochrome Pixel/Dark/restart.png" id="51_01y67"]
@@ -1552,9 +1556,32 @@ unique_name_in_owner = true
 
 [node name="IntroSFX" type="AudioStreamPlayer" parent="SFX"]
 stream = ExtResource("40_ibk3b")
+volume_db = -80.0
+bus = &"Intro/Outro SFX"
 
 [node name="OutroSFX" type="AudioStreamPlayer" parent="SFX"]
 stream = ExtResource("41_l0gm2")
+bus = &"Intro/Outro SFX"
+
+[node name="Hover" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("47_k7xhl")
+volume_db = -10.0
+bus = &"SFX"
+
+[node name="Open" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("48_krgcv")
+volume_db = -10.0
+bus = &"SFX"
+
+[node name="Close" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("48_e4ydr")
+volume_db = -10.0
+bus = &"SFX"
+
+[node name="Minimize" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("49_8w2qy")
+volume_db = -10.0
+bus = &"SFX"
 
 [node name="Smart Wallpaper" type="ColorRect" parent="."]
 material = SubResource("ShaderMaterial_gi6f8")

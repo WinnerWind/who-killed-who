@@ -29,6 +29,7 @@ func _ready():
 	for message in direct_messages: #Deals with all direct messages
 		var new_recipient_row:HBoxContainer = single_recipient_row.instantiate()
 		new_recipient_row.get_node("Text/Name").text = message.name
+		new_recipient_row.mouse_entered.connect(desktop.play_sound.bind("Hover"))
 		new_recipient_row.get_node("Text/Last Message").text = message.last_message
 		new_recipient_row.tooltip_text =  message.name+"\n\n"+message.last_message
 		new_recipient_row.get_node("Icon Margins/Icon").texture = message.icon
@@ -40,6 +41,7 @@ func _ready():
 	for message in group_messages:
 		var new_recipient_row:HBoxContainer = single_recipient_row.instantiate()
 		new_recipient_row.get_node("Text/Name").text = message.name
+		new_recipient_row.mouse_entered.connect(desktop.play_sound.bind("Hover"))
 		new_recipient_row.get_node("Text/Last Message").text = message.last_message
 		new_recipient_row.tooltip_text = message.name+"\n\n"+message.last_message #so we can hover over it.
 		new_recipient_row.get_node("Icon Margins/Icon").texture = message.icon

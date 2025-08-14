@@ -18,6 +18,8 @@ func _ready():
 	for email in email_list:
 		var new_email_row = email_row.instantiate()
 		
+		new_email_row.mouse_entered.connect(desktop.play_sound.bind("Hover"))
+		
 		var email_hotkeys = email_replacements.replacements
 		var content_hotkeys = content_replacements.replacements
 		#Replaces based on hotkeys

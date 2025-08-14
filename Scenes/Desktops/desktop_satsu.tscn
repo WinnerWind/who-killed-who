@@ -1,4 +1,4 @@
-[gd_scene load_steps=94 format=3 uid="uid://km3q1i4fcw0t"]
+[gd_scene load_steps=98 format=3 uid="uid://km3q1i4fcw0t"]
 
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="1_oo3qg"]
 [ext_resource type="Theme" uid="uid://dfp8tc3gbtaeo" path="res://Art/Themes/winxp.tres" id="2_6dpgf"]
@@ -21,6 +21,10 @@
 [ext_resource type="AudioStream" uid="uid://cm0upo68h1h50" path="res://Art/Sound/Transitory SFX/outro_retro.wav" id="38_xw3pa"]
 [ext_resource type="Texture2D" uid="uid://tsw1lv5ecbhs" path="res://Art/Pictures/Desktop Icons/WindowsXP/reboot.png" id="39_s7hr2"]
 [ext_resource type="Texture2D" uid="uid://dubjsv5ovl0i7" path="res://Art/Pictures/Desktop Icons/WindowsXP/logout.png" id="40_bms7w"]
+[ext_resource type="AudioStream" uid="uid://c4fo3hlggf0rk" path="res://Art/Sound/SFX/winxp_hover.wav" id="41_3lad6"]
+[ext_resource type="AudioStream" uid="uid://cs4yps70jraam" path="res://Art/Sound/SFX/winxp_close.wav" id="42_5x16o"]
+[ext_resource type="AudioStream" uid="uid://drf3oy1r0f5qf" path="res://Art/Sound/SFX/winxp_minimize.wav" id="43_38x4a"]
+[ext_resource type="AudioStream" uid="uid://b8v25gqpb4s4q" path="res://Art/Sound/SFX/winxp_open.wav" id="43_jyme2"]
 [ext_resource type="Texture2D" uid="uid://dmdex3eijgfnc" path="res://Art/Placeholders/PS30TH_16x9_WALLPAPER.png" id="88_lnqyc"]
 [ext_resource type="Script" uid="uid://bifm388ef70uc" path="res://Scripts/Resources and Files/For Desktop/messages.gd" id="93_bkf2c"]
 [ext_resource type="Script" uid="uid://bfmnfev8k5uiw" path="res://Scripts/Resources and Files/For Desktop/emails.gd" id="95_gostb"]
@@ -917,9 +921,27 @@ unique_name_in_owner = true
 
 [node name="IntroSFX" type="AudioStreamPlayer" parent="SFX"]
 stream = ExtResource("37_6k1xg")
+bus = &"Intro/Outro SFX"
 
 [node name="OutroSFX" type="AudioStreamPlayer" parent="SFX"]
 stream = ExtResource("38_xw3pa")
+bus = &"Intro/Outro SFX"
+
+[node name="Hover" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("41_3lad6")
+bus = &"SFX"
+
+[node name="Close" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("42_5x16o")
+bus = &"SFX"
+
+[node name="Open" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("43_jyme2")
+bus = &"SFX"
+
+[node name="Minimize" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("43_38x4a")
+bus = &"SFX"
 
 [node name="Wallpaper" type="TextureRect" parent="."]
 visible = false

@@ -49,6 +49,7 @@ layout_mode = 2
 size_flags_vertical = 3
 autoplay = true
 expand = true
+bus = &"Computer Sounds"
 
 [node name="Subtitles Margin" type="MarginContainer" parent="Sorter/MarginContainer"]
 layout_mode = 2

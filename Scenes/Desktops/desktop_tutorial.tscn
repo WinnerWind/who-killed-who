@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=3 uid="uid://ja0iaxhopt5e"]
+[gd_scene load_steps=64 format=3 uid="uid://ja0iaxhopt5e"]
 
 [ext_resource type="Script" uid="uid://clvk5hdxhgtjm" path="res://Scripts/Desktop/desktop.gd" id="1_mmul2"]
 [ext_resource type="Theme" uid="uid://dfp8tc3gbtaeo" path="res://Art/Themes/winxp.tres" id="2_pkkam"]
@@ -27,7 +27,11 @@
 [ext_resource type="PackedScene" uid="uid://bj5x25ns3hxmd" path="res://Scenes/Other/power_prompt.tscn" id="30_as8qx"]
 [ext_resource type="PackedScene" uid="uid://b8jwsa53j715" path="res://Scenes/login.tscn" id="31_lapd0"]
 [ext_resource type="Script" uid="uid://cmowc8flglqra" path="res://Scripts/Files and Folders/folders.gd" id="32_7yiay"]
+[ext_resource type="AudioStream" uid="uid://c4fo3hlggf0rk" path="res://Art/Sound/SFX/winxp_hover.wav" id="32_qdcfa"]
+[ext_resource type="AudioStream" uid="uid://cs4yps70jraam" path="res://Art/Sound/SFX/winxp_close.wav" id="33_tbbll"]
 [ext_resource type="Script" uid="uid://6ahcfwj62g07" path="res://Scripts/Files and Folders/files.gd" id="33_vu1kh"]
+[ext_resource type="AudioStream" uid="uid://b8v25gqpb4s4q" path="res://Art/Sound/SFX/winxp_open.wav" id="34_0lcfo"]
+[ext_resource type="AudioStream" uid="uid://drf3oy1r0f5qf" path="res://Art/Sound/SFX/winxp_minimize.wav" id="34_28g1i"]
 [ext_resource type="Script" uid="uid://betc7x5t62js8" path="res://Scripts/Resources and Files/Other/subtitles.gd" id="34_if8uj"]
 [ext_resource type="AudioStream" uid="uid://bicvw7y4rirve" path="res://Art/Sound/Transitory SFX/intro_retro.wav" id="34_tbbll"]
 [ext_resource type="AudioStream" uid="uid://cm0upo68h1h50" path="res://Art/Sound/Transitory SFX/outro_retro.wav" id="35_28g1i"]
@@ -488,9 +492,27 @@ unique_name_in_owner = true
 
 [node name="IntroSFX" type="AudioStreamPlayer" parent="SFX"]
 stream = ExtResource("34_tbbll")
+bus = &"Intro/Outro SFX"
 
 [node name="OutroSFX" type="AudioStreamPlayer" parent="SFX"]
 stream = ExtResource("35_28g1i")
+bus = &"Intro/Outro SFX"
+
+[node name="Hover" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("32_qdcfa")
+bus = &"SFX"
+
+[node name="Close" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("33_tbbll")
+bus = &"SFX"
+
+[node name="Open" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("34_0lcfo")
+bus = &"SFX"
+
+[node name="Minimize" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("34_28g1i")
+bus = &"SFX"
 
 [node name="Wallpaper" type="TextureRect" parent="."]
 layout_mode = 1

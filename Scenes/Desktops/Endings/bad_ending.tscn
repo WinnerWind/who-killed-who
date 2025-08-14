@@ -441,7 +441,20 @@ unique_name_in_owner = true
 
 [node name="EndingSong" type="AudioStreamPlayer" parent="SFX"]
 stream = ExtResource("18_nbinm")
+bus = &"Music"
 parameters/looping = true
+
+[node name="Hover" type="AudioStreamPlayer" parent="SFX"]
+bus = &"SFX"
+
+[node name="Close" type="AudioStreamPlayer" parent="SFX"]
+bus = &"SFX"
+
+[node name="Open" type="AudioStreamPlayer" parent="SFX"]
+bus = &"SFX"
+
+[node name="Minimize" type="AudioStreamPlayer" parent="SFX"]
+bus = &"SFX"
 
 [node name="Wallpaper" type="TextureRect" parent="."]
 visible = false

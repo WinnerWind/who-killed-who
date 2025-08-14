@@ -115,6 +115,7 @@ func read_files(enforce_delay:bool = true):
 	
 	for row in sorter.get_children().slice(1): #Tell the rows that its time to display
 		if not row is Label:
+			row.mouse_entered.connect(desktop.play_sound.bind("Hover"))
 			row.ready_to_display = true
 	
 	currently_reading_files = false #Allows us to go back and stuff after executing has finished.

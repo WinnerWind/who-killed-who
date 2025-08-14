@@ -67,8 +67,9 @@ func make_mcq(question:SingleQNA):
 	
 	for number in number_of_questions:
 		var question_name = question.get("option%s_text"%[number+1])
-		var new_button = Button.new()
+		var new_button := Button.new()
 		new_button.text = question_name
+		new_button.mouse_entered.connect(desktop.play_sound.bind("Hover"))
 		new_button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		new_button.size_flags_vertical = Control.SIZE_EXPAND_FILL
 		new_button.pressed.connect(mcq_submitted.bind(number)) #So we can deal with options
