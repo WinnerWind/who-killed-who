@@ -326,12 +326,41 @@ day = 29
 hour = 10
 minute = 10
 
+[node name="email-300425" type="Node" parent="Redacted"]
+script = ExtResource("2_g45ot")
+text = "Hey,
+
+Did anyone remove the body from the scene? After we sent the investigative team for a lunch break, it seems as though the body is nowhere to be found. 
+
+---
+
+Hello,
+
+As far as I am aware, I could not find any memo pertaining to this. Are you sure that no one on the team had a hand in this?
+
+And also, why was no one on scene when the team left for a lunch break? You know that that is standard protocol. 
+
+---
+
+Hey,
+
+No, I am absolutely positive. I have asked everyone. This needs to reported to the higher ups immediately.
+
+I thought I told some of my men to remain on scene even for lunch break. I am so sorry that this has happened."
+audio_subtitles = SubResource("Resource_ysqan")
+video_subtitles = SubResource("Resource_83t6h")
+month = 3
+day = 29
+hour = 10
+minute = 10
+
 [node name="log-300425" type="Node" parent="Redacted"]
 script = ExtResource("2_g45ot")
 text = "[[MESSAGE LOG 30/4/25]]
 <630d0a> i thought the investigators took more photographs? where are they? i cant seem to find them except the living room photo and the knife photo.
 <716572> well they did take more photos its just that they've been witheld looking for further evidence
-<630d0a> withheld? i NEED those photos"
+<630d0a> withheld? i NEED those photos
+<716572> oh it turns out we never took that many photos. weird."
 audio_subtitles = SubResource("Resource_ky3hv")
 video_subtitles = SubResource("Resource_hwwu2")
 month = 3
