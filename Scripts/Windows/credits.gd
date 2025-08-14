@@ -11,6 +11,8 @@ class_name CreditsWindow
 @export_multiline var text:String
 @export_tool_button("Compile Text") var compile_func = compile_text
 
+@export var initial_delay:float
+
 func compile_text():
 	contents_node.text = text
 	for replacement in replacements.replacements:
@@ -40,7 +42,7 @@ func _process(delta) -> void:
 func roll_credits():
 	await contents_node.finished
 	await get_tree().process_frame
-	await create_tween().tween_interval(2).finished
+	await create_tween().tween_interval(initial_delay).finished
 	
 	if debug_mode: print(contents_node.get_content_height())
 	

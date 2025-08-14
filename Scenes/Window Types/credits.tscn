@@ -84,6 +84,7 @@ All Rights Reserved [b] Soham Dash [/b] © 2025
 {h2}
 {banner}
 "
+initial_delay = 3.0
 starting_size = Vector2(400, 300)
 
 [node name="Sorter" type="VBoxContainer" parent="."]
