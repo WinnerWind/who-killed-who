@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=3 uid="uid://bkqgcmwrffhrp"]
+[gd_scene load_steps=47 format=3 uid="uid://bkqgcmwrffhrp"]
 
 [ext_resource type="Script" uid="uid://d0oqhtrr0rtur" path="res://Scripts/Desktop/endings.gd" id="1_brvf0"]
 [ext_resource type="PackedScene" uid="uid://cibxgh62a0ncg" path="res://Scenes/Window Types/credits.tscn" id="2_uv2mx"]
@@ -29,7 +29,6 @@
 [ext_resource type="PackedScene" uid="uid://dqpce0a7r6slg" path="res://Scenes/Other/users_row.tscn" id="38_hwx7e"]
 [ext_resource type="Script" uid="uid://cq8v8vfrqt7lp" path="res://Scripts/Desktop/clock_and_calendar.gd" id="42_xbyhi"]
 [ext_resource type="PackedScene" uid="uid://demfdsp570gsd" path="res://Scenes/Window Types/ending_text_editor.tscn" id="43_6mngw"]
-[ext_resource type="PackedScene" uid="uid://cf0woduy5x8pf" path="res://Scenes/Window Types/games_list.tscn" id="44_bwgr5"]
 
 [sub_resource type="Resource" id="Resource_0lcfo"]
 script = ExtResource("29_8fasn")
@@ -442,6 +441,7 @@ unique_name_in_owner = true
 
 [node name="EndingSong" type="AudioStreamPlayer" parent="SFX"]
 stream = ExtResource("20_qj11v")
+parameters/looping = true
 
 [node name="Wallpaper" type="TextureRect" parent="."]
 visible = false
@@ -892,8 +892,20 @@ offset_right = -124.0
 offset_bottom = 449.0
 grow_horizontal = 1
 grow_vertical = 1
-credits_scene = ExtResource("44_bwgr5")
-directory_path_text = "texttexttexttext"
+text = "Hey,
+
+I just finished reading over your statement and the evidence you sent me. I mean... did you even take a look at the evidence I sent you? Perhaps it's a major misunderstanding but I have not received anything from you.
+
+I need to be straight with you. Everything is riding on us to get the facts right, and right now it seems that you weren't able to sell yourself too well. 
+
+The prosecution went fast and because of the way things went, it seems as though they have pushed for your arrest. There was nothing I could do. There was just not enough facts for me to sell you better. 
+
+You'll probably have a chance to appeal but I don't know when that is. I'll be fighting for it, that's all I can tell you. Next time, remember to leave no stone unturned. Every piece matters more than you think.
+
+That's all. I wish that things had been different.
+
+- Your lawyer friend."
+directory_path_text = ">> /Desktop/re:email.txt"
 desktop = NodePath("..")
 
 [connection signal="theme_changed" from="." to="." method="_on_theme_changed"]
