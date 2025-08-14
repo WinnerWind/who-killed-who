@@ -1,37 +1,37 @@
-[gd_scene load_steps=47 format=3 uid="uid://cwtftfd5leqdo"]
+[gd_scene load_steps=47 format=3 uid="uid://cl5a3qe8yok7f"]
 
-[ext_resource type="Script" uid="uid://d0oqhtrr0rtur" path="res://Scripts/Desktop/endings.gd" id="1_8b4yl"]
-[ext_resource type="PackedScene" uid="uid://cibxgh62a0ncg" path="res://Scenes/Window Types/credits.tscn" id="2_3wmxa"]
-[ext_resource type="Resource" uid="uid://bwu1n3phbct1q" path="res://Data and Resources/Users/tutorial.tres" id="3_g88ed"]
-[ext_resource type="Theme" uid="uid://dqccwaixn6vhy" path="res://Art/Themes/winxp_dark.tres" id="4_720i8"]
-[ext_resource type="Resource" uid="uid://bn2xmponak4f7" path="res://Art/Pictures/Desktop Icons/Icon Sets/light_windowsxp.tres" id="5_1e5u5"]
-[ext_resource type="Resource" uid="uid://oshxy6cv5mi" path="res://Art/Pictures/Desktop Icons/Icon Sets/dark_windowsxp.tres" id="6_2ignr"]
-[ext_resource type="PackedScene" uid="uid://c2md68ibvvoxk" path="res://Scenes/Other/notification.tscn" id="7_xkabr"]
-[ext_resource type="PackedScene" uid="uid://fal2iityh6i6" path="res://Scenes/Window Types/popup.tscn" id="8_78j5b"]
-[ext_resource type="PackedScene" uid="uid://c8t5wkgn4r6wi" path="res://Scenes/Window Types/password_prompt.tscn" id="9_fl1nl"]
-[ext_resource type="PackedScene" uid="uid://d2c8qnwy6t3gx" path="res://Scenes/Other/app_tray_icon.tscn" id="10_1thna"]
-[ext_resource type="PackedScene" uid="uid://g84qji3yh2sm" path="res://Scenes/Other/user_password_prompt.tscn" id="11_jakxi"]
-[ext_resource type="PackedScene" uid="uid://bj5x25ns3hxmd" path="res://Scenes/Other/power_prompt.tscn" id="12_u1172"]
-[ext_resource type="PackedScene" uid="uid://b8jwsa53j715" path="res://Scenes/login.tscn" id="13_8l8yr"]
-[ext_resource type="Script" uid="uid://cmowc8flglqra" path="res://Scripts/Files and Folders/folders.gd" id="14_jt4ok"]
-[ext_resource type="Script" uid="uid://6ahcfwj62g07" path="res://Scripts/Files and Folders/files.gd" id="15_a52ij"]
-[ext_resource type="Script" uid="uid://betc7x5t62js8" path="res://Scripts/Resources and Files/Other/subtitles.gd" id="16_p75nn"]
-[ext_resource type="PackedScene" uid="uid://dpsvuj4bhgvyp" path="res://Scenes/File Systems/incident_report.tscn" id="17_13jur"]
-[ext_resource type="AudioStream" uid="uid://bsomeolopdx06" path="res://Art/Sound/Music/factorio.mp3" id="18_nbinm"]
-[ext_resource type="Texture2D" uid="uid://dmdex3eijgfnc" path="res://Art/Placeholders/PS30TH_16x9_WALLPAPER.png" id="19_yxuyn"]
-[ext_resource type="PackedScene" uid="uid://bwgiv56py676e" path="res://Scenes/Other/desktop_icon.tscn" id="20_bktlf"]
-[ext_resource type="Texture2D" uid="uid://cajkgw7h5kb80" path="res://Art/Pictures/Editor Only/file.svg" id="21_q277o"]
-[ext_resource type="Script" uid="uid://bumowvb75nl7b" path="res://Scripts/Desktop/desktop_panels.gd" id="22_ejiqp"]
-[ext_resource type="Script" uid="uid://cjrscc2gi8o1v" path="res://Scripts/Desktop/users_panel.gd" id="23_qdg8x"]
-[ext_resource type="PackedScene" uid="uid://dqpce0a7r6slg" path="res://Scenes/Other/users_row.tscn" id="24_w44kf"]
-[ext_resource type="Texture2D" uid="uid://66g6nhllimbn" path="res://Art/Pictures/Desktop Icons/WindowsXP/power_off_dark.png" id="25_l4mme"]
-[ext_resource type="Texture2D" uid="uid://cm77q0q52oq5e" path="res://Art/Pictures/Desktop Icons/WindowsXP/reboot_dark.png" id="26_rljxk"]
-[ext_resource type="Texture2D" uid="uid://dyc1x8bwj4t6j" path="res://Art/Pictures/Desktop Icons/WindowsXP/logout_dark.png" id="27_kgum6"]
-[ext_resource type="Script" uid="uid://cq8v8vfrqt7lp" path="res://Scripts/Desktop/clock_and_calendar.gd" id="28_0q6pl"]
-[ext_resource type="PackedScene" uid="uid://demfdsp570gsd" path="res://Scenes/Window Types/ending_text_editor.tscn" id="29_awkfq"]
+[ext_resource type="Script" uid="uid://d0oqhtrr0rtur" path="res://Scripts/Desktop/endings.gd" id="1_fuegc"]
+[ext_resource type="PackedScene" uid="uid://cibxgh62a0ncg" path="res://Scenes/Window Types/credits.tscn" id="2_75ii7"]
+[ext_resource type="Resource" uid="uid://bwu1n3phbct1q" path="res://Data and Resources/Users/tutorial.tres" id="3_g01q7"]
+[ext_resource type="Theme" uid="uid://dqccwaixn6vhy" path="res://Art/Themes/winxp_dark.tres" id="4_vwcfk"]
+[ext_resource type="Resource" uid="uid://bn2xmponak4f7" path="res://Art/Pictures/Desktop Icons/Icon Sets/light_windowsxp.tres" id="5_kn8lp"]
+[ext_resource type="Resource" uid="uid://oshxy6cv5mi" path="res://Art/Pictures/Desktop Icons/Icon Sets/dark_windowsxp.tres" id="6_x5umr"]
+[ext_resource type="PackedScene" uid="uid://c2md68ibvvoxk" path="res://Scenes/Other/notification.tscn" id="7_4cc3k"]
+[ext_resource type="PackedScene" uid="uid://fal2iityh6i6" path="res://Scenes/Window Types/popup.tscn" id="8_ubch3"]
+[ext_resource type="PackedScene" uid="uid://c8t5wkgn4r6wi" path="res://Scenes/Window Types/password_prompt.tscn" id="9_xi3eu"]
+[ext_resource type="PackedScene" uid="uid://d2c8qnwy6t3gx" path="res://Scenes/Other/app_tray_icon.tscn" id="10_eqf30"]
+[ext_resource type="PackedScene" uid="uid://g84qji3yh2sm" path="res://Scenes/Other/user_password_prompt.tscn" id="11_6s1rq"]
+[ext_resource type="PackedScene" uid="uid://bj5x25ns3hxmd" path="res://Scenes/Other/power_prompt.tscn" id="12_ycoer"]
+[ext_resource type="PackedScene" uid="uid://b8jwsa53j715" path="res://Scenes/login.tscn" id="13_5xfhh"]
+[ext_resource type="Script" uid="uid://cmowc8flglqra" path="res://Scripts/Files and Folders/folders.gd" id="14_qb8vt"]
+[ext_resource type="Script" uid="uid://6ahcfwj62g07" path="res://Scripts/Files and Folders/files.gd" id="15_qroo7"]
+[ext_resource type="Script" uid="uid://betc7x5t62js8" path="res://Scripts/Resources and Files/Other/subtitles.gd" id="16_eys42"]
+[ext_resource type="PackedScene" uid="uid://dpsvuj4bhgvyp" path="res://Scenes/File Systems/incident_report.tscn" id="17_5x8e0"]
+[ext_resource type="AudioStream" uid="uid://bsomeolopdx06" path="res://Art/Sound/Music/factorio.mp3" id="18_ryt55"]
+[ext_resource type="Texture2D" uid="uid://dmdex3eijgfnc" path="res://Art/Placeholders/PS30TH_16x9_WALLPAPER.png" id="19_pwfog"]
+[ext_resource type="PackedScene" uid="uid://bwgiv56py676e" path="res://Scenes/Other/desktop_icon.tscn" id="20_bat6h"]
+[ext_resource type="Texture2D" uid="uid://cajkgw7h5kb80" path="res://Art/Pictures/Editor Only/file.svg" id="21_i27fu"]
+[ext_resource type="Script" uid="uid://bumowvb75nl7b" path="res://Scripts/Desktop/desktop_panels.gd" id="22_k0ota"]
+[ext_resource type="Script" uid="uid://cjrscc2gi8o1v" path="res://Scripts/Desktop/users_panel.gd" id="23_npqqr"]
+[ext_resource type="PackedScene" uid="uid://dqpce0a7r6slg" path="res://Scenes/Other/users_row.tscn" id="24_3nxod"]
+[ext_resource type="Texture2D" uid="uid://66g6nhllimbn" path="res://Art/Pictures/Desktop Icons/WindowsXP/power_off_dark.png" id="25_3d80d"]
+[ext_resource type="Texture2D" uid="uid://cm77q0q52oq5e" path="res://Art/Pictures/Desktop Icons/WindowsXP/reboot_dark.png" id="26_q7868"]
+[ext_resource type="Texture2D" uid="uid://dyc1x8bwj4t6j" path="res://Art/Pictures/Desktop Icons/WindowsXP/logout_dark.png" id="27_sqcdu"]
+[ext_resource type="Script" uid="uid://cq8v8vfrqt7lp" path="res://Scripts/Desktop/clock_and_calendar.gd" id="28_phxs6"]
+[ext_resource type="PackedScene" uid="uid://demfdsp570gsd" path="res://Scenes/Window Types/ending_text_editor.tscn" id="29_u26xb"]
 
 [sub_resource type="Resource" id="Resource_0lcfo"]
-script = ExtResource("16_p75nn")
+script = ExtResource("16_eys42")
 subtitles = Dictionary[int, String]({})
 time_to_be_changed = 0
 change_time_to = 0
@@ -39,7 +39,7 @@ key_to_be_moved = 0
 index_to_be_moved_to = 0
 
 [sub_resource type="Resource" id="Resource_mmul2"]
-script = ExtResource("16_p75nn")
+script = ExtResource("16_eys42")
 subtitles = Dictionary[int, String]({})
 time_to_be_changed = 0
 change_time_to = 0
@@ -47,7 +47,7 @@ key_to_be_moved = 0
 index_to_be_moved_to = 0
 
 [sub_resource type="Resource" id="Resource_6crtp"]
-script = ExtResource("16_p75nn")
+script = ExtResource("16_eys42")
 subtitles = Dictionary[int, String]({})
 time_to_be_changed = 0
 change_time_to = 0
@@ -55,7 +55,7 @@ key_to_be_moved = 0
 index_to_be_moved_to = 0
 
 [sub_resource type="Resource" id="Resource_naixv"]
-script = ExtResource("16_p75nn")
+script = ExtResource("16_eys42")
 subtitles = Dictionary[int, String]({})
 time_to_be_changed = 0
 change_time_to = 0
@@ -298,7 +298,7 @@ _data = {
 &"open_animation": SubResource("Animation_ybo8t")
 }
 
-[node name="Bad" type="Control" node_paths=PackedStringArray("theme_switch_nodes", "app_icon_container", "wallpaper_node", "users_panel")]
+[node name="Special" type="Control" node_paths=PackedStringArray("theme_switch_nodes", "app_icon_container", "wallpaper_node", "users_panel")]
 clip_contents = true
 layout_mode = 3
 anchors_preset = 15
@@ -306,19 +306,19 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_8b4yl")
-credits_window = ExtResource("2_3wmxa")
-game_restart_user = ExtResource("3_g88ed")
+script = ExtResource("1_fuegc")
+credits_window = ExtResource("2_75ii7")
+game_restart_user = ExtResource("3_g01q7")
 theme_switch_nodes = [NodePath("Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Panel/Power Strip/power_off"), NodePath("Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Panel/Power Strip/restart"), NodePath("Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Panel/Power Strip/logout")]
 active_edges = Array[int]([50, 50, 50, 50])
 app_icon_container = NodePath("Panels/Bottom Panel/Container/Apps Container/Apps Container")
 wallpaper_node = NodePath("Wallpaper")
 users_panel = NodePath("Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Users Sorter")
 dictionary_key = "satsu"
-light_theme = ExtResource("4_720i8")
-dark_theme = ExtResource("4_720i8")
-light_icons = ExtResource("5_1e5u5")
-dark_icons = ExtResource("6_2ignr")
+light_theme = ExtResource("4_vwcfk")
+dark_theme = ExtResource("4_vwcfk")
+light_icons = ExtResource("5_kn8lp")
+dark_icons = ExtResource("6_x5umr")
 is_dark_theme = true
 system_name = "Dub XP"
 system_version = "v1.2"
@@ -327,21 +327,21 @@ system_information = "(c) WinnerWind 2025
 There is no licence agreement. Do not try to find the licence. That's impossible. Instead, realize that it is not the licence that exists, only you.
 
 Just remember that the answers are all here, and within you."
-current_user = ExtResource("3_g88ed")
+current_user = ExtResource("3_g01q7")
 chat_username = "$sth"
 chat_realname = "Satsu Hito"
-virtual_notification = ExtResource("7_xkabr")
-popup = ExtResource("8_78j5b")
-password_prompt = ExtResource("9_fl1nl")
-app_tray_icon = ExtResource("10_1thna")
-users_password_prompt = ExtResource("11_jakxi")
+virtual_notification = ExtResource("7_4cc3k")
+popup = ExtResource("8_ubch3")
+password_prompt = ExtResource("9_xi3eu")
+app_tray_icon = ExtResource("10_eqf30")
+users_password_prompt = ExtResource("11_6s1rq")
 bootup_scene_path = "res://Scenes/bootup.tscn"
-power_prompt = ExtResource("12_u1172")
-login_scene = ExtResource("13_8l8yr")
+power_prompt = ExtResource("12_ycoer")
+login_scene = ExtResource("13_5xfhh")
 
 [node name="Files" type="Node" parent="."]
 unique_name_in_owner = true
-script = ExtResource("14_jt4ok")
+script = ExtResource("14_qb8vt")
 month = 4
 day = 28
 hour = 12
@@ -349,10 +349,10 @@ minute = 10
 metadata/_custom_type_script = "uid://cmowc8flglqra"
 
 [node name="Desktop" type="Node" parent="Files"]
-script = ExtResource("14_jt4ok")
+script = ExtResource("14_qb8vt")
 
 [node name="README" type="Node" parent="Files/Desktop"]
-script = ExtResource("15_a52ij")
+script = ExtResource("15_qroo7")
 text = "WELCOME TO YOUR NEW ANYTABLE DESKTOP!
 
 If you are reading this file, this means that your system has been fully set up and ready to go!
@@ -386,7 +386,7 @@ hour = 18
 minute = 32
 
 [node name="email" type="Node" parent="Files/Desktop"]
-script = ExtResource("15_a52ij")
+script = ExtResource("15_qroo7")
 text = "Hey! 
 
 It's me, your lawyer friend. I gave you this system to share some rather confidential information regarding Ranmara Rakesh's murder, who is your brother. Because of the nature of the information I'm giving you, I thought it was necessary to give you a dedicated computer. We cannot risk information being leaked or intercepted. This device is completely isolated from your other devices. 
@@ -406,7 +406,7 @@ audio_subtitles = SubResource("Resource_6crtp")
 video_subtitles = SubResource("Resource_naixv")
 
 [node name="urgent" type="Node" parent="Files/Desktop"]
-script = ExtResource("15_a52ij")
+script = ExtResource("15_qroo7")
 text = "Hey! 
 
 It's me, your lawyer friend. I gave you this system to share some rather confidential information regarding Ranmara Rakesh's murder, who is your brother. Because of the nature of the information I'm giving you, I thought it was necessary to give you a dedicated computer. We cannot risk information being leaked or intercepted. This device is completely isolated from your other devices. 
@@ -425,7 +425,7 @@ password   : oSkdpdwW!!?
 audio_subtitles = SubResource("Resource_6crtp")
 video_subtitles = SubResource("Resource_naixv")
 
-[node name="confidential-evidence" parent="Files" instance=ExtResource("17_13jur")]
+[node name="confidential-evidence" parent="Files" instance=ExtResource("17_5x8e0")]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -440,7 +440,7 @@ unique_name_in_owner = true
 [node name="OutroSFX" type="AudioStreamPlayer" parent="SFX"]
 
 [node name="EndingSong" type="AudioStreamPlayer" parent="SFX"]
-stream = ExtResource("18_nbinm")
+stream = ExtResource("18_ryt55")
 parameters/looping = true
 
 [node name="Wallpaper" type="TextureRect" parent="."]
@@ -451,7 +451,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("19_yxuyn")
+texture = ExtResource("19_pwfog")
 expand_mode = 1
 stretch_mode = 6
 
@@ -464,7 +464,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="README" parent="Desktop Icons" instance=ExtResource("20_bktlf")]
+[node name="README" parent="Desktop Icons" instance=ExtResource("20_bat6h")]
 layout_mode = 1
 offset_left = -409.0
 offset_top = -39.0
@@ -477,7 +477,7 @@ open_file_instead = true
 file_path = "Desktop/README"
 autoshift = true
 
-[node name="email" parent="Desktop Icons" instance=ExtResource("20_bktlf")]
+[node name="email" parent="Desktop Icons" instance=ExtResource("20_bat6h")]
 layout_mode = 1
 offset_left = 415.0
 offset_top = -317.0
@@ -490,7 +490,7 @@ open_file_instead = true
 file_path = "Desktop/email"
 autoshift = true
 
-[node name="urgent" parent="Desktop Icons" instance=ExtResource("20_bktlf")]
+[node name="urgent" parent="Desktop Icons" instance=ExtResource("20_bat6h")]
 layout_mode = 1
 offset_left = 9.0
 offset_top = -127.0
@@ -544,11 +544,11 @@ grow_vertical = 2
 [node name="App Starter" type="Button" parent="Panels/Bottom Panel/Container" node_paths=PackedStringArray("animation_player")]
 custom_minimum_size = Vector2(45, 45)
 layout_mode = 2
-icon = ExtResource("21_q277o")
+icon = ExtResource("21_i27fu")
 flat = true
 icon_alignment = 1
 expand_icon = true
-script = ExtResource("22_ejiqp")
+script = ExtResource("22_k0ota")
 icon_name = &"users"
 animation_player = NodePath("AnimationPlayer")
 
@@ -580,9 +580,9 @@ size_flags_vertical = 3
 [node name="Users Sorter" type="VBoxContainer" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users" node_paths=PackedStringArray("sorter")]
 layout_mode = 2
 size_flags_horizontal = 3
-script = ExtResource("23_qdg8x")
+script = ExtResource("23_npqqr")
 slice = 0
-users_row = ExtResource("24_w44kf")
+users_row = ExtResource("24_3nxod")
 sorter = NodePath(".")
 
 [node name="VSeparator" type="VSeparator" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users"]
@@ -607,14 +607,14 @@ size_flags_vertical = 3
 layout_mode = 2
 columns = 3
 
-[node name="Files Icon" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container/GridContainer" instance=ExtResource("20_bktlf")]
+[node name="Files Icon" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container/GridContainer" instance=ExtResource("20_bat6h")]
 layout_mode = 2
 size_flags_horizontal = 1
 icon_name = &"file_manager"
 text = "File Manager"
 tooltip = "Manage your files in style!"
 
-[node name="Info" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container/GridContainer" instance=ExtResource("20_bktlf")]
+[node name="Info" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container/GridContainer" instance=ExtResource("20_bat6h")]
 layout_mode = 2
 size_flags_horizontal = 1
 type = 4
@@ -622,7 +622,7 @@ icon_name = &"system_information"
 text = "About"
 tooltip = "About your system"
 
-[node name="Settings" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container/GridContainer" instance=ExtResource("20_bktlf")]
+[node name="Settings" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container/GridContainer" instance=ExtResource("20_bat6h")]
 layout_mode = 2
 size_flags_horizontal = 1
 type = 5
@@ -630,7 +630,7 @@ icon_name = &"settings"
 text = "Settings"
 tooltip = "Configure your system"
 
-[node name="Notepad" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container/GridContainer" instance=ExtResource("20_bktlf")]
+[node name="Notepad" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container/GridContainer" instance=ExtResource("20_bat6h")]
 layout_mode = 2
 size_flags_horizontal = 1
 type = 6
@@ -638,7 +638,7 @@ icon_name = &"notepad"
 text = "Notepad"
 tooltip = "Take notes in style."
 
-[node name="Remote Connect" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container/GridContainer" instance=ExtResource("20_bktlf")]
+[node name="Remote Connect" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container/GridContainer" instance=ExtResource("20_bat6h")]
 layout_mode = 2
 size_flags_horizontal = 1
 type = 7
@@ -646,7 +646,7 @@ icon_name = &"remote_connection"
 text = "Anytable"
 tooltip = "Connecting your systems since 2004"
 
-[node name="Radio" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container/GridContainer" instance=ExtResource("20_bktlf")]
+[node name="Radio" parent="Panels/Bottom Panel/Container/App Starter/Panel/Main Container/Apps and Users/Apps/Apps Container/GridContainer" instance=ExtResource("20_bat6h")]
 layout_mode = 2
 size_flags_horizontal = 1
 type = 9
@@ -674,7 +674,7 @@ alignment = 1
 custom_minimum_size = Vector2(40, 0)
 layout_mode = 2
 mouse_filter = 1
-icon = ExtResource("25_l4mme")
+icon = ExtResource("25_3d80d")
 flat = true
 icon_alignment = 1
 expand_icon = true
@@ -683,7 +683,7 @@ expand_icon = true
 custom_minimum_size = Vector2(40, 0)
 layout_mode = 2
 mouse_filter = 1
-icon = ExtResource("26_rljxk")
+icon = ExtResource("26_q7868")
 flat = true
 icon_alignment = 1
 expand_icon = true
@@ -692,7 +692,7 @@ expand_icon = true
 custom_minimum_size = Vector2(40, 0)
 layout_mode = 2
 mouse_filter = 1
-icon = ExtResource("27_kgum6")
+icon = ExtResource("27_sqcdu")
 flat = true
 icon_alignment = 1
 expand_icon = true
@@ -722,7 +722,7 @@ layout_mode = 2
 bbcode_enabled = true
 text = "[center][font_size=16]17:08:24[p][center] Monday, June 4th 2024"
 scroll_active = false
-script = ExtResource("28_0q6pl")
+script = ExtResource("28_phxs6")
 panel = NodePath("Calendar")
 animation_player = NodePath("AnimationPlayer")
 month_container = NodePath("Calendar/Sorter/Days")
@@ -880,7 +880,7 @@ libraries = {
 &"": SubResource("AnimationLibrary_ocbpv")
 }
 
-[node name="Gnome Scribe" parent="." node_paths=PackedStringArray("desktop") instance=ExtResource("29_awkfq")]
+[node name="Gnome Scribe" parent="." node_paths=PackedStringArray("desktop") instance=ExtResource("29_u26xb")]
 custom_minimum_size = Vector2(400, 300)
 layout_mode = 0
 anchors_preset = 0
@@ -892,19 +892,19 @@ offset_right = -124.0
 offset_bottom = 449.0
 grow_horizontal = 1
 grow_vertical = 1
-text = "Subject: I'm sorry.
+text = "Subject: Breakthrough
 
 Hey,
 
-I wanted to reach out, but I'm sure you already know what has happened. The court has issued your arrest warrant just this morning. There wasn't enough testimony in your favour, nor enough evidence. All the signs unfortunately pointed to you.
+I wanted to reach out to you, with some good news for once. You're officially in the clear! And the best part is that with the evidence you helped to uncover, we now *officially* know who killed Ranmara. It wasn't easy, but your hard work and your observation towards careful details finally led the police to the culprit.
 
-I know that you are not the one to have done it, but after reviewing what little evidence I have myself, I understand why the courts took this decision. As it stands, they took this decision with haste, and there was nothing I could do. 
+You're officially in the clear and no charges will be pressed against you. You did everything you could and it paid off.
 
-I'll do everything I can to appeal the verdict, but I am sorry that things ended up this way. If there's anything you can remember, any file you think we might have missed, let me know. The next time I visit will unfortunately be with bars between the two of us.
+That said, I do sometimes wonder where Ranmara's body could've gone. If I recall from the memos correctly, the body dissapeared in the middle of the investigation? How could this have happened? Anyway, this means that the families involved, and you, don't have the closure that you deserve. I really hope that one day the search ends, and Ranmara is finally found. He was a close friend to me as well.
 
-Take care of yourself.
+Anyway, that's all for now. You might as well consider this case closed and move on with your life. It's probably for the best. This has been quite the shitshow.
 
-- Your lawyer friend."
+- Your lawyer friend"
 directory_path_text = ">> /Desktop/re:email.txt"
 desktop = NodePath("..")
 
