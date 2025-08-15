@@ -25,6 +25,8 @@ func _ready():
 	
 	get_tree().root.size_changed.connect(size_changed)
 	
+	mouse_entered.connect(desktop.play_sound.bind("Hover"))
+	
 	pivot_offset = Vector2(size.x/2,size.y/2) #Calculate pivot offset so it scales up properly in mouse hover
 
 func _process(delta):

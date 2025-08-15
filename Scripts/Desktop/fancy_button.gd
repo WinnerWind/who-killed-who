@@ -25,6 +25,7 @@ func _ready():
 	mouse_entered.connect(_on_hover)
 	mouse_exited.connect(_on_hover_exit)
 	
+	mouse_entered.connect(desktop.play_sound.bind("Hover"))
 	
 	sub_text.modulate = Color.TRANSPARENT
 	if desktop.is_dark_theme:
