@@ -21,6 +21,7 @@ config/icon="res://Art/Pictures/Editor Only/icon.svg"
 
 SaveData="*res://Scripts/savedata.gd"
 DisplayManager="*res://Scenes/Other/Display Manager/display_manager.tscn"
+AudioManager="*res://Scripts/audio_manager.gd"
 
 [debug]
 

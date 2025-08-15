@@ -12,7 +12,7 @@ offset_bottom = -348.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_lfaf5")
-checkbuttons_array = [NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Instant Entries/fm_instant_load"), NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Default Theme/desktop_use_default_theme"), NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Rollover Mouse/rollover_window_focus"), NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/24H Clock/use_24h_clock"), NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Show Names for Subtitles/subtitles_show_names"), NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Subtitles/subtitles_shown"), NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/On Screen Descriptions/subtitles_use_cc"), NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Show Names for Subtitles/subtitles_show_names"), NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Larger File Manager Icons/larger_file_manager_icons")]
+checkbuttons_array = [NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Instant Entries/fm_instant_load"), NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Default Theme/desktop_use_default_theme"), NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Rollover Mouse/rollover_window_focus"), NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/24H Clock/use_24h_clock"), NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Show Names for Subtitles/subtitles_show_names"), NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Subtitles/subtitles_shown"), NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/On Screen Descriptions/subtitles_use_cc"), NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Show Names for Subtitles/subtitles_show_names"), NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Larger File Manager Icons/larger_file_manager_icons"), NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/SFX/enable_window_sfx")]
 current_desktop_theme_checkbutton = NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Theme Row/Desktop Theme Button")
 option_box_array = [NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Display Resolution/display_resolution"), NodePath("Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Display Type/display_type")]
 starting_size = Vector2(400, 300)
@@ -101,6 +101,24 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 25
 text = "Misc"
 autowrap_mode = 3
+
+[node name="SFX" type="HBoxContainer" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="Text" type="Label" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/SFX"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+text = "Enable window SFX"
+autowrap_mode = 3
+
+[node name="Spacer" type="Control" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/SFX"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="enable_window_sfx" type="CheckButton" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/SFX"]
+layout_mode = 2
+flat = true
 
 [node name="Instant Entries" type="HBoxContainer" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter"]
 custom_minimum_size = Vector2(0, 20)
@@ -309,6 +327,7 @@ popup/item_2/id = 2
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
 [connection signal="toggled" from="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Theme Row/Desktop Theme Button" to="." method="set_desktop_theme"]
 [connection signal="toggled" from="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Default Theme/desktop_use_default_theme" to="." method="set_setting" binds= ["desktop_use_default_theme"]]
+[connection signal="toggled" from="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/SFX/enable_window_sfx" to="." method="set_setting" binds= ["enable_window_sfx"]]
 [connection signal="toggled" from="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Instant Entries/fm_instant_load" to="." method="set_setting" binds= ["fm_instant_load"]]
 [connection signal="toggled" from="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/24H Clock/use_24h_clock" to="." method="set_setting" binds= ["use_24h_clock"]]
 [connection signal="toggled" from="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Rollover Mouse/rollover_window_focus" to="." method="set_setting" binds= ["rollover_window_focus"]]

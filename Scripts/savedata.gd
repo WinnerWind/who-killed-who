@@ -15,6 +15,8 @@ var ram_save = {
 	"ranmara_is_theme_dark": true,
 	"satsu_is_theme_dark": false,
 	"jeremy_is_theme_dark": true,
+	"romila_is_theme_dark": true,
+	"tutorial_is_theme_dark": false,
 	# DEFINE SETTINGS:
 	"settings_rollover_window_focus": false, #Focus windows on mouse hover only
 	"settings_fm_instant_load" : false, #File manager loads entries instantly
@@ -25,7 +27,8 @@ var ram_save = {
 	"settings_display_type": 0, #Display type to be selected by user
 	"settings_subtitles_shown": false, #Are subtitles shown
 	"settings_subtitles_use_cc": false, #Are Closed Captions and on screen descriptons shown
-	"settings_subtitles_show_names": false #Show speaker names
+	"settings_subtitles_show_names": false, #Show speaker names
+	"settings_enable_window_sfx": true #Defines whether to play misc window sfx for opening closing etc.
 }: #SaveData currently being accessed by the game
 	set(new_save):
 		ram_save = new_save
@@ -42,6 +45,7 @@ func save():
 	disk_save = FileAccess.open(save_path,FileAccess.WRITE)
 	disk_save.store_var(ram_save)
 	disk_save.close()
+	AudioManager._ready()
 
 func delete_save():
 	#Function to delete the save
