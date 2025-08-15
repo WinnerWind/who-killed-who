@@ -1125,11 +1125,10 @@ use_inverted_icons_when_titlebar_focused = true
 use_alternate_icon_for_power_prompt = true
 system_name = "HipOS"
 system_version = "v1.1.2"
-system_information = "COPYRIGHT HIPXEL CC 2025
+system_information = "(c) WinnerWind 2025
+(c) Design by Hipxel 2025
 
-CREDITS
-HIPXEL
-WINNERWIND"
+There is no ghost. No ghost at all."
 current_user = ExtResource("6_nkhfi")
 chat_username = "$ran"
 chat_realname = "Ranmara"
@@ -1556,7 +1555,6 @@ unique_name_in_owner = true
 
 [node name="IntroSFX" type="AudioStreamPlayer" parent="SFX"]
 stream = ExtResource("40_ibk3b")
-volume_db = -80.0
 bus = &"Intro/Outro SFX"
 
 [node name="OutroSFX" type="AudioStreamPlayer" parent="SFX"]
@@ -1565,22 +1563,18 @@ bus = &"Intro/Outro SFX"
 
 [node name="Hover" type="AudioStreamPlayer" parent="SFX"]
 stream = ExtResource("47_k7xhl")
-volume_db = -10.0
 bus = &"SFX"
 
 [node name="Open" type="AudioStreamPlayer" parent="SFX"]
 stream = ExtResource("48_krgcv")
-volume_db = -10.0
 bus = &"SFX"
 
 [node name="Close" type="AudioStreamPlayer" parent="SFX"]
 stream = ExtResource("48_e4ydr")
-volume_db = -10.0
 bus = &"SFX"
 
 [node name="Minimize" type="AudioStreamPlayer" parent="SFX"]
 stream = ExtResource("49_8w2qy")
-volume_db = -10.0
 bus = &"SFX"
 
 [node name="Smart Wallpaper" type="ColorRect" parent="."]

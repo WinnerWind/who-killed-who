@@ -514,8 +514,12 @@ dark_icons = ExtResource("5_vqh4t")
 is_dark_theme = true
 is_default_dark_theme = true
 system_name = "All See OS"
-system_version = "v0.0.1"
-system_information = "Copyright WinnerWind"
+system_version = "v2.2.1"
+system_information = "(c) WinnerWind 2025
+
+There is no such thing as rumor. Only fact and un-fact. Rumors live in words unsaid and words lost.
+
+Seek facts. Not rumor. "
 current_user = ExtResource("2_f78nl")
 chat_username = "$rom"
 chat_realname = "romila160209"

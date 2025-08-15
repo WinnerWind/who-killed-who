@@ -704,8 +704,12 @@ dark_theme = ExtResource("3_oo3qg")
 light_icons = ExtResource("4_vgvvn")
 dark_icons = ExtResource("5_6k1xg")
 system_name = "Dub XP"
-system_version = "v0.0.1"
-system_information = "Copyright WinnerWind"
+system_version = "v1.1"
+system_information = "(c) WinnerWind 2025
+
+There is no guilt file. There is no confession. Only consequences. What you do with this information is solely up to you. 
+
+To know the truth, you must find the lies."
 current_user = ExtResource("6_vgvvn")
 chat_username = "$sth"
 chat_realname = "Satsu Hito"
