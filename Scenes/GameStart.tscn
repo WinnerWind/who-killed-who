@@ -1,0 +1,10 @@
+[gd_scene load_steps=4 format=3 uid="uid://bc6mlrjjhufe0"]
+
+[ext_resource type="Script" uid="uid://bsqh736agb8ph" path="res://Scripts/game_start.gd" id="1_tdh8d"]
+[ext_resource type="PackedScene" uid="uid://ja0iaxhopt5e" path="res://Scenes/Desktops/desktop_tutorial.tscn" id="2_0vix4"]
+[ext_resource type="PackedScene" uid="uid://b8jwsa53j715" path="res://Scenes/login.tscn" id="3_dxm5d"]
+
+[node name="GameStart" type="Node"]
+script = ExtResource("1_tdh8d")
+tutorial_user_scene = ExtResource("2_0vix4")
+login_scene = ExtResource("3_dxm5d")

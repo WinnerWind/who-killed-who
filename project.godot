@@ -12,7 +12,7 @@ config_version=5
 
 config/name="Who Killed Who"
 config/tags=PackedStringArray("2d", "working_on")
-run/main_scene="res://Scenes/Desktops/Demos/demo_desktop_robert.tscn"
+run/main_scene="uid://bc6mlrjjhufe0"
 config/features=PackedStringArray("4.4", "Forward Plus")
 boot_splash/bg_color=Color(0, 0, 0, 1)
 config/icon="res://Art/Pictures/Editor Only/icon.svg"
