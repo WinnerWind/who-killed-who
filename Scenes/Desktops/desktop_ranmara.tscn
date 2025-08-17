@@ -1813,14 +1813,6 @@ sub_text_string = "Connecting your systems since 2004."
 speed = 0.1
 desktop = NodePath("../../../../../../../../..")
 
-[node name="Radio" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Apps Container/Sorter" node_paths=PackedStringArray("desktop") instance=ExtResource("53_nwur7")]
-layout_mode = 2
-current_type = 10
-main_text_string = "Foobar 1984"
-sub_text_string = "Web Radio for your pleasure."
-speed = 0.1
-desktop = NodePath("../../../../../../../../..")
-
 [node name="Police Radio" parent="Panels/Top Panel/Container/App Starter/Panel/Seperator/Apps Container/Sorter" node_paths=PackedStringArray("desktop") instance=ExtResource("53_nwur7")]
 layout_mode = 2
 current_type = 9
