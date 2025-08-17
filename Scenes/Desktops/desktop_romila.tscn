@@ -48,8 +48,8 @@
 [ext_resource type="PackedScene" uid="uid://bwgiv56py676e" path="res://Scenes/Other/desktop_icon.tscn" id="33_vgd67"]
 [ext_resource type="Texture2D" uid="uid://cvd1r8gkr2itr" path="res://Art/Pictures/Documents/godotcon-info/godotcon-information-0.png" id="34_jkww4"]
 [ext_resource type="Texture2D" uid="uid://c70dji81qedu0" path="res://Art/Pictures/Documents/godotcon-info/godotcon-information-1.png" id="35_md6mi"]
-[ext_resource type="AudioStream" uid="uid://w7qblkd2bb2l" path="res://Art/Sound/Music/kiryev and the void.wav" id="36_md6mi"]
 [ext_resource type="Script" uid="uid://cq8v8vfrqt7lp" path="res://Scripts/Desktop/clock_and_calendar.gd" id="37_silvm"]
+[ext_resource type="AudioStream" uid="uid://bgjmvfu835kmr" path="res://Art/Sound/Music/kiryev and the void.mp3" id="38_d7gui"]
 [ext_resource type="Texture2D" uid="uid://c3h3exl6xyt5w" path="res://Art/Pictures/Drawings/kissing.png" id="38_jg670"]
 [ext_resource type="Texture2D" uid="uid://duceho8c5llak" path="res://Art/Pictures/Desktop Icons/User1/Dark/power_off.svg" id="38_mv4s2"]
 [ext_resource type="Texture2D" uid="uid://bvfc20h5rfxyj" path="res://Art/Pictures/Desktop Icons/User1/Dark/reboot.svg" id="39_jkww4"]
@@ -571,7 +571,7 @@ metadata/_custom_type_script = "uid://cmowc8flglqra"
 
 [node name="f7833464" type="Node" parent="Files/Documents"]
 script = ExtResource("32_rd6dx")
-music = ExtResource("36_md6mi")
+music = ExtResource("38_d7gui")
 title = "Kiryev and The Void"
 subtitle = "WinnerWind"
 audio_subtitles = SubResource("Resource_lvsis")

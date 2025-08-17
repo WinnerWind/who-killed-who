@@ -17,7 +17,7 @@
 [ext_resource type="Script" uid="uid://6ahcfwj62g07" path="res://Scripts/Files and Folders/files.gd" id="15_aokb8"]
 [ext_resource type="Script" uid="uid://betc7x5t62js8" path="res://Scripts/Resources and Files/Other/subtitles.gd" id="16_8b6xh"]
 [ext_resource type="PackedScene" uid="uid://dpsvuj4bhgvyp" path="res://Scenes/File Systems/incident_report.tscn" id="17_7xcv3"]
-[ext_resource type="AudioStream" uid="uid://bsomeolopdx06" path="res://Art/Sound/Music/factorio.mp3" id="18_b3kij"]
+[ext_resource type="AudioStream" uid="uid://dtughduell475" path="res://Art/Sound/Music/bad-ending.wav" id="18_rvt3e"]
 [ext_resource type="Texture2D" uid="uid://dmdex3eijgfnc" path="res://Art/Placeholders/PS30TH_16x9_WALLPAPER.png" id="19_n8nhv"]
 [ext_resource type="PackedScene" uid="uid://bwgiv56py676e" path="res://Scenes/Other/desktop_icon.tscn" id="20_n6xnv"]
 [ext_resource type="Texture2D" uid="uid://cajkgw7h5kb80" path="res://Art/Pictures/Editor Only/file.svg" id="21_iwxa5"]
@@ -440,9 +440,8 @@ unique_name_in_owner = true
 [node name="OutroSFX" type="AudioStreamPlayer" parent="SFX"]
 
 [node name="EndingSong" type="AudioStreamPlayer" parent="SFX"]
-stream = ExtResource("18_b3kij")
+stream = ExtResource("18_rvt3e")
 bus = &"Music"
-parameters/looping = true
 
 [node name="Hover" type="AudioStreamPlayer" parent="SFX"]
 bus = &"SFX"

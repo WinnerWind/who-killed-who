@@ -6,7 +6,7 @@
 [ext_resource type="Resource" uid="uid://bn2xmponak4f7" path="res://Art/Pictures/Desktop Icons/Icon Sets/light_windowsxp.tres" id="4_lacub"]
 [ext_resource type="Resource" uid="uid://oshxy6cv5mi" path="res://Art/Pictures/Desktop Icons/Icon Sets/dark_windowsxp.tres" id="5_lrsj5"]
 [ext_resource type="Resource" uid="uid://bwu1n3phbct1q" path="res://Data and Resources/Users/tutorial.tres" id="6_vjiyk"]
-[ext_resource type="AudioStream" uid="uid://bsomeolopdx06" path="res://Art/Sound/Music/factorio.mp3" id="20_qj11v"]
+[ext_resource type="AudioStream" uid="uid://dtughduell475" path="res://Art/Sound/Music/bad-ending.wav" id="18_c8h1e"]
 [ext_resource type="PackedScene" uid="uid://c2md68ibvvoxk" path="res://Scenes/Other/notification.tscn" id="20_rwhod"]
 [ext_resource type="PackedScene" uid="uid://fal2iityh6i6" path="res://Scenes/Window Types/popup.tscn" id="21_34bui"]
 [ext_resource type="PackedScene" uid="uid://c8t5wkgn4r6wi" path="res://Scenes/Window Types/password_prompt.tscn" id="22_4gcca"]
@@ -440,9 +440,8 @@ unique_name_in_owner = true
 [node name="OutroSFX" type="AudioStreamPlayer" parent="SFX"]
 
 [node name="EndingSong" type="AudioStreamPlayer" parent="SFX"]
-stream = ExtResource("20_qj11v")
+stream = ExtResource("18_c8h1e")
 bus = &"Music"
-parameters/looping = true
 
 [node name="Hover" type="AudioStreamPlayer" parent="SFX"]
 bus = &"SFX"
