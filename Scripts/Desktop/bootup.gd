@@ -44,8 +44,8 @@ func change_to_text():
 	main_text_label.show()
 
 func intro():
-	for line in sequence.array_of_bootup_text: #reads every line
-		await add_new_line(line.text,line.type,line.delay) #waits for it to finish
+	#for line in sequence.array_of_bootup_text: #reads every line
+		#await add_new_line(line.text,line.type,line.delay) #waits for it to finish
 	#change_to_plymouth() #switch to plymouth
 	#await plymouth.get_node("Timer").timeout #Waits for it to finish
 	get_tree().root.call_deferred("add_child",scene_to_start.instantiate()) #Changes scene
@@ -56,7 +56,7 @@ func intro():
 func outro():
 	#change_to_plymouth() #Starts with plymouth
 	#await plymouth.get_node("Timer").timeout #Waits for it to finish
-	change_to_text() #Switches to text
-	for line in sequence.array_of_bootup_text: #Starts text sequence
-		await add_new_line(line.text,line.type,line.delay)
+	#change_to_text() #Switches to text
+	#for line in sequence.array_of_bootup_text: #Starts text sequence
+		#await add_new_line(line.text,line.type,line.delay)
 	get_tree().quit() #Quits game
