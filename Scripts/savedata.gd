@@ -38,10 +38,6 @@ var ram_save = {
 var disk_save #SaveData from the system, on disk
 func save():
 	# Function to copy ram_save into disk_save
-	#Make a backup
-	if FileAccess.file_exists(save_path):
-		var dir = DirAccess.open("user://")
-		dir.copy(save_path,save_backup_path)
 	
 	disk_save = FileAccess.open(save_path,FileAccess.WRITE)
 	disk_save.store_var(ram_save)
@@ -70,6 +66,8 @@ func load_save():
 		
 		ram_save = temp_save # read from file. Also make ramsave = disksave, hence loading it.
 		
+		print(ram_save)
+		
 		disk_save.close() #Close the disk save as we don't need it.
 		user_id_list = ram_save["users"].duplicate()
 		for id in user_id_list:
@@ -81,6 +79,11 @@ func load_save():
 func _ready():
 	#delete_save()
 	load_save()
+	#Make a backup
+	if FileAccess.file_exists(save_path):
+		var dir = DirAccess.open("user://")
+		dir.copy(save_path,save_backup_path)
+	
 	DisplayManager.change_display_type(ram_save["settings_display_type"])
 	DisplayManager.change_resolution(ram_save["settings_display_resolution"])
 	DisplayManager.change_display_scale(ram_save["settings_display_scale"])
