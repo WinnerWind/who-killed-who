@@ -138,7 +138,7 @@ func move_inside_viewport(delta)->void:
 	var speed:int = 1000
 	var blocked_edges:Array[int] = desktop.active_edges
 	#Ensures right edge doesn't bleed out
-	if position.x+size.x > viewport_size.x - blocked_edges[1]: 
+	if position.x+size.x > desktop.size.x - blocked_edges[1]: 
 		position.x -= speed * delta
 	elif position.x<= blocked_edges[3]: #Ensures left edge doesnt bleed out
 		position.x += speed * delta
@@ -146,7 +146,7 @@ func move_inside_viewport(delta)->void:
 		pass
 	
 	#Esnures bottom edge doesnt bleed out
-	if position.y + size.y > viewport_size.y - blocked_edges[2]: 
+	if position.y + size.y > desktop.size.y - blocked_edges[2]: 
 		position.y -=speed*delta
 	elif position.y <= blocked_edges[0]: #Ensures top edge doesnt bleed out
 		position.y += speed * delta
