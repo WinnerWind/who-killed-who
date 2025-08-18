@@ -261,6 +261,7 @@ text = "Display Settings"
 autowrap_mode = 3
 
 [node name="Display Resolution" type="HBoxContainer" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter"]
+visible = false
 custom_minimum_size = Vector2(0, 20)
 layout_mode = 2
 
@@ -323,6 +324,38 @@ popup/item_1/id = 1
 popup/item_2/text = "Ex. Fullscreen"
 popup/item_2/id = 2
 
+[node name="Scale" type="HBoxContainer" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter"]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="Text" type="Label" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Scale"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "Display Scale"
+autowrap_mode = 3
+
+[node name="Spacer" type="Control" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Scale"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="display_type2" type="OptionButton" parent="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Scale"]
+layout_mode = 2
+selected = 0
+allow_reselect = true
+item_count = 6
+popup/item_0/text = "0.5"
+popup/item_0/id = 0
+popup/item_1/text = "0.7"
+popup/item_1/id = 1
+popup/item_2/text = "1.0"
+popup/item_2/id = 2
+popup/item_3/text = "1.25"
+popup/item_3/id = 3
+popup/item_4/text = "1.5"
+popup/item_4/id = 4
+popup/item_5/text = "2"
+popup/item_5/id = 5
+
 [connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
 [connection signal="toggled" from="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Theme Row/Desktop Theme Button" to="." method="set_desktop_theme"]
@@ -337,3 +370,4 @@ popup/item_2/id = 2
 [connection signal="toggled" from="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Larger File Manager Icons/larger_file_manager_icons" to="." method="set_setting" binds= ["larger_file_manager_icons"]]
 [connection signal="item_selected" from="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Display Resolution/display_resolution" to="." method="change_resolution"]
 [connection signal="item_selected" from="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Display Type/display_type" to="." method="change_display_type"]
+[connection signal="item_selected" from="Sorter/Contents/ScrollContainer/MarginContainer/Sorter/Scale/display_type2" to="." method="change_display_scale"]

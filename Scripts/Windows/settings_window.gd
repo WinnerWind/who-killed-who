@@ -5,6 +5,7 @@ class_name SettingsWindow
 @export var checkbuttons_array:Array[CheckButton]
 @export var current_desktop_theme_checkbutton:CheckButton
 @export var option_box_array:Array[OptionButton]
+
 func set_setting(value,key:String):
 	if not SaveData.ram_save.has("settings_"+key):
 		printerr("Key %s does not exist in the SaveData dictionary!"%["settings_"+key])
@@ -29,6 +30,10 @@ func change_display_type(index:int):
 	SaveData.ram_save["settings_display_type"] = index
 	SaveData.save()
 
+func change_display_scale(index:int):
+	DisplayManager.change_display_scale(index)
+	SaveData.ram_save["settings_display_scale"] = index
+	SaveData.save()
 
 func _ready():
 	super()
