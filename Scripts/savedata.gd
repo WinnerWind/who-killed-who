@@ -25,7 +25,7 @@ var ram_save = {
 	"settings_larger_file_manager_icons": false, #Larger icons
 	"settings_display_resolution": 3, #Resolution from drop down selected by user
 	"settings_display_type": 0, #Display type to be selected by user
-	"settings_display_scale": 1.0, #Display scale.
+	"settings_display_scale": 2, #Display scale.
 	"settings_subtitles_shown": false, #Are subtitles shown
 	"settings_subtitles_use_cc": false, #Are Closed Captions and on screen descriptons shown
 	"settings_subtitles_show_names": false, #Show speaker names
