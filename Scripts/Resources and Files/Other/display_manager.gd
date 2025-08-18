@@ -8,8 +8,8 @@ func change_resolution(index:int):
 	if set_resolutions:
 		var viewport:Viewport = get_viewport()
 		var window:Viewport = get_tree().root
-		#get_window().mode = Window.MODE_EXCLUSIVE_FULLSCREEN
-		#get_window().size = Vector2.ONE*900
+		get_window().mode = Window.MODE_EXCLUSIVE_FULLSCREEN
+		get_window().size = Vector2.ONE*900
 		var resolution:Vector2 = display_resolutions[index]
 		viewport.set_content_scale_size(resolution)
 		viewport.content_scale_factor = display_scales[index]
