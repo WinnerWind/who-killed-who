@@ -66,7 +66,7 @@ func load_save():
 		
 		ram_save = temp_save # read from file. Also make ramsave = disksave, hence loading it.
 		
-		print(ram_save)
+		#print(ram_save)
 		
 		disk_save.close() #Close the disk save as we don't need it.
 		user_id_list = ram_save["users"].duplicate()
