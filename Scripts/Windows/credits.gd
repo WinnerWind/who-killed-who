@@ -37,6 +37,7 @@ func _process(delta) -> void:
 	if not Engine.is_editor_hint():
 		super(delta)
 
+@export var scroll_time:float
 func roll_credits():
 	await get_tree().process_frame
 	await create_tween().tween_interval(initial_delay).finished
@@ -60,7 +61,6 @@ func roll_credits():
 	var deceleration_time = 0.5*deceleration_ratio * deceleration_distance
 	#acceleration_time = 1.5
 	#deceleration_time = 3
-	var scroll_time:float = 25
 	
 	tween.tween_property(scroll_bar, "value", acceleration_distance, acceleration_time).set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_IN)
 	tween.tween_property(scroll_bar, "value", content_height - deceleration_distance, scroll_time).set_trans(Tween.TRANS_LINEAR)

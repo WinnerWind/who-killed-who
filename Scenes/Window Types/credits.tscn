@@ -52,9 +52,9 @@ text = "[font_size=18]{h1} Who Killed Who {/h}
 
 {h2} Testers {/h}
 [i] Thank you so much for your time and patience with testing this hot mess [/i]
-[i] REPLACE THESE PLACEHOLDER VALUES!!! [/i]
-[b]NAMEHERE[/b]
-[b]NAMEHERE[/b]
+[center]
+[b] Shreya Jindia [/b]
+[/center]
 
 {h2} SFX {/h}
 {me}
@@ -88,6 +88,7 @@ All Rights Reserved [b] Soham Dash [/b] © 2025
 {banner}
 "
 initial_delay = 3.0
+scroll_time = 30.0
 starting_size = Vector2(400, 300)
 
 [node name="Sorter" type="VBoxContainer" parent="."]
@@ -129,9 +130,9 @@ text = "[font_size=18][center][font_size=35] Who Killed Who [/font_size][/center
 
 [center][font_size=30] Testers [/font_size][/center]
 [i] Thank you so much for your time and patience with testing this hot mess [/i]
-[i] REPLACE THESE PLACEHOLDER VALUES!!! [/i]
-[b]NAMEHERE[/b]
-[b]NAMEHERE[/b]
+[center]
+[b] Shreya Jindia [/b]
+[/center]
 
 [center][font_size=30] SFX [/font_size][/center]
 [b]Soham Dash[/b] (WinnerWind) ([url=https://winnerwind.in]Website[/url])
