@@ -363,6 +363,7 @@ func change_users(user:UserMetadata):
 	if submitted_password == user.password: #password correct
 		new_password_window.queue_free()
 		$AnimationPlayer.play("outro_animation")
+		for window in array_of_windows: window.close_window()
 		await $AnimationPlayer.animation_finished #Wait for animation to finish.
 		
 		# scene thingamagic
