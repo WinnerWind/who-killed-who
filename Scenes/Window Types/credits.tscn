@@ -52,9 +52,10 @@ text = "[font_size=18]{h1} Who Killed Who {/h}
 
 {h2} Testers {/h}
 [i] Thank you so much for your time and patience with testing this hot mess [/i]
-[center]
-[b] Shreya Jindia [/b]
-[/center]
+[center][b]
+Shreya Jindia 
+Anonymous
+[/b][/center]
 
 {h2} SFX {/h}
 {me}
@@ -130,9 +131,10 @@ text = "[font_size=18][center][font_size=35] Who Killed Who [/font_size][/center
 
 [center][font_size=30] Testers [/font_size][/center]
 [i] Thank you so much for your time and patience with testing this hot mess [/i]
-[center]
-[b] Shreya Jindia [/b]
-[/center]
+[center][b]
+Shreya Jindia 
+Anonymous
+[/b][/center]
 
 [center][font_size=30] SFX [/font_size][/center]
 [b]Soham Dash[/b] (WinnerWind) ([url=https://winnerwind.in]Website[/url])
