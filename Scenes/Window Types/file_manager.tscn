@@ -11,7 +11,7 @@
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -602.0
+offset_right = -477.0
 offset_bottom = -298.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -20,7 +20,7 @@ sorter = NodePath("Sorter/Contents/MarginContainer/Sorter")
 file_manager_row = ExtResource("2_recye")
 directory_label = ExtResource("3_v2xir")
 maximum_path_length = 55
-starting_size = Vector2(650, 450)
+starting_size = Vector2(675, 450)
 window_icon_name = &"file_manager"
 
 [node name="Sorter" type="VBoxContainer" parent="."]
